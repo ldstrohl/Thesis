@@ -447,7 +447,7 @@ Fuel consumption is related to the thrust acceleration vector by engine paramete
 \dot{m} = -k ||\boldsymbol{a}_T||
 \end{equation}
 
-A fuel optimal guidance law would therefor use the performance index
+A fuel optimal guidance law should therefore use the performance index
 \begin{equation}
 \label{eqn:fueloptimalindex}
 J = \int_{t_0}^{t_f} ||\boldsymbol{a}_T||dt
@@ -505,7 +505,7 @@ Setting $t = t_f$ and letting $t_{go} = t_f - t_0$ satisfies the terminal constr
 \frac{1}{2}\boldsymbol{k}_1 t_{go}^2 + \frac{1}{6}\boldsymbol{k}_2 t_{go}^3 &= \boldsymbol{r}_f^* - \boldsymbol{r}_0 - \boldsymbol{V}_0t_{go}
 \end{align}
 
-Define an inertial guidance frame $\boldsymbol{e} = (\hat{x},\hat{y},\hat{z})^T$ such that guidance vectors $\boldsymbol{q}$ are composed of components in $\boldsymbol{e}$, $\boldsymbol{q} = (q_{x},q_{y},q_{z})^T$. Then we have
+These equations can be separated into sets of two per vector component. Define an inertial guidance frame $\boldsymbol{e} = (\hat{x},\hat{y},\hat{z})^T$ such that guidance vector $\boldsymbol{u}$ is composed of components in $\boldsymbol{e}$, $\boldsymbol{u} = (u_{x},u_{y},u_{z})^T$. For the equations in $\hat{x}$ we have
 
 \begin{equation}
   \begin{bmatrix}
@@ -527,9 +527,32 @@ Define an inertial guidance frame $\boldsymbol{e} = (\hat{x},\hat{y},\hat{z})^T$
 %  \label{de2}
 \end{equation}
 
+Solving the two-equation system is accomplished by inverting the A matrix, leading to a coefficient matrix $E$
+\begin{equation}
+E = 
+	\begin{bmatrix}
+	-2/t_{go} & 6/t_{go}^2 \\
+	6/t_{go}^2 & -12/t_{go}^3
+	\end{bmatrix}
+\end{equation}
 
+The coefficients in $\hat{x}$ are then
+\begin{equation}
+\begin{pmatrix}
+k_{1_x} \\
+k_{2_x}
+\end{pmatrix}
+= E
+\begin{pmatrix}
+V_{f_x}^* - V_{0_x} \\ 
+r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go}) 
+\end{pmatrix}
+\end{equation}
 
+It can be shown that the equations in $\hat{y}$ and $\hat{z}$ take the same form. This $2x2$ $E$ matrix is the origin of the name \textit{E-Guidance}, the guidance law used in the Apollo lunar landing missions.
 
+\subsection{Time-to-go}
+The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until  start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. 
 
 
 
