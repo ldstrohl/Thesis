@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  3 FEB 2018 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  3 FEB 2018 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -177,33 +177,70 @@ See the caption package documentation for explanation.
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p {\ssp \raggedright \bfseries #1. #2\par } \vskip \belowcaptionskip .
 \c@ContinuedFloat=\count105
+) (c:/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks26
+\float@box=\box28
+\@float@everytoks=\toks27
+\@floatcapt=\box29
+)
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks28
+\c@algorithm=\count107
+)
+(c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count108
+\c@ALG@rem=\count109
+\c@ALG@nested=\count110
+\ALG@tlm=\skip52
+\ALG@thistlm=\skip53
+\c@ALG@Lnr=\count111
+\c@ALG@blocknr=\count112
+\c@ALG@storecount=\count113
+\c@ALG@tmpcounter=\count114
+\ALG@tmplength=\skip54
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (c:/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip52
-\LTright=\skip53
-\LTpre=\skip54
-\LTpost=\skip55
-\LTchunksize=\count106
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count115
 \LTcapwidth=\dimen125
-\LT@head=\box28
-\LT@firsthead=\box29
-\LT@foot=\box30
-\LT@lastfoot=\box31
-\LT@cols=\count107
-\LT@rows=\count108
-\c@LT@tables=\count109
-\c@LT@chunks=\count110
-\LT@p@ftn=\toks26
+\LT@head=\box30
+\LT@firsthead=\box31
+\LT@foot=\box32
+\LT@lastfoot=\box33
+\LT@cols=\count116
+\LT@rows=\count117
+\c@LT@tables=\count118
+\c@LT@chunks=\count119
+\LT@p@ftn=\toks29
 )
 (c:/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box32
-\UL@hyphenbox=\box33
-\UL@skip=\skip56
-\UL@hook=\toks27
+\UL@box=\box34
+\UL@hyphenbox=\box35
+\UL@skip=\skip59
+\UL@hook=\toks30
 \UL@height=\dimen126
-\UL@pe=\count111
+\UL@pe=\count120
 \UL@pixel=\dimen127
-\ULC@box=\box34
+\ULC@box=\box36
 Package: ulem 2012/05/18
 \ULdepth=\dimen128
 )
@@ -215,25 +252,22 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks28
-\XKV@tempa@toks=\toks29
+\XKV@toks=\toks31
+\XKV@tempa@toks=\toks32
 )
-\XKV@depth=\count112
+\XKV@depth=\count121
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (c:/texlive/2017/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
 (c:/texlive/2017/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count113
+\c@su@anzahl=\count122
 )
 (c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count114
+\etb@tempcnta=\count123
 )
 (c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2017/11/12 v2.29 (NLCT)
@@ -247,19 +281,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (c:/texlive/2017/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count115
+\actioncount=\count124
 )
 (c:/texlive/2017/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count116
-\FP@xia=\count117
-\FP@xib=\count118
-\FP@xfa=\count119
-\FP@xfb=\count120
-\FP@rega=\count121
-\FP@regb=\count122
-\FP@regs=\count123
-\FP@times=\count124
+\FP@xs=\count125
+\FP@xia=\count126
+\FP@xib=\count127
+\FP@xfa=\count128
+\FP@xfb=\count129
+\FP@rega=\count130
+\FP@regb=\count131
+\FP@regs=\count132
+\FP@times=\count133
 )
 (c:/texlive/2017/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -278,7 +312,7 @@ Package: fp-pas 1994/08/29
 )
 (c:/texlive/2017/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count125
+\FPseed=\count134
 )
 (c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -289,59 +323,59 @@ Package: fp-upn 1996/10/21
 (c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks30
-\@dtl@tmpcount=\count126
-\dtl@tmplength=\skip57
-\dtl@sortresult=\count127
-\@dtl@numgrpsepcount=\count128
-\@dtl@datatype=\count129
-\dtl@codeA=\count130
-\dtl@codeB=\count131
-\@dtl@foreach@level=\count132
+\@dtl@toks=\toks33
+\@dtl@tmpcount=\count135
+\dtl@tmplength=\skip60
+\dtl@sortresult=\count136
+\@dtl@numgrpsepcount=\count137
+\@dtl@datatype=\count138
+\dtl@codeA=\count139
+\dtl@codeB=\count140
+\@dtl@foreach@level=\count141
 )
-\dtlcolumnnum=\count133
-\dtlrownum=\count134
-\@dtl@before=\toks31
-\@dtl@after=\toks32
-\@dtl@colhead=\toks33
-\dtlcurrentrow=\toks34
-\dtlbeforerow=\toks35
-\dtlafterrow=\toks36
-\dtlforeachlevel=\count135
-\c@DTLrowi=\count136
-\c@DTLrowii=\count137
-\c@DTLrowiii=\count138
-\c@DTLrow=\count139
-\dtl@rowi=\count140
-\dtl@rowii=\count141
-\dtl@rowiii=\count142
-\@dtl@curi=\toks37
-\@dtl@previ=\toks38
-\@dtl@nexti=\toks39
-\@dtl@curii=\toks40
-\@dtl@previi=\toks41
-\@dtl@nextii=\toks42
-\@dtl@curiii=\toks43
-\@dtl@previii=\toks44
-\@dtl@nextiii=\toks45
-\@dtl@elements=\count143
-\@dtl@list=\toks46
-\@dtl@rowa=\toks47
-\@dtl@rowb=\toks48
-\@dtl@toksA=\toks49
-\@dtl@toksB=\toks50
+\dtlcolumnnum=\count142
+\dtlrownum=\count143
+\@dtl@before=\toks34
+\@dtl@after=\toks35
+\@dtl@colhead=\toks36
+\dtlcurrentrow=\toks37
+\dtlbeforerow=\toks38
+\dtlafterrow=\toks39
+\dtlforeachlevel=\count144
+\c@DTLrowi=\count145
+\c@DTLrowii=\count146
+\c@DTLrowiii=\count147
+\c@DTLrow=\count148
+\dtl@rowi=\count149
+\dtl@rowii=\count150
+\dtl@rowiii=\count151
+\@dtl@curi=\toks40
+\@dtl@previ=\toks41
+\@dtl@nexti=\toks42
+\@dtl@curii=\toks43
+\@dtl@previi=\toks44
+\@dtl@nextii=\toks45
+\@dtl@curiii=\toks46
+\@dtl@previii=\toks47
+\@dtl@nextiii=\toks48
+\@dtl@elements=\count152
+\@dtl@list=\toks49
+\@dtl@rowa=\toks50
+\@dtl@rowb=\toks51
+\@dtl@toksA=\toks52
+\@dtl@toksB=\toks53
 \@dtl@write=\write3
 \@dtl@read=\read1
-\dtl@entrycr=\count144
-\dtl@omitlines=\count145
+\dtl@entrycr=\count153
+\dtl@omitlines=\count154
 )
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2017/11/14 v4.35 (NLCT)
 
 (c:/texlive/2017/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks51
-\@glsmrest=\toks52
+\@glsmfirst=\toks54
+\@glsmrest=\toks55
 )
 (c:/texlive/2017/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
@@ -350,36 +384,36 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 .sty
 Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
 )
-\gls@level=\count146
-\@gls@tmpb=\toks53
-\gls@tmplen=\skip58
-\glskeylisttok=\toks54
-\glslabeltok=\toks55
-\glsshorttok=\toks56
-\glslongtok=\toks57
+\gls@level=\count155
+\@gls@tmpb=\toks56
+\gls@tmplen=\skip61
+\glskeylisttok=\toks57
+\glslabeltok=\toks58
+\glsshorttok=\toks59
+\glslongtok=\toks60
 
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2017/11/14 v4.35 (NLCT)
 )
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2017/11/14 v4.35 (NLCT)
-\glslistdottedwidth=\skip59
+\glslistdottedwidth=\skip62
 )
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2017/11/14 v4.35 (NLCT)
-\glsdescwidth=\skip60
-\glspagelistwidth=\skip61
+\glsdescwidth=\skip63
+\glspagelistwidth=\skip64
 )
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2017/11/14 v4.35 (NLCT)
 
 (c:/texlive/2017/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count147
+\c@tracingst=\count156
 \ST@wd=\dimen129
-\ST@rightskip=\skip62
-\ST@leftskip=\skip63
-\ST@parfillskip=\skip64
+\ST@rightskip=\skip65
+\ST@leftskip=\skip66
+\ST@parfillskip=\skip67
 \ST@pageleft=\dimen130
 \ST@headht=\dimen131
 \ST@tailht=\dimen132
@@ -390,40 +424,40 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@prevht=\dimen137
 \ST@toadd=\dimen138
 \ST@dimen=\dimen139
-\ST@pbox=\box35
+\ST@pbox=\box37
 ))
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2017/11/14 v4.35 (NLCT)
-\glstreeindent=\skip65
+\glstreeindent=\skip68
 ))
 \glswrite=\write4
 \glo@main@file=\write5
 \openout5 = `thesis.glo'.
 
-Package glossaries Info: Writing glossary file thesis.glo on input line 98.
+Package glossaries Info: Writing glossary file thesis.glo on input line 101.
 
 (./glossary.tex)
-\c@corollary=\count148
-\c@definition=\count149
-\c@lemma=\count150
-\c@proposition=\count151
-\c@theorem=\count152
+\c@corollary=\count157
+\c@definition=\count158
+\c@lemma=\count159
+\c@proposition=\count160
+\c@theorem=\count161
  (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 208.
-LaTeX Font Info:    ... okay on input line 208.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 208.
-LaTeX Font Info:    ... okay on input line 208.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 208.
-LaTeX Font Info:    ... okay on input line 208.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 208.
-LaTeX Font Info:    ... okay on input line 208.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 208.
-LaTeX Font Info:    ... okay on input line 208.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 208.
-LaTeX Font Info:    ... okay on input line 208.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 208.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 211.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -432,17 +466,17 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 Note: longtable package detected, redefining the caption printing
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
+\scratchcounter=\count162
 \scratchdimen=\dimen140
-\scratchbox=\box36
-\nofMPsegments=\count154
-\nofMParguments=\count155
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count156
+\scratchbox=\box38
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count165
 \MPscratchDim=\dimen141
-\MPnumerator=\count157
-\makeMPintoPDFobject=\count158
-\everyMPtoPDFconversion=\toks59
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks62
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -512,6 +546,7 @@ Package caption Warning: \caption will not be redefined since it's already
 (caption)                unknown to the caption package.
 See the caption package documentation for explanation.
 
+Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
@@ -519,7 +554,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 212.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 215.
  [1
 
 
@@ -527,16 +562,16 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 
 {c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 216.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 219.
  [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 221.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 224.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 221.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
  [3] (./abstract.tex)
 [4
 
@@ -625,63 +660,64 @@ Overfull \hbox (20.58517pt too wide) in paragraph at lines 288--288
  Subsection 2.4.2.
 [9]
  Subsection 2.4.3.
+[10]
  Section 2.5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 592.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 617.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 592.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 617.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 596.
-[10]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 621.
+[11]
 
-LaTeX Warning: Reference `fig1' on page 11 undefined on input line 632.
-
-
-LaTeX Warning: Reference `fig:graph' on page 11 undefined on input line 633.
+LaTeX Warning: Reference `fig1' on page 12 undefined on input line 657.
 
 
-LaTeX Warning: Reference `fig1' on page 11 undefined on input line 636.
+LaTeX Warning: Reference `fig:graph' on page 12 undefined on input line 658.
 
 
-LaTeX Warning: Reference `fig1' on page 11 undefined on input line 636.
+LaTeX Warning: Reference `fig1' on page 12 undefined on input line 661.
 
 
-LaTeX Warning: Reference `fullfig' on page 11 undefined on input line 663.
+LaTeX Warning: Reference `fig1' on page 12 undefined on input line 661.
+
+
+LaTeX Warning: Reference `fullfig' on page 12 undefined on input line 688.
 
  Section 2.6.
-[11]
-Underfull \hbox (badness 1558) in paragraph at lines 699--699
+
+Underfull \hbox (badness 1558) in paragraph at lines 724--724
 \OT1/ptm/b/n/12 e-ters Used in Some Nu-
  []
 
-[12]
+[12] [13]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 766.
- [13]
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 791.
+ [14]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 846.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 871.
 
-Overfull \hbox (1.59021pt too wide) in paragraph at lines 847--876
+Overfull \hbox (1.59021pt too wide) in paragraph at lines 872--901
 [][] 
  []
 
  Section 2.7.
-[14] [15]
  Subsection 2.7.1.
+[15] [16]
  Subsubsection 2.7.1.1.
  Subsection 2.7.2.
-[16]
+[17]
  Subsection 2.7.3.
  Subsection 2.7.4.
 
 LaTeX Font Warning: Font shape `OMS/ptm/bx/n' undefined
 (Font)              using `OMS/ptm/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 993.
+(Font)              for symbol `textbraceleft' on input line 1018.
 
 LaTeX Font Info:    Font shape `OMS/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 993.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1018.
+
  Subsection 2.7.5.
-[17]
  Subsection 2.7.6.
 [18]
 CHAPTER 3.
@@ -716,13 +752,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8915 strings out of 492980
- 131460 string characters out of 6136208
- 276912 words of memory out of 5000000
- 12248 multiletter control sequences out of 15000+600000
+ 9480 strings out of 492980
+ 139678 string characters out of 6136208
+ 284100 words of memory out of 5000000
+ 12798 multiletter control sequences out of 15000+600000
  47470 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,84p,1988b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,18n,84p,1988b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
@@ -746,7 +782,7 @@ public/amsfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times
 exlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on thesis.pdf (37 pages, 315143 bytes).
+Output written on thesis.pdf (37 pages, 318274 bytes).
 PDF statistics:
  227 PDF objects out of 1000 (max. 8388607)
  161 compressed objects within 2 object streams

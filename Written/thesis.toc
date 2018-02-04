@@ -19,15 +19,15 @@
 \contentsline {subsection}{\numberline {2.4.1}Performance Index}{8}
 \contentsline {subsection}{\numberline {2.4.2}Guidance solution}{9}
 \contentsline {subsection}{\numberline {2.4.3}Time-to-go}{10}
-\contentsline {section}{\numberline {2.5}Figures or How to Get into Real Trouble if You Take Advantage of What \LaTeX \ Can Do}{10}
-\contentsline {section}{\numberline {2.6}Tables}{11}
-\contentsline {section}{\numberline {2.7}Potential Pitfalls}{16}
-\contentsline {subsection}{\numberline {2.7.1}Tables and Figures}{16}
-\contentsline {subsubsection}{\numberline {2.7.1.1}Centered Tables Figures}{16}
+\contentsline {section}{\numberline {2.5}Figures or How to Get into Real Trouble if You Take Advantage of What \LaTeX \ Can Do}{11}
+\contentsline {section}{\numberline {2.6}Tables}{12}
+\contentsline {section}{\numberline {2.7}Potential Pitfalls}{15}
+\contentsline {subsection}{\numberline {2.7.1}Tables and Figures}{15}
+\contentsline {subsubsection}{\numberline {2.7.1.1}Centered Tables Figures}{17}
 \contentsline {subsection}{\numberline {2.7.2}Margins}{17}
-\contentsline {subsection}{\numberline {2.7.3}Bad Pagebreaks}{17}
-\contentsline {subsection}{\numberline {2.7.4}Bad Linebreaks}{17}
-\contentsline {subsection}{\numberline {2.7.5}Vertical Space}{17}
+\contentsline {subsection}{\numberline {2.7.3}Bad Pagebreaks}{18}
+\contentsline {subsection}{\numberline {2.7.4}Bad Linebreaks}{18}
+\contentsline {subsection}{\numberline {2.7.5}Vertical Space}{18}
 \contentsline {subsection}{\numberline {2.7.6}Non-Bold Math in the TOC: $x=2\pi /e$}{18}
 \contentsline {chapter}{\numberline {3}SECTIONING --- THE MIDDLE}{19}
 \contentsline {section}{\numberline {3.1}A Section}{19}

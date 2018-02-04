@@ -552,7 +552,32 @@ r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go})
 It can be shown that the equations in $\hat{y}$ and $\hat{z}$ take the same form. This $2x2$ $E$ matrix is the origin of the name \textit{E-Guidance}, the guidance law used in the Apollo lunar landing missions.
 
 \subsection{Time-to-go}
-The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until  start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. 
+The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. Updating the $t_{go}$ estimate continuously is attractive since it should be robust; if conditions have to change during the mission a closed-loop (continuously updating) solution will adjust and a new, realistic $t_{go}$ will feed into the guidance solution. This quality was important to the Apollo Guidance solution because it relied upon pilot inputs to define the landing location visually, which meant allowing for landing site redesignations mid-mission. If $t_{go}$ was not recomputed after site redesignation, the guidance law would impose unrealizable thrust acceleration commands.
+
+For the purposes of this study, live landing site redesignation was not considered. Without the possibility of landing site redesignation, an open-loop $t_{go}$ solution lends the guidance law more stability in that the performance is less dependent upon specific assumptions and conditions imposed by the $t_{go}$ algorithm. For instance, one closed-loop $t_{go}$ algorithm is implemented as follows
+
+\begin{align}
+while 
+\label{eqn:tgoFPI}
+\Delta V &= \sqrt{(\boldsymbol{V}-\boldsymbol{V_0} + \boldsymbol{g}\cdot t_{go})^T(\boldsymbol{V}-\boldsymbol{V_0} + \boldsymbol{g}\cdot t_{go})} \\ 
+5 = g
+\end{align}
+
+\begin{algorithm}
+\begin{algorithmic}
+	\State $tol \gets 1$ 
+	\If {$i\geq maxval$}
+	\State $i\gets 0$
+	\Else
+	\If {$i+k\leq maxval$}
+	\State $i\gets i+k$
+	\EndIf
+	\EndIf
+\end{algorithmic}
+\end{algorithm}
+
+
+This algorithm requires an assumption about a fixed mass flow rate which is not guaranteed by the guidance law. Adjustment of this mass flow rate estimate is very particular to the initial conditions of the mission, resulting in a necessarily over conservative $t_{go}$ to account for initial condition dispersion.
 
 
 
