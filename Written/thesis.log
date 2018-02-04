@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  3 FEB 2018 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  4 FEB 2018 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,41 +663,41 @@ Overfull \hbox (20.58517pt too wide) in paragraph at lines 288--288
 [10]
  Section 2.5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 617.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 616.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 617.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 616.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 621.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 620.
 [11]
 
-LaTeX Warning: Reference `fig1' on page 12 undefined on input line 657.
+LaTeX Warning: Reference `fig1' on page 12 undefined on input line 656.
 
 
-LaTeX Warning: Reference `fig:graph' on page 12 undefined on input line 658.
+LaTeX Warning: Reference `fig:graph' on page 12 undefined on input line 657.
 
 
-LaTeX Warning: Reference `fig1' on page 12 undefined on input line 661.
+LaTeX Warning: Reference `fig1' on page 12 undefined on input line 660.
 
 
-LaTeX Warning: Reference `fig1' on page 12 undefined on input line 661.
+LaTeX Warning: Reference `fig1' on page 12 undefined on input line 660.
 
 
-LaTeX Warning: Reference `fullfig' on page 12 undefined on input line 688.
+LaTeX Warning: Reference `fullfig' on page 12 undefined on input line 687.
 
  Section 2.6.
 
-Underfull \hbox (badness 1558) in paragraph at lines 724--724
+Underfull \hbox (badness 1558) in paragraph at lines 723--723
 \OT1/ptm/b/n/12 e-ters Used in Some Nu-
  []
 
 [12] [13]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 791.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 790.
  [14]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 871.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 870.
 
-Overfull \hbox (1.59021pt too wide) in paragraph at lines 872--901
+Overfull \hbox (1.59021pt too wide) in paragraph at lines 871--900
 [][] 
  []
 
@@ -712,10 +712,10 @@ Overfull \hbox (1.59021pt too wide) in paragraph at lines 872--901
 
 LaTeX Font Warning: Font shape `OMS/ptm/bx/n' undefined
 (Font)              using `OMS/ptm/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 1018.
+(Font)              for symbol `textbraceleft' on input line 1017.
 
 LaTeX Font Info:    Font shape `OMS/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1018.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1017.
 
  Subsection 2.7.5.
  Subsection 2.7.6.
@@ -752,10 +752,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9480 strings out of 492980
- 139678 string characters out of 6136208
- 284100 words of memory out of 5000000
- 12798 multiletter control sequences out of 15000+600000
+ 9481 strings out of 492980
+ 139686 string characters out of 6136208
+ 284104 words of memory out of 5000000
+ 12799 multiletter control sequences out of 15000+600000
  47470 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,18n,84p,1988b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -782,7 +782,7 @@ public/amsfonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times
 exlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on thesis.pdf (37 pages, 318274 bytes).
+Output written on thesis.pdf (37 pages, 318566 bytes).
 PDF statistics:
  227 PDF objects out of 1000 (max. 8388607)
  161 compressed objects within 2 object streams
