@@ -554,29 +554,28 @@ It can be shown that the equations in $\hat{y}$ and $\hat{z}$ take the same form
 \subsection{Time-to-go}
 The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. Updating the $t_{go}$ estimate continuously is attractive since it should be robust; if conditions have to change during the mission a closed-loop (continuously updating) solution will adjust and a new, realistic $t_{go}$ will feed into the guidance solution. This quality was important to the Apollo Guidance solution because it relied upon pilot inputs to define the landing location visually, which meant allowing for landing site redesignations mid-mission. If $t_{go}$ was not recomputed after site redesignation, the guidance law would impose unrealizable thrust acceleration commands.
 
-For the purposes of this study, live landing site redesignation was not considered. Without the possibility of landing site redesignation, an open-loop $t_{go}$ solution lends the guidance law more stability in that the performance is less dependent upon specific assumptions and conditions imposed by the $t_{go}$ algorithm. For instance, one closed-loop $t_{go}$ algorithm is implemented as follows
-
-\begin{align}
-while 
-\label{eqn:tgoFPI}
-\Delta V &= \sqrt{(\boldsymbol{V}-\boldsymbol{V_0} + \boldsymbol{g}\cdot t_{go})^T(\boldsymbol{V}-\boldsymbol{V_0} + \boldsymbol{g}\cdot t_{go})} \\ 
-5 = g
-\end{align}
+For the purposes of this study, live landing site redesignation was not considered. Without the possibility of landing site redesignation, an open-loop $t_{go}$ solution lends the guidance law more stability in that the performance is less dependent upon specific assumptions and conditions imposed by the $t_{go}$ algorithm. For instance, one closed-loop $t_{go}$ algorithm is implemented in Algorithm \ref{eqn:FPI}.
 
 \begin{algorithm}
-\begin{algorithmic}
-	\State $tol \gets 1$ 
-	\If {$i\geq maxval$}
-	\State $i\gets 0$
-	\Else
-	\If {$i+k\leq maxval$}
-	\State $i\gets i+k$
-	\EndIf
-	\EndIf
-\end{algorithmic}
+	\caption{Fixed-Point-Iteration $t_{go}$}\label{eqn:FPI}
+	\begin{algorithmic}[1]
+		\Procedure{FPI}{$t_{go_1}$}
+		\State $tol\gets c$
+		\While{$|t_{go_0} - t_{go_1}| \geq tol$}
+		\State $t_{go_0} \gets t_{go_1}$
+		\State $\Delta V \gets \sqrt{(\boldsymbol{V}-\boldsymbol{V_0} + \boldsymbol{g}\cdot t_{go})^T(\boldsymbol{V}-\boldsymbol{V_0} + \boldsymbol{g}\cdot t_{go_0})}$
+		\State $t_{go_1} \gets \frac{m_0}{\dot{m}}\left(e^{\frac{-\Delta V}{v_{ex}}}-1\right)$ \Comment{$\dot{m} < 0$}
+		\EndWhile
+		\State \textbf{return} $t_{go_1}$
+		\EndProcedure
+	\end{algorithmic}
 \end{algorithm}
 
-This algorithm requires an assumption about a fixed mass flow rate which is not guaranteed by the guidance law. Adjustment of this mass flow rate estimate is very particular to the initial conditions of the mission, resulting in a necessarily over conservative $t_{go}$ to account for initial condition dispersion.
+Each guidance update uses the previous update's $t_{go}$ minus clock time as its initial guess $t_{go_0}$, and the max iterations may be limited to some reasonable number.
+
+This algorithm requires an assumption about a fixed mass flow rate $\dot{m}$ which is not guaranteed by the guidance law. Adjustment of this mass flow rate estimate is very particular to the initial conditions of the mission, resulting in a necessarily conservative $t_{go}$ to account for initial condition dispersion.
+
+One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. The equation for a gravity turn time-to-go, $t_{go_{GT}}$, was presented first in Cherry 1964 \cite{CHERRY}. After engine ignition and initiation of the Powered Descent Guidance, the live time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time.
 
 \section{Figures or How to Get into Real Trouble if You Take Advantage
   of What \LaTeX\ Can Do}

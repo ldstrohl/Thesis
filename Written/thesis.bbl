@@ -1,15 +1,124 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{ART}
+T.~Abraham.
+\newblock Mathematical study of $\gamma$-rings in a {H}ilbert space.
+\newblock {\em J. Math. Anal. Appl.}, 19:125--128, 1984.
+
+\bibitem{PRO}
+P.~Axelrod and C.~P. Snow, editors.
+\newblock {\em Proceedings of the Conference on Mathematical Population
+  Genetics}, New York, 1982. Marcel Dekker.
+
+\bibitem{INC}
+B.~J. Bach.
+\newblock Homotopy theory for the delay differential equation $\dot y(t) =
+  {A}y(t-\tau)$.
+\newblock In F.~Neuerfeldt, editor, {\em Concepts in Differential Equations},
+  volume~2, pages 807--876. Academic Press, Washington, D.C., 1987.
+
+\bibitem{BOK}
+G.~T. Bankhead.
+\newblock {\em Modeling and Control in the Mathematical Sciences}, volume~69 of
+  {\em Lecture Notes in Mathematics}.
+\newblock Springer, Berlin, 1975.
 
 \bibitem{CHERRY}
-{\sc G.~W. Cherry}, {\em A general, explicit, optimizing guidance law for
-  rocket-propelled spaceflight}, AIAA Paper,  (1964), pp.~64--638.
+G.~W. Cherry.
+\newblock A general, explicit, optimizing guidance law for rocket-propelled
+  spaceflight.
+\newblock {\em AIAA Paper}, pages 64--638, 1964.
+
+\bibitem{INB}
+R.~DeWitt.
+\newblock {\em Abstract Functional Equations for Fluids}, chapter~9, pages
+  274--293.
+\newblock Addison-Wesley, New York, 1983.
+
+\bibitem{MTH}
+H.~B. Finknoddle.
+\newblock Random processes for $\alpha$-surds in a complex topology.
+\newblock Master's thesis, San Diego State University, San Diego, CA, 1990.
+
+\bibitem{PatentExample}
+Bill Gates.
+\newblock {The Knife and Fork: Novel Eating Utensils for the Mass Consumption
+  of Plant and Animal Based Food Items}, U.S.~Patent~No.~0,000,000. January 19,
+  2038.
 
 \bibitem{CITRON}
-{\sc S.~J.~Citron, S.~E.~Dunin, and H.~F.~Meissinger}, {\em A terminal guidance
-  technique for lunar landing}, AIAA Journal, 2 (1964), pp.~503--509.
+S~J.~Citron, S~E.~Dunin, and H~F.~Meissinger.
+\newblock A terminal guidance technique for lunar landing.
+\newblock {\em AIAA Journal}, 2:503--509, 1964.
 
 \bibitem{KLUMPP}
-{\sc A.~R. Klumpp}, {\em Apollo lunar descent guidance}, Automatica, 10 (1974),
-  pp.~133--146.
+A.~R. Klumpp.
+\newblock Apollo lunar descent guidance.
+\newblock {\em Automatica}, 10:133--146, 1974.
+
+\bibitem{LAM}
+L.~Lamport.
+\newblock {\em \LaTeX: A Document Preparation System}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1986.
+
+\bibitem{LAM2}
+L.~Lamport.
+\newblock {\em \LaTeX: A Document Preparation System (doubled reference)}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1986.
+
+\bibitem{Lehto:1976}
+Olli Lehto.
+\newblock On the boundary value problem for quasiconformal mappings.
+\newblock In {\em Romanian-Finnish Seminar on Complex Analysis (Proc.,
+  Bucharest, 1976)}, volume 743 of {\em Lecture Notes in Math.}, pages
+  184--196. Springer, Berlin, 1979.
+
+\bibitem{MJV}
+J.~M. Mahaffy, D.~A. Jorgensen, and R.~L. Vanderheyden.
+\newblock Oscillations in a model of repression with external control.
+\newblock {\em Quart.\ Appl.\ Math.}, 50:415--435, 1992.
+
+\bibitem{Milnor:topdiff}
+John~W. Milnor.
+\newblock {\em {Topology From The Differentiable Viewpoint}}.
+\newblock The University Press of Virginia, Charlottesville, Virginia, 1969.
+
+\bibitem{DTM2010spring}
+Montezuma Publishing.
+\newblock {\em San Diego State Univeristy Dissertation and Thesis Manual:
+  Policies, Procedures and Format}, Spring 2010.
+
+\bibitem{Wikipedia}
+Misc Peeps.
+\newblock The truth about everything.
+\newblock Wikipedia, http://www.wikipedia.com/, accessed August 2012, n.d.
+
+\bibitem{TEC}
+I.~T. Simon and A.~M. McGeorge.
+\newblock Integration of large {B}essel functions.
+\newblock Technical Report 284, San Diego State University, San Diego, CA,
+  1989.
+
+\bibitem{UNP}
+J.~K. Slemrod.
+\newblock ${P}$-infinity norms in the physical sciences.
+\newblock Unpublished report, 1990.
+
+\bibitem{INP}
+B.~W. Stuart.
+\newblock Contour mappings over closed ${\Omega}$-groups.
+\newblock In G.~V. Avery, editor, {\em Complex Algebras}, volume
+  \$VOLUME\_REQUIRED\$, page \$PAGES\_REQUIRED\$, Philadelphia, PA, 1987. SIAM.
+
+\bibitem{EPA-2010-09-07}
+\textsc{United States Environments Protection Agency}.
+\newblock \emph{EPA Challenges Colleges to Recycle at Football Games / Agency
+  encourages fans to Reduce, Reuse, Recycle.}\/ News Release, Sept.\ 7, 2010.
+  http://yosemite.epa.gov/opa/admpress.nsf/2010\%20Press\%20Releases?OpenView,
+  accessed September 2010.
+
+\bibitem{BKL}
+Writing style for the mathematical sciences.
+\newblock AMS, Providence, RI, 1979.
 
 \end{thebibliography}

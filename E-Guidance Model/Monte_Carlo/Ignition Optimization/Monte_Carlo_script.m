@@ -4,23 +4,23 @@ clear
 close all
 
 %% Inputs
-runs = 1000; % per case
+runs = 1; % per case
 scenario = 6; % 1:6
 debug_mode = 0;
 debug_row = 12;
 
 % Data recording
-data_save_flag = 1; % save run data
-result_file = 'tan2_test.mat';
-traj_file = 'traj_tan2_test_'; % prefix - case is appended
-traj_rate = 1/50; % how many runs to record
+data_save_flag = 0; % save run data
+result_file = 'rundata_ignopti_flip.mat';
+traj_file = 'traj_ignopti_flip_'; % prefix - case is appended
+traj_rate = 1/1; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
 run_and_seed = 1;
 run_results = 1;
 case_results = 1;
-vis_flag = 0; % plots of each run
+vis_flag = 1; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
@@ -33,15 +33,8 @@ threshhold = 1; % factor of T_max required for gravity turn
 rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
 IC_dispersion_flag  = 1; % on/off initial condition dispersion
 atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
-nav_flag = 1; % on/off navigation errors
+nav_flag = 0; % on/off navigation errors
 
-%% Result file parsing
-runsettings = [guidance_law,af_factor,tgo_method,threshhold,...
-    rocket_dispersion_flag,IC_dispersion_flag,atmosphere_flag,nav_flag];
-data_directory = strcat('run',sprintf('%d.',runsettings));
-mkdir(data_directory)
-
-result_file = strcat(data_directory,'/',result_file);
 
 %% Conditions
 % Mars
@@ -336,6 +329,7 @@ for j = scenario
     
 end
 run_time = toc/(length(scenario)*runs);
+fprintf('Time per run: %f\n',run_time)
 
 %% Results
 results.flight_time = [flight_time_mean',flight_time_std'];

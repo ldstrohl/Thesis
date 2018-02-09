@@ -29,17 +29,17 @@
 \contentsline {subsection}{\numberline {2.7.4}Bad Linebreaks}{18}
 \contentsline {subsection}{\numberline {2.7.5}Vertical Space}{18}
 \contentsline {subsection}{\numberline {2.7.6}Non-Bold Math in the TOC: $x=2\pi /e$}{18}
-\contentsline {chapter}{\numberline {3}SECTIONING --- THE MIDDLE}{19}
-\contentsline {section}{\numberline {3.1}A Section}{19}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection With a Very Long Title To See How That Will Look When Printed}{19}
-\contentsline {subsubsection}{\numberline {3.1.1.1}A Subsubsection}{19}
-\contentsline {subsubsubsection}{\numberline {3.1.1.1.1}A Subsubsubsection}{19}
-\contentsline {paragraph}{\numberline {3.1.1.1.1.1}A Paragraph.}{19}
-\contentsline {chapter}{\numberline {4}REFERENCING}{20}
-\contentsline {schapter}{BIBLIOGRAPHY}{21}
+\contentsline {chapter}{\numberline {3}SECTIONING --- THE MIDDLE}{20}
+\contentsline {section}{\numberline {3.1}A Section}{20}
+\contentsline {subsection}{\numberline {3.1.1}A Subsection With a Very Long Title To See How That Will Look When Printed}{20}
+\contentsline {subsubsection}{\numberline {3.1.1.1}A Subsubsection}{20}
+\contentsline {subsubsubsection}{\numberline {3.1.1.1.1}A Subsubsubsection}{20}
+\contentsline {paragraph}{\numberline {3.1.1.1.1.1}A Paragraph.}{20}
+\contentsline {chapter}{\numberline {4}REFERENCING}{21}
+\contentsline {schapter}{BIBLIOGRAPHY}{22}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{22}
+\contentsline {chaphd}{APPENDICES}{24}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{23}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{26}
+\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{25}
+\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{28}
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 
