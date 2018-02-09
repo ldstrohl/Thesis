@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: thbib.bib
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            652 strings with 6883 characters,
+and the built_in function-call counts, 6266 in all, are:
+= -- 645
+> -- 179
+< -- 11
++ -- 77
+- -- 52
+* -- 327
+:= -- 985
+add.period$ -- 65
+call.type$ -- 22
+change.case$ -- 86
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 307
+empty$ -- 556
+format.name$ -- 52
+if$ -- 1408
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 18
+newline$ -- 108
+num.names$ -- 43
+pop$ -- 112
+preamble$ -- 1
+purify$ -- 72
+quote$ -- 0
+skip$ -- 241
+stack$ -- 0
+substring$ -- 347
+swap$ -- 100
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 77
+warning$ -- 0
+while$ -- 54
+width$ -- 24
+write$ -- 242

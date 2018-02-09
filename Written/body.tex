@@ -425,10 +425,10 @@ The state equations for the 3-dimensional powered descent guidance problem are a
 %a &= \frac{T}{m(t)} \\
 %\end{align*}
 
-with terminal constraints at a fixed final time $t_t$
+with terminal constraints at a fixed final time $t_f$
 \begin{align}
 \label{eqn:constraint_r}
-\boldsymbol{r}^*(t_f) &= \boldsymbol{r}^*_f\\
+\boldsymbol{r}^(t_f) &= \boldsymbol{r}^*_f\\
 \label{eqn:constraint_V}
 \boldsymbol{V}(t_f) &= \boldsymbol{V}^*_f 
 \end{align}
@@ -552,7 +552,7 @@ r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go})
 It can be shown that the equations in $\hat{y}$ and $\hat{z}$ take the same form. This $2x2$ $E$ matrix is the origin of the name \textit{E-Guidance}, the guidance law used in the Apollo lunar landing missions.
 
 \subsection{Time-to-go}
-The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. Updating the $t_{go}$ estimate continuously is attractive since it should be robust; if conditions have to change during the mission a closed-loop (continuously updating) solution will adjust and a new, realistic $t_{go}$ will feed into the guidance solution. This quality was important to the Apollo Guidance solution because it relied upon pilot inputs to define the landing location visually, which meant allowing for landing site redesignations mid-mission. If $t_{go}$ was not recomputed after site redesignation, the guidance law would impose unrealizable thrust acceleration commands.
+The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. Updating the $t_{go}$ estimate continuously is attractive since it should be robust; if conditions have to change during the mission a closed-loop (continuously updating) solution will adjust and a new, realistic $t_{go}$ will feed into the guidance solution. This quality was important to the Apollo Guidance solution because it relied upon pilot inputs to define the landing location visually, which meant allowing for landing site redesignations mid-mission. If $t_{go}$ was not recomputed after site redesignation, the guidance law would command unrealizable thrust acceleration commands.
 
 For the purposes of this study, live landing site redesignation was not considered. Without the possibility of landing site redesignation, an open-loop $t_{go}$ solution lends the guidance law more stability in that the performance is less dependent upon specific assumptions and conditions imposed by the $t_{go}$ algorithm. For instance, one closed-loop $t_{go}$ algorithm is implemented in Algorithm \ref{eqn:FPI}.
 
@@ -575,7 +575,9 @@ Each guidance update uses the previous update's $t_{go}$ minus clock time as its
 
 This algorithm requires an assumption about a fixed mass flow rate $\dot{m}$ which is not guaranteed by the guidance law. Adjustment of this mass flow rate estimate is very particular to the initial conditions of the mission, resulting in a necessarily conservative $t_{go}$ to account for initial condition dispersion.
 
-One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. The equation for a gravity turn time-to-go, $t_{go_{GT}}$, was presented first in Cherry 1964 \cite{CHERRY}. After engine ignition and initiation of the Powered Descent Guidance, the live time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time.
+One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. The equation for a gravity turn time-to-go, $t_{go_{GT}}$, was presented first in Cherry 1964 \cite{CHERRY}. After engine ignition and initiation of the Powered Descent Guidance, the updated time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time.
+
+A gravity turn landing does not directly apply to the general powered descent guidance problem under investigation because it does not seek to satisfy the constraints given in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. However, if the magnitude of the terminal velocity target in Equation \ref{eqn:constraint_V} is small, the required time to decelerate from an initial $\boldsymbol{V}_0$ under only the forces of thrust acceleration $\boldsymbol{a}_T$ and gravity $\boldsymbol{g}$ is, at minimum, the gravity turn solution $t_{go_{GT}}$. Since the terminal position $\boldsymbol{r}_f$ is specified, the vehicle necessarily needs more time than given by the gravity turn solution to satisfy it. Assuming a small trajectory error requiring a small diversion to landing site, a small constant factor $ c_t \approxeq 1.2$ can be applied to the gravity turn time-to-go to allow for redirection. Because the fuel optimal guidance law would minimize the index given in Equation \ref{eqn:fueloptimalindex}, reducing the time of flight should be expected to reduce propellant consumption. This suggests that driving the factor $c_t$ as close to $1$ as possible while still landing softly is desirable. The choice of $c_t = 1.2$ will prove to be sufficiently conservative to survive initial condition dispersion, rocket parameter dispersion, and navigation error. 
 
 \section{Figures or How to Get into Real Trouble if You Take Advantage
   of What \LaTeX\ Can Do}

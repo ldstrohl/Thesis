@@ -253,7 +253,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
             ignition_switch = 1;
             S = S/2;
             refresh_counter = (1/guidance_refresh_rate)/dt;
-            tgo(k) = 1.2*norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
+            tgo(k) = norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
                 + (1-sin(gamma))/(a_GT-gm));
             % snip visualization logs
             a_GT_vis = a_GT_vis(1:k);

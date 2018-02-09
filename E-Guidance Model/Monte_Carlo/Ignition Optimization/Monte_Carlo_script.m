@@ -30,8 +30,8 @@ threshhold = 1; % factor of T_max required for gravity turn
                   %     to ignite engine and start guidance
 
 % models
-rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
-IC_dispersion_flag  = 1; % on/off initial condition dispersion
+rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
+IC_dispersion_flag  = 0; % on/off initial condition dispersion
 atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
 nav_flag = 0; % on/off navigation errors
 
