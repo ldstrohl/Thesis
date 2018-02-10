@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  8 FEB 2018 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  9 FEB 2018 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -584,12 +584,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
- [][] []\OT1/ptm/m/n/12 MISCELLANEOUS COM-MANDS: AN IN-TRO-DUC-TION TO 
- []
-
-[5
+) [5
 
 ])
 \tf@toc=\write6
@@ -599,7 +594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--14
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [7
+[7
 
 ] (./thesis.lof)
 \tf@lof=\write8
@@ -619,177 +614,102 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 12.
  Section 1.1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 17.
  Section 1.2.
+ Section 1.3.
 [1
 
 ]
- Section 1.3.
-[2]
- Section 1.4.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 141.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 154
-.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 154.
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 154.
-
-[3]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
- [4] [5]
 CHAPTER 2.
- Section 2.1.
-
-Overfull \hbox (20.58517pt too wide) in paragraph at lines 288--288
-[]  \OT1/cmtt/m/n/12 \int_{\partial \Omega} \omega = \int_{\Omega} d\omega.[] 
- []
-
- Section 2.2.
-[6
+[2
 
 ]
- Section 2.3.
-[7]
- Section 2.4.
- Subsection 2.4.1.
-[8]
- Subsection 2.4.2.
-[9]
- Subsection 2.4.3.
-[10]
- Section 2.5.
-[11]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 613.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 613.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 617.
-
-
-LaTeX Warning: Reference `fig1' on page 12 undefined on input line 653.
-
-
-LaTeX Warning: Reference `fig:graph' on page 12 undefined on input line 654.
-
-
-LaTeX Warning: Reference `fig1' on page 12 undefined on input line 657.
-
-
-LaTeX Warning: Reference `fig1' on page 12 undefined on input line 657.
-
-[12]
-
-LaTeX Warning: Reference `fullfig' on page 13 undefined on input line 684.
-
- Section 2.6.
-
-Underfull \hbox (badness 1558) in paragraph at lines 720--720
-\OT1/ptm/b/n/12 e-ters Used in Some Nu-
- []
-
-[13]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 787.
- [14] [15]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 867.
-
-Overfull \hbox (1.59021pt too wide) in paragraph at lines 868--897
-[][] 
- []
-
- Section 2.7.
- Subsection 2.7.1.
-[16] [17]
- Subsubsection 2.7.1.1.
- Subsection 2.7.2.
- Subsection 2.7.3.
-[18]
- Subsection 2.7.4.
-
-LaTeX Font Warning: Font shape `OMS/ptm/bx/n' undefined
-(Font)              using `OMS/ptm/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 1014.
-
-LaTeX Font Info:    Font shape `OMS/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1014.
-
- Subsection 2.7.5.
- Subsection 2.7.6.
-[19]
 CHAPTER 3.
  Section 3.1.
  Subsection 3.1.1.
- Subsubsection 3.1.1.1.
- Subsubsubsection 3.1.1.1.1.
-[20
+ Subsection 3.1.2.
+[3
 
 ]
+ Subsection 3.1.3.
+ Subsection 3.1.4.
+[4]
+ Subsection 3.1.5.
+[5] [6]
+ Subsection 3.1.6.
+ Section 3.2.
+ Subsection 3.2.1.
+ Subsection 3.2.2.
+ Subsection 3.2.3.
+ Subsection 3.2.4.
+ Subsubsection 3.2.4.1.
+ Subsubsection 3.2.4.2.
+ Subsubsection 3.2.4.3.
+[7]
 CHAPTER 4.
-) (./thesis.bbl [21
+[8
 
-] [22
+]
+CHAPTER 5.
+[9
 
-] [23]) (./append.tex [24]
+]
+CHAPTER 6.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1129.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1129.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1148.
+
+) (./thesis.bbl [10
+
+] [11
+
+] [12]) (./append.tex [13]
 APPENDIX A.
-[25
+[14
 
 ]
  Section A.1.
-[26] [27]
+[15] [16]
 APPENDIX B.
-[28
+[17
 
-]) [29] (./thesis.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
- ) 
+]) [18] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 9486 strings out of 492980
- 139763 string characters out of 6136208
- 287109 words of memory out of 5000000
- 12804 multiletter control sequences out of 15000+600000
- 47470 words of font info for 103 fonts, out of 8000000 for 9000
+ 9418 strings out of 492980
+ 138991 string characters out of 6136208
+ 273937 words of memory out of 5000000
+ 12749 multiletter control sequences out of 15000+600000
+ 34230 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,84p,1988b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmitt10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2017/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c
-:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
+ 45i,13n,66p,1988b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
+}<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmib10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/
+cmmib8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c
 :/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2017/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on thesis.pdf (39 pages, 332982 bytes).
+Output written on thesis.pdf (28 pages, 234509 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
+ 180 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

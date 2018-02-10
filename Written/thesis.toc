@@ -7,39 +7,33 @@
 \contentsline {chaphd}{CHAPTER}{1}
 \nopagebreak 
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
-\contentsline {section}{\numberline {1.1}History}{1}
-\contentsline {section}{\numberline {1.2}Purpose}{1}
-\contentsline {section}{\numberline {1.3}Format of the Thesis}{2}
-\contentsline {section}{\numberline {1.4}Processing \LaTeX \ Files}{3}
-\contentsline {chapter}{\numberline {2}MISCELLANEOUS COMMANDS: AN INTRODUCTION TO EQUATIONS, THEOREMS, FIGURES AND TABLES}{6}
-\contentsline {section}{\numberline {2.1}Basic Math}{6}
-\contentsline {section}{\numberline {2.2}Equations}{7}
-\contentsline {section}{\numberline {2.3}Theorems, etc.}{7}
-\contentsline {section}{\numberline {2.4}Optimal Powered Descent Guidance Law}{8}
-\contentsline {subsection}{\numberline {2.4.1}Performance Index}{8}
-\contentsline {subsection}{\numberline {2.4.2}Guidance solution}{9}
-\contentsline {subsection}{\numberline {2.4.3}Time-to-go}{10}
-\contentsline {section}{\numberline {2.5}Figures or How to Get into Real Trouble if You Take Advantage of What \LaTeX \ Can Do}{11}
-\contentsline {section}{\numberline {2.6}Tables}{13}
-\contentsline {section}{\numberline {2.7}Potential Pitfalls}{16}
-\contentsline {subsection}{\numberline {2.7.1}Tables and Figures}{16}
-\contentsline {subsubsection}{\numberline {2.7.1.1}Centered Tables Figures}{18}
-\contentsline {subsection}{\numberline {2.7.2}Margins}{18}
-\contentsline {subsection}{\numberline {2.7.3}Bad Pagebreaks}{18}
-\contentsline {subsection}{\numberline {2.7.4}Bad Linebreaks}{19}
-\contentsline {subsection}{\numberline {2.7.5}Vertical Space}{19}
-\contentsline {subsection}{\numberline {2.7.6}Non-Bold Math in the TOC: $x=2\pi /e$}{19}
-\contentsline {chapter}{\numberline {3}SECTIONING --- THE MIDDLE}{20}
-\contentsline {section}{\numberline {3.1}A Section}{20}
-\contentsline {subsection}{\numberline {3.1.1}A Subsection With a Very Long Title To See How That Will Look When Printed}{20}
-\contentsline {subsubsection}{\numberline {3.1.1.1}A Subsubsection}{20}
-\contentsline {subsubsubsection}{\numberline {3.1.1.1.1}A Subsubsubsection}{20}
-\contentsline {paragraph}{\numberline {3.1.1.1.1.1}A Paragraph.}{20}
-\contentsline {chapter}{\numberline {4}REFERENCING}{21}
-\contentsline {schapter}{BIBLIOGRAPHY}{22}
+\contentsline {section}{\numberline {1.1}Literature Review}{1}
+\contentsline {section}{\numberline {1.2}Contribution}{1}
+\contentsline {section}{\numberline {1.3}Organization}{1}
+\contentsline {chapter}{\numberline {2}Problem Statement}{2}
+\contentsline {chapter}{\numberline {3}Methodology}{3}
+\contentsline {section}{\numberline {3.1}Guidance Law}{3}
+\contentsline {subsection}{\numberline {3.1.1}Optimal Powered Descent Guidance Law}{3}
+\contentsline {subsection}{\numberline {3.1.2}Equations of Motion}{4}
+\contentsline {subsection}{\numberline {3.1.3}Performance Index}{4}
+\contentsline {subsection}{\numberline {3.1.4}Guidance solution}{4}
+\contentsline {subsection}{\numberline {3.1.5}Time-to-go}{6}
+\contentsline {subsection}{\numberline {3.1.6}Ignition Timing}{7}
+\contentsline {section}{\numberline {3.2}Simulation}{7}
+\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{7}
+\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{7}
+\contentsline {subsection}{\numberline {3.2.3}Navigation Module}{7}
+\contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{7}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{7}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{7}
+\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{7}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{8}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{9}
+\contentsline {chapter}{\numberline {6}REFERENCING}{10}
+\contentsline {schapter}{BIBLIOGRAPHY}{11}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{24}
+\contentsline {chaphd}{APPENDICES}{13}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{25}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{28}
+\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{14}
+\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{17}
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 
