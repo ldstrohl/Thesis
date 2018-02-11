@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  9 FEB 2018 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  10 FEB 2018 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,11 +633,12 @@ CHAPTER 3.
 ]
  Subsection 3.1.3.
  Subsection 3.1.4.
-[4]
+[4] [5]
  Subsection 3.1.5.
-[5] [6]
+[6]
  Subsection 3.1.6.
  Section 3.2.
+[7]
  Subsection 3.2.1.
  Subsection 3.2.2.
  Subsection 3.2.3.
@@ -645,44 +646,45 @@ CHAPTER 3.
  Subsubsection 3.2.4.1.
  Subsubsection 3.2.4.2.
  Subsubsection 3.2.4.3.
-[7]
+ Subsection 3.2.5.
+[8]
 CHAPTER 4.
-[8
+[9
 
 ]
 CHAPTER 5.
-[9
+[10
 
 ]
 CHAPTER 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1129.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1145.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1129.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1145.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1148.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1164.
 
-) (./thesis.bbl [10
+) (./thesis.bbl [11
 
-] [11
+] [12
 
-] [12]) (./append.tex [13]
+] [13]) (./append.tex [14]
 APPENDIX A.
-[14
+[15
 
 ]
  Section A.1.
-[15] [16]
+[16] [17]
 APPENDIX B.
-[17
+[18
 
-]) [18] (./thesis.aux) ) 
+]) [19] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 9418 strings out of 492980
- 138991 string characters out of 6136208
- 273937 words of memory out of 5000000
- 12749 multiletter control sequences out of 15000+600000
+ 9419 strings out of 492980
+ 139009 string characters out of 6136208
+ 272948 words of memory out of 5000000
+ 12750 multiletter control sequences out of 15000+600000
  34230 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,66p,1988b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -706,10 +708,10 @@ bols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on thesis.pdf (28 pages, 234509 bytes).
+Output written on thesis.pdf (29 pages, 235474 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 183 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

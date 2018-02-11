@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {1.1}Literature Review}{1}
 \contentsline {section}{\numberline {1.2}Contribution}{1}
 \contentsline {section}{\numberline {1.3}Organization}{1}
-\contentsline {chapter}{\numberline {2}Problem Statement}{2}
-\contentsline {chapter}{\numberline {3}Methodology}{3}
+\contentsline {chapter}{\numberline {2}PROBLEM STATEMENT}{2}
+\contentsline {chapter}{\numberline {3}METHODOLOGY}{3}
 \contentsline {section}{\numberline {3.1}Guidance Law}{3}
 \contentsline {subsection}{\numberline {3.1.1}Optimal Powered Descent Guidance Law}{3}
 \contentsline {subsection}{\numberline {3.1.2}Equations of Motion}{4}
@@ -20,20 +20,21 @@
 \contentsline {subsection}{\numberline {3.1.5}Time-to-go}{6}
 \contentsline {subsection}{\numberline {3.1.6}Ignition Timing}{7}
 \contentsline {section}{\numberline {3.2}Simulation}{7}
-\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{7}
-\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{7}
-\contentsline {subsection}{\numberline {3.2.3}Navigation Module}{7}
-\contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{7}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{7}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{7}
-\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{7}
-\contentsline {chapter}{\numberline {4}Results and Discussion}{8}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{9}
-\contentsline {chapter}{\numberline {6}REFERENCING}{10}
-\contentsline {schapter}{BIBLIOGRAPHY}{11}
+\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{8}
+\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{8}
+\contentsline {subsection}{\numberline {3.2.3}Navigation Module}{8}
+\contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{8}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{8}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{8}
+\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{8}
+\contentsline {subsection}{\numberline {3.2.5}Monte Carlo}{8}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{9}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{10}
+\contentsline {chapter}{\numberline {6}REFERENCING}{11}
+\contentsline {schapter}{BIBLIOGRAPHY}{12}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{13}
+\contentsline {chaphd}{APPENDICES}{14}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{14}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{17}
+\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{15}
+\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{18}
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 

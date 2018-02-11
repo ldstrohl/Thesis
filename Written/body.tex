@@ -448,7 +448,7 @@ The state equations for the 3-dimensional powered descent guidance problem are a
 with terminal constraints at a fixed final time $t_f$
 \begin{align}
 \label{eqn:constraint_r}
-\boldsymbol{r}^(t_f) &= \boldsymbol{r}^*_f\\
+\boldsymbol{r}(t_f) &= \boldsymbol{r}^*_f\\
 \label{eqn:constraint_V}
 \boldsymbol{V}(t_f) &= \boldsymbol{V}^*_f 
 \end{align}
@@ -528,6 +528,7 @@ Setting $t = t_f$ and letting $t_{go} = t_f - t_0$ satisfies the terminal constr
 These equations can be separated into sets of two per vector component. Define an inertial guidance frame $\boldsymbol{e} = (\hat{x},\hat{y},\hat{z})^T$ such that guidance vector $\boldsymbol{u}$ is composed of components in $\boldsymbol{e}$, $\boldsymbol{u} = (u_{x},u_{y},u_{z})^T$. For the equations in $\hat{x}$ we have
 
 \begin{equation}
+  \label{eqn:E_system}
   \begin{bmatrix}
     t_{go} & \frac{1}{2}t_{go}^2 \\
     \frac{1}{2}t_{go}^2 & \frac{1}{6}t_{go}^3 \\
@@ -544,7 +545,7 @@ These equations can be separated into sets of two per vector component. Define a
 	r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go}) 
 	\end{matrix}
 \right)
-%  \label{de2}
+
 \end{equation}
 
 Solving the two-equation system is accomplished by inverting the A matrix, leading to a coefficient matrix $E$
@@ -570,6 +571,38 @@ r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go})
 \end{equation}
 
 It can be shown that the equations in $\hat{y}$ and $\hat{z}$ take the same form. This $2x2$ $E$ matrix is the origin of the name \textit{E-Guidance}, the guidance law used in the Apollo lunar landing missions.
+
+Of some interest is the addition of a final attitude constraint. For a vehicle whose attitude it determined by the thrust acceleration vector, this constraint can be implemented as a final thrust acceleration constraint as in Equation \ref{eqn:constraint_a}.
+
+\begin{equation}
+\label{eqn:constraint_a}
+\boldsymbol{a}_T(t_f) = \boldsymbol{a}^*_{T_f}
+\end{equation}
+
+This vector constraint cannot be satisfied with only two basis functions for the command $\boldsymbol{u}$, so a third linearly independent function must be introduced such that $\boldsymbol{u} = \boldsymbol{c}_1 p_1(t) +\boldsymbol{c}_2 p_2(t) + \boldsymbol{c}_3 p_3(t)$. A tempting choice for the third basis function is $p_3(t) = t^2$ for simplicity, with the other two functions the same as E-Guidance.
+
+After applying the substitution from Equation \ref{eqn:command}, this choice gives a command $\boldsymbol{u} = \boldsymbol{k}_1+\boldsymbol{k}_2 \tau + \boldsymbol{c}_3 \tau^2$. This form for the command input is also easily integrable and leads to a similar linear system of 9 equations in $\boldsymbol{k_1}$, $\boldsymbol{k_2}$, and $\boldsymbol{k_3}$. Using the same guidance frame $\hat{e}$ defined for Equation \ref{eqn:E_system} we get the system in Equation \ref{eqn:E_system_adv}
+
+\begin{equation}
+\label{eqn:E_system_adv}
+\begin{bmatrix}
+	t_{go} & \frac{1}{2}t_{go}^2 \\
+	\frac{1}{2}t_{go}^2 & \frac{1}{6}t_{go}^3 \\
+\end{bmatrix}
+\left(
+\begin{matrix}
+	k_{1_x} \\ 
+	k_{2_x} 
+\end{matrix}
+\right) = 
+\left(
+\begin{matrix}
+	V_{f_x}^* - V_{0_x} \\ 
+	r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go}) 
+\end{matrix}
+\right)
+\end{equation}
+
 
 \subsection{Time-to-go}
 The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. Updating the $t_{go}$ estimate continuously is attractive since it should be robust; if conditions have to change during the mission a closed-loop (continuously updating) solution will adjust and a new, realistic $t_{go}$ will feed into the guidance solution. This quality was important to the Apollo Guidance solution because it relied upon pilot inputs to define the landing location visually, which meant allowing for landing site redesignations mid-mission. If $t_{go}$ was not recomputed after site redesignation, the guidance law would command unrealizable thrust acceleration commands.
@@ -600,6 +633,8 @@ One attractive open-loop option is the time to perform a gravity turn landing at
 A gravity turn landing does not directly apply to the general powered descent guidance problem under investigation because it does not seek to satisfy the constraints given in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. However, if the magnitude of the terminal velocity target in Equation \ref{eqn:constraint_V} is small, the required time to decelerate from an initial $\boldsymbol{V}_0$ under only the forces of thrust acceleration $\boldsymbol{a}_T$ and gravity $\boldsymbol{g}$ is, at minimum, the gravity turn solution $t_{go_{GT}}$. Since the terminal position $\boldsymbol{r}_f$ is specified, the vehicle necessarily needs more time than given by the gravity turn solution to satisfy it. Assuming a small trajectory error requiring a small diversion to landing site, a small constant factor $ c_t \approxeq 1.2$ can be applied to the gravity turn time-to-go to allow for redirection. Because the fuel optimal guidance law would minimize the index given in Equation \ref{eqn:fueloptimalindex}, reducing the time of flight should be expected to reduce propellant consumption. This suggests that driving the factor $c_t$ as close to $1$ as possible while still landing softly is desirable. The choice of $c_t = 1.2$ will prove to be sufficiently conservative to survive initial condition dispersion, rocket parameter dispersion, and navigation error. 
 
 \subsection{Ignition Timing}
+The literature has also given very little attention to the topic of ignition timing, or the initiation of powered descent guidance (PDI). Mission planning involves phases and guidance laws like E-Guidance 
+
 
 \section{Simulation}
 Here we outline the simulation architecture, i.e. individual modules designed to reflect mission computers and separate functions
@@ -611,6 +646,8 @@ Here we outline the simulation architecture, i.e. individual modules designed to
 \subsubsection{Atmosphere Model}
 \subsubsection{Lift and Drag}
 \subsubsection{Orientation}
+\subsection{Monte Carlo}
+
 
 %\section{Figures or How to Get into Real Trouble if You Take Advantage
 %  of What \LaTeX\ Can Do}
