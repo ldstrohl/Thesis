@@ -260,6 +260,9 @@
 
 
 \chapter{METHODOLOGY}
+To investigate a guidance law with careful focus on the time-to-go approach, a law must be developed and implemented in a simulation framework. The Law's derivation is presented here in the context of optimal control, as is the time-to-go approach. 
+
+The simulation methodology is also described, including the numerical methods and the aerodynamic model.
 
 %In this chapter we see how equations, theorems, figures and tables are
 %created, enumerated and referenced.  We also play around with lengths
@@ -419,7 +422,7 @@ Below E-Guidance as a control law will be derived using optimal control theory. 
 
 
 
-\subsection{Optimal Powered Descent Guidance Law}
+\subsection{Equations of Motion}
 Derivation of an optimal powered descent guidance law begins with a formulation of the State Equation\:\ref{eqn:state_equation}
 \begin{equation}
 \dot{\boldsymbol{x}} = \boldsymbol{f}(\boldsymbol{x,\boldsymbol{u}})
@@ -428,8 +431,6 @@ Derivation of an optimal powered descent guidance law begins with a formulation 
 
 The command input $\boldsymbol{u}$ for this problem is comprised of the thrust magnitude and direction. Aerodynamic effects are not considered for development of the law, though they will be simulated and investigated with regards to performance.
 
-
-\subsection{Equations of Motion}
 The state equations for the 3-dimensional powered descent guidance problem are as follows
 
 \begin{align}
@@ -545,7 +546,6 @@ These equations can be separated into sets of two per vector component. Define a
 	r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go}) 
 	\end{matrix}
 \right)
-
 \end{equation}
 
 Solving the two-equation system is accomplished by inverting the A matrix, leading to a coefficient matrix $E$
@@ -637,17 +637,42 @@ The literature has also given very little attention to the topic of ignition tim
 
 
 \section{Simulation}
-Here we outline the simulation architecture, i.e. individual modules designed to reflect mission computers and separate functions
+
+The powered descent simulation (PD Sim) is developed using standard programming techniques and numerical methods. The code is modular to facilitate design and reflect the functions of a mission computer. The simulation has three degrees of freedom (3-DoF) with derived orientation for force modeling.
+
+At the core of the simulation is numerical time integration. The method employed is a 4th order Runge-Kutta (RK4). The RK4 function is called at each time step to progress the simulation forward.
+
+The separate modules called during simulation are the guidance computer which contains the guidance law and computes a commanded thrust acceleration vector, the navigation module which generates a state estimate from simulated instrument measurements for use by the guidance computer, and the aerodynamic module which contains a model of the landing vehicle to compute forces and orientation for use in integration.
+
+The full simulation code is wrapped in a Monte-Carlo script. The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parameters, initial condition, and navigation uncertainty. This allows each individual run to have dispersed conditions without modification of the code.
+
+Further detail for each part of the simulation follows.
 
 \subsection{Numerical Integration}
+The numerical time integration is done via a standard Runge-Kutta formulation, presented here as in Ferziger and Peri\'c\:\cite{FERZIGER}. The state vector $\boldsymbol{\phi}$ is passed to the equations of motion $\bm{f}(\bm{\phi},t)$ several times as in Equation \ref{eqn:RK4}.
+
+\begin{align}
+\label{eqn:RK4}
+\boldsymbol{\phi}_{n+\frac{1}{2}}^* &= \bm{\phi}_n + \frac{\Delta t}{2} \bm{f}(t_n,\bm{\phi}_n)\\
+\boldsymbol{\phi}_{n+\frac{1}{2}}^{**} &= \bm{\phi}^n + \frac{\Delta t}{2}  \bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^*_{n+\frac{1}{2}})\\
+\boldsymbol{\phi}_{n+1}^* &= \bm{\phi}^n + \Delta t  \bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^{**}_{n+\frac{1}{2}})\\
+\boldsymbol{\phi}_{n+1} &= \bm{\phi}^n + \frac{\Delta t}{6}
+[\bm{f}(t_n,\bm{\phi}_{n})
++ 2\bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^*_{n+\frac{1}{2}})\\
+&\:+ 2\bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^{**}_{n+\frac{1}{2}})
++ \bm{f}(t_{n+1},\bm{\phi}_{n+1}^*)]
+\end{align}
+
+
 \subsection{Guidance Computer}
 \subsection{Navigation Module}
 \subsection{Aerodynamic Model}
+The Aerodynamic model is comprised of Mars atmosphere data from (insert atmosphere data reference), and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
+
 \subsubsection{Atmosphere Model}
 \subsubsection{Lift and Drag}
 \subsubsection{Orientation}
 \subsection{Monte Carlo}
-
 
 %\section{Figures or How to Get into Real Trouble if You Take Advantage
 %  of What \LaTeX\ Can Do}

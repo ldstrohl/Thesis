@@ -23,6 +23,12 @@ G.~T. Bankhead.
   {\em Lecture Notes in Mathematics}.
 \newblock Springer, Berlin, 1975.
 
+\bibitem{CERIMELE}
+C.~Cerimele~et al.
+\newblock A rigid mid lift-to-drag ratio approach to human mars entry, descent,
+  and landing.
+\newblock {\em AIAA Paper}, pages 2017--1898, 2017.
+
 \bibitem{CHERRY}
 G.~W. Cherry.
 \newblock A general, explicit, optimizing guidance law for rocket-propelled
@@ -34,6 +40,11 @@ R.~DeWitt.
 \newblock {\em Abstract Functional Equations for Fluids}, chapter~9, pages
   274--293.
 \newblock Addison-Wesley, New York, 1983.
+
+\bibitem{FERZIGER}
+J.~H. Ferziger and M.~Peri\'c.
+\newblock {\em Computational Methods for Fluid Dynamics}.
+\newblock Springer, Berlin, 2002.
 
 \bibitem{MTH}
 H.~B. Finknoddle.
@@ -61,32 +72,10 @@ L.~Lamport.
 \newblock {\em \LaTeX: A Document Preparation System}.
 \newblock Addison-Wesley, Reading, Massachusetts, 1986.
 
-\bibitem{LAM2}
-L.~Lamport.
-\newblock {\em \LaTeX: A Document Preparation System (doubled reference)}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1986.
-
-\bibitem{Lehto:1976}
-Olli Lehto.
-\newblock On the boundary value problem for quasiconformal mappings.
-\newblock In {\em Romanian-Finnish Seminar on Complex Analysis (Proc.,
-  Bucharest, 1976)}, volume 743 of {\em Lecture Notes in Math.}, pages
-  184--196. Springer, Berlin, 1979.
-
 \bibitem{MJV}
 J.~M. Mahaffy, D.~A. Jorgensen, and R.~L. Vanderheyden.
 \newblock Oscillations in a model of repression with external control.
 \newblock {\em Quart.\ Appl.\ Math.}, 50:415--435, 1992.
-
-\bibitem{Milnor:topdiff}
-John~W. Milnor.
-\newblock {\em {Topology From The Differentiable Viewpoint}}.
-\newblock The University Press of Virginia, Charlottesville, Virginia, 1969.
-
-\bibitem{DTM2010spring}
-Montezuma Publishing.
-\newblock {\em San Diego State Univeristy Dissertation and Thesis Manual:
-  Policies, Procedures and Format}, Spring 2010.
 
 \bibitem{Wikipedia}
 Misc Peeps.

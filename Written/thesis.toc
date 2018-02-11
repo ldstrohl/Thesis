@@ -13,28 +13,27 @@
 \contentsline {chapter}{\numberline {2}PROBLEM STATEMENT}{2}
 \contentsline {chapter}{\numberline {3}METHODOLOGY}{3}
 \contentsline {section}{\numberline {3.1}Guidance Law}{3}
-\contentsline {subsection}{\numberline {3.1.1}Optimal Powered Descent Guidance Law}{3}
-\contentsline {subsection}{\numberline {3.1.2}Equations of Motion}{4}
-\contentsline {subsection}{\numberline {3.1.3}Performance Index}{4}
-\contentsline {subsection}{\numberline {3.1.4}Guidance solution}{4}
-\contentsline {subsection}{\numberline {3.1.5}Time-to-go}{6}
-\contentsline {subsection}{\numberline {3.1.6}Ignition Timing}{7}
-\contentsline {section}{\numberline {3.2}Simulation}{7}
+\contentsline {subsection}{\numberline {3.1.1}Equations of Motion}{3}
+\contentsline {subsection}{\numberline {3.1.2}Performance Index}{4}
+\contentsline {subsection}{\numberline {3.1.3}Guidance solution}{5}
+\contentsline {subsection}{\numberline {3.1.4}Time-to-go}{6}
+\contentsline {subsection}{\numberline {3.1.5}Ignition Timing}{8}
+\contentsline {section}{\numberline {3.2}Simulation}{8}
 \contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{8}
-\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{8}
-\contentsline {subsection}{\numberline {3.2.3}Navigation Module}{8}
-\contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{8}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{8}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{8}
-\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{8}
-\contentsline {subsection}{\numberline {3.2.5}Monte Carlo}{8}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{9}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{10}
-\contentsline {chapter}{\numberline {6}REFERENCING}{11}
-\contentsline {schapter}{BIBLIOGRAPHY}{12}
+\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{9}
+\contentsline {subsection}{\numberline {3.2.3}Navigation Module}{9}
+\contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{9}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{9}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{9}
+\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{9}
+\contentsline {subsection}{\numberline {3.2.5}Monte Carlo}{9}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{10}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{11}
+\contentsline {chapter}{\numberline {6}REFERENCING}{12}
+\contentsline {schapter}{BIBLIOGRAPHY}{13}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{14}
+\contentsline {chaphd}{APPENDICES}{15}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{15}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{18}
+\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{16}
+\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{19}
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  10 FEB 2018 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  11 FEB 2018 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,68 +73,19 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \epsfxsize=\dimen107
 \epsfysize=\dimen108
 )
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip46
-
-For additional information on amsmath, use the `?' option.
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen109
-))
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen110
-)
-(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count93
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count94
-\leftroot@=\count95
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count96
-\DOTSCASE@=\count97
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen111
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
-\dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
-\tag@help=\toks16
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
-\andhelp@=\toks17
-\eqnshift@=\dimen112
-\alignsep@=\dimen113
-\tagshift@=\dimen114
-\tagwidth@=\dimen115
-\totwidth@=\dimen116
-\lineht@=\dimen117
-\@envbody=\toks18
-\multlinegap=\skip47
-\multlinetaggap=\skip48
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+(c:/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
 )
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\@emptytoks=\toks15
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
@@ -143,15 +94,15 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (c:/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks20
-\thm@bodyfont=\toks21
-\thm@headfont=\toks22
-\thm@notefont=\toks23
-\thm@headpunct=\toks24
-\thm@preskip=\skip49
-\thm@postskip=\skip50
-\thm@headsep=\skip51
-\dth@everypar=\toks25
+\thm@style=\toks16
+\thm@bodyfont=\toks17
+\thm@headfont=\toks18
+\thm@notefont=\toks19
+\thm@headpunct=\toks20
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks21
 )
 (c:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -159,13 +110,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (c:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen118
-\captionmargin@=\dimen119
-\captionwidth=\dimen120
-\caption@tempdima=\dimen121
-\caption@indent=\dimen122
-\caption@parindent=\dimen123
-\caption@hangindent=\dimen124
+\captionmargin=\dimen109
+\captionmargin@=\dimen110
+\captionwidth=\dimen111
+\caption@tempdima=\dimen112
+\caption@indent=\dimen113
+\caption@parindent=\dimen114
+\caption@hangindent=\dimen115
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -176,24 +127,24 @@ See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p {\ssp \raggedright \bfseries #1. #2\par } \vskip \belowcaptionskip .
-\c@ContinuedFloat=\count105
+\c@ContinuedFloat=\count93
 ) (c:/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
 (c:/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count106
-\float@exts=\toks26
-\float@box=\box28
-\@float@everytoks=\toks27
-\@floatcapt=\box29
+\c@float@type=\count94
+\float@exts=\toks22
+\float@box=\box26
+\@float@everytoks=\toks23
+\@floatcapt=\box27
 )
 (c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks28
-\c@algorithm=\count107
+\@float@every@algorithm=\toks24
+\c@algorithm=\count95
 )
 (c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -202,47 +153,47 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count108
-\c@ALG@rem=\count109
-\c@ALG@nested=\count110
-\ALG@tlm=\skip52
-\ALG@thistlm=\skip53
-\c@ALG@Lnr=\count111
-\c@ALG@blocknr=\count112
-\c@ALG@storecount=\count113
-\c@ALG@tmpcounter=\count114
-\ALG@tmplength=\skip54
+\c@ALG@line=\count96
+\c@ALG@rem=\count97
+\c@ALG@nested=\count98
+\ALG@tlm=\skip49
+\ALG@thistlm=\skip50
+\c@ALG@Lnr=\count99
+\c@ALG@blocknr=\count100
+\c@ALG@storecount=\count101
+\c@ALG@tmpcounter=\count102
+\ALG@tmplength=\skip51
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (c:/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip55
-\LTright=\skip56
-\LTpre=\skip57
-\LTpost=\skip58
-\LTchunksize=\count115
-\LTcapwidth=\dimen125
-\LT@head=\box30
-\LT@firsthead=\box31
-\LT@foot=\box32
-\LT@lastfoot=\box33
-\LT@cols=\count116
-\LT@rows=\count117
-\c@LT@tables=\count118
-\c@LT@chunks=\count119
-\LT@p@ftn=\toks29
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count103
+\LTcapwidth=\dimen116
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count104
+\LT@rows=\count105
+\c@LT@tables=\count106
+\c@LT@chunks=\count107
+\LT@p@ftn=\toks25
 )
 (c:/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box34
-\UL@hyphenbox=\box35
-\UL@skip=\skip59
-\UL@hook=\toks30
-\UL@height=\dimen126
-\UL@pe=\count120
-\UL@pixel=\dimen127
-\ULC@box=\box36
+\UL@box=\box32
+\UL@hyphenbox=\box33
+\UL@skip=\skip56
+\UL@hook=\toks26
+\UL@height=\dimen117
+\UL@pe=\count108
+\UL@pixel=\dimen118
+\ULC@box=\box34
 Package: ulem 2012/05/18
-\ULdepth=\dimen128
+\ULdepth=\dimen119
 )
 (c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool.sty
 Package: datatool 2017/11/12 v2.29 (NLCT)
@@ -252,10 +203,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
 )
-\XKV@depth=\count121
+\XKV@depth=\count109
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2017/texmf-dist/tex/latex/xfor/xfor.sty
@@ -263,15 +214,74 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 )
 (c:/texlive/2017/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count122
+\c@su@anzahl=\count110
 )
 (c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count123
+\etb@tempcnta=\count111
 )
 (c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2017/11/12 v2.29 (NLCT)
 
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen120
+))
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen121
+)
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count112
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count113
+\leftroot@=\count114
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count115
+\DOTSCASE@=\count116
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box35
+\strutbox@=\box36
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count117
+\c@MaxMatrixCols=\count118
+\dotsspace@=\muskip10
+\c@parentequation=\count119
+\dspbrk@lvl=\count120
+\tag@help=\toks30
+\row@=\count121
+\column@=\count122
+\maxfields@=\count123
+\andhelp@=\toks31
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks32
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
 (c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2017/11/12 v2.29 (NLCT)
 
@@ -323,7 +333,7 @@ Package: fp-upn 1996/10/21
 (c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks33
+\@dtl@toks=\toks34
 \@dtl@tmpcount=\count135
 \dtl@tmplength=\skip60
 \dtl@sortresult=\count136
@@ -335,12 +345,12 @@ Package: fp-eval 1995/04/03
 )
 \dtlcolumnnum=\count142
 \dtlrownum=\count143
-\@dtl@before=\toks34
-\@dtl@after=\toks35
-\@dtl@colhead=\toks36
-\dtlcurrentrow=\toks37
-\dtlbeforerow=\toks38
-\dtlafterrow=\toks39
+\@dtl@before=\toks35
+\@dtl@after=\toks36
+\@dtl@colhead=\toks37
+\dtlcurrentrow=\toks38
+\dtlbeforerow=\toks39
+\dtlafterrow=\toks40
 \dtlforeachlevel=\count144
 \c@DTLrowi=\count145
 \c@DTLrowii=\count146
@@ -349,21 +359,21 @@ Package: fp-eval 1995/04/03
 \dtl@rowi=\count149
 \dtl@rowii=\count150
 \dtl@rowiii=\count151
-\@dtl@curi=\toks40
-\@dtl@previ=\toks41
-\@dtl@nexti=\toks42
-\@dtl@curii=\toks43
-\@dtl@previi=\toks44
-\@dtl@nextii=\toks45
-\@dtl@curiii=\toks46
-\@dtl@previii=\toks47
-\@dtl@nextiii=\toks48
+\@dtl@curi=\toks41
+\@dtl@previ=\toks42
+\@dtl@nexti=\toks43
+\@dtl@curii=\toks44
+\@dtl@previi=\toks45
+\@dtl@nextii=\toks46
+\@dtl@curiii=\toks47
+\@dtl@previii=\toks48
+\@dtl@nextiii=\toks49
 \@dtl@elements=\count152
-\@dtl@list=\toks49
-\@dtl@rowa=\toks50
-\@dtl@rowb=\toks51
-\@dtl@toksA=\toks52
-\@dtl@toksB=\toks53
+\@dtl@list=\toks50
+\@dtl@rowa=\toks51
+\@dtl@rowb=\toks52
+\@dtl@toksA=\toks53
+\@dtl@toksB=\toks54
 \@dtl@write=\write3
 \@dtl@read=\read1
 \dtl@entrycr=\count153
@@ -374,8 +384,8 @@ Package: glossaries 2017/11/14 v4.35 (NLCT)
 
 (c:/texlive/2017/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks54
-\@glsmrest=\toks55
+\@glsmfirst=\toks55
+\@glsmrest=\toks56
 )
 (c:/texlive/2017/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
@@ -385,12 +395,12 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
 )
 \gls@level=\count155
-\@gls@tmpb=\toks56
+\@gls@tmpb=\toks57
 \gls@tmplen=\skip61
-\glskeylisttok=\toks57
-\glslabeltok=\toks58
-\glsshorttok=\toks59
-\glslongtok=\toks60
+\glskeylisttok=\toks58
+\glslabeltok=\toks59
+\glsshorttok=\toks60
+\glslongtok=\toks61
 
 (c:/texlive/2017/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2017/11/14 v4.35 (NLCT)
@@ -471,12 +481,12 @@ Note: longtable package detected, redefining the caption printing
 \scratchbox=\box38
 \nofMPsegments=\count163
 \nofMParguments=\count164
-\everyMPshowfont=\toks61
+\everyMPshowfont=\toks62
 \MPscratchCnt=\count165
 \MPscratchDim=\dimen141
 \MPnumerator=\count166
 \makeMPintoPDFobject=\count167
-\everyMPtoPDFconversion=\toks62
+\everyMPtoPDFconversion=\toks63
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -627,19 +637,18 @@ CHAPTER 2.
 CHAPTER 3.
  Section 3.1.
  Subsection 3.1.1.
- Subsection 3.1.2.
 [3
 
 ]
+ Subsection 3.1.2.
  Subsection 3.1.3.
- Subsection 3.1.4.
 [4] [5]
+ Subsection 3.1.4.
+[6] [7]
  Subsection 3.1.5.
-[6]
- Subsection 3.1.6.
  Section 3.2.
-[7]
  Subsection 3.2.1.
+[8]
  Subsection 3.2.2.
  Subsection 3.2.3.
  Subsection 3.2.4.
@@ -647,44 +656,44 @@ CHAPTER 3.
  Subsubsection 3.2.4.2.
  Subsubsection 3.2.4.3.
  Subsection 3.2.5.
-[8]
+[9]
 CHAPTER 4.
-[9
+[10
 
 ]
 CHAPTER 5.
-[10
+[11
 
 ]
 CHAPTER 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1145.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1191.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1145.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1191.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1164.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1210.
 
-) (./thesis.bbl [11
+) (./thesis.bbl [12
 
-] [12
+] [13
 
-] [13]) (./append.tex [14]
+] [14]) (./append.tex [15]
 APPENDIX A.
-[15
+[16
 
 ]
  Section A.1.
-[16] [17]
+[17] [18]
 APPENDIX B.
-[18
+[19
 
-]) [19] (./thesis.aux) ) 
+]) [20] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 9419 strings out of 492980
- 139009 string characters out of 6136208
- 272948 words of memory out of 5000000
- 12750 multiletter control sequences out of 15000+600000
+ 9484 strings out of 492980
+ 139643 string characters out of 6136208
+ 274222 words of memory out of 5000000
+ 12812 multiletter control sequences out of 15000+600000
  34230 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,13n,66p,1988b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -708,10 +717,10 @@ bols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on thesis.pdf (29 pages, 235474 bytes).
+Output written on thesis.pdf (30 pages, 238372 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

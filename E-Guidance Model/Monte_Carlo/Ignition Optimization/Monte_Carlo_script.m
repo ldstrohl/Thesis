@@ -1,4 +1,4 @@
-% E-Guidance run script
+ % E-Guidance run script
 
 clear
 close all
