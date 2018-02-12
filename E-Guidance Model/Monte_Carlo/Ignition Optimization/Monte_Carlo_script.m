@@ -4,7 +4,7 @@ clear
 close all
 
 %% Inputs
-runs = 1; % per case
+runs = 10; % per case
 scenario = 6; % 1:6
 debug_mode = 0;
 debug_row = 12;
@@ -13,14 +13,14 @@ debug_row = 12;
 data_save_flag = 0; % save run data
 result_file = 'rundata_ignopti_flip.mat';
 traj_file = 'traj_ignopti_flip_'; % prefix - case is appended
-traj_rate = 1/1; % how many runs to record
+traj_rate = 1/1000; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
-run_and_seed = 1;
+run_and_seed = 0;
 run_results = 1;
-case_results = 1;
-vis_flag = 1; % plots of each run
+case_results = 0;
+vis_flag = 0; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
@@ -30,10 +30,10 @@ threshhold = 1; % factor of T_max required for gravity turn
                   %     to ignite engine and start guidance
 
 % models
-rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
-IC_dispersion_flag  = 0; % on/off initial condition dispersion
+rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
+IC_dispersion_flag  = 1; % on/off initial condition dispersion
 atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
-nav_flag = 0; % on/off navigation errors
+nav_flag = 1; % on/off navigation errors
 
 
 %% Conditions

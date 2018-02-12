@@ -245,8 +245,10 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
         
         if a_GT >= threshhold*T_max/m0
             range_trigger = 1;
+%             fprintf('acceleration\n')
         elseif sf >= range(k)
             range_trigger = 1;
+%             fprintf('range\n')
         end
             
         if range_trigger

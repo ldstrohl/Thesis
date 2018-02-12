@@ -18,22 +18,23 @@
 \contentsline {subsection}{\numberline {3.1.3}Guidance solution}{5}
 \contentsline {subsection}{\numberline {3.1.4}Time-to-go}{6}
 \contentsline {subsection}{\numberline {3.1.5}Ignition Timing}{8}
-\contentsline {section}{\numberline {3.2}Simulation}{8}
-\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{8}
-\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{9}
-\contentsline {subsection}{\numberline {3.2.3}Navigation Module}{10}
-\contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{10}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{10}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{11}
-\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{11}
-\contentsline {subsection}{\numberline {3.2.5}Monte Carlo}{12}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{13}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{14}
-\contentsline {chapter}{\numberline {6}REFERENCING}{15}
-\contentsline {schapter}{BIBLIOGRAPHY}{16}
+\contentsline {section}{\numberline {3.2}Simulation}{9}
+\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{9}
+\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{10}
+\contentsline {subsection}{\numberline {3.2.3}Ignition trigger}{11}
+\contentsline {subsection}{\numberline {3.2.4}Navigation Module}{11}
+\contentsline {subsection}{\numberline {3.2.5}Aerodynamic Model}{11}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Atmosphere Model}{11}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Lift and Drag}{12}
+\contentsline {subsubsection}{\numberline {3.2.5.3}Orientation}{12}
+\contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{13}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{14}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{15}
+\contentsline {chapter}{\numberline {6}REFERENCING}{16}
+\contentsline {schapter}{BIBLIOGRAPHY}{17}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{18}
+\contentsline {chaphd}{APPENDICES}{19}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{19}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{22}
+\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{20}
+\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{23}
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 

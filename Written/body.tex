@@ -460,6 +460,15 @@ where $\boldsymbol{a}_T$ is the thrust acceleration vector. $\boldsymbol{a}_T$ i
 0 < a_{min} \leq ||\boldsymbol{a}_T|| \leq a_{max}
 \end{equation}
 
+and $\bm{g}(\bm{r})$ is gravitational acceleration
+
+\begin{equation}
+\label{eqn:gravity}
+\bm{g} = -\frac{\mu \bm{r}}{(\bm{r}^T\bm{r})^{(3/2)}}
+\end{equation}
+
+Where $\mu$ is the standard gravitational parameter for the body in question. For Mars, $\mu \approx 4.282*10^{13}$
+
 \subsection{Performance Index}
 Fuel consumption is related to the thrust acceleration vector by engine parameters represented by some positive constant k
 
@@ -604,7 +613,7 @@ g_x + a_{f_x}^*
 \end{equation}
 
 
-\subsection{Time-to-go}
+\subsection{Time-to-go} \label{sec:Time-to-go}
 The E-Guidance solution depends upon a reliable estimate of remaining time-to-go ($t_{go}$). The Apollo mission's guidance used an estimate that updated continuously using Newton's method, but it was intended to only operate until start of the terminal descent phase at which point guidance switched to a manual vertical descent operation. Updating the $t_{go}$ estimate continuously is attractive since it should be robust; if conditions have to change during the mission a closed-loop (continuously updating) solution will adjust and a new, realistic $t_{go}$ will feed into the guidance solution. This quality was important to the Apollo Guidance solution because it relied upon pilot inputs to define the landing location visually, which meant allowing for landing site redesignations mid-mission. If $t_{go}$ was not recomputed after site redesignation, the guidance law would command unrealizable thrust acceleration commands.
 
 For the purposes of this study, live landing site redesignation was not considered. Without the possibility of landing site redesignation, an open-loop $t_{go}$ solution lends the guidance law more stability in that the performance is less dependent upon specific assumptions and conditions imposed by the $t_{go}$ algorithm. For instance, one closed-loop $t_{go}$ algorithm is implemented in Algorithm \ref{eqn:FPI}.
@@ -628,21 +637,48 @@ Each guidance update uses the previous update's $t_{go}$ minus clock time as its
 
 This algorithm requires an assumption about a fixed mass flow rate $\dot{m}$ which is not guaranteed by the guidance law. Adjustment of this mass flow rate estimate is very particular to the initial conditions of the mission, resulting in a necessarily conservative $t_{go}$ to account for initial condition dispersion.
 
-One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. The equation for a gravity turn time-to-go, $t_{go_{GT}}$, was presented first in Cherry 1964 \cite{CHERRY}. After engine ignition and initiation of the Powered Descent Guidance, the updated time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time.
+One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. Equation \ref{eqn:tgoGT} for a gravity turn time-to-go, $t_{go_{GT}}$, was presented first in Cherry 1964 \cite{CHERRY}. After engine ignition and initiation of the Powered Descent Guidance, the updated time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time. The algorithm for time-to-go using a gravity turn maneuver is given in Equation \ref{eqn:tgoGT}, where $a_{GT}$ is the thrust acceleration magnitude applied during the maneuver. This equation gives two roots for $a_{GT}$, a positive root and a negative root. The desired root is positive, making it a simple matter to find. This quantity will be important in section\:\ref{sec:ignitiontiming}.
+
+\begin{align}
+\label{eqn:tgoGT}
+\begin{split}
+\gamma &= \frac{\pi}{2} - cos^{-1}\left(\frac{\bm{r}^T\bm{V}}{||\bm{r}||||\bm{V} ||} \right) \\
+g_m &= ||\bm{g}|| \\
+r_m &= ||\bm{r}|| \\
+V_m &= ||\bm{V}|| \\
+a &= 1/g_m^2 \\
+b &= \frac{sin(\gamma)V_m^2}{2(r_m-R_M)g_m^2} \\
+c &= -\frac{V_m^2 (1+sin(\gamma)^2)}{4(r_m - R_M)g_m}+1 \\
+a_{GT} &= \frac{-b \pm \sqrt{b^2 - 4 a c}}{2 a} \\
+t_{go_{GT}} &= \frac{V_m}{2} \left(\frac{1+sin(\gamma)}{a_{GT} + g_m} + \frac{1-sin(\gamma)}{a_{GT} - g_m} \right)
+\end{split}
+\end{align}
 
 A gravity turn landing does not directly apply to the general powered descent guidance problem under investigation because it does not seek to satisfy the constraints given in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. However, if the magnitude of the terminal velocity target in Equation \ref{eqn:constraint_V} is small, the required time to decelerate from an initial $\boldsymbol{V}_0$ under only the forces of thrust acceleration $\boldsymbol{a}_T$ and gravity $\boldsymbol{g}$ is, at minimum, the gravity turn solution $t_{go_{GT}}$. Since the terminal position $\boldsymbol{r}_f$ is specified, the vehicle necessarily needs more time than given by the gravity turn solution to satisfy it. Assuming a small trajectory error requiring a small diversion to landing site, a small constant factor $ c_t \approxeq 1.2$ can be applied to the gravity turn time-to-go to allow for redirection. Because the fuel optimal guidance law would minimize the index given in Equation \ref{eqn:fueloptimalindex}, reducing the time of flight should be expected to reduce propellant consumption. This suggests that driving the factor $c_t$ as close to $1$ as possible while still landing softly is desirable. The choice of $c_t = 1.2$ will prove to be sufficiently conservative to survive initial condition dispersion, rocket parameter dispersion, and navigation error. 
 
-\subsection{Ignition Timing}
+\subsection{Ignition Timing} \label{sec:ignitiontiming}
 The literature has also given very little attention to the topic of ignition timing, or the initiation of powered descent guidance (PDI). Mission planning involves phases and guidance laws like E-Guidance 
 
+Here we talk about the thrust acceleration and range criterion for ignition. 
+
+... where $h$ is altitude and $s_{GT}$ is the downrange distance traveled during a gravity turn maneuver.
+
+\begin{equation}
+\label{eqn:rangeGT}
+\begin{split}
+s_{GT} = \frac{V_m^2}{2*a_{GT})}*cos(\gamma)*\frac{V_m^2+2*g_m*h}{V_norm^2+g_m*h}*\frac{R_M}{r_m}
+\end{split}
+\end{equation}
 
 \section{Simulation}
 
-The powered descent simulation (PD Sim) is developed using standard programming techniques and numerical methods. The code is modular to facilitate design and reflect the functions of a mission computer. The simulation has three degrees of freedom (3-DoF) with derived orientation for force modeling.
+The powered descent simulation (PD Sim) is developed using standard programming techniques and numerical methods. The code is modular to facilitate design and reflect the functions of a mission computer. The simulation has three degrees of freedom (3-DoF) with derived orientation for force modeling. The simulation takes a set of initial conditions $\bm{r}_0$ and $\bm{V}_0$, a set of final conditions $\bm{r}_f$ and $\bm{V}_f$, dispersed rocker parameters, and nominal rocket parameters for the guidance module to use in its calculations of throttle setting.
 
 At the core of the simulation is numerical time integration. The method employed is a 4th order Runge-Kutta (RK4). The RK4 function is called at each time step to progress the simulation forward.
 
 The separate modules called during simulation are the guidance computer which contains the guidance law and computes a commanded thrust acceleration vector, the navigation module which generates a state estimate from simulated instrument measurements for use by the guidance computer, and the aerodynamic module which contains a model of the landing vehicle to compute forces and orientation for use in integration.
+
+The simulation stops when either the vehicle passes through zero altitude (crashes) or the time-to-go is less than a single time integration step. When the latter condition is met, the time integration step is reduced to the remaining time-to-go and one more iteration is performed.
 
 The full simulation code is wrapped in a Monte-Carlo script. The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parameters, initial condition, and navigation uncertainty. This allows each individual run to have dispersed conditions without modification of the code.
 
@@ -684,6 +720,11 @@ The output is a throttle setting as a fraction of the nominal max thrust and a d
 In this implementation, the throttle is limited after being passed out of the guidance computer to satisfy the real performance constraint represented in Equation \ref{eqn:thrustlimit}. Since the guidance computer only receives nominal $T_{max}$ upon which to base its throttle setting, the resultant command can be off due to engine performance dispersion.
 
 The guidance command is updated periodically at a rate lower than the simulation rate. It must also stop updating when $t_{go}$ becomes small due to its presence in the denominator for several entries in the E matrices of Equations \ref{eqn:E_system} and \ref{eqn:E_system_adv}. For the last half second the thrust acceleration is held constant. This has very little impact on landing precision.
+
+The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on on the current conditions and then allowed to run open-loop until simulation stop.
+
+\subsection{Ignition trigger}
+
 
 \subsection{Navigation Module}
 The navigation module is fairly simplistic. It has two functions. 
