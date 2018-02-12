@@ -688,7 +688,7 @@ The guidance command is updated periodically at a rate lower than the simulation
 \subsection{Navigation Module}
 The navigation module is fairly simplistic. It has two functions. 
 
-The first function is to produce navigation error in the form of normally distributed noise. The function takes the actual vehicle state $\bm{r}$ and $\bm{V}$, adds noise with a distribution specified in the simulation settings of the Monte Carlo script, and creates $\bm{r}_{nav}$ and $\bm{V}_{nav}$ vectors. The noise distribution is chosen to reflect realistic navigation error as provided by an inertial navigation system per the trade study presented in Moesser\:2010\:\cite{MOESSER}. Typical standard deviations are $1\:m$ position error and $1/3\:m/s$ velocity error.
+The first function is to produce navigation error in the form of normally distributed noise. The function takes the actual vehicle state $\bm{r}$ and $\bm{V}$, adds noise with a distribution specified in the simulation settings of the Monte Carlo script, and creates $\bm{r}_{nav}$ and $\bm{V}_{nav}$ vectors. The noise distribution is chosen to reflect realistic navigation error as provided by an inertial navigation system per the trade study presented in Moesser\:2010\:\cite{MOESSER}. Typical standard deviations are 1\:m position error and 1/3\:m/s velocity error.
 
 The second function is to filter the noisy navigation measurements to produce a smoother estimate of vehicle state. It does this using a simple low-pass filter as in Equation \ref{eqn:LPF}, where $\alpha$ is a chosen filter constant (here $\alpha = 0.3$), $\bm{x}$ is the current nav output of state, $\bm{x}_{prev}$ is the previous filtered state estimate, and $\bm{x}_{est}$ is the current filtered state estimate. 
 
@@ -703,13 +703,48 @@ A Kalman filter would likely be used on a more sophisticated navigation system f
 The Aerodynamic model is comprised of Mars atmosphere data from (insert atmosphere data reference), and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
 
 \subsubsection{Atmosphere Model}
-The atmosphere model comes from NASA data using a simplified model blah blah blah
+The atmosphere model is based on NASA's Mars-GRAM\:\cite{MARSGRAM}, an engineering-level atmospheric model of the Martian atmosphere. The model used for this simulation is an empirically developed equation to represent the Martian atmosphere data within the mission's envelope. Mars-GRAM 2010 is based on NASA Ames Mars General Circulation Model for altitudes under 80 km.
+
+For this simulation, the Mars-GRAM data is used to calculate a density $\rho$ and a speed of sound $V_{sound}$, from which Mach number is calculated as $|V|/V_{sound}$ and lift and drag are calculated as in Equations \ref{eqn:drag} and \ref{eqn:lift}, where S is a reference area.
+
+\begin{equation}
+\label{eqn:lift}
+L = \frac{1}{2} \rho |V|^2 S C_L
+\end{equation}
+
+\begin{equation}
+\label{eqn:drag}
+D = \frac{1}{2} \rho |V|^2 S C_D
+\end{equation}
+
+A particular feature of the powered descent phase is the change in drag calculation while the engine is ignited. When the guidance system is operating and the rocket is firing, the drag is modeled as half the value computed when the vehicle is unpowered, i.e. during glide. This is due to the rocket plume's aerodynamics. This change is accomplished in the simulation during the ignition timing phase by simply dividing the reference area by a factor of 2. 
 
 \subsubsection{Lift and Drag}
-The vehicle model comes from Cerimele\:et\:al\:\cite{CERIMELE}
+The vehicle aerodynamic model is based on the work of Cerimele\:et\:al\:\cite{CERIMELE}. The vehicle is the CobraMRV, a "rigid, enclosed, elongated lifting body shape that provides a higher lift-to-drag ratio (L/D) than a typical entry capsule..."\:\cite{CERIMELE}. It was designed as an atmospheric entry and powered descent and landing vehicle for manned Mars missions compatible with the current NASA Human Mars mission architectures. These missions require delivery of roughly 20 tonnes of cargo to the surface.
+
+The work of Cerimele er al provides a model of the lift and drag coeffecients $C_L$ and $C_D$ based on vehicle Mach number and angle of attack. Vehicle angle of attack is determined directly from the thrust acceleration vector $\bm{a}_T$ and the vehicle velocity vector $\bm{V}$. 
+
+During the unpowered phase of approach when ignition timing is being optimized, the vehicle is held at a constant angle of attack of $55^{\circ}$ to achieve maximum drag. 
 
 \subsubsection{Orientation}
-The vehicle's orientation is primarily determined from the thrust command direction. 
+The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body axes. Since the simulation assumes perfect control, the body axes are computed as Equations \ref{eqn:body_Y}, \ref{eqn:body_P}, \ref{eqn:body_R}. Pitch, yaw, and roll are then calculated as the angles between the body axes and the planet-fixed guidance frame $\hat{e}$. Angle of attack is similarly calculated using the body axes and the velocity vector.
+
+\begin{equation}
+\label{eqn:body_Y}
+\bm{body}_Y = \bm{a}_T/||\bm{a}_T||
+\end{equation}
+
+\begin{equation}
+\label{eqn:body_P}
+\bm{body}_P = \frac{\bm{r} \times \bm{body}_Y}{||\bm{r} \times \bm{body}_Y||}
+\end{equation}
+
+\begin{equation}
+\label{eqn:body_R}
+\bm{body}_R = \bm{body}_Y \times \bm{body}_R
+\end{equation}
+
+This calculation ensures zero side-slip, that the vehicle will always be pointed in the direction it is traveling. Figure \ref{fig:EulerAngles} shows a small changing yaw angle throughout flight since it is computed relative to a fixed guidance frame centered on the landing site, and the vehicle's initial condition is rotated around the curvature of the planet.
 
 \subsection{Monte Carlo}
 

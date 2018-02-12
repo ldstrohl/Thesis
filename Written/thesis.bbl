@@ -62,6 +62,12 @@ S~J.~Citron, S~E.~Dunin, and H~F.~Meissinger.
 \newblock A terminal guidance technique for lunar landing.
 \newblock {\em AIAA Journal}, 2:503--509, 1964.
 
+\bibitem{MARSGRAM}
+Hilary~L. Justh.
+\newblock Mars global reference atmospheric model.
+\newblock NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February
+  2018, 2010.
+
 \bibitem{KLUMPP}
 A.~R. Klumpp.
 \newblock Apollo lunar descent guidance.

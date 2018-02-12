@@ -24,16 +24,16 @@
 \contentsline {subsection}{\numberline {3.2.3}Navigation Module}{10}
 \contentsline {subsection}{\numberline {3.2.4}Aerodynamic Model}{10}
 \contentsline {subsubsection}{\numberline {3.2.4.1}Atmosphere Model}{10}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{10}
-\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{10}
-\contentsline {subsection}{\numberline {3.2.5}Monte Carlo}{10}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{11}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{12}
-\contentsline {chapter}{\numberline {6}REFERENCING}{13}
-\contentsline {schapter}{BIBLIOGRAPHY}{14}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Lift and Drag}{11}
+\contentsline {subsubsection}{\numberline {3.2.4.3}Orientation}{11}
+\contentsline {subsection}{\numberline {3.2.5}Monte Carlo}{12}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{13}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{14}
+\contentsline {chapter}{\numberline {6}REFERENCING}{15}
+\contentsline {schapter}{BIBLIOGRAPHY}{16}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{16}
+\contentsline {chaphd}{APPENDICES}{18}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{17}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{20}
+\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{19}
+\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{22}
 \vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 
