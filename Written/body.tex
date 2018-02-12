@@ -581,26 +581,26 @@ Of some interest is the addition of a final attitude constraint. For a vehicle w
 
 This vector constraint cannot be satisfied with only two basis functions for the command $\boldsymbol{u}$, so a third linearly independent function must be introduced such that $\boldsymbol{u} = \boldsymbol{c}_1 p_1(t) +\boldsymbol{c}_2 p_2(t) + \boldsymbol{c}_3 p_3(t)$. A tempting choice for the third basis function is $p_3(t) = t^2$ for simplicity, with the other two functions the same as E-Guidance.
 
-After applying the substitution from Equation \ref{eqn:command}, this choice gives a command $\boldsymbol{u} = \boldsymbol{k}_1+\boldsymbol{k}_2 \tau + \boldsymbol{c}_3 \tau^2$. This form for the command input is also easily integrable and leads to a similar linear system of 9 equations in $\boldsymbol{k_1}$, $\boldsymbol{k_2}$, and $\boldsymbol{k_3}$. Using the same guidance frame $\hat{e}$ defined for Equation \ref{eqn:E_system} we get the system in Equation \ref{eqn:E_system_adv}
+After applying the substitution from Equation \ref{eqn:command}, this choice gives a command $\boldsymbol{u} = \boldsymbol{k}_1+\boldsymbol{k}_2 \tau + \boldsymbol{c}_3 \tau^2$. This form for the command input is also easily integrable and leads to a similar linear system of 9 equations in $\boldsymbol{k_1}$, $\boldsymbol{k_2}$, and $\boldsymbol{k_3}$. Using the same guidance frame $\hat{e}$ defined for Equation \ref{eqn:E_system} and considering one coordinate a time we get a system similar to E-Guidance in Equation \ref{eqn:E_system_adv}
 
 \begin{equation}
 \label{eqn:E_system_adv}
+\begin{pmatrix}
+k_{1_x} \\
+k_{2_x} \\
+k_{3_x}
+\end{pmatrix}
+= 
 \begin{bmatrix}
-	t_{go} & \frac{1}{2}t_{go}^2 \\
-	\frac{1}{2}t_{go}^2 & \frac{1}{6}t_{go}^3 \\
+0 & 0 & 1 \\
+18/t_{go}^2 & -24/t_{go}^3 & -6/t_{go}\\
+-24/t_{go}^3 & 36/t_{go}^4 & 6/t_{go}^2
 \end{bmatrix}
-\left(
-\begin{matrix}
-	k_{1_x} \\ 
-	k_{2_x} 
-\end{matrix}
-\right) = 
-\left(
-\begin{matrix}
-	V_{f_x}^* - V_{0_x} \\ 
-	r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go}) 
-\end{matrix}
-\right)
+\begin{pmatrix}
+V_{f_x}^* - V_{0_x} \\ 
+r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go}) \\
+g_x + a_{f_x}^*
+\end{pmatrix}
 \end{equation}
 
 
@@ -653,6 +653,7 @@ The numerical time integration is done via a standard Runge-Kutta formulation, p
 
 \begin{align}
 \label{eqn:RK4}
+\begin{split}
 \boldsymbol{\phi}_{n+\frac{1}{2}}^* &= \bm{\phi}_n + \frac{\Delta t}{2} \bm{f}(t_n,\bm{\phi}_n)\\
 \boldsymbol{\phi}_{n+\frac{1}{2}}^{**} &= \bm{\phi}^n + \frac{\Delta t}{2}  \bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^*_{n+\frac{1}{2}})\\
 \boldsymbol{\phi}_{n+1}^* &= \bm{\phi}^n + \Delta t  \bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^{**}_{n+\frac{1}{2}})\\
@@ -661,17 +662,55 @@ The numerical time integration is done via a standard Runge-Kutta formulation, p
 + 2\bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^*_{n+\frac{1}{2}})\\
 &\:+ 2\bm{f}(t_{n+\frac{1}{2}},\bm{\phi}^{**}_{n+\frac{1}{2}})
 + \bm{f}(t_{n+1},\bm{\phi}_{n+1}^*)]
+\end{split}
 \end{align}
 
 
+The EOM function computes the derivative of the state vector $\bm{\phi}$. It is the same as the modeled equations of motion in Equations \ref{eqn:EoM1} and \ref{eqn:EoM2} but with an additional force term, $\bm{F}_{LD}$, to represent the aerodynamic forces of Lift and Drag. $\bm{\phi}$ is passed in as a $6x1$ column vector such that $\bm{\phi} = [\bm{r}^T,\bm{V}^T]^T$, and the derivatives are calculated as in Equations \ref{eqn:EoM_sim1} and \ref{eqn:EoM_sim2}.
+\begin{align}
+\label{eqn:EoM_sim1}
+\boldsymbol{\dot{r}} &= \boldsymbol{V}\\
+\label{eqn:EoM_sim2}
+\boldsymbol{\dot{V}} &= \boldsymbol{g(r)} + \boldsymbol{a_T} + \bm{F}_{LD}
+\end{align}
+
+For simplicity, the vehicle's thrust acceleration response to a guidance command is modeled as zero-lag, i.e. perfect control. It assumes that the vehicle instantly and perfectly responds to the commanded $\bm{a}_T$, so the command from the guidance computer, after being put through a thrust magnitude limiter, is the same as the term in Equation \ref{eqn:EoM_sim2}.
+
 \subsection{Guidance Computer}
+The guidance computer takes as input the current state as provided by the navigation system, the terminal constraints (final position and velocity in the case of E-Guidance, with final acceleration as well in the case of advanced E-Guidance with attitude constraint), nominal rocket max thrust, current vehicle mass, time-to-go, and selection of guidance law.
+
+The output is a throttle setting as a fraction of the nominal max thrust and a direction for the thrust acceleration $\bm{a}_T$. These values are unlimited at the level of the guidance computer, i.e. the throttle setting can be larger than 1 requiring thrust magnitude greater than $T_{max}$. 
+
+In this implementation, the throttle is limited after being passed out of the guidance computer to satisfy the real performance constraint represented in Equation \ref{eqn:thrustlimit}. Since the guidance computer only receives nominal $T_{max}$ upon which to base its throttle setting, the resultant command can be off due to engine performance dispersion.
+
+The guidance command is updated periodically at a rate lower than the simulation rate. It must also stop updating when $t_{go}$ becomes small due to its presence in the denominator for several entries in the E matrices of Equations \ref{eqn:E_system} and \ref{eqn:E_system_adv}. For the last half second the thrust acceleration is held constant. This has very little impact on landing precision.
+
 \subsection{Navigation Module}
+The navigation module is fairly simplistic. It has two functions. 
+
+The first function is to produce navigation error in the form of normally distributed noise. The function takes the actual vehicle state $\bm{r}$ and $\bm{V}$, adds noise with a distribution specified in the simulation settings of the Monte Carlo script, and creates $\bm{r}_{nav}$ and $\bm{V}_{nav}$ vectors. The noise distribution is chosen to reflect realistic navigation error as provided by an inertial navigation system per the trade study presented in Moesser\:2010\:\cite{MOESSER}. Typical standard deviations are $1\:m$ position error and $1/3\:m/s$ velocity error.
+
+The second function is to filter the noisy navigation measurements to produce a smoother estimate of vehicle state. It does this using a simple low-pass filter as in Equation \ref{eqn:LPF}, where $\alpha$ is a chosen filter constant (here $\alpha = 0.3$), $\bm{x}$ is the current nav output of state, $\bm{x}_{prev}$ is the previous filtered state estimate, and $\bm{x}_{est}$ is the current filtered state estimate. 
+
+\begin{equation}
+\label{eqn:LPF}
+\bm{x}_{est} = \alpha \bm{x}_{prev} + (1-\alpha) \bm{x}
+\end{equation}
+
+A Kalman filter would likely be used on a more sophisticated navigation system for a real aerospace vehicle, but given the simplicity of the navigation error and perfect knowledge of the noise distrubution, modeling a Kalman filter would likely provide too good an estimate effectively canceling the effects of simulated navigation error.
+
 \subsection{Aerodynamic Model}
 The Aerodynamic model is comprised of Mars atmosphere data from (insert atmosphere data reference), and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
 
 \subsubsection{Atmosphere Model}
+The atmosphere model comes from NASA data using a simplified model blah blah blah
+
 \subsubsection{Lift and Drag}
+The vehicle model comes from Cerimele\:et\:al\:\cite{CERIMELE}
+
 \subsubsection{Orientation}
+The vehicle's orientation is primarily determined from the thrust command direction. 
+
 \subsection{Monte Carlo}
 
 %\section{Figures or How to Get into Real Trouble if You Take Advantage
