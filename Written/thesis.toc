@@ -8,33 +8,33 @@
 \nopagebreak 
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Literature Review}{1}
-\contentsline {section}{\numberline {1.2}Contribution}{1}
-\contentsline {section}{\numberline {1.3}Organization}{1}
-\contentsline {chapter}{\numberline {2}PROBLEM STATEMENT}{2}
-\contentsline {chapter}{\numberline {3}METHODOLOGY}{3}
-\contentsline {section}{\numberline {3.1}Guidance Law}{3}
-\contentsline {subsection}{\numberline {3.1.1}Equations of Motion}{3}
-\contentsline {subsection}{\numberline {3.1.2}Performance Index}{4}
-\contentsline {subsection}{\numberline {3.1.3}Guidance solution}{5}
-\contentsline {subsection}{\numberline {3.1.4}Time-to-go}{6}
-\contentsline {subsection}{\numberline {3.1.5}Ignition Timing}{8}
-\contentsline {section}{\numberline {3.2}Simulation}{9}
-\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{9}
-\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{10}
-\contentsline {subsection}{\numberline {3.2.3}Ignition trigger}{11}
-\contentsline {subsection}{\numberline {3.2.4}Navigation Module}{11}
-\contentsline {subsection}{\numberline {3.2.5}Aerodynamic Model}{11}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Atmosphere Model}{11}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Lift and Drag}{12}
-\contentsline {subsubsection}{\numberline {3.2.5.3}Orientation}{12}
-\contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{13}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{14}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{15}
-\contentsline {chapter}{\numberline {6}REFERENCING}{16}
-\contentsline {schapter}{BIBLIOGRAPHY}{17}
+\contentsline {section}{\numberline {1.2}Contribution}{2}
+\contentsline {section}{\numberline {1.3}Organization}{3}
+\contentsline {chapter}{\numberline {2}PROBLEM STATEMENT}{4}
+\contentsline {chapter}{\numberline {3}METHODOLOGY}{5}
+\contentsline {section}{\numberline {3.1}Guidance Law}{5}
+\contentsline {subsection}{\numberline {3.1.1}Equations of Motion}{5}
+\contentsline {subsection}{\numberline {3.1.2}Performance Index}{6}
+\contentsline {subsection}{\numberline {3.1.3}Guidance solution}{7}
+\contentsline {subsection}{\numberline {3.1.4}Time-to-go}{8}
+\contentsline {subsection}{\numberline {3.1.5}Ignition Timing}{10}
+\contentsline {section}{\numberline {3.2}Simulation}{11}
+\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{12}
+\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{12}
+\contentsline {subsection}{\numberline {3.2.3}Ignition trigger}{13}
+\contentsline {subsection}{\numberline {3.2.4}Navigation Module}{13}
+\contentsline {subsection}{\numberline {3.2.5}Aerodynamic Model}{14}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Atmosphere Model}{14}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Lift and Drag}{15}
+\contentsline {subsubsection}{\numberline {3.2.5.3}Orientation}{15}
+\contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{16}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{17}
+\contentsline {subsection}{\numberline {4.0.1}Results}{17}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{18}
+\contentsline {chapter}{\numberline {6}REFERENCING}{19}
+\contentsline {schapter}{BIBLIOGRAPHY}{20}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{19}
+\contentsline {chaphd}{APPENDICES}{21}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}MORE INFORMATION ON EQUATIONS}{20}
-\contentsline {chapter}{\numberline {B}LISTS AND QUOTATIONS}{23}
-\vspace {5.98pt}\vspace {-3pt}\hspace {-0.25in}\parbox {0.25in}{Z}SOURCE CODE .\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {1pt}.\hspace {3pt}\space \hbox {on CD} 
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{22}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{24}

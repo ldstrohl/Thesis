@@ -11,11 +11,30 @@
 
 \chapter{INTRODUCTION}
 \label{chap:intro}
+A manned Mars mission places a heavy penalty on propellant inefficiency. This is because every kilogram of fuel required for landing must be delivered as payload through every phase of the mission until that point, and due to the exponential nature of Tsiolkovsky's rocket equation increasing landing payload mass is extremely expensive. The problem of powered descent guidance is then one of fuel optimality.
+
 % By labeling the chapter, I can refer to it later using the
 % label. (\ref{chap:intro}, \pageref{chap:intro}) Latex will take care
 % of the numbering.
 \section{Literature Review}
+The problem of powered descent guidance has been studied extensively throughout the last century, particularly since The Space Race of the 1960s and the Apollo program which spawned E-Guidance, presented first in Cherry\:1964\:\cite{CHERRY}. These analyses have approached the problem in several different ways, but they generally share the requirement that the solution ensure soft landing in vacuum conditions. Most if not all of these analyses attempt to optimize fuel consumption due to the heavy penalty imposed on payload mass by inefficient propellant use when landing on an extraterrestrial body. Almost all approaches also share the assumption of a fixed final time, computed or chosen in various ways. Few of them address the problem of ignition timing, or when to start powered descent guidance. None investigate ignition timing with E-Guidance in the context of a manned mission landing in atmosphere. Some work has been done in mission phase planning but little optimization has been done for an  initial trajectory with free ignition time.
+
+Apollo Lunar Descent Guidance (E-Guidance) solves the Equations of Motion \ref{eqn:EoM1} and \ref{eqn:EoM2} by defining a linear or quadratic thrust acceleration profile which ensures satisfaction of the terminal constraints \ref{eqn:constraint_r}, \ref{eqn:constraint_V}, and (for constrained final attitude with quadratic thrust profile) \ref{eqn:constraint_a}. These two methods require choosing a fixed final time $t_f$, and Cherry proposes an algorithm similar to Algorithm \ref{eqn:FPI}. The final time $t_f$ is dependent upon the initial conditions assuming the powered descent guidance is active.
+
+D'Souza did take consideration of an optimal time-to-go in his paper "An Optimal Guidance Law for Planetary Landing"\:\cite{DSOUZA}. D'Souza's solution minimizes a weighted function of the time-to-go and the performance index given in Equation \ref{eqn:performanceindex}. As discussed below, minimizing this performance index is not fuel optimal but by minimizing the time-to-go a better performance can be realized, as demonstrated in D'Souza's paper. However, this approach still only considers the problem after ignition, when the powered descent guidance phase has already begun.
+
+Rea and Bishop examine the fuel optimal powered descent guidance problem in their paper, "Analytical Dimensional Reduction of a Fuel Optimal Powered Descent Subproblem"\:\cite{REA}. Rea and Bishop explore a time-to-go which optimizes their fuel optimal performance index, but it only considers the portion of flight after a deorbiting "braking" maneuver which ends when the vehicle altitude reaches some pre-designated altitude. They also discuss the approaches previously explored and the limitations of these approaches. These approaches do not explore ignition timing optimization either.
+
+Meditch showed that the fuel optimal thrust profile for a vertical landing given lower and upper thrust bounds is a "bang-bang" style thrust, where the thrust switches between its upper and lower bounds with at most one switch between the bounds during landing. The paper, "On the Problem of Optimal Thrust Programming For a Lunar Soft Landing,"\:\cite{MEDITCH} examined the one-dimensional fuel-optimal powered descent in a uniform gravitational field. This strategy may be directly applicable for the final touchdown phase, during which the E-Guidance solution must be stopped when time-to-go gets small as discussed in Section \ref{sec:guidancecomp}.
+
+Leitmann also examined a set of two-dimensional rocket flight problems including the two-dimensional powered descent and landing problem, similar to the problem under examination. Leitmann also showed that the fuel optimal thrust profile is "bang-bang," with up to two switches, in his paper "Class of Variational Problems in Rocket Flight."\:\cite{LEITMANN} 
+
+
 \section{Contribution}
+This paper seeks to improve upon the classic E-Guidance solution's fuel performance in the context of a manned Mars mission. The unique requirements of such a mission include high payload mass, aerodynamics of the landing vehicle, critical safety requirements, and the very high penalty for propellant inefficiency. The method by which the E-Guidance solution is improved is through ignition timing, pushing the solution closer to fuel optimality by making use of a longer glide slope during which energy is shed through drag effects and a thrust profile closer to fuel optimal. The solution presented is equally as computationally expensive as traditional E-Guidance and does not rely on high rate thrust magnitude switching. The guidance law has been studied extensively and flown on real spacecraft.
+
+The method of ignition timing optimization is applicable beyond the implementation of E-Guidance. This strategy is valid for any multi-phase mission involving powered descent and could be employed in many other contexts. It has particular applicability for atmospheric landings due to the increased efficiency gained from aerodynamic effects, extending the glide and aerobraking phase.
+
 \section{Organization}
 
 %You can save yourself 12 minutes now by not reading this document;
@@ -255,8 +274,25 @@
 %.log .aux .ps .dvi files.
 
 \chapter{PROBLEM STATEMENT}
+The guidance algorithm for powered descent and landing is formulated under the following assumptions:
 
+\begin{enumerate}
+\item Atmospheric forces can be neglected
+\item Rotation of the planetary body is accounted for by the terminal conditions and the guidance frame formulation
+\item The vehicle's engine is not vectored such that the thrust is in line with the vehicle's yaw axis at all times
+\item The vehicle's control system is perfect with zero lag
+\item The nozzle exit velocity $v_{ex}$ is a known constant
+\item The thrust magnitude's upper bound is known
+\item The vehicle's state can be reliably measured at all times, including measurement of local gravitational acceleration
+\item The vehicle's thrust is throttleable between minimum and maximum values
+\item Upon ignition, the vehicle can obtain commanded thrust within its upper and lower bounds instantaneously
+\end{enumerate}
 
+Implicit in these assumptions is a specified landing condition which defines the guidance frame $\hat{e}$. 
+
+It is desired to minimize propellant usage required by the E-Guidance law by improving ignition timing. It is essential that the solution is robust and reliable given the safety criticality of a manned mission.
+
+The last assumption is only relevant when ignition is started; the E-Guidance solution does not demand instantaneous throttle responses. Taking into account ignition lag would be simple and not affect performance significantly, but it is not modeled here.
 
 
 \chapter{METHODOLOGY}
@@ -273,7 +309,7 @@ The simulation methodology is also described, including the numerical methods an
 
 
 
-\section{Guidance Law}
+\section{Guidance Law} \label{sec:guidancelaw}
 The guidance law under investigation is E-Guidance, first presented in Cherry\:1964\:\cite{CHERRY}. E-Guidance was developed empirically by integrating the equations of motion and choosing basis functions for the thrust acceleration input $\boldsymbol{a}_T$ that provided the necessary degrees of freedom to satisfy the terminal constraints in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. With control over thrust acceleration (and therefore total acceleration), satisfying the initial conditions after integration of the equations of motion shows the need for two basis functions with vector coefficients. Cherry developed E-Guidance by considering first one guidance axis at a time, so the acceleration command took the form of Equation \ref{eqn:Cherryaccel}, where $p_1(t)$ and $p_2(t)$ are linearly independent functions of time.
 
 \begin{equation}
@@ -654,14 +690,14 @@ t_{go_{GT}} &= \frac{V_m}{2} \left(\frac{1+sin(\gamma)}{a_{GT} + g_m} + \frac{1-
 \end{split}
 \end{align}
 
-A gravity turn landing does not directly apply to the general powered descent guidance problem under investigation because it does not seek to satisfy the constraints given in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. However, if the magnitude of the terminal velocity target in Equation \ref{eqn:constraint_V} is small, the required time to decelerate from an initial $\boldsymbol{V}_0$ under only the forces of thrust acceleration $\boldsymbol{a}_T$ and gravity $\boldsymbol{g}$ is, at minimum, the gravity turn solution $t_{go_{GT}}$. Since the terminal position $\boldsymbol{r}_f$ is specified, the vehicle necessarily needs more time than given by the gravity turn solution to satisfy it. Assuming a small trajectory error requiring a small diversion to landing site, a small constant factor $ c_t \approxeq 1.2$ can be applied to the gravity turn time-to-go to allow for redirection. Because the fuel optimal guidance law would minimize the index given in Equation \ref{eqn:fueloptimalindex}, reducing the time of flight should be expected to reduce propellant consumption. This suggests that driving the factor $c_t$ as close to $1$ as possible while still landing softly is desirable. The choice of $c_t = 1.2$ will prove to be sufficiently conservative to survive initial condition dispersion, rocket parameter dispersion, and navigation error. 
+A gravity turn landing does not directly apply to the general powered descent guidance problem under investigation because it does not seek to satisfy the constraints given in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. However, if the magnitude of the terminal velocity target in Equation \ref{eqn:constraint_V} is small, the required time to decelerate from an initial $\boldsymbol{V}_0$ under only the forces of thrust acceleration $\boldsymbol{a}_T$ and gravity $\boldsymbol{g}$ is, at minimum, the gravity turn solution $t_{go_{GT}}$. Since the terminal position $\boldsymbol{r}_f$ is specified, the vehicle necessarily needs more time than given by the gravity turn solution to satisfy it. Assuming a small trajectory error requiring a small diversion to landing site, a small constant factor $ c_t \approxeq 1.2$ can be applied to the gravity turn time-to-go to allow for redirection. The choice of $c_t = 1.2$ will prove to be sufficiently conservative to survive initial condition dispersion, rocket parameter dispersion, and navigation error. 
 
 \subsection{Ignition Timing} \label{sec:ignitiontiming}
-The literature has also given very little attention to the topic of ignition timing, or the initiation of powered descent guidance (PDI). Mission planning involves phases and guidance laws like E-Guidance 
+The central focus of this thesis is the use of ignition timing to improve the fuel performance of E-Guidance. This is accomplished by making some attempt to force E-Guidance to command a nearly fuel optimal thrust acceleration profile. From Leitmann's\:\cite{LEITMANN} and Meditch's\:\cite{MEDITCH} work it is expected that a "bang-bang" style thrust profile is desirable. With E-Guidance controlling the thrust acceleration vector $\bm{a}_T$, the ignition timing may be chosen to force a nearly optimal solution. By choosing a time-to-go which is short enough that the thrust magnitude commanded by E-Guidance saturates at the upper bound for most of the flight, nearly optimal fuel performance may be expected.
 
-Here we talk about the thrust acceleration and range criterion for ignition. 
+Since E-Guidance does not take the thrust acceleration limits of Equation \ref{eqn:thrustlimit} into account directly the time-to-go must do so or risk the required thrust command exceeding the capabilities of the landing vehicle. One way to do this is to make use of the gravity turn solution as discussed in Section \ref{sec:Time-to-go}, Equation \ref{eqn:tgoGT}. This equation provides one criterion for ignition through the specified thrust acceleration $\bm{a}_{GT}$. If the gravity turn time-to-go $t_{go_{GT}}$ is used and the engine ignited for E-Guidance powered descent the moment the magnitude of the specified thrust acceleration $\bm{a}_{GT}$ reaches or exceeds the known maximum thrust acceleration magnitude $a_{min}$, E-Guidance will command a large initial thrust acceleration which exceeds the rocket's limits and the thrust will be saturated for most of the flight. Using a padded $t_{go_{GT}}$ helps ensure that there is some margin for error.
 
-... where $h$ is altitude and $s_{GT}$ is the downrange distance traveled during a gravity turn maneuver.
+Another important criterion is the downrange travel required by a gravity turn maneuver. The engine should be ignited if the horizontal distance remaining to the landing site is greater than or equal to the downrange distance traveled during a gravity turn maneuver. This will help ensure that the vehicle does not overshoot the landing site which would ultimately require far more fuel than a less optimal thrust profile. Equation\ref{eqn:rangeGT} gives the downrange distance traveled during a gravity turn maneuver $s_{GT}$, where $h$ is the current altitude.
 
 \begin{equation}
 \label{eqn:rangeGT}
@@ -712,7 +748,7 @@ The EOM function computes the derivative of the state vector $\bm{\phi}$. It is 
 
 For simplicity, the vehicle's thrust acceleration response to a guidance command is modeled as zero-lag, i.e. perfect control. It assumes that the vehicle instantly and perfectly responds to the commanded $\bm{a}_T$, so the command from the guidance computer, after being put through a thrust magnitude limiter, is the same as the term in Equation \ref{eqn:EoM_sim2}.
 
-\subsection{Guidance Computer}
+\subsection{Guidance Computer} \label{sec:guidancecomp}
 The guidance computer takes as input the current state as provided by the navigation system, the terminal constraints (final position and velocity in the case of E-Guidance, with final acceleration as well in the case of advanced E-Guidance with attitude constraint), nominal rocket max thrust, current vehicle mass, time-to-go, and selection of guidance law.
 
 The output is a throttle setting as a fraction of the nominal max thrust and a direction for the thrust acceleration $\bm{a}_T$. These values are unlimited at the level of the guidance computer, i.e. the throttle setting can be larger than 1 requiring thrust magnitude greater than $T_{max}$. 
@@ -721,12 +757,14 @@ In this implementation, the throttle is limited after being passed out of the gu
 
 The guidance command is updated periodically at a rate lower than the simulation rate. It must also stop updating when $t_{go}$ becomes small due to its presence in the denominator for several entries in the E matrices of Equations \ref{eqn:E_system} and \ref{eqn:E_system_adv}. For the last half second the thrust acceleration is held constant. This has very little impact on landing precision.
 
-The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on on the current conditions and then allowed to run open-loop until simulation stop.
+The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on the current conditions and then allowed to run open-loop until simulation stop. As discussed, the gravity turn time-to-go is used with an applied factor of $1.2$ for a safety margin.
 
 \subsection{Ignition trigger}
+Ignition time is determined by checking the two criterion discussed in Section \ref{sec:ignitiontiming}: required thrust acceleration magnitude $\bm{a}_{GT}$ and downrange distanced traveled by a gravity turn maneuver $s_{GT}$. The vehicle is started in atmosphere on a trajectory roughly in line with the landing site. As the vehicle travels along its trajectory with its engine off, these two criterion are constantly checked. Once either one is satisfied, the engine is ignited and the time-to-go estimate is updated as described in Section \ref{sec:guidancecomp}. Implementation of the ignition switch is performed in the simulation script by a simple flag that is checked upon guidance updates.
 
+It is important to be certain that the criteria are met at some point in the flight. This strategy ensures that the ignition trigger is flipped in time as is clear in Figure \ref{fig:criteriaGT}. Gravity turn required thrust acceleration magnitude monotonically increases throughout the unpowered trajectory, and downrange distance traveled in a gravity turn maneuver decreases faster than the vehicle's range from landing site.
 
-\subsection{Navigation Module}
+\subsection{Navigation Module} \label{sec:navmod}
 The navigation module is fairly simplistic. It has two functions. 
 
 The first function is to produce navigation error in the form of normally distributed noise. The function takes the actual vehicle state $\bm{r}$ and $\bm{V}$, adds noise with a distribution specified in the simulation settings of the Monte Carlo script, and creates $\bm{r}_{nav}$ and $\bm{V}_{nav}$ vectors. The noise distribution is chosen to reflect realistic navigation error as provided by an inertial navigation system per the trade study presented in Moesser\:2010\:\cite{MOESSER}. Typical standard deviations are 1\:m position error and 1/3\:m/s velocity error.
@@ -768,7 +806,7 @@ The work of Cerimele er al provides a model of the lift and drag coeffecients $C
 During the unpowered phase of approach when ignition timing is being optimized, the vehicle is held at a constant angle of attack of $55^{\circ}$ to achieve maximum drag. 
 
 \subsubsection{Orientation}
-The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body axes. Since the simulation assumes perfect control, the body axes are computed as Equations \ref{eqn:body_Y}, \ref{eqn:body_P}, \ref{eqn:body_R}. Pitch, yaw, and roll are then calculated as the angles between the body axes and the planet-fixed guidance frame $\hat{e}$. Angle of attack is similarly calculated using the body axes and the velocity vector.
+The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body axes. Since the simulation assumes perfect control, the body axes are computed as Equations \ref{eqn:body_Y}, \ref{eqn:body_P}, \ref{eqn:body_R}. Pitch, yaw, and roll are then calculated as the angles between the body axes and the planet-fixed guidance frame $\hat{e}$. Angle of attack is similarly calculated using the body axes and the velocity vector. The CobraMRV's configuration determines that the thrust acceleration vector be in the direction of the vehicle yaw axis.
 
 \begin{equation}
 \label{eqn:body_Y}
@@ -785,9 +823,25 @@ The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body a
 \bm{body}_R = \bm{body}_Y \times \bm{body}_R
 \end{equation}
 
-This calculation ensures zero side-slip, that the vehicle will always be pointed in the direction it is traveling. Figure \ref{fig:EulerAngles} shows a small changing yaw angle throughout flight since it is computed relative to a fixed guidance frame centered on the landing site, and the vehicle's initial condition is rotated around the curvature of the planet.
+This calculation ensures zero side-slip, that the vehicle will always be pointed in the direction it is traveling. Figure \ref{fig:EulerAngles} shows a small changing yaw angle throughout flight since it is computed relative to a fixed guidance frame centered on the landing site, and the vehicle's initial condition is rotated around the curvature of the planet. 
 
 \subsection{Monte Carlo}
+The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parameters, initial condition, and navigation uncertainty. This allows each individual run to have dispersed conditions without modification of the code. The Monte-Carlo script allows choice of initial condition, fixed or dynamic, as well as specification of rocket parameter dispersion, initial condition dispersion in position and velocity, and navigation noise distribution.
+
+The Monte-Carlo script is designed to allow testing of various scenarios and includes initial condition selection among a set of cases. The cases simulated here are points along a trajectory that passes nearly over the landing site, simulating the trajectory resulting from a typical re-entry and aerobraking glide phase. These cases also include initial velocity information that coincides with the vehicle having traveled unpowered along its trajectory. In fixed initial condition mode, the user specifies which initial conditions to test, the initial states are dispersed, and the simulations are run from the nominally fixed starting conditions. In ignition optimization mode, the Monte-Carlo script automatically chooses the nominal starting condition as the first point along this trajectory. It then disperses the starting point according to dispersion specifications and performs the number of runs specified by the user.
+
+The dispersion factors are chosen to reflect realistic parameter dispersion. Navigation error is modeled using a normal distribution with standard deviations in accordance with Moesser's\:\cite{MOESSER} work as described in Section \ref{sec:navmod}. Rocket parameter dispersion is modeled as a uniform distribution of 2\% of the parameter. Equation \ref{eqn:thrustdisp} shows this calculation for the maximum thrust dispersion, where $T_{max_{nom}}$ is the nominal maximum thrust expected by the guidance computer and $rand$ is a uniformly distributed random number between zero and one.
+
+\begin{equation}
+\label{eqn:thrustdisp}
+T_{max} = T_{max_{nom}}*(1+0.02*(1-2*rand))
+\end{equation}
+
+Each rocket parameter is modeled in this fashion.
+
+Initial condition values are normally distributed about their nominal values. The dispersion is applied such that three standard deviations in position dispersion is 1000 m from the mean, and three standard deviations in velocity dispersion is 10 m/s from the mean. 
+
+The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
 
 %\section{Figures or How to Get into Real Trouble if You Take Advantage
 %  of What \LaTeX\ Can Do}
@@ -1250,6 +1304,24 @@ This calculation ensures zero side-slip, that the vehicle will always be pointed
 %the Table of Contents.
 
 \chapter{RESULTS AND DISCUSSION} \label{chapter:Results}
+In this chapter results are presented for several simulated conditions.
+
+\begin{enumerate}
+	\item Nominal vs. dispersed parameters
+	\item Atmosphere vs. vacuum
+	\item Static initial conditions vs. dynamic ignition timing
+\end{enumerate}
+
+The first condition, the effect of dispersion, is of interest on the topic of robustness. A closed-loop guidance law implementation is intended to ensure satisfaction of the problem constraints in practical conditions with uncertainty of state and performance limitations. A guidance system without periodic state feedback, i.e. an open-loop implementation, would be expected to quickly lose accuracy and ultimately fail in real application. Due to the criticality of safety in the intended mission, it is vital to show that this strategy performs well in nominal as well as dispersed conditions and to give a sense for the uncertainty in its performance.
+
+The second condition is of particular interest because, as is clear in Section \ref{sec:guidancelaw}, neither E-Guidance nor the Gravity Turn approach take into account atmospheric effects and, at least in the case of the Apollo missions, have not been flown in the context of atmospheric landing. It is important to verify that the strategy can satisfy mission goals and still perform well in atmosphere, and the comparison with vacuum conditions serves both as a control and a fuel requirement baseline. 
+
+The third condition is the subject of this study. Whether dynamic ignition timing can reliably provide propellant efficiency improvement while maintaining safety and practicality is the topic of interest.
+
+\subsection{Results}
+
+\subsection{Discussion}
+Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.
 
 %Middle chapter.  Here we put the middle things, that is, things that
 %are in the middle and not in the beginning or in the end.  Here we
@@ -1287,41 +1359,42 @@ This calculation ensures zero side-slip, that the vehicle will always be pointed
 \chapter{CONCLUSIONS AND FUTURE WORK}
 
 
+
 \chapter{REFERENCING}
 
-Below a list of references are provided in the acceptable format for
-Master's thesis submission. References are to be numbered and should
-appear either alphabetically or in the order of appearance in the
-text.  (\LaTeX\ does the former for the student.) For students using
-\LaTeX\ these are obtained using the plain style with {\sc
-Bib}\TeX. The Department of Mathematics and Statistics will accept
-either the plain style or the SIAM style. (For the SIAM style, get a
-copy of the SIAM.BST file from your graduate adviser or the
-Mathematical Sciences computer system.) There are references for
-journal \verb+article+s \cite{ART}, \verb+book+s and \verb+booklet+s
-\cite{BOK,BKL}, \verb+inbook+s, \verb+incollection+s, and
-\verb+inproceedings+
-\cite{INC,INB,INP}. \emph{Note\marginpar{\small\textbf{\textit{Style
-note}}} that when you have more than one citation in a single bracket
-they must be in increasing numerical order!}  Other sources may be
-\verb+proceedings+ \cite{PRO}, technical reports (\verb+techreport+)
-\cite{TEC}, theses (\verb+mastersthesis+, or \verb+PhDthesis+)
-\cite{MTH}, or \verb+unpublished+ material \cite{UNP}.  This should
-provide a fairly comprehensive list for any material that the student
-may encounter.  For additional assistance, see the graduate adviser in
-your area of concentration. \LaTeX\ source codes are available for
-copying.
-
-If you cite a website \cite{Wikipedia} and you can't find the year on
-the website, you should put "n.d." (not dated) at the end. (this is
-true for other reference also.) It must also has the word "accessed"
-and the month and year you access the website.  You can change how
-things with no author(s) are sorted in the bibliography by supplying a
-\verb+key+ entry (see \verb+thbib.bib+), \emph{e.g.} this news release
-\cite{EPA-2010-09-07} will be sorted under ``U,'' the leading letter
-of the publishing agency (as preferred by the thesis publisher).
-
-This \cite{PatentExample} is an example of a patent.
-\textbf{\textit{Notice:}} how the \texttt{month} and \texttt{year}
-fields in \texttt{thbib.bib} have been abused to force the ``correct''
-format.
+%Below a list of references are provided in the acceptable format for
+%Master's thesis submission. References are to be numbered and should
+%appear either alphabetically or in the order of appearance in the
+%text.  (\LaTeX\ does the former for the student.) For students using
+%\LaTeX\ these are obtained using the plain style with {\sc
+%Bib}\TeX. The Department of Mathematics and Statistics will accept
+%either the plain style or the SIAM style. (For the SIAM style, get a
+%copy of the SIAM.BST file from your graduate adviser or the
+%Mathematical Sciences computer system.) There are references for
+%journal \verb+article+s \cite{ART}, \verb+book+s and \verb+booklet+s
+%\cite{BOK,BKL}, \verb+inbook+s, \verb+incollection+s, and
+%\verb+inproceedings+
+%\cite{INC,INB,INP}. \emph{Note\marginpar{\small\textbf{\textit{Style
+%note}}} that when you have more than one citation in a single bracket
+%they must be in increasing numerical order!}  Other sources may be
+%\verb+proceedings+ \cite{PRO}, technical reports (\verb+techreport+)
+%\cite{TEC}, theses (\verb+mastersthesis+, or \verb+PhDthesis+)
+%\cite{MTH}, or \verb+unpublished+ material \cite{UNP}.  This should
+%provide a fairly comprehensive list for any material that the student
+%may encounter.  For additional assistance, see the graduate adviser in
+%your area of concentration. \LaTeX\ source codes are available for
+%copying.
+%
+%If you cite a website \cite{Wikipedia} and you can't find the year on
+%the website, you should put "n.d." (not dated) at the end. (this is
+%true for other reference also.) It must also has the word "accessed"
+%and the month and year you access the website.  You can change how
+%things with no author(s) are sorted in the bibliography by supplying a
+%\verb+key+ entry (see \verb+thbib.bib+), \emph{e.g.} this news release
+%\cite{EPA-2010-09-07} will be sorted under ``U,'' the leading letter
+%of the publishing agency (as preferred by the thesis publisher).
+%
+%This \cite{PatentExample} is an example of a patent.
+%\textbf{\textit{Notice:}} how the \texttt{month} and \texttt{year}
+%fields in \texttt{thbib.bib} have been abused to force the ``correct''
+%format.

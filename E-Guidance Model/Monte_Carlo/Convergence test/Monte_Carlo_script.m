@@ -1,40 +1,39 @@
-% E-Guidance Monte Carlo run script
+ % E-Guidance run script
+
 clear
 close all
 
 %% Inputs
-runs = 1; % per case
-scenario = 4; % 1:6
+runs = 20; % per case
+scenario = 6; % 1:6
 debug_mode = 0;
-debug_row = 5;
+debug_row = 12;
 
 % Data recording
-data_save_flag = 0; % save run data
-result_file = 'rundata_case2to6_atmo0_nav0.mat';
-traj_file = 'traj_atmo0_nav0_'; % prefix - case is appended
+data_save_flag = 1; % save run data
+result_file = 'rundata_conv_RK4.mat';
+traj_file = 'traj_ignopti_flip_'; % prefix - case is appended
 traj_rate = 1/1000; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
-run_and_seed = 1;
+run_and_seed = 0;
 run_results = 1;
-case_results = 1;
-vis_flag = 1; % plots of each run
+case_results = 0;
+vis_flag = 0; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
 af_factor = 2; % final commanded thrust, in Mars g (only for law 2)
-tgo_method = 1; 
-% 1: gravity turn 
-% 2: E-Guidance iterative 
-% 3: Souza 
-% 4: Apollo cubic
+tgo_method = 1; % 1: GT, 2: fixed-point, 3: Souza, 4: apollo cubic
+threshhold = 1; % factor of T_max required for gravity turn 
+                  %     to ignite engine and start guidance
 
 % models
-rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
-IC_dispersion_flag  = 1; % on/off initial condition dispersion
-atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
-nav_flag = 1; % on/off navigation errors
+rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
+IC_dispersion_flag  = 0; % on/off initial condition dispersion
+atmosphere_flag = 0; % on/off atmosphere model (off = vacuum)
+nav_flag = 0; % on/off navigation errors
 
 
 %% Conditions
@@ -50,7 +49,7 @@ T_min_nom = 200000;
 v_ex_nom = 3531.7;
 
 if atmosphere_flag == 1
-    S = 62.21/2; % m^2 wetted area
+    S = 62.21; % m^2 wetted area
 else
     S = 0;
 end
@@ -65,7 +64,7 @@ end
 
 % Rocket Parameter dispersion
 if rocket_dispersion_flag == 1
-    rocket_disp = 1/100;
+    rocket_disp = 2/100;
 else
     rocket_disp = 0/100;
 end
@@ -94,7 +93,7 @@ end
 run_fid = fopen(result_file);
 if data_save_flag
     if run_fid == -1
-        rundata = zeros(runs*length(scenario),8);
+        rundata = zeros(runs*length(scenario),9);
         % rundata(1,:) = {'Case','Run','Flight Time','Fuel','Range','Speed','Angle'};
         save(result_file,'rundata');
         prev_rows = 0;
@@ -106,7 +105,7 @@ if data_save_flag
         rundata = rundata(rundata(:,1)~=0,:);
         prev_rows = size(rundata);
         prev_rows = prev_rows(1);
-        rundata = [rundata;zeros(runs*length(scenario),8)];
+        rundata = [rundata;zeros(runs*length(scenario),9)];
     end
 else
     prev_rows = 0;
@@ -215,10 +214,12 @@ for j = scenario
     if case_results == 1
         fprintf('Case: %0d \n',j)
     end
+
     
     %% Run loop
     for k = 1:runs
-        
+        dt = 2^-(k);
+% dt = 1e-3;
         if run_and_seed == 1
             fprintf('Table Row: %d   Run: %d/%d\n',...
                 (q-1)*runs+k+prev_rows,k,runs)
@@ -269,11 +270,11 @@ for j = scenario
         FC = [rf,Vf,af];
         rocket_disp = [m0;v_ex;T_max;T_min;S];
         rocket_nom = [m0_nom;m0_dry;v_ex_nom;T_max_nom;T_min_nom];
-        options = [guidance_law;tgo_method;r_sig;V_sig;vis_flag];
+        options = [guidance_law;tgo_method;r_sig;V_sig;vis_flag;threshhold];
 %         seed = rng;
         
         [sim_data,traj_add] = PD_sim(IC,FC,rocket_disp,rocket_nom,options,...
-            traj_record_flag,traj_step,rng);
+            traj_record_flag,traj_step,rng,dt);
         
         if data_save_flag
             if traj_record_flag
@@ -296,7 +297,7 @@ for j = scenario
         
         if data_save_flag
             rundata((q-1)*runs+k+prev_rows,:) = [j,k,seed(k)...
-                flight_time(k),fuel(k),range_f(k),speed_f(k),angle_f(k)];
+                flight_time(k),fuel(k),range_f(k),speed_f(k),angle_f(k),dt];
             save(result_file,'rundata')
         end
     end
@@ -330,6 +331,7 @@ for j = scenario
     
 end
 run_time = toc/(length(scenario)*runs);
+fprintf('Time per run: %f\n',run_time)
 
 %% Results
 results.flight_time = [flight_time_mean',flight_time_std'];

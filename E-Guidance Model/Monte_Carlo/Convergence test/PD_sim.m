@@ -4,7 +4,7 @@
 % Lloyd Strohl
 % 07/30/17
 function [results,traj] = PD_sim(IC,FC,rocket_disp,rocket_nom,options,...
-    traj_record_flag,skip,seed)
+    traj_record_flag,skip,seed,dt)
 
 rng(seed);
 
@@ -51,11 +51,11 @@ mu = 4.282828185603917*10^13;
 [pitch,yaw,roll,~] = EulerAngles(-V0,r0,V0);
 
 %% Simulation Settings
-dt = 10^-3; % time step size
+% dt = 10^-3; % time step size
 dt0 = dt;
 guidance_refresh_rate = 5; % Hz
 tgo_tol = 0.01; % tgo update iteration tolerance
-tgo_stop = 0.25; % thrust update threshold
+tgo_stop = 0.5; % thrust update threshold
 
 % Compute initial tgo
 g = -mu*r0/((r0'*r0)^(1.5));
@@ -257,6 +257,9 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
             refresh_counter = (1/guidance_refresh_rate)/dt;
             tgo(k) = norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
                 + (1-sin(gamma))/(a_GT-gm));
+            
+            % convergence test short-circuit
+            tgo(k) = 1;
             % snip visualization logs
             a_GT_vis = a_GT_vis(1:k);
             sf_vis = sf_vis(1:k);
@@ -290,6 +293,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
     % compute mass
     m_dot = T(:,k) / v_ex;
     m_tot(k+1) = m_tot(k) + m_dot*dt;
+
     if m_tot(k+1) > m0-m0_dry
         T_max = 0;
         T_min = 0;
@@ -454,8 +458,8 @@ if options(5)
     ylabel('m/s^2')
     legend('Up','East','North','Location','Northwest')
 end
-
-results = [(k-1)*dt0;m_tot(end);range(end);speed(end);...
+disp(10/dt)
+results = [(k-1)*dt0;m_tot(10/dt0-1);range(10/dt0-1);speed(10/dt0-1);...
     acosd(-aT'*g/(norm(aT)*norm(g)))];
 
 end

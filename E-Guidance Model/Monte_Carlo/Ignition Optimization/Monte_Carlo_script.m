@@ -4,7 +4,7 @@ clear
 close all
 
 %% Inputs
-runs = 10; % per case
+runs = 1; % per case
 scenario = 6; % 1:6
 debug_mode = 0;
 debug_row = 12;
@@ -20,7 +20,7 @@ traj_step = 200; % time steps per recorded line
 run_and_seed = 0;
 run_results = 1;
 case_results = 0;
-vis_flag = 0; % plots of each run
+vis_flag = 1; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
@@ -28,12 +28,13 @@ af_factor = 2; % final commanded thrust, in Mars g (only for law 2)
 tgo_method = 1; % 1: GT, 2: fixed-point, 3: Souza, 4: apollo cubic
 threshhold = 1; % factor of T_max required for gravity turn 
                   %     to ignite engine and start guidance
+                  % set to 0 for no ignition optimization
 
 % models
-rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
-IC_dispersion_flag  = 1; % on/off initial condition dispersion
+rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
+IC_dispersion_flag  = 0; % on/off initial condition dispersion
 atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
-nav_flag = 1; % on/off navigation errors
+nav_flag = 0; % on/off navigation errors
 
 
 %% Conditions

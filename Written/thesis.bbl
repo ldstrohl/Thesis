@@ -1,61 +1,26 @@
 \begin{thebibliography}{10}
 
-\bibitem{ART}
-T.~Abraham.
-\newblock Mathematical study of $\gamma$-rings in a {H}ilbert space.
-\newblock {\em J. Math. Anal. Appl.}, 19:125--128, 1984.
-
-\bibitem{PRO}
-P.~Axelrod and C.~P. Snow, editors.
-\newblock {\em Proceedings of the Conference on Mathematical Population
-  Genetics}, New York, 1982. Marcel Dekker.
-
-\bibitem{INC}
-B.~J. Bach.
-\newblock Homotopy theory for the delay differential equation $\dot y(t) =
-  {A}y(t-\tau)$.
-\newblock In F.~Neuerfeldt, editor, {\em Concepts in Differential Equations},
-  volume~2, pages 807--876. Academic Press, Washington, D.C., 1987.
-
-\bibitem{BOK}
-G.~T. Bankhead.
-\newblock {\em Modeling and Control in the Mathematical Sciences}, volume~69 of
-  {\em Lecture Notes in Mathematics}.
-\newblock Springer, Berlin, 1975.
-
 \bibitem{CERIMELE}
 C.~Cerimele~et al.
 \newblock A rigid mid lift-to-drag ratio approach to human mars entry, descent,
   and landing.
-\newblock {\em AIAA Paper}, pages 2017--1898, 2017.
+\newblock {\em AIAA Paper}, 2017-1898, 2017.
 
 \bibitem{CHERRY}
 G.~W. Cherry.
 \newblock A general, explicit, optimizing guidance law for rocket-propelled
   spaceflight.
-\newblock {\em AIAA Paper}, pages 64--638, 1964.
+\newblock {\em AIAA Paper}, 64-638, 1964.
 
-\bibitem{INB}
-R.~DeWitt.
-\newblock {\em Abstract Functional Equations for Fluids}, chapter~9, pages
-  274--293.
-\newblock Addison-Wesley, New York, 1983.
+\bibitem{DSOUZA}
+C.~S. D'Souza.
+\newblock An optimal guidance law for planetary landing.
+\newblock {\em AIAA Paper}, 97-3709, 1997.
 
 \bibitem{FERZIGER}
 J.~H. Ferziger and M.~Peri\'c.
 \newblock {\em Computational Methods for Fluid Dynamics}.
 \newblock Springer, Berlin, 2002.
-
-\bibitem{MTH}
-H.~B. Finknoddle.
-\newblock Random processes for $\alpha$-surds in a complex topology.
-\newblock Master's thesis, San Diego State University, San Diego, CA, 1990.
-
-\bibitem{PatentExample}
-Bill Gates.
-\newblock {The Knife and Fork: Novel Eating Utensils for the Mass Consumption
-  of Plant and Animal Based Food Items}, U.S.~Patent~No.~0,000,000. January 19,
-  2038.
 
 \bibitem{CITRON}
 S~J.~Citron, S~E.~Dunin, and H~F.~Meissinger.
@@ -73,15 +38,16 @@ A.~R. Klumpp.
 \newblock Apollo lunar descent guidance.
 \newblock {\em Automatica}, 10:133--146, 1974.
 
-\bibitem{LAM}
-L.~Lamport.
-\newblock {\em \LaTeX: A Document Preparation System}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1986.
+\bibitem{LEITMANN}
+G.~Leitmann.
+\newblock Class of variational problems in rocket flight.
+\newblock {\em Journal of the Aerospace Sciences}, 26:586--591, 1959.
 
-\bibitem{MJV}
-J.~M. Mahaffy, D.~A. Jorgensen, and R.~L. Vanderheyden.
-\newblock Oscillations in a model of repression with external control.
-\newblock {\em Quart.\ Appl.\ Math.}, 50:415--435, 1992.
+\bibitem{MEDITCH}
+J.~J. Meditch.
+\newblock On the problem of optimal thrust programming for a lunar soft
+  landing.
+\newblock {\em IEEE Transactions on Automatic Control}, 9:477--484, 1964.
 
 \bibitem{MOESSER}
 T.~J. Moesser.
@@ -89,37 +55,10 @@ T.~J. Moesser.
   descent.
 \newblock Master's thesis, Utah State University, Logan, UT, 2010.
 
-\bibitem{Wikipedia}
-Misc Peeps.
-\newblock The truth about everything.
-\newblock Wikipedia, http://www.wikipedia.com/, accessed August 2012, n.d.
-
-\bibitem{TEC}
-I.~T. Simon and A.~M. McGeorge.
-\newblock Integration of large {B}essel functions.
-\newblock Technical Report 284, San Diego State University, San Diego, CA,
-  1989.
-
-\bibitem{UNP}
-J.~K. Slemrod.
-\newblock ${P}$-infinity norms in the physical sciences.
-\newblock Unpublished report, 1990.
-
-\bibitem{INP}
-B.~W. Stuart.
-\newblock Contour mappings over closed ${\Omega}$-groups.
-\newblock In G.~V. Avery, editor, {\em Complex Algebras}, volume
-  \$VOLUME\_REQUIRED\$, page \$PAGES\_REQUIRED\$, Philadelphia, PA, 1987. SIAM.
-
-\bibitem{EPA-2010-09-07}
-\textsc{United States Environments Protection Agency}.
-\newblock \emph{EPA Challenges Colleges to Recycle at Football Games / Agency
-  encourages fans to Reduce, Reuse, Recycle.}\/ News Release, Sept.\ 7, 2010.
-  http://yosemite.epa.gov/opa/admpress.nsf/2010\%20Press\%20Releases?OpenView,
-  accessed September 2010.
-
-\bibitem{BKL}
-Writing style for the mathematical sciences.
-\newblock AMS, Providence, RI, 1979.
+\bibitem{REA}
+J.~R. Rea and R.~H. Bishop.
+\newblock Analytical dimensional reduction of a fuel optimal powered descent
+  subproblem.
+\newblock {\em AIAA Paper}, 2010-8026, 2010.
 
 \end{thebibliography}
