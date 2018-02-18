@@ -11,16 +11,16 @@ debug_row = 12;
 
 % Data recording
 data_save_flag = 1; % save run data
-result_file = 'rundata_ignopti_flip.mat';
-traj_file = 'traj_ignopti_flip_'; % prefix - case is appended
-traj_rate = 1/1000; % how many runs to record
+result_file = 'rundata.mat';
+traj_file = 'traj_atmo'; % prefix - case is appended
+traj_rate = 1/1; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
 run_and_seed = 0;
 run_results = 1;
 case_results = 0;
-vis_flag = 1; % plots of each run
+vis_flag = 0; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
@@ -128,7 +128,8 @@ for j = scenario
     q  = q + 1;
     
     if data_save_flag
-        case_file = strcat(traj_file,num2str(j),'.mat');
+%         case_file = strcat(traj_file,num2str(j),'.mat');
+        case_file = strcat(traj_file,'.mat');
         case_fid = fopen(case_file);
         if case_fid == -1
             traj = zeros(1,13);

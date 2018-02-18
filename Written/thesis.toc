@@ -22,19 +22,21 @@
 \contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{12}
 \contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{12}
 \contentsline {subsection}{\numberline {3.2.3}Ignition trigger}{13}
-\contentsline {subsection}{\numberline {3.2.4}Navigation Module}{13}
+\contentsline {subsection}{\numberline {3.2.4}Navigation Module}{14}
 \contentsline {subsection}{\numberline {3.2.5}Aerodynamic Model}{14}
 \contentsline {subsubsection}{\numberline {3.2.5.1}Atmosphere Model}{14}
 \contentsline {subsubsection}{\numberline {3.2.5.2}Lift and Drag}{15}
 \contentsline {subsubsection}{\numberline {3.2.5.3}Orientation}{15}
 \contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{16}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{17}
-\contentsline {subsection}{\numberline {4.0.1}Results}{17}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{18}
-\contentsline {chapter}{\numberline {6}REFERENCING}{19}
-\contentsline {schapter}{BIBLIOGRAPHY}{20}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{18}
+\contentsline {subsection}{\numberline {4.0.1}Vacuum Performance}{18}
+\contentsline {subsection}{\numberline {4.0.2}Atmospheric Performance}{18}
+\contentsline {subsection}{\numberline {4.0.3}Discussion}{18}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{20}
+\contentsline {chapter}{\numberline {6}REFERENCING}{21}
+\contentsline {schapter}{BIBLIOGRAPHY}{22}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{21}
+\contentsline {chaphd}{APPENDICES}{23}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{22}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{24}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{24}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{26}

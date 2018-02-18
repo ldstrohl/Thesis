@@ -757,7 +757,7 @@ In this implementation, the throttle is limited after being passed out of the gu
 
 The guidance command is updated periodically at a rate lower than the simulation rate. It must also stop updating when $t_{go}$ becomes small due to its presence in the denominator for several entries in the E matrices of Equations \ref{eqn:E_system} and \ref{eqn:E_system_adv}. For the last half second the thrust acceleration is held constant. This has very little impact on landing precision.
 
-The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on the current conditions and then allowed to run open-loop until simulation stop. As discussed, the gravity turn time-to-go is used with an applied factor of $1.2$ for a safety margin.
+The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on the current conditions and then allowed to run open-loop until simulation stop. The safety factor applied depends upon conditions. In vacuum, a factor of $1.2$ is necessarily applied to ensure soft landing when using the ignition optimization strategy. With atmospheric conditions the additional factor is unnecessary, as will be demonstrated in section \ref{sec:results_atmosphere}.
 
 \subsection{Ignition trigger}
 Ignition time is determined by checking the two criterion discussed in Section \ref{sec:ignitiontiming}: required thrust acceleration magnitude $\bm{a}_{GT}$ and downrange distanced traveled by a gravity turn maneuver $s_{GT}$. The vehicle is started in atmosphere on a trajectory roughly in line with the landing site. As the vehicle travels along its trajectory with its engine off, these two criterion are constantly checked. Once either one is satisfied, the engine is ignited and the time-to-go estimate is updated as described in Section \ref{sec:guidancecomp}. Implementation of the ignition switch is performed in the simulation script by a simple flag that is checked upon guidance updates.
@@ -1318,7 +1318,10 @@ The second condition is of particular interest because, as is clear in Section \
 
 The third condition is the subject of this study. Whether dynamic ignition timing can reliably provide propellant efficiency improvement while maintaining safety and practicality is the topic of interest.
 
-\subsection{Results}
+\subsection{Vacuum Performance}
+Presented first are nominal results for the non-atmospheric condition. The starting conditions are listed in Table \ref{tab:IC}. These conditions represent points along a ballistic trajectory which misses the landing site by a small angle at altitude
+
+\subsection{Atmospheric Performance} \label{sec:results_atmosphere}
 
 \subsection{Discussion}
 Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.

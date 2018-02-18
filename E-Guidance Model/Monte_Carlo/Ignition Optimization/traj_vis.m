@@ -11,8 +11,9 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_ignopti_flip_6.mat';
+filename = 'traj_atmo.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
+save_figs = 0; % 1 to generate jpgs
 
 if variable_name_flag
     % input variable name strings
@@ -80,8 +81,10 @@ for j = 2:data_size(2)
     title(sprintf('%s vs. Time',var_names(j-1)))
     ylabel(sprintf('%s',var_names(j-1)))
     xlabel('Time (s)')
-%     legend(legend_entry)
-saveas(gcf,sprintf('%s',var_names(j-1)),'jpeg')
+    %     legend(legend_entry)
+    if save_figs
+        saveas(gcf,sprintf('%s',var_names(j-1)),'jpeg')
+    end
     hold off
 end
 

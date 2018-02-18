@@ -255,7 +255,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
             ignition_switch = 1;
             S = S/2;
             refresh_counter = (1/guidance_refresh_rate)/dt;
-            tgo(k) = norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
+            tgo(k) = 1.2*norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
                 + (1-sin(gamma))/(a_GT-gm));
             % snip visualization logs
             a_GT_vis = a_GT_vis(1:k);
@@ -270,7 +270,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
         % orient craft for optimal angle of attack
         %   align thrust with velocity
         %   rotate down in V x r plane to achieve AoA 
-        aTc = V(:,k); 
+        aTc = -V(:,k); 
         axis = cross(V(:,k),r(:,k));
         axis = axis/norm(axis);
         AoA = 55;
@@ -281,7 +281,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
         A = [cod + axis(1)^2*omcd,axis(1)*axis(2)*omcd-axis(3)*sd,axis(1)*axis(3)*omcd+axis(2)*sd;...
             axis(2)*axis(1)*omcd+axis(3)*sd,cod+axis(2)^2*omcd,axis(2)*axis(3)*omcd-axis(1)*sd;...
             axis(3)*axis(1)*omcd-axis(2)*sd,axis(3)*axis(2)*omcd+axis(1)*sd,cod+axis(3)^2*omcd];
-        aTc = A*aTc; % rotate  
+        aTc = A'*aTc; % rotate  
         [pitch(k),yaw(k),roll(k),alpha(k), body_P] = EulerAngles(aTc,r(:,k),V(:,k));
         
     end
