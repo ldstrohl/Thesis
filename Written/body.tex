@@ -657,7 +657,6 @@ For the purposes of this study, live landing site redesignation was not consider
 \begin{algorithm}
 	\caption{Fixed-Point-Iteration $t_{go}$}\label{eqn:FPI}
 	\begin{algorithmic}[1]
-		\Procedure{FPI}{$t_{go_1}$}
 		\State $tol\gets c$
 		\While{$|t_{go_0} - t_{go_1}| \geq tol$}
 		\State $t_{go_0} \gets t_{go_1}$
@@ -665,7 +664,6 @@ For the purposes of this study, live landing site redesignation was not consider
 		\State $t_{go_1} \gets \frac{m_0}{\dot{m}}\left(e^{\frac{-\Delta V}{v_{ex}}}-1\right)$ \Comment{$\dot{m} < 0$}
 		\EndWhile
 		\State \textbf{return} $t_{go_1}$
-		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
 
@@ -695,9 +693,18 @@ A gravity turn landing does not directly apply to the general powered descent gu
 \subsection{Ignition Timing} \label{sec:ignitiontiming}
 The central focus of this thesis is the use of ignition timing to improve the fuel performance of E-Guidance. This is accomplished by making some attempt to force E-Guidance to command a nearly fuel optimal thrust acceleration profile. From Leitmann's\:\cite{LEITMANN} and Meditch's\:\cite{MEDITCH} work it is expected that a "bang-bang" style thrust profile is desirable. With E-Guidance controlling the thrust acceleration vector $\bm{a}_T$, the ignition timing may be chosen to force a nearly optimal solution. By choosing a time-to-go which is short enough that the thrust magnitude commanded by E-Guidance saturates at the upper bound for most of the flight, nearly optimal fuel performance may be expected.
 
-Since E-Guidance does not take the thrust acceleration limits of Equation \ref{eqn:thrustlimit} into account directly the time-to-go must do so or risk the required thrust command exceeding the capabilities of the landing vehicle. One way to do this is to make use of the gravity turn solution as discussed in Section \ref{sec:Time-to-go}, Equation \ref{eqn:tgoGT}. This equation provides one criterion for ignition through the specified thrust acceleration $\bm{a}_{GT}$. If the gravity turn time-to-go $t_{go_{GT}}$ is used and the engine ignited for E-Guidance powered descent the moment the magnitude of the specified thrust acceleration $\bm{a}_{GT}$ reaches or exceeds the known maximum thrust acceleration magnitude $a_{min}$, E-Guidance will command a large initial thrust acceleration which exceeds the rocket's limits and the thrust will be saturated for most of the flight. Using a padded $t_{go_{GT}}$ helps ensure that there is some margin for error.
+Since E-Guidance does not take the thrust acceleration limits of Equation \ref{eqn:thrustlimit} into account directly the time-to-go must do so or risk the required thrust command exceeding the capabilities of the landing vehicle. One way to do this is to make use of the gravity turn solution as discussed in Section \ref{sec:Time-to-go}, Equation \ref{eqn:tgoGT}. This equation provides one criterion for ignition through the specified thrust acceleration $\bm{a}_{GT}$ as in Algorithm \ref{eqn:thrustcriterionGT}. If the gravity turn time-to-go $t_{go_{GT}}$ is used and the engine ignited for E-Guidance powered descent the moment the magnitude of the specified thrust acceleration $\bm{a}_{GT}$ reaches or exceeds the known maximum thrust acceleration magnitude $a_{min}$, E-Guidance will command a large initial thrust acceleration which exceeds the rocket's limits and the thrust will be saturated for most of the flight. Using a padded $t_{go_{GT}}$ helps ensure that there is some margin for error.
 
-Another important criterion is the downrange travel required by a gravity turn maneuver. The engine should be ignited if the horizontal distance remaining to the landing site is greater than or equal to the downrange distance traveled during a gravity turn maneuver. This will help ensure that the vehicle does not overshoot the landing site which would ultimately require far more fuel than a less optimal thrust profile. Equation\ref{eqn:rangeGT} gives the downrange distance traveled during a gravity turn maneuver $s_{GT}$, where $h$ is the current altitude.
+\begin{algorithm}
+	\caption{Thrust Acceleration Criterion}\label{eqn:thrustcriterion}
+	\begin{algorithmic}[1]
+		\If {$|\bm{a}_{GT}| \geq \frac{T_{max}}{m}$}
+			\State $ ignite\: engine $
+		\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+Another important criterion is the downrange travel required by a gravity turn maneuver. The engine should be ignited if the horizontal distance remaining to the landing site is greater than or equal to the downrange distance traveled during a gravity turn maneuver. This will help ensure that the vehicle does not overshoot the landing site which would ultimately require far more fuel than a less optimal thrust profile. Equation\ref{eqn:rangeGT} gives the downrange distance traveled during a gravity turn maneuver $s_{GT}$, where $h$ is the current altitude. Algorithm \ref{eqn:rangecriterion} details this ignition logic.
 
 \begin{equation}
 \label{eqn:rangeGT}
@@ -705,6 +712,15 @@ Another important criterion is the downrange travel required by a gravity turn m
 s_{GT} = \frac{V_m^2}{2*a_{GT})}*cos(\gamma)*\frac{V_m^2+2*g_m*h}{V_norm^2+g_m*h}*\frac{R_M}{r_m}
 \end{split}
 \end{equation}
+
+\begin{algorithm}
+	\caption{Range Criterion}\label{eqn:rangecriterion}
+	\begin{algorithmic}[1]
+		\If {$|s_{GT}| \leq |\bm{r}_{xy} - {\bm{r_f}}_{xy}|$}
+			\State $ ignite\: engine $
+		\EndIf
+	\end{algorithmic}
+\end{algorithm}
 
 \section{Simulation}
 
@@ -837,11 +853,68 @@ The dispersion factors are chosen to reflect realistic parameter dispersion. Nav
 T_{max} = T_{max_{nom}}*(1+0.02*(1-2*rand))
 \end{equation}
 
-Each rocket parameter is modeled in this fashion.
+Each rocket parameter is modeled in this fashion. Only the nominal rocket parameters and dispersed navigation values can be known to the guidance computer, and the module design allows this distinction to be made easily. The simulation script calls the guidance computer with nominal max thrust and the guidance law outputs a throttle setting based on that nominal value, but the simulation script applies thrust limits based on the real dispersed values. 
+
+The separation between nominal and dispersed rocket parameters is also important to the ignition timing strategy, ideally performed within the guidance computer. The ignition timing required acceleration criterion is implemented as in Algorithm\:\ref{eqn:thrustcriterion}, but the guidance computer only has the nominal maximum thrust available to it. Similarly, it only has the dispersed navigation values available for the range criterion in Algorithm\:\ref{eqn:rangecriterion}.
 
 Initial condition values are normally distributed about their nominal values. The dispersion is applied such that three standard deviations in position dispersion is 1000 m from the mean, and three standard deviations in velocity dispersion is 10 m/s from the mean. 
 
 The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
+
+\subsection{Initial Condition}
+The initial conditions are listed in Table \ref{tab:IC}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed "East", $\hat{\bm{e}}_y$ is pointed "North", and $\hat{\bm{e}}_z$ is pointed "Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
+
+\begin{table}[hbt]
+	\centering
+	\begin{minipage}{3.5in}
+		\centering
+		\caption{Initial Conditions for Mars Landing\label{tab:IC}.}
+		\begin{tabular}{|c||c|c|c|c|c||}    \hline
+			State &	Case & $\hat{e}_x$  &  $\hat{e}_y$ & $\hat{e}_z$ & Unit \\ \hline \hline
+			$\bm{r}_0$ & 6 & 6079  & -30720 & 8685 & m \\ \hline
+			$\bm{V}_0$ & 6 & -121.0  & 644.1 & -64.82 & m/s \\ \hline
+			$\bm{r}_0$ & 5 & 5013  & 25170 & 8054 & m \\ \hline
+			$\bm{V}_0$ & 5 & -121.1  & 616.5 & -78.57 & m/s \\ \hline
+			$\bm{r}_0$ & 4 & 3947  & -19860 & 7305 & m\\ \hline
+			$\bm{V}_0$ & 4 & -120.9  & 589.6 & -91.67 & m/s \\ \hline
+			$\bm{r}_0$ & 3 & 2887  & -14790 & 6444 & m \\ \hline
+			$\bm{V}_0$ & 3 & -120.1  & 563.3 & -103.9 & m/s \\ \hline
+			$\bm{r}_0$ & 2 & 2359  & -12,340 & 5973 & m \\ \hline
+			$\bm{V}_0$ & 2 & -119.7  & 550.2 & -109.7 & m/s \\ \hline
+			$\bm{r}_0$ & 1 & 1832 & -9949 & 5478 & m \\ \hline
+			$\bm{V}_0$ & 1 & -119.8 & 537.0 & -115.4 & m/s \\ \hline
+		\end{tabular}
+	\end{minipage}
+\end{table}
+
+These conditions represent an entry trajectory that is slightly off-target for the landing site and requires both powered deceleration to avoid overshoot as well as redirection to correct the angle error. The trajectory traveled from the furthest starting condition unpowered in a vacuum is plotted in Figure \ref{fig:trajunpowvac_1}. Similarly, Figure \ref{fig:trajunpowatmo_1} shows the trajectory in atmosphere with the vehicle held at optimum angle of attack.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajunpowvac_1.pdf}
+		\caption{Unpowered Initial Trajectory in Vacuum \label{fig:trajunpowvac_1} }
+	\end{minipage}
+\end{figure}
+
+As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatmo_2} the initial conditions are chosen to represent the landing vehicle on aerodynamic approach making corrections toward the site. While employing the ignition timing strategy outlined in Section\:\ref{sec:ignitiontiming} the vehicle will travel along the atmospheric trajectory shown in Figure\:\ref{fig:trajunpowvac_1} until ignition.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajunpowatmo_1.pdf}
+		\caption{Unpowered Initial Trajectory in Atmosphere \label{fig:trajunpowatmo_1} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajunpowatmo_2.pdf}
+		\caption{Unpowered Initial Trajectory in Atmosphere From Above \label{fig:trajunpowatmo_2} }
+	\end{minipage}
+\end{figure}
+
 
 %\section{Figures or How to Get into Real Trouble if You Take Advantage
 %  of What \LaTeX\ Can Do}
@@ -1319,9 +1392,10 @@ The second condition is of particular interest because, as is clear in Section \
 The third condition is the subject of this study. Whether dynamic ignition timing can reliably provide propellant efficiency improvement while maintaining safety and practicality is the topic of interest.
 
 \subsection{Vacuum Performance}
-Presented first are nominal results for the non-atmospheric condition. The starting conditions are listed in Table \ref{tab:IC}. These conditions represent points along a ballistic trajectory which misses the landing site by a small angle at altitude
+Presented here are nominal results for the non-atmospheric condition. The starting conditions are listed in Table \ref{tab:IC}. These conditions represent points along a ballistic trajectory which misses the landing site by a small angle at altitude. 
 
 \subsection{Atmospheric Performance} \label{sec:results_atmosphere}
+The results 
 
 \subsection{Discussion}
 Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.

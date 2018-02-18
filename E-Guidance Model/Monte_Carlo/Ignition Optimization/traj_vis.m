@@ -11,7 +11,7 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_atmo.mat';
+filename = 'traj_unpow_vac.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
 save_figs = 0; % 1 to generate jpgs
 
@@ -37,6 +37,7 @@ end
 %% File read
 data = load(filename);
 data = data.traj;
+data = data(2:end,:);
 data_size = size(data); % (timesteps, variables)
 
 % check variable count
@@ -81,10 +82,31 @@ for j = 2:data_size(2)
     title(sprintf('%s vs. Time',var_names(j-1)))
     ylabel(sprintf('%s',var_names(j-1)))
     xlabel('Time (s)')
-    %     legend(legend_entry)
+%         legend(legend_entry)
     if save_figs
         saveas(gcf,sprintf('%s',var_names(j-1)),'jpeg')
     end
     hold off
 end
 
+
+figure('Name','Trajectory','NumberTitle','off')
+hold on
+% grid on
+legend_entry = strings(length(traj_index)-1,1);
+for k = 1:length(traj_index)-1
+    E = data(traj_index(k):traj_index(k+1)-1,3);
+    N = data(traj_index(k):traj_index(k+1)-1,4);
+    U = data(traj_index(k):traj_index(k+1)-1,2);
+%     t = data(traj_index(k):traj_index(k+1)-1,1);
+%     v = data(traj_index(k):traj_index(k+1)-1,j);
+    plot3(E,N,U)
+    legend_entry(k) = sprintf('Run %d',k);
+end
+xlabel('East (m)')
+ylabel('North (m)')
+zlabel('Altitude (m)')
+if save_figs
+    saveas(gcf,'Trajectory_vac','fig')
+end
+hold off

@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.1.5}Ignition Timing}{10}
 \contentsline {section}{\numberline {3.2}Simulation}{11}
 \contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{12}
-\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{12}
+\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{13}
 \contentsline {subsection}{\numberline {3.2.3}Ignition trigger}{13}
 \contentsline {subsection}{\numberline {3.2.4}Navigation Module}{14}
 \contentsline {subsection}{\numberline {3.2.5}Aerodynamic Model}{14}
@@ -28,15 +28,16 @@
 \contentsline {subsubsection}{\numberline {3.2.5.2}Lift and Drag}{15}
 \contentsline {subsubsection}{\numberline {3.2.5.3}Orientation}{15}
 \contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{16}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{18}
-\contentsline {subsection}{\numberline {4.0.1}Vacuum Performance}{18}
-\contentsline {subsection}{\numberline {4.0.2}Atmospheric Performance}{18}
-\contentsline {subsection}{\numberline {4.0.3}Discussion}{18}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{20}
-\contentsline {chapter}{\numberline {6}REFERENCING}{21}
-\contentsline {schapter}{BIBLIOGRAPHY}{22}
+\contentsline {subsection}{\numberline {3.2.7}Initial Condition}{17}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{20}
+\contentsline {subsection}{\numberline {4.0.1}Vacuum Performance}{20}
+\contentsline {subsection}{\numberline {4.0.2}Atmospheric Performance}{20}
+\contentsline {subsection}{\numberline {4.0.3}Discussion}{20}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{22}
+\contentsline {chapter}{\numberline {6}REFERENCING}{23}
+\contentsline {schapter}{BIBLIOGRAPHY}{24}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{23}
+\contentsline {chaphd}{APPENDICES}{25}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{24}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{26}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{26}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{28}
