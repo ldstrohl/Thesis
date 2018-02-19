@@ -693,7 +693,7 @@ A gravity turn landing does not directly apply to the general powered descent gu
 \subsection{Ignition Timing} \label{sec:ignitiontiming}
 The central focus of this thesis is the use of ignition timing to improve the fuel performance of E-Guidance. This is accomplished by making some attempt to force E-Guidance to command a nearly fuel optimal thrust acceleration profile. From Leitmann's\:\cite{LEITMANN} and Meditch's\:\cite{MEDITCH} work it is expected that a "bang-bang" style thrust profile is desirable. With E-Guidance controlling the thrust acceleration vector $\bm{a}_T$, the ignition timing may be chosen to force a nearly optimal solution. By choosing a time-to-go which is short enough that the thrust magnitude commanded by E-Guidance saturates at the upper bound for most of the flight, nearly optimal fuel performance may be expected.
 
-Since E-Guidance does not take the thrust acceleration limits of Equation \ref{eqn:thrustlimit} into account directly the time-to-go must do so or risk the required thrust command exceeding the capabilities of the landing vehicle. One way to do this is to make use of the gravity turn solution as discussed in Section \ref{sec:Time-to-go}, Equation \ref{eqn:tgoGT}. This equation provides one criterion for ignition through the specified thrust acceleration $\bm{a}_{GT}$ as in Algorithm \ref{eqn:thrustcriterionGT}. If the gravity turn time-to-go $t_{go_{GT}}$ is used and the engine ignited for E-Guidance powered descent the moment the magnitude of the specified thrust acceleration $\bm{a}_{GT}$ reaches or exceeds the known maximum thrust acceleration magnitude $a_{min}$, E-Guidance will command a large initial thrust acceleration which exceeds the rocket's limits and the thrust will be saturated for most of the flight. Using a padded $t_{go_{GT}}$ helps ensure that there is some margin for error.
+Since E-Guidance does not take the thrust acceleration limits of Equation \ref{eqn:thrustlimit} into account directly the time-to-go must do so or risk the required thrust command exceeding the capabilities of the landing vehicle. One way to do this is to make use of the gravity turn solution as discussed in Section \ref{sec:Time-to-go}, Equation \ref{eqn:tgoGT}. This equation provides one criterion for ignition through the specified thrust acceleration $\bm{a}_{GT}$ as in Algorithm \ref{eqn:thrustcriterion}. If the gravity turn time-to-go $t_{go_{GT}}$ is used and the engine ignited for E-Guidance powered descent the moment the magnitude of the specified thrust acceleration $\bm{a}_{GT}$ reaches or exceeds the known maximum thrust acceleration magnitude $a_{min}$, E-Guidance will command a large initial thrust acceleration which exceeds the rocket's limits and the thrust will be saturated for most of the flight. Using a padded $t_{go_{GT}}$ helps ensure that there is some margin for error.
 
 \begin{algorithm}
 	\caption{Thrust Acceleration Criterion}\label{eqn:thrustcriterion}
@@ -704,7 +704,7 @@ Since E-Guidance does not take the thrust acceleration limits of Equation \ref{e
 	\end{algorithmic}
 \end{algorithm}
 
-Another important criterion is the downrange travel required by a gravity turn maneuver. The engine should be ignited if the horizontal distance remaining to the landing site is greater than or equal to the downrange distance traveled during a gravity turn maneuver. This will help ensure that the vehicle does not overshoot the landing site which would ultimately require far more fuel than a less optimal thrust profile. Equation\ref{eqn:rangeGT} gives the downrange distance traveled during a gravity turn maneuver $s_{GT}$, where $h$ is the current altitude. Algorithm \ref{eqn:rangecriterion} details this ignition logic.
+Another important criterion is the downrange travel required by a gravity turn maneuver. The engine should be ignited if the horizontal distance remaining in the velocity direction to landing site is greater than or equal to the downrange distance traveled during a gravity turn maneuver. This will help ensure that the vehicle does not overshoot the landing site which would ultimately require far more fuel than a less optimal thrust profile. Equation\ref{eqn:rangeGT} gives the downrange distance traveled during a gravity turn maneuver $s_{GT}$, where $h$ is the current altitude. Algorithm \ref{eqn:rangecriterion} details this ignition logic.
 
 \begin{equation}
 \label{eqn:rangeGT}
@@ -887,7 +887,7 @@ The initial conditions are listed in Table \ref{tab:IC}. They are provided in th
 	\end{minipage}
 \end{table}
 
-These conditions represent an entry trajectory that is slightly off-target for the landing site and requires both powered deceleration to avoid overshoot as well as redirection to correct the angle error. The trajectory traveled from the furthest starting condition unpowered in a vacuum is plotted in Figure \ref{fig:trajunpowvac_1}. Similarly, Figure \ref{fig:trajunpowatmo_1} shows the trajectory in atmosphere with the vehicle held at optimum angle of attack.
+These conditions represent an entry trajectory that is slightly off-target for the landing site and requires both powered deceleration to avoid overshoot as well as redirection to correct the angle error. The trajectory traveled from the furthest starting condition unpowered in a vacuum is plotted in Figure \ref{fig:trajunpowvac_1}. Similarly, Figure \ref{fig:trajunpowatmo_1} shows the trajectory in atmosphere with the vehicle held at optimum angle of attack. Figure \ref{fig:trajunpowvacgr} shows the trajectory error in terms of ground range to landing site as the vacuum trajectory passes over at around 48 seconds.
 
 \begin{figure}[H]
 	\centering
@@ -897,7 +897,15 @@ These conditions represent an entry trajectory that is slightly off-target for t
 	\end{minipage}
 \end{figure}
 
-As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatmo_2} the initial conditions are chosen to represent the landing vehicle on aerodynamic approach making corrections toward the site. While employing the ignition timing strategy outlined in Section\:\ref{sec:ignitiontiming} the vehicle will travel along the atmospheric trajectory shown in Figure\:\ref{fig:trajunpowvac_1} until ignition.
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajunpowvacgr.pdf}
+		\caption{Unpowered Initial Trajectory In Vacuum Ground Range \label{fig:trajunpowatmo_2} }
+	\end{minipage}
+\end{figure}
+
+As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatmo_2} by the placement of the initial conditions of the 6 cases, the initial conditions are chosen to represent the landing vehicle on aerodynamic approach making corrections toward the site. While employing the ignition timing strategy outlined in Section\:\ref{sec:ignitiontiming} the vehicle will travel along the atmospheric trajectory shown in Figures\:\ref{fig:trajunpowatmo_1} and\:\ref{fig:trajunpowatmo_2} until ignition.
 
 \begin{figure}[H]
 	\centering

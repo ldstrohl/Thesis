@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  18 FEB 2018 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  18 FEB 2018 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,7 +452,11 @@ Package glossaries Info: Writing glossary file thesis.glo on input line 101.
 \c@lemma=\count159
 \c@proposition=\count160
 \c@theorem=\count161
- (./thesis.aux)
+ (./thesis.aux
+
+LaTeX Warning: Label `fig:trajunpowatmo_2' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
@@ -469,8 +473,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
 LaTeX Font Info:    ... okay on input line 211.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 211.
 
-
-(c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Note: longtable package detected, redefining the caption printing
@@ -649,10 +652,6 @@ CHAPTER 3.
  Subsection 3.1.4.
 [8] [9]
  Subsection 3.1.5.
-
-LaTeX Warning: Reference `eqn:thrustcriterionGT' on page 10 undefined on input 
-line 696.
-
 [10]
  Section 3.2.
 [11]
@@ -679,58 +678,72 @@ LaTeX Warning: Reference `fig:EulerAngles' on page 16 undefined on input line 8
  Subsection 3.2.6.
 [16]
  Subsection 3.2.7.
+
+LaTeX Warning: Reference `fig:trajunpowvacgr' on page 17 undefined on input lin
+e 890.
+
 <Figures/trajunpowvac_1.pdf, id=103, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvac_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowvac_1.pdf>
 Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 895.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
 [17]
-<Figures/trajunpowatmo_1.pdf, id=107, 421.575pt x 316.18124pt>
-File: Figures/trajunpowatmo_1.pdf Graphic file (type pdf)
-<use Figures/trajunpowatmo_1.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 905.
+<Figures/trajunpowvacgr.pdf, id=107, 421.575pt x 316.18124pt>
+File: Figures/trajunpowvacgr.pdf Graphic file (type pdf)
+<use Figures/trajunpowvacgr.pdf>
+Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 903.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [18 <./Figures/trajunpowvac_1.pdf>]
-<Figures/trajunpowatmo_2.pdf, id=113, 421.575pt x 316.18124pt>
+<Figures/trajunpowatmo_1.pdf, id=145, 421.575pt x 316.18124pt>
+File: Figures/trajunpowatmo_1.pdf Graphic file (type pdf)
+<use Figures/trajunpowatmo_1.pdf>
+Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 913.
+(pdftex.def)             Requested size: 325.215pt x 243.9138pt.
+ [19 <./Figures/trajunpowvacgr.pdf>]
+<Figures/trajunpowatmo_2.pdf, id=168, 421.575pt x 316.18124pt>
 File: Figures/trajunpowatmo_2.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_2.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 913.
+Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 921.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
- [19 <./Figures/trajunpowatmo_1.pdf> <./Figures/trajunpowatmo_2.pdf>]
+
+[20 <./Figures/trajunpowatmo_1.pdf> <./Figures/trajunpowatmo_2.pdf>]
 CHAPTER 4.
  Subsection 4.0.1.
  Subsection 4.0.2.
  Subsection 4.0.3.
-[20
+[21
 
-] [21]
+] [22]
 CHAPTER 5.
-[22
+[23
 
 ]
 CHAPTER 6.
-) (./thesis.bbl [23
+) (./thesis.bbl [24
 
-] [24
+] [25
 
-]) (./append.tex [25]
+]) (./append.tex [26]
 APPENDIX A.
-[26
+[27
 
-] [27]
+] [28]
 APPENDIX B.
-[28
+[29
 
-]) [29] (./thesis.aux)
+]) [30] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9495 strings out of 492980
- 140238 string characters out of 6136208
- 278455 words of memory out of 5000000
- 12828 multiletter control sequences out of 15000+600000
+ 9500 strings out of 492980
+ 140400 string characters out of 6136208
+ 278494 words of memory out of 5000000
+ 12832 multiletter control sequences out of 15000+600000
  23142 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,18n,76p,1988b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -751,10 +764,10 @@ y8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/201
 7/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (39 pages, 260506 bytes).
+Output written on thesis.pdf (40 pages, 269859 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
+ 322 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
