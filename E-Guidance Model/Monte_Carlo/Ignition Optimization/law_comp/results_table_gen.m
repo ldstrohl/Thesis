@@ -85,7 +85,7 @@ if latex_flag
     input.data = [row1;row2];
     input.tableColLabels = {'Runs','Fuel','Fuel $\sigma$','Flight Time',...
         'FT $\sigma$','Range','Range $\sigma$','Speed','Speed $\sigma$'};
-    input.tableRowLabels = {'E-Guidance','Adv. E-Guidance'};
+    input.tableRowLabels = {'Simple Law','Adv. Law'};
     input.dataFormatMode = 'column';
     input.dataFormat = {'%1d',1,'%.1f',8};
     input.tableColumnAlignment = 'c';

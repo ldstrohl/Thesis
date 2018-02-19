@@ -1,8 +1,8 @@
 \contentsline {schapter}{ABSTRACT}{iv}
 \contentsline {schapter}{LIST OF TABLES}{vii}
 \contentsline {schapter}{LIST OF FIGURES}{viii}
-\contentsline {schapter}{GLOSSARY}{ix}
-\contentsline {schapter}{ACKNOWLEDGMENTS}{x}
+\contentsline {schapter}{GLOSSARY}{x}
+\contentsline {schapter}{ACKNOWLEDGMENTS}{xi}
 \pagebreak [3]
 \contentsline {chaphd}{CHAPTER}{1}
 \nopagebreak 
@@ -30,16 +30,16 @@
 \contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{16}
 \contentsline {subsection}{\numberline {3.2.7}Initial Condition}{17}
 \contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{21}
-\contentsline {subsection}{\numberline {4.0.1}Vacuum Performance}{21}
-\contentsline {subsection}{\numberline {4.0.2}Atmospheric Performance}{21}
-\contentsline {subsection}{\numberline {4.0.3}Comparison of E-Guidance with Advanced E-Guidance}{22}
-\contentsline {subsection}{\numberline {4.0.4}Navigation Error}{22}
-\contentsline {subsection}{\numberline {4.0.5}Discussion}{23}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{24}
-\contentsline {chapter}{\numberline {6}REFERENCING}{25}
-\contentsline {schapter}{BIBLIOGRAPHY}{26}
+\contentsline {subsection}{\numberline {4.0.1}Comparison of E-Guidance with Advanced E-Guidance}{21}
+\contentsline {subsection}{\numberline {4.0.2}Navigation Error}{25}
+\contentsline {subsection}{\numberline {4.0.3}Vacuum Performance}{26}
+\contentsline {subsection}{\numberline {4.0.4}Atmospheric Performance}{26}
+\contentsline {subsection}{\numberline {4.0.5}Discussion}{27}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{28}
+\contentsline {chapter}{\numberline {6}REFERENCING}{29}
+\contentsline {schapter}{BIBLIOGRAPHY}{30}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{27}
+\contentsline {chaphd}{APPENDICES}{31}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{28}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{44}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{32}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{45}

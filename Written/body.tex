@@ -604,6 +604,7 @@ E =
 
 The coefficients in $\hat{x}$ are then
 \begin{equation}
+\label{eqn:simplelaw}
 \begin{pmatrix}
 k_{1_x} \\
 k_{2_x}
@@ -626,10 +627,10 @@ Of some interest is the addition of a final attitude constraint. For a vehicle w
 
 This vector constraint cannot be satisfied with only two basis functions for the command $\boldsymbol{u}$, so a third linearly independent function must be introduced such that $\boldsymbol{u} = \boldsymbol{c}_1 p_1(t) +\boldsymbol{c}_2 p_2(t) + \boldsymbol{c}_3 p_3(t)$. A tempting choice for the third basis function is $p_3(t) = t^2$ for simplicity, with the other two functions the same as E-Guidance.
 
-After applying the substitution from Equation \ref{eqn:command}, this choice gives a command $\boldsymbol{u} = \boldsymbol{k}_1+\boldsymbol{k}_2 \tau + \boldsymbol{c}_3 \tau^2$. This form for the command input is also easily integrable and leads to a similar linear system of 9 equations in $\boldsymbol{k_1}$, $\boldsymbol{k_2}$, and $\boldsymbol{k_3}$. Using the same guidance frame $\hat{e}$ defined for Equation \ref{eqn:E_system} and considering one coordinate a time we get a system similar to E-Guidance in Equation \ref{eqn:E_system_adv}
+After applying the substitution from Equation \ref{eqn:command}, this choice gives a command $\boldsymbol{u} = \boldsymbol{k}_1+\boldsymbol{k}_2 \tau + \boldsymbol{c}_3 \tau^2$. This form for the command input is also easily integrable and leads to a similar linear system of 9 equations in $\boldsymbol{k_1}$, $\boldsymbol{k_2}$, and $\boldsymbol{k_3}$. Using the same guidance frame $\hat{e}$ defined for Equation \ref{eqn:E_system} and considering one coordinate a time we get a system similar to E-Guidance in Equation \ref{eqn:advancedlaw}
 
 \begin{equation}
-\label{eqn:E_system_adv}
+\label{eqn:advancedlaw}
 \begin{pmatrix}
 k_{1_x} \\
 k_{2_x} \\
@@ -1399,6 +1400,114 @@ The second condition is of particular interest because, as is clear in Section \
 
 The third condition is the subject of this study. Whether dynamic ignition timing can reliably provide propellant efficiency improvement while maintaining safety and practicality is the topic of interest.
 
+\subsection{Comparison of E-Guidance with Advanced E-Guidance}
+Table and figures for the following condition:
+Both guidance laws
+Full dispersion (Rocket, IC, Nav)
+Atmospheric effects
+Dynamic Ignition Case
+Comparing guidance laws
+
+The choice between simple E-Guidance of Equation\:\ref{eqn:simplelaw} as flown on the Apollo missions and the advanced version with final attitude constraint of Equation\:\ref{eqn:advancedlaw} is examined below. Results are first presented as nominal performance in atmosphere in order to investigate the individual performance of each law without the distraction of dispersion. Beyond this section, results will be presented using the advanced law which will be referred to simply as the Guidance Law.
+
+Figures\:\ref{fig:trajsimvsadv} through\:\ref{fig:fatsimvsadv} show plotted quantities of a rocket in atmosphere employing the ignition timing strategy on approach to landing at the origin from Initial Condition Case 6 (Table\:\ref{tab:IC}). In Figure\:\ref{fig:trajsimvsadv} the trajectory with the steeper approach upon landing is flown by the advanced guidance law. 
+
+The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:trajsimvsadv} through\:\ref{fig:fatsimvsadv}. However, the thrust and therefore speed profiles are notably different, with the Advanced law starting at a lower magnitude of thrust in Figure\:\ref{fig:thrsimvsadv} than the Simple law and their profiles roughly reversed. The Angle of Attack in Figure\:\ref{fig:fatsimvsadv} profiles are very different, with the Advanced law providing a final angle of attack much closer to $90^\circ$. Since the vehicle's velocity is vertical as specified by the terminal constraints, an angle of attack close to $90^\circ$ suggests a vertical descent.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajsimvsadv.pdf}
+		\caption{Trajectory: Simple vs. Advanced Guidance Laws \label{fig:trajsimvsadv} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/altsimvsadv.pdf}
+		\caption{Altitude: Simple vs. Advanced Guidance Laws \label{fig:altsimvsadv} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/rngsimvsadv.pdf}
+		\caption{Ground Range: Simple vs. Advanced Guidance Laws \label{fig:rngsimvsadv} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/spdsimvsadv.pdf}
+		\caption{Speed: Simple vs. Advanced Guidance Laws \label{fig:spdsimvsadv} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/thrsimvsadv.pdf}
+		\caption{Thrust Magnitude: Simple vs. Advanced Guidance Laws \label{fig:thrsimvsadv} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/fatsimvsadv.pdf}
+		\caption{Angle of Attack: Simple vs. Advanced Guidance Laws \label{fig:fatsimvsadv} }
+	\end{minipage}
+\end{figure}
+
+Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:simvsadv}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the advanced law showing slightly higher speed on approach and using more fuel. This inaccuracy will be addressed in Section\:\ref{sec:naverror}
+
+\begin{table}[ht]                                                                                              
+	\centering        
+	\caption{Comparison of Performance of E-Guidance with Commanded Final Attitude E-Guidance}                     
+	\label{tab:simvsadv}                                                                                              
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
+		\hline                                                                                                        Guidance &      &   Fuel   &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
+		Law      & Runs & (kg)      & $\sigma$ &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
+		
+		\hline                                                                                                         
+		Simple  & 1000 & 9707.4 & 280.1 & 95.2 & 2.0 & 1.9 & 1.5 & 5.9 & 3.1 \\                                     
+		\hline                                                                                                         
+		Adv.  & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                       
+		\hline                                                                                                         
+	\end{tabular}                                                                                                  
+	
+\end{table}      
+
+\subsection{Navigation Error} \label{sec:naverror}
+Table and figures for the following condition:
+Advanced Guidance Law
+Rocket and IC Dispersion
+Atmospheric effects
+Dynamic Ignition Case
+Comparing Navigation Error from to dispersion
+
+The final speeds shown in Table\:\ref{tab:simvsadv} are not very accurate given the terminal constraint magnitude of $1\:m/s$. This constraint is important since it determines how softly the vehicle will land. However, this final speed (and range) inaccuracy is due almost entirely to the navigation dispersion model outlined in Section\:\ref{sec:navmod}, as is clear from the results given in Table\:\ref{tab:navvsnonav}. Here the simulation was run with atmospheric effects, ignition timing, and full initial condition and rocket parameter dispersion. The cases differed in whether navigation dispersion was active. The Nominal runs clearly show very accurate satisfaction of the terminal constraints. A more realistic model would include much lower navigation error near the landing site due to the availability of more accurate measurements through radar systems and short range devices and would result in similarly low inaccuracies. These more sophisticated sensor models are not investigated here since they would not impact the focus of this thesis.
+
+\begin{table}[ht]                                                                                              
+	\centering                             
+	\caption{Comparison of Performance With and Without Navigation Error}                                          
+	\label{tab:navvsnonav}                                                                          
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
+		\hline                                                                                                        Nav &      &   Fuel    &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
+		& Runs & (kg)      & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
+		
+		\hline                                                                                                         
+		Dispersed & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                      
+		\hline                                                                                                         
+		Nominal & 1000 & 9761.8 & 270.8 & 95.2 & 2.0 & 0.1 & 0.0 & 1.0 & 0.0 \\                                   
+		\hline                                                                                                         
+	\end{tabular}                                                                                                  
+	
+\end{table}   
+
 \subsection{Vacuum Performance}
 Presented here are nominal results for the non-atmospheric condition. The starting conditions are listed in Table \ref{tab:IC}. These conditions represent points along a ballistic trajectory which misses the landing site by a small angle at altitude. 
 
@@ -1408,10 +1517,12 @@ Full dispersion (rocket, nav, IC)
 Vacuum effects
 All cases including dynamic ignition
 \begin{table}[ht]                                                                                              
-	\centering                                                                                                     
+	\centering        
+	\caption{Performance of PD Guidance In Vacuum}                                                                 
+	\label{tab:disppowvac}                                                                                                                     
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                         
-		& Runs & Fuel & Fuel $\sigma$ & Flight Time & FT $\sigma$ & Range & Range $\sigma$ & Speed & Speed $\sigma$ \\
+		\hline                                                                                                        Case &      &   Fuel   &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
+		     & Runs & (kg)     & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
 		\hline                                                                                                         
 		1 & 1000 & 11650.1 & 605.8 & 66.0 & 5.7 & 54.3 & 244.5 & 11.5 & 15.8 \\                                        
 		\hline                                                                                                         
@@ -1427,9 +1538,7 @@ All cases including dynamic ignition
 		\hline                                                                                                         
 		7 & 1000 & 11885.2 & 257.9 & 90.1 & 3.7 & 2.7 & 2.0 & 8.4 & 3.7 \\                                             
 		\hline                                                                                                         
-	\end{tabular}                                                                                                  
-	\caption{Performance of PD Guidance In Vacuum}                                                                 
-	\label{table:tab:disppowvac}                                                                                   
+	\end{tabular}
 \end{table}    
 
 \subsection{Atmospheric Performance} \label{sec:results_atmosphere}
@@ -1440,74 +1549,28 @@ Atmospheric effects
 All cases including dynamic ignition
 
 \begin{table}[ht]                                                                                                  
-	\centering                                                                                                     
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                         
-		& Runs & Fuel & Fuel $\sigma$ & Flight Time & FT $\sigma$ & Range & Range $\sigma$ & Speed & Speed $\sigma$ \\
-		\hline                                                                                                         
-		1 & 1000 & 10141.2 & 357.5 & 55.8 & 3.2 & 9.1 & 60.2 & 8.8 & 7.4 \\                                            
-		\hline                                                                                                         
-		2 & 1000 & 9947.4 & 267.2 & 60.7 & 2.6 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
-		\hline                                                                                                         
-		3 & 1000 & 9918.5 & 264.8 & 65.4 & 2.8 & 2.6 & 1.9 & 8.2 & 3.5 \\                                              
-		\hline                                                                                                         
-		4 & 1000 & 9900.6 & 244.9 & 74.0 & 2.5 & 2.6 & 2.0 & 8.1 & 3.5 \\                                              
-		\hline                                                                                                         
-		5 & 1000 & 10010.2 & 217.6 & 82.0 & 2.7 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
-		\hline                                                                                                         
-		6 & 1000 & 10413.7 & 210.5 & 89.5 & 2.6 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
-		\hline                                                                                                         
-		7 & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
-		\hline                                                                                                         
-	\end{tabular}                                                                                                  
+	\centering        
 	\caption{Performance of PD Guidance With Aerodynamic Effects}                                                  
-	\label{table:tab:disppowatmo}                                                                                  
-\end{table}   
-
-\subsection{Comparison of E-Guidance with Advanced E-Guidance}
-Table and figures for the following condition:
-Both guidance laws
-Full dispersion (Rocket, IC, Nav)
-Atmospheric effects
-Dynamic Ignition Case
-Comparing guidance laws
-
-\begin{table}[ht]                                                                                              
-	\centering                                                                                                     
+	\label{tab:disppowatmo}                                                                                                
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                         
-		& Runs & Fuel & Fuel $\sigma$ & Flight Time & FT $\sigma$ & Range & Range $\sigma$ & Speed & Speed $\sigma$ \\
-		\hline                                                                                                         
-		E-Guidance & 1000 & 9707.4 & 280.1 & 95.2 & 2.0 & 1.9 & 1.5 & 5.9 & 3.1 \\                                     
-		\hline                                                                                                         
-		Adv. E-Guidance & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                
-		\hline                                                                                                         
-	\end{tabular}                                                                                                  
-	\caption{Comparison of Performance of E-Guidance with Commanded Final Attitude E-Guidance}                     
-	\label{table:tab:simvsadv}                                                                                     
-\end{table}      
-
-\subsection{Navigation Error}
-Table and figures for the following condition:
-Advanced Guidance Law
-Rocket and IC Dispersion
-Atmospheric effects
-Dynamic Ignition Case
-Comparing Navigation Error from to dispersion
-
-\begin{table}[ht]                                                                                              
-	\centering                                                                                                     
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                         
-		& Runs & Fuel & Fuel $\sigma$ & Flight Time & FT $\sigma$ & Range & Range $\sigma$ & Speed & Speed $\sigma$ \\
-		\hline                                                                                                         
-		Nav Error & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                      
-		\hline                                                                                                         
-		No Nav Error & 1000 & 9761.8 & 270.8 & 95.2 & 2.0 & 0.1 & 0.0 & 1.0 & 0.0 \\                                   
-		\hline                                                                                                         
-	\end{tabular}                                                                                                  
-	\caption{Comparison of Performance With and Without Navigation Error}                                          
-	\label{table:tab:navvsnonav}                                                                                   
+		\hline                                                                                                        Case  &      &   Fuel    &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
+		      & Runs & (kg)      & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
+		\hline                                                                                                        
+		1 & 1000 & 10141.2 & 357.5 & 55.8 & 3.2 & 9.1 & 60.2 & 8.8 & 7.4 \\                                            
+		\hline                                                                                                        
+		2 & 1000 & 9947.4 & 267.2 & 60.7 & 2.6 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
+		\hline                                                                                                        
+		3 & 1000 & 9918.5 & 264.8 & 65.4 & 2.8 & 2.6 & 1.9 & 8.2 & 3.5 \\                                              
+		\hline                                                                                                        
+		4 & 1000 & 9900.6 & 244.9 & 74.0 & 2.5 & 2.6 & 2.0 & 8.1 & 3.5 \\                                              
+		\hline                                                                                                        
+		5 & 1000 & 10010.2 & 217.6 & 82.0 & 2.7 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
+		\hline                                                                                                        
+		6 & 1000 & 10413.7 & 210.5 & 89.5 & 2.6 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
+		\hline                                                                                                        
+		7 & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
+		\hline                                                                                                        
+	\end{tabular}
 \end{table}   
 
 \subsection{Discussion}

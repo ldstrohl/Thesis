@@ -8,8 +8,8 @@
 \@writefile{toc}{\contentsline {schapter}{ABSTRACT}{iv}}
 \@writefile{toc}{\contentsline {schapter}{LIST OF TABLES}{vii}}
 \@writefile{toc}{\contentsline {schapter}{LIST OF FIGURES}{viii}}
-\@writefile{toc}{\contentsline {schapter}{GLOSSARY}{ix}}
-\@writefile{toc}{\contentsline {schapter}{ACKNOWLEDGMENTS}{x}}
+\@writefile{toc}{\contentsline {schapter}{GLOSSARY}{x}}
+\@writefile{toc}{\contentsline {schapter}{ACKNOWLEDGMENTS}{xi}}
 \citation{CHERRY}
 \citation{DSOUZA}
 \@writefile{toc}{\pagebreak [3]}
@@ -49,8 +49,9 @@
 \newlabel{eqn:system1}{{3.16}{7}}
 \newlabel{eqn:system2}{{3.17}{7}}
 \newlabel{eqn:E_system}{{3.18}{8}}
+\newlabel{eqn:simplelaw}{{3.20}{8}}
 \newlabel{eqn:constraint_a}{{3.21}{8}}
-\newlabel{eqn:E_system_adv}{{3.22}{8}}
+\newlabel{eqn:advancedlaw}{{3.22}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Time-to-go}{8}}
 \newlabel{sec:Time-to-go}{{3.1.4}{8}}
 \citation{CHERRY}
@@ -109,24 +110,37 @@
 \newlabel{fig:trajunpowatmo_2}{{3.4}{20}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{21}}
 \newlabel{chapter:Results}{{4}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Vacuum Performance}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.2}Atmospheric Performance}{21}}
-\newlabel{sec:results_atmosphere}{{4.0.2}{21}}
-\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.1. \ignorespaces Performance of PD Guidance In Vacuum}{22}}
-\newlabel{table:tab:disppowvac}{{4.1}{22}}
-\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.2. \ignorespaces Performance of PD Guidance With Aerodynamic Effects}{22}}
-\newlabel{table:tab:disppowatmo}{{4.2}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.3}Comparison of E-Guidance with Advanced E-Guidance}{22}}
-\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.3. \ignorespaces Comparison of Performance of E-Guidance with Commanded Final Attitude E-Guidance}{22}}
-\newlabel{table:tab:simvsadv}{{4.3}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.4}Navigation Error}{22}}
-\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.4. \ignorespaces Comparison of Performance With and Without Navigation Error}{23}}
-\newlabel{table:tab:navvsnonav}{{4.4}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.5}Discussion}{23}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Comparison of E-Guidance with Advanced E-Guidance}{21}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.1. \ignorespaces Trajectory: Simple vs. Advanced Guidance Laws  }{22}}
+\newlabel{fig:trajsimvsadv}{{4.1}{22}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.2. \ignorespaces Altitude: Simple vs. Advanced Guidance Laws  }{23}}
+\newlabel{fig:altsimvsadv}{{4.2}{23}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.3. \ignorespaces Ground Range: Simple vs. Advanced Guidance Laws  }{23}}
+\newlabel{fig:rngsimvsadv}{{4.3}{23}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.4. \ignorespaces Speed: Simple vs. Advanced Guidance Laws  }{24}}
+\newlabel{fig:spdsimvsadv}{{4.4}{24}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.5. \ignorespaces Thrust Magnitude: Simple vs. Advanced Guidance Laws  }{24}}
+\newlabel{fig:thrsimvsadv}{{4.5}{24}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.6. \ignorespaces Angle of Attack: Simple vs. Advanced Guidance Laws  }{25}}
+\newlabel{fig:fatsimvsadv}{{4.6}{25}}
+\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.1. \ignorespaces Comparison of Performance of E-Guidance with Commanded Final Attitude E-Guidance}{25}}
+\newlabel{tab:simvsadv}{{4.1}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.2}Navigation Error}{25}}
+\newlabel{sec:naverror}{{4.0.2}{25}}
+\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.2. \ignorespaces Comparison of Performance With and Without Navigation Error}{26}}
+\newlabel{tab:navvsnonav}{{4.2}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.3}Vacuum Performance}{26}}
+\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.3. \ignorespaces Performance of PD Guidance In Vacuum}{26}}
+\newlabel{tab:disppowvac}{{4.3}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.4}Atmospheric Performance}{26}}
+\newlabel{sec:results_atmosphere}{{4.0.4}{26}}
+\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.4. \ignorespaces Performance of PD Guidance With Aerodynamic Effects}{27}}
+\newlabel{tab:disppowatmo}{{4.4}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.5}Discussion}{27}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{28}}
 \bibstyle{plain}
 \bibdata{thbib}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}REFERENCING}{25}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}REFERENCING}{29}}
 \bibcite{CERIMELE}{1}
 \bibcite{CHERRY}{2}
 \bibcite{DSOUZA}{3}
@@ -138,69 +152,57 @@
 \bibcite{MEDITCH}{9}
 \bibcite{MOESSER}{10}
 \bibcite{REA}{11}
-\@writefile{toc}{\contentsline {schapter}{BIBLIOGRAPHY}{26}}
+\@writefile{toc}{\contentsline {schapter}{BIBLIOGRAPHY}{30}}
 \citation{CITRON}
 \citation{CHERRY}
 \citation{KLUMPP}
 \citation{CERIMELE}
 \@writefile{toc}{\pagebreak [3]}
-\@writefile{toc}{\contentsline {chaphd}{APPENDICES}{27}}
+\@writefile{toc}{\contentsline {chaphd}{APPENDICES}{31}}
 \@writefile{toc}{\nopagebreak }
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}PLACEHOLDER}{28}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.1. \ignorespaces INSERT FIGURE CAPTION  }{29}}
-\newlabel{fig:altatmovsvac}{{A.1}{29}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.2. \ignorespaces INSERT FIGURE CAPTION  }{30}}
-\newlabel{fig:altpowatmo}{{A.2}{30}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.3. \ignorespaces INSERT FIGURE CAPTION  }{30}}
-\newlabel{fig:altpowvac}{{A.3}{30}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.4. \ignorespaces INSERT FIGURE CAPTION  }{31}}
-\newlabel{fig:altsimvsadv}{{A.4}{31}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.5. \ignorespaces INSERT FIGURE CAPTION  }{31}}
-\newlabel{fig:convtestatmo}{{A.5}{31}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.6. \ignorespaces INSERT FIGURE CAPTION  }{32}}
-\newlabel{fig:convtestvac}{{A.6}{32}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.7. \ignorespaces INSERT FIGURE CAPTION  }{32}}
-\newlabel{fig:fatsimvsadv}{{A.7}{32}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.8. \ignorespaces INSERT FIGURE CAPTION  }{33}}
-\newlabel{fig:gtcriterion}{{A.8}{33}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.9. \ignorespaces INSERT FIGURE CAPTION  }{33}}
-\newlabel{fig:rngatmovsvac}{{A.9}{33}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.10. \ignorespaces INSERT FIGURE CAPTION  }{34}}
-\newlabel{fig:rngpowatmo}{{A.10}{34}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.11. \ignorespaces INSERT FIGURE CAPTION  }{34}}
-\newlabel{fig:rngpowvac}{{A.11}{34}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.12. \ignorespaces INSERT FIGURE CAPTION  }{35}}
-\newlabel{fig:rngsimvsadv}{{A.12}{35}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.13. \ignorespaces INSERT FIGURE CAPTION  }{35}}
-\newlabel{fig:spdatmovsvac}{{A.13}{35}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.14. \ignorespaces INSERT FIGURE CAPTION  }{36}}
-\newlabel{fig:spdpowatmo}{{A.14}{36}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.15. \ignorespaces INSERT FIGURE CAPTION  }{36}}
-\newlabel{fig:spdpowvac}{{A.15}{36}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.16. \ignorespaces INSERT FIGURE CAPTION  }{37}}
-\newlabel{fig:spdsimvsadv}{{A.16}{37}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.17. \ignorespaces INSERT FIGURE CAPTION  }{37}}
-\newlabel{fig:thratmovsvac}{{A.17}{37}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.18. \ignorespaces INSERT FIGURE CAPTION  }{38}}
-\newlabel{fig:thrpowatmo}{{A.18}{38}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.19. \ignorespaces INSERT FIGURE CAPTION  }{38}}
-\newlabel{fig:thrpowvac}{{A.19}{38}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.20. \ignorespaces INSERT FIGURE CAPTION  }{39}}
-\newlabel{fig:thrsimvsadv}{{A.20}{39}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.21. \ignorespaces INSERT FIGURE CAPTION  }{39}}
-\newlabel{fig:trajatmovsvac}{{A.21}{39}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.22. \ignorespaces INSERT FIGURE CAPTION  }{40}}
-\newlabel{fig:trajpowatmo}{{A.22}{40}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.23. \ignorespaces INSERT FIGURE CAPTION  }{40}}
-\newlabel{fig:trajpowvac}{{A.23}{40}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.24. \ignorespaces INSERT FIGURE CAPTION  }{41}}
-\newlabel{fig:trajsimvsadv}{{A.24}{41}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.25. \ignorespaces INSERT FIGURE CAPTION  }{41}}
-\newlabel{fig:trajunpowatmo_1}{{A.25}{41}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.26. \ignorespaces INSERT FIGURE CAPTION  }{42}}
-\newlabel{fig:trajunpowatmo_2}{{A.26}{42}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.27. \ignorespaces INSERT FIGURE CAPTION  }{42}}
-\newlabel{fig:trajunpowvac_1}{{A.27}{42}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.28. \ignorespaces INSERT FIGURE CAPTION  }{43}}
-\newlabel{fig:trajunpowvacgr}{{A.28}{43}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{44}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}PLACEHOLDER}{32}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.1. \ignorespaces INSERT FIGURE CAPTION  }{33}}
+\newlabel{fig:altatmovsvac}{{A.1}{33}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.2. \ignorespaces INSERT FIGURE CAPTION  }{34}}
+\newlabel{fig:altpowatmo}{{A.2}{34}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.3. \ignorespaces INSERT FIGURE CAPTION  }{34}}
+\newlabel{fig:altpowvac}{{A.3}{34}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.4. \ignorespaces INSERT FIGURE CAPTION  }{35}}
+\newlabel{fig:convtestatmo}{{A.4}{35}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.5. \ignorespaces INSERT FIGURE CAPTION  }{35}}
+\newlabel{fig:convtestvac}{{A.5}{35}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.6. \ignorespaces INSERT FIGURE CAPTION  }{36}}
+\newlabel{fig:gtcriterion}{{A.6}{36}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.7. \ignorespaces INSERT FIGURE CAPTION  }{36}}
+\newlabel{fig:rngatmovsvac}{{A.7}{36}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.8. \ignorespaces INSERT FIGURE CAPTION  }{37}}
+\newlabel{fig:rngpowatmo}{{A.8}{37}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.9. \ignorespaces INSERT FIGURE CAPTION  }{37}}
+\newlabel{fig:rngpowvac}{{A.9}{37}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.10. \ignorespaces INSERT FIGURE CAPTION  }{38}}
+\newlabel{fig:spdatmovsvac}{{A.10}{38}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.11. \ignorespaces INSERT FIGURE CAPTION  }{38}}
+\newlabel{fig:spdpowatmo}{{A.11}{38}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.12. \ignorespaces INSERT FIGURE CAPTION  }{39}}
+\newlabel{fig:spdpowvac}{{A.12}{39}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.13. \ignorespaces INSERT FIGURE CAPTION  }{39}}
+\newlabel{fig:thratmovsvac}{{A.13}{39}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.14. \ignorespaces INSERT FIGURE CAPTION  }{40}}
+\newlabel{fig:thrpowatmo}{{A.14}{40}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.15. \ignorespaces INSERT FIGURE CAPTION  }{40}}
+\newlabel{fig:thrpowvac}{{A.15}{40}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.16. \ignorespaces INSERT FIGURE CAPTION  }{41}}
+\newlabel{fig:trajatmovsvac}{{A.16}{41}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.17. \ignorespaces INSERT FIGURE CAPTION  }{41}}
+\newlabel{fig:trajpowatmo}{{A.17}{41}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.18. \ignorespaces INSERT FIGURE CAPTION  }{42}}
+\newlabel{fig:trajpowvac}{{A.18}{42}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.19. \ignorespaces INSERT FIGURE CAPTION  }{42}}
+\newlabel{fig:trajunpowatmo_1}{{A.19}{42}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.20. \ignorespaces INSERT FIGURE CAPTION  }{43}}
+\newlabel{fig:trajunpowatmo_2}{{A.20}{43}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.21. \ignorespaces INSERT FIGURE CAPTION  }{43}}
+\newlabel{fig:trajunpowvac_1}{{A.21}{43}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.22. \ignorespaces INSERT FIGURE CAPTION  }{44}}
+\newlabel{fig:trajunpowvacgr}{{A.22}{44}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{45}}
