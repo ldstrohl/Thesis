@@ -4,14 +4,14 @@ clear
 close all
 
 %% Inputs
-runs = 20; % per case
+runs = 13; % per case
 scenario = 6; % 1:6
 debug_mode = 0;
 debug_row = 12;
 
 % Data recording
 data_save_flag = 1; % save run data
-result_file = 'rundata_conv_RK4.mat';
+result_file = 'rundata_conv_RK4_thr.mat';
 traj_file = 'traj_ignopti_flip_'; % prefix - case is appended
 traj_rate = 1/1000; % how many runs to record
 traj_step = 200; % time steps per recorded line
@@ -26,7 +26,7 @@ vis_flag = 0; % plots of each run
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
 af_factor = 2; % final commanded thrust, in Mars g (only for law 2)
 tgo_method = 1; % 1: GT, 2: fixed-point, 3: Souza, 4: apollo cubic
-threshhold = 1; % factor of T_max required for gravity turn 
+threshhold = 0; % factor of T_max required for gravity turn 
                   %     to ignite engine and start guidance
 
 % models

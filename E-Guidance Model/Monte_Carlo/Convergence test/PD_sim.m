@@ -148,6 +148,7 @@ V_nav = V0;
 T = ones(1,(floor(tgo0)+1)/dt);
 thrust_angle = zeros(1,(floor(tgo0)+1)/dt);
 speed = T*norm(V(:,1));
+t_track = speed*0;
 altitude = T*norm(r(:,1)) - R_M;
 range = T*norm([r(2,1);r(3,1)]);
 pitch = pitch*T;
@@ -258,8 +259,8 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
             tgo(k) = norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
                 + (1-sin(gamma))/(a_GT-gm));
             
-            % convergence test short-circuit
-            tgo(k) = 1;
+%             % convergence test short-circuit
+%             tgo(k) = 1;
             % snip visualization logs
             a_GT_vis = a_GT_vis(1:k);
             sf_vis = sf_vis(1:k);
@@ -307,9 +308,9 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
     end
     
     % atmospheric model
-    [L,D,Mach(k)] = atmosphere_model(altitude(k),V(:,k),alpha(k),S,body_P);
-%    L = 0;
-%    D = 0;
+%     [L,D,Mach(k)] = atmosphere_model(altitude(k),V(:,k),alpha(k),S,body_P);
+   L = 0;
+   D = 0;
     Lk(k) = norm(L);
     Dk(k) = norm(D);
     
@@ -318,6 +319,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
     [r(:,k+1),V(:,k+1)] = integrator(r(:,k),V(:,k),aT+a_LD,mu,dt);
     
     speed(k+1) = norm(V(:,k+1));
+    t_track(k+1) = t_track(k)+dt;
     altitude(k+1) = norm(r(:,k+1)) - R_M;
     range(k+1) = norm([r(2,k+1);r(3,k+1)]);
 %     range(k+1)
@@ -339,9 +341,9 @@ pitch = pitch(1:k-1);
 yaw = yaw(1:k-1);
 roll = roll(1:k-1);
 alpha = alpha(1:k-1);
-Lk = Lk(1:k-1);
-Dk = Dk(1:k-1);
-Mach = Mach(1:k-1);
+% Lk = Lk(1:k-1);
+% Dk = Dk(1:k-1);
+% Mach = Mach(1:k-1);
 trajectory = r-rf;
 thrust_angle = thrust_angle(1:k-1);
 aT_tracking = aT_tracking(:,1:k-1);
@@ -458,8 +460,8 @@ if options(5)
     ylabel('m/s^2')
     legend('Up','East','North','Location','Northwest')
 end
-disp(10/dt)
-results = [(k-1)*dt0;m_tot(10/dt0-1);range(10/dt0-1);speed(10/dt0-1);...
+
+results = [t_track(10/dt0+2);m_tot(10/dt0+2);range(10/dt0+2);speed(10/dt0+2);...
     acosd(-aT'*g/(norm(aT)*norm(g)))];
 
 end

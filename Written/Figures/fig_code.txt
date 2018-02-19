@@ -1,0 +1,280 @@
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/altatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:altatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/altpowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:altpowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/altpowvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:altpowvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/altsimvsadv.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:altsimvsadv} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/convtestatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:convtestatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/convtestvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:convtestvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/fatsimvsadv.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:fatsimvsadv} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/gtcriterion.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:gtcriterion} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/rngatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:rngatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/rngpowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:rngpowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/rngpowvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:rngpowvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/rngsimvsadv.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:rngsimvsadv} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/spdatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:spdatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/spdpowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:spdpowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/spdpowvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:spdpowvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/spdsimvsadv.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:spdsimvsadv} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/thratmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:thratmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/thrpowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:thrpowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/thrpowvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:thrpowvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/thrsimvsadv.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:thrsimvsadv} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajpowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajpowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajpowvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajpowvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajsimvsadv.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajsimvsadv} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajunpowatmo_1.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajunpowatmo_1} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajunpowatmo_2.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajunpowatmo_2} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajunpowvac_1.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajunpowvac_1} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/trajunpowvacgr.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:trajunpowvacgr} }
+    \end{minipage}
+\end{figure}
+
+
+

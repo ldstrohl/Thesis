@@ -42,4 +42,4 @@
 \contentsline {chaphd}{APPENDICES}{27}
 \nopagebreak 
 \contentsline {chapter}{\numberline {A}PLACEHOLDER}{28}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{30}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{44}
