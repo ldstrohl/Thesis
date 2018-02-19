@@ -11,7 +11,7 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_simvsadv.mat';
+filename = 'traj_simple7.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
 save_figs = 0; % 1 to generate jpgs
 
@@ -77,13 +77,12 @@ for j = 2:data_size(2)
         t = data(traj_index(k):traj_index(k+1)-1,1);
         v = data(traj_index(k):traj_index(k+1)-1,j);
         plot(t,v)
-%         legend_entry(k) = sprintf('Case %d',k);
+        legend_entry(k) = sprintf('Run %d',k);
     end
     title(sprintf('%s vs. Time',var_names(j-1)))
     ylabel(sprintf('%s',var_names(j-1)))
     xlabel('Time (s)')
 %         legend(legend_entry)
-    legend('E-Guidance','Adv. E-Guidance')
     if save_figs
         saveas(gcf,sprintf('%s',var_names(j-1)),'jpeg')
     end
@@ -93,7 +92,7 @@ end
 
 figure('Name','Trajectory','NumberTitle','off')
 hold on
-grid on
+% grid on
 legend_entry = strings(length(traj_index)-1,1);
 for k = 1:length(traj_index)-1
     E = data(traj_index(k):traj_index(k+1)-1,3);
@@ -104,10 +103,11 @@ for k = 1:length(traj_index)-1
     plot3(E,N,U)
     legend_entry(k) = sprintf('Run %d',k);
 end
-xlabel('East (m)')
-ylabel('North (m)')
-zlabel('Altitude (m)')
+% title(sprintf('%s vs. Time',var_names(j-1)))
+% ylabel(sprintf('%s',var_names(j-1)))
+% xlabel('Time (s)')
+%     legend(legend_entry)
 if save_figs
-    saveas(gcf,'traj_simvsadv','fig')
+    saveas(gcf,'Trajectory','fig')
 end
 hold off

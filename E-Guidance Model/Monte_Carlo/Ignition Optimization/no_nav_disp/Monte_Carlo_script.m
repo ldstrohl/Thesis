@@ -1,38 +1,38 @@
- % E-Guidance run script
+% E-Guidance run script
 
 clear
 close all
 
 %% Inputs
-runs = 1; % per case
-scenario = 6; % 1:6
+runs = 1000; % per case
+scenario = 7; % 1:6
 debug_mode = 0;
 debug_row = 12;
 
 % Data recording
 data_save_flag = 1; % save run data
-result_file = 'rundata.mat';
-traj_file = 'traj_simvsadv'; % prefix - case is appended
-traj_rate = 1/1; % how many runs to record
+result_file = 'rundata_nonav.mat';
+traj_file = 'traj_nonav'; % prefix - case is appended
+traj_rate = 1/50; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
 run_and_seed = 0;
-run_results = 1;
-case_results = 0;
+run_results = 0;
+case_results = 1;
 vis_flag = 0; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
 af_factor = 2; % final commanded thrust, in Mars g (only for law 2)
 tgo_method = 1; % 1: GT, 2: fixed-point, 3: Souza, 4: apollo cubic
-threshhold = 1; % factor of T_max required for gravity turn 
-                  %     to ignite engine and start guidance
-                  % set to 0 for no ignition optimization
+threshhold = 1; % factor of T_max required for gravity turn
+%     to ignite engine and start guidance
+% set to 0 for no ignition optimization
 
 % models
-rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
-IC_dispersion_flag  = 0; % on/off initial condition dispersion
+rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
+IC_dispersion_flag  = 1; % on/off initial condition dispersion
 atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
 nav_flag = 0; % on/off navigation errors
 
@@ -98,11 +98,11 @@ if data_save_flag
         % rundata(1,:) = {'Case','Run','Flight Time','Fuel','Range','Speed','Angle'};
         save(result_file,'rundata');
         prev_rows = 0;
-%         s = rng;
-%         save(seed_file,'s')
+        %         s = rng;
+        %         save(seed_file,'s')
     else
         load(result_file)
-%         load(seed_file)
+        %         load(seed_file)
         rundata = rundata(rundata(:,1)~=0,:);
         prev_rows = size(rundata);
         prev_rows = prev_rows(1);
@@ -128,8 +128,7 @@ for j = scenario
     q  = q + 1;
     
     if data_save_flag
-%         case_file = strcat(traj_file,num2str(j),'.mat');
-        case_file = strcat(traj_file,'.mat');
+        case_file = strcat(traj_file,num2str(j),'.mat');
         case_fid = fopen(case_file);
         if case_fid == -1
             traj = zeros(1,13);
@@ -183,6 +182,13 @@ for j = scenario
             V0=[55.7770843260274;...
                 125.451270269588;...
                 644.130998398719];
+        case 7
+            r0=[  -3395285.92438538;...
+                -255429.908623963;...
+                -30715.5304665501];
+            V0=[55.7770843260274;...
+                125.451270269588;...
+                644.130998398719];
     end
     
     % Final Condition
@@ -211,12 +217,12 @@ for j = scenario
     angle_f = ones(1,runs);
     rng shuffle
     seed = randi([0 10000],[1,runs]); % create reproducible results
-%     seed(1) = 7883;
+    %     seed(1) = 7883;
     
     if case_results == 1
         fprintf('Case: %0d \n',j)
     end
-
+    
     %% Run loop
     for k = 1:runs
         
@@ -227,21 +233,21 @@ for j = scenario
         
         rng(seed(k),'twister')
         
-%         if data_save_flag
-%             load('seeds.mat')
-%             s((q-1)*runs+k+prev_rows) = rng;
-%             save('seeds.mat','s');
-%         else
-%             s((q-1)*runs+k+prev_rows) = rng;
-%         end
+        %         if data_save_flag
+        %             load('seeds.mat')
+        %             s((q-1)*runs+k+prev_rows) = rng;
+        %             save('seeds.mat','s');
+        %         else
+        %             s((q-1)*runs+k+prev_rows) = rng;
+        %         end
         if debug_mode
-%             k = rundata(debug_row,2);
+            %             k = rundata(debug_row,2);
             rng(rundata(debug_row,3))
         end
         
-%         % Debugging
-%         rngtest = randi([0 10],1);
-%         fprintf('Outside Test: %d\n',rngtest)
+        %         % Debugging
+        %         rngtest = randi([0 10],1);
+        %         fprintf('Outside Test: %d\n',rngtest)
         
         % determine if run should be recorded
         if mod(k,1/traj_rate) == 0
@@ -262,8 +268,8 @@ for j = scenario
         r0_disp = r0 + dr;
         V0_disp = V0 + dV;
         
-
-%         fprintf('dr outside: %.1f\n',dr)
+        
+        %         fprintf('dr outside: %.1f\n',dr)
         
         % create sim inputs
         IC = [r0_disp,V0_disp,dr];
@@ -271,7 +277,7 @@ for j = scenario
         rocket_disp = [m0;v_ex;T_max;T_min;S];
         rocket_nom = [m0_nom;m0_dry;v_ex_nom;T_max_nom;T_min_nom];
         options = [guidance_law;tgo_method;r_sig;V_sig;vis_flag;threshhold];
-%         seed = rng;
+        %         seed = rng;
         
         [sim_data,traj_add] = PD_sim(IC,FC,rocket_disp,rocket_nom,options,...
             traj_record_flag,traj_step,rng);
@@ -308,7 +314,7 @@ for j = scenario
         save(result_file,'rundata')
     end
     
-%     seeds(q,:) = seed;
+    %     seeds(q,:) = seed;
     flight_time_mean(q) = mean(flight_time);
     fuel_mean(q) = mean(fuel);
     range_mean(q) = mean(range_f);

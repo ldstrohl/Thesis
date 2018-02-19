@@ -2,12 +2,12 @@
 % Opens pre-generated 3-D Trajectory plot and overlays initial conditions
 clear
 close all
-filename = 'Trajectory_vac.fig';
+filename = 'traj_simvsadv.fig';
 openfig(filename);
 
 R_M = 3.39619*10^6;
 hold on
-for j = 1:6
+for j = 6
     % Initial Condition
     switch j
         case 1
@@ -67,32 +67,22 @@ for j = 1:6
     % coordinate transformation to landing site
     % [up;east;north]
     A = [cosd(lonf),sind(lonf),0;-sind(lonf),cosd(lonf),0;0,0,1];
-    disp(j)
     r0 = A*r0 - R_M*[1;0;0];
     V0 = A*V0;
     rf = A*rf - R_M*[1;0;0];
     Vf = A*Vf;
 %     af = A*af;
     
-r0 = [r0(2),r0(3),r0(1)]
+r0 = [r0(2),r0(3),r0(1)];
 rf = [rf(2),rf(3),rf(1)];
-V0 = [V0(2),V0(3),V0(1)]
+V0 = [V0(2),V0(3),V0(1)];
 Vf = [Vf(2),Vf(3),Vf(1)];
 
 plot3(r0(1),r0(2),r0(3),'X')
 
 end
 plot3(rf(1),rf(2),rf(3),'O')
+grid on
+h = gcf;
 
-ax = gca;
-outerpos = ax.OuterPosition;
-ti = ax.TightInset; 
-left = outerpos(1) + ti(1);
-bottom = outerpos(2) + ti(2);
-ax_width = outerpos(3) - ti(1) - ti(3);
-ax_height = outerpos(4) - ti(2) - ti(4);
-ax.Position = [left bottom ax_width ax_height];
-fig = gcf;
-fig.PaperPositionMode = 'auto'
-fig_pos = fig.PaperPosition;
-fig.PaperSize = [fig_pos(3) fig_pos(4)];
+hold off

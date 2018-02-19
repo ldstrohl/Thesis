@@ -55,7 +55,7 @@ dt = 10^-3; % time step size
 dt0 = dt;
 guidance_refresh_rate = 5; % Hz
 tgo_tol = 0.01; % tgo update iteration tolerance
-tgo_stop = 0.25; % thrust update threshold
+tgo_stop = 1; % thrust update threshold
 
 % Compute initial tgo
 g = -mu*r0/((r0'*r0)^(1.5));
@@ -243,26 +243,20 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
         a_GT_vis(k) = a_GT; % logging for visualization
         sf_vis(k) = sf;
         
-        if a_GT >= threshhold*T_max/m0
+        if a_GT >= threshhold*T_max_nom/m0
             range_trigger = 1;
 %             fprintf('acceleration\n')
         elseif sf >= range(k)
             range_trigger = 1;
 %             fprintf('range\n')
         end
-        
+            
         if range_trigger
             ignition_switch = 1;
             S = S/2;
             refresh_counter = (1/guidance_refresh_rate)/dt;
-            
-%             % SPECIAL CONFIG: in vacuum
-%             tgo(k) = 1.2*norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
-%                 + (1-sin(gamma))/(a_GT-gm));
-            % SPECIAL CONFIG: in atmosphere
             tgo(k) = norm(V(:,k))/2 * ((1+sin(gamma))/(a_GT + gm)...
                 + (1-sin(gamma))/(a_GT-gm));
-%             
             % snip visualization logs
             a_GT_vis = a_GT_vis(1:k);
             sf_vis = sf_vis(1:k);
@@ -450,7 +444,7 @@ if options(5)
     plot(j,sf_vis,j,range(1:length(a_GT_vis)))
     title('Gravity Turn')
     xlabel('Run time (s)')
-    legend({'a_{GT}','s_{GT}','Downrange'},'Location','Northwest')
+    legend({'a_{GT}','Range_{GT}','Downrange'},'Location','Northwest')
     
     figure('Name','Thrust Vector')
     plot(dt0*[1:k-1],aT_tracking(1,:),...

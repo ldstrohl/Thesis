@@ -1,0 +1,7 @@
+Atmosphere On
+All dispersion on
+ignition optimized case
+1000 runs
+Simple E-Guidance law
+
+NOTE: For ignition optimized case, set tgo factor to 1.

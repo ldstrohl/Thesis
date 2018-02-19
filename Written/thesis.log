@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  18 FEB 2018 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  19 FEB 2018 09:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,28 +710,42 @@ Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 921.
 CHAPTER 4.
  Subsection 4.0.1.
  Subsection 4.0.2.
- Subsection 4.0.3.
 [21
 
-] [22]
+]
+ Subsection 4.0.3.
+
+Overfull \hbox (62.24165pt too wide) in paragraph at lines 1477--1486
+ [][] 
+ []
+
+ Subsection 4.0.4.
+
+Overfull \hbox (44.06181pt too wide) in paragraph at lines 1500--1509
+ [][] 
+ []
+
+[22]
+ Subsection 4.0.5.
+[23]
 CHAPTER 5.
-[23
+[24
 
 ]
 CHAPTER 6.
-) (./thesis.bbl [24
+) (./thesis.bbl [25
 
-] [25
+] [26
 
-]) (./append.tex [26]
+]) (./append.tex [27]
 APPENDIX A.
-[27
+[28
 
-] [28]
+] [29]
 APPENDIX B.
-[29
+[30
 
-]) [30] (./thesis.aux)
+]) [31] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -740,10 +754,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9500 strings out of 492980
- 140400 string characters out of 6136208
- 278494 words of memory out of 5000000
- 12832 multiletter control sequences out of 15000+600000
+ 9504 strings out of 492980
+ 140487 string characters out of 6136208
+ 284538 words of memory out of 5000000
+ 12836 multiletter control sequences out of 15000+600000
  23142 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,18n,76p,1988b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -764,10 +778,10 @@ y8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/201
 7/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (40 pages, 269859 bytes).
+Output written on thesis.pdf (41 pages, 274439 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
+ 325 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

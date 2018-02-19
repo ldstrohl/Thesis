@@ -32,12 +32,14 @@
 \contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{21}
 \contentsline {subsection}{\numberline {4.0.1}Vacuum Performance}{21}
 \contentsline {subsection}{\numberline {4.0.2}Atmospheric Performance}{21}
-\contentsline {subsection}{\numberline {4.0.3}Discussion}{21}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{23}
-\contentsline {chapter}{\numberline {6}REFERENCING}{24}
-\contentsline {schapter}{BIBLIOGRAPHY}{25}
+\contentsline {subsection}{\numberline {4.0.3}Comparison of E-Guidance with Advanced E-Guidance}{22}
+\contentsline {subsection}{\numberline {4.0.4}Navigation Error}{22}
+\contentsline {subsection}{\numberline {4.0.5}Discussion}{23}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{24}
+\contentsline {chapter}{\numberline {6}REFERENCING}{25}
+\contentsline {schapter}{BIBLIOGRAPHY}{26}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{26}
+\contentsline {chaphd}{APPENDICES}{27}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{27}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{29}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{28}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{30}

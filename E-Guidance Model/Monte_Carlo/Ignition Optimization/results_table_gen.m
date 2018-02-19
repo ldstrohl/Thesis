@@ -2,7 +2,12 @@
 clear
 close all
 
-load('rundata_ignopti_th12_atmo1_nav1_.mat') % run results file
+latex_flag = 1;
+input.tableCaption = 'Performance of PD Guidance In Vacuum';
+input.tableLabel = 'tab:disppowvac';
+input.tablePlacement = 'ht';
+
+load('rundata_vac.mat') % run results file
 % case, run, flight_time, fuel, range, speed, angle
 
 
@@ -45,4 +50,20 @@ results = table(run_count,...
     'Flight_Time','FT_dev',...
     'Range','Range_dev',...
     'Speed','Speed_dev'})
+
+if latex_flag
+    input.data = [run_count,...
+        fuel,fuel_std,...
+        flight_time,flight_time_std,...
+        range,range_std,...
+        speed,speed_std];
+    input.tableColLabels = {'Runs','Fuel','Fuel $\sigma$','Flight Time',...
+        'FT $\sigma$','Range','Range $\sigma$','Speed','Speed $\sigma$'};
+    input.tableRowLabels = num2cell(num2str(scenario));
+    input.dataFormatMode = 'column';
+    input.dataFormat = {'%1d',1,'%.1f',8};
+    input.tableColumnAlignment = 'c';
+    input.tableBorders = 1;
+    latex = latexTable(input);
+end
 
