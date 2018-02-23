@@ -4,7 +4,7 @@ clear
 close all
 
 %% Inputs
-runs = 1000; % per case
+runs = 1; % per case
 scenario = 7; % 1:6
 debug_mode = 0;
 debug_row = 12;
@@ -12,8 +12,8 @@ debug_row = 12;
 % Data recording
 data_save_flag = 1; % save run data
 result_file = 'rundata_nonav.mat';
-traj_file = 'traj_nonav'; % prefix - case is appended
-traj_rate = 1/50; % how many runs to record
+traj_file = 'traj_lawcomp'; % prefix - case is appended
+traj_rate = 1/1; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
@@ -31,8 +31,8 @@ threshhold = 1; % factor of T_max required for gravity turn
 % set to 0 for no ignition optimization
 
 % models
-rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
-IC_dispersion_flag  = 1; % on/off initial condition dispersion
+rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
+IC_dispersion_flag  = 0; % on/off initial condition dispersion
 atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
 nav_flag = 0; % on/off navigation errors
 

@@ -1,32 +1,33 @@
-\contentsline {figure}{Figure\nobreakspace 3.1. \ignorespaces Unpowered Initial Trajectory in Vacuum }{18}
-\contentsline {figure}{Figure\nobreakspace 3.2. \ignorespaces Unpowered Initial Trajectory In Vacuum Ground Range }{19}
-\contentsline {figure}{Figure\nobreakspace 3.3. \ignorespaces Unpowered Initial Trajectory in Atmosphere }{20}
-\contentsline {figure}{Figure\nobreakspace 3.4. \ignorespaces Unpowered Initial Trajectory in Atmosphere From Above }{20}
-\contentsline {figure}{Figure\nobreakspace 4.1. \ignorespaces Trajectory: Simple vs. Advanced Guidance Laws }{22}
-\contentsline {figure}{Figure\nobreakspace 4.2. \ignorespaces Altitude: Simple vs. Advanced Guidance Laws }{23}
-\contentsline {figure}{Figure\nobreakspace 4.3. \ignorespaces Ground Range: Simple vs. Advanced Guidance Laws }{23}
-\contentsline {figure}{Figure\nobreakspace 4.4. \ignorespaces Speed: Simple vs. Advanced Guidance Laws }{24}
-\contentsline {figure}{Figure\nobreakspace 4.5. \ignorespaces Thrust Magnitude: Simple vs. Advanced Guidance Laws }{24}
-\contentsline {figure}{Figure\nobreakspace 4.6. \ignorespaces Angle of Attack: Simple vs. Advanced Guidance Laws }{25}
-\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces INSERT FIGURE CAPTION }{33}
-\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces INSERT FIGURE CAPTION }{34}
-\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces INSERT FIGURE CAPTION }{34}
-\contentsline {figure}{Figure\nobreakspace A.4. \ignorespaces INSERT FIGURE CAPTION }{35}
-\contentsline {figure}{Figure\nobreakspace A.5. \ignorespaces INSERT FIGURE CAPTION }{35}
-\contentsline {figure}{Figure\nobreakspace A.6. \ignorespaces INSERT FIGURE CAPTION }{36}
-\contentsline {figure}{Figure\nobreakspace A.7. \ignorespaces INSERT FIGURE CAPTION }{36}
-\contentsline {figure}{Figure\nobreakspace A.8. \ignorespaces INSERT FIGURE CAPTION }{37}
-\contentsline {figure}{Figure\nobreakspace A.9. \ignorespaces INSERT FIGURE CAPTION }{37}
-\contentsline {figure}{Figure\nobreakspace A.10. \ignorespaces INSERT FIGURE CAPTION }{38}
-\contentsline {figure}{Figure\nobreakspace A.11. \ignorespaces INSERT FIGURE CAPTION }{38}
-\contentsline {figure}{Figure\nobreakspace A.12. \ignorespaces INSERT FIGURE CAPTION }{39}
-\contentsline {figure}{Figure\nobreakspace A.13. \ignorespaces INSERT FIGURE CAPTION }{39}
-\contentsline {figure}{Figure\nobreakspace A.14. \ignorespaces INSERT FIGURE CAPTION }{40}
-\contentsline {figure}{Figure\nobreakspace A.15. \ignorespaces INSERT FIGURE CAPTION }{40}
-\contentsline {figure}{Figure\nobreakspace A.16. \ignorespaces INSERT FIGURE CAPTION }{41}
-\contentsline {figure}{Figure\nobreakspace A.17. \ignorespaces INSERT FIGURE CAPTION }{41}
-\contentsline {figure}{Figure\nobreakspace A.18. \ignorespaces INSERT FIGURE CAPTION }{42}
-\contentsline {figure}{Figure\nobreakspace A.19. \ignorespaces INSERT FIGURE CAPTION }{42}
-\contentsline {figure}{Figure\nobreakspace A.20. \ignorespaces INSERT FIGURE CAPTION }{43}
-\contentsline {figure}{Figure\nobreakspace A.21. \ignorespaces INSERT FIGURE CAPTION }{43}
-\contentsline {figure}{Figure\nobreakspace A.22. \ignorespaces INSERT FIGURE CAPTION }{44}
+\contentsline {figure}{Figure\nobreakspace 1.1. \ignorespaces CobraMRV Design. Source: C. Cerimele et al. A rigid mid lift-to-drag ratio approach to human mars entry, descent, and landing. AIAA Paper, 2017-1898, 2017. }{4}
+\contentsline {figure}{Figure\nobreakspace 3.1. \ignorespaces Unpowered Initial Trajectory in Vacuum }{22}
+\contentsline {figure}{Figure\nobreakspace 3.2. \ignorespaces Unpowered Initial Trajectory In Vacuum Ground Range }{23}
+\contentsline {figure}{Figure\nobreakspace 3.3. \ignorespaces Unpowered Initial Trajectory in Atmosphere }{24}
+\contentsline {figure}{Figure\nobreakspace 3.4. \ignorespaces Unpowered Initial Trajectory in Atmosphere From Above }{24}
+\contentsline {figure}{Figure\nobreakspace 4.1. \ignorespaces Trajectory: Simple vs. APDG Guidance Laws }{26}
+\contentsline {figure}{Figure\nobreakspace 4.2. \ignorespaces Altitude: Simple vs. APDG Guidance Laws }{27}
+\contentsline {figure}{Figure\nobreakspace 4.3. \ignorespaces Ground Range: Simple vs. APDG Guidance Laws }{27}
+\contentsline {figure}{Figure\nobreakspace 4.4. \ignorespaces Speed: Simple vs. APDG Guidance Laws }{28}
+\contentsline {figure}{Figure\nobreakspace 4.5. \ignorespaces Thrust Magnitude: Simple vs. APDG Guidance Laws }{28}
+\contentsline {figure}{Figure\nobreakspace 4.6. \ignorespaces Angle of Attack: Simple vs. APDG Guidance Laws }{29}
+\contentsline {figure}{Figure\nobreakspace 4.7. \ignorespaces INSERT FIGURE CAPTION }{30}
+\contentsline {figure}{Figure\nobreakspace 4.8. \ignorespaces INSERT FIGURE CAPTION }{31}
+\contentsline {figure}{Figure\nobreakspace 4.9. \ignorespaces INSERT FIGURE CAPTION }{31}
+\contentsline {figure}{Figure\nobreakspace 4.10. \ignorespaces INSERT FIGURE CAPTION }{32}
+\contentsline {figure}{Figure\nobreakspace 4.11. \ignorespaces INSERT FIGURE CAPTION }{32}
+\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces INSERT FIGURE CAPTION }{39}
+\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces INSERT FIGURE CAPTION }{40}
+\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces INSERT FIGURE CAPTION }{40}
+\contentsline {figure}{Figure\nobreakspace A.4. \ignorespaces INSERT FIGURE CAPTION }{41}
+\contentsline {figure}{Figure\nobreakspace A.5. \ignorespaces INSERT FIGURE CAPTION }{41}
+\contentsline {figure}{Figure\nobreakspace A.6. \ignorespaces INSERT FIGURE CAPTION }{42}
+\contentsline {figure}{Figure\nobreakspace A.7. \ignorespaces INSERT FIGURE CAPTION }{42}
+\contentsline {figure}{Figure\nobreakspace A.8. \ignorespaces INSERT FIGURE CAPTION }{43}
+\contentsline {figure}{Figure\nobreakspace A.9. \ignorespaces INSERT FIGURE CAPTION }{43}
+\contentsline {figure}{Figure\nobreakspace A.10. \ignorespaces INSERT FIGURE CAPTION }{44}
+\contentsline {figure}{Figure\nobreakspace A.11. \ignorespaces INSERT FIGURE CAPTION }{44}
+\contentsline {figure}{Figure\nobreakspace A.12. \ignorespaces INSERT FIGURE CAPTION }{45}
+\contentsline {figure}{Figure\nobreakspace A.13. \ignorespaces INSERT FIGURE CAPTION }{45}
+\contentsline {figure}{Figure\nobreakspace A.14. \ignorespaces INSERT FIGURE CAPTION }{46}
+\contentsline {figure}{Figure\nobreakspace A.15. \ignorespaces INSERT FIGURE CAPTION }{46}
+\contentsline {figure}{Figure\nobreakspace A.16. \ignorespaces INSERT FIGURE CAPTION }{47}
+\contentsline {figure}{Figure\nobreakspace A.17. \ignorespaces INSERT FIGURE CAPTION }{47}

@@ -9,37 +9,43 @@
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
 \contentsline {section}{\numberline {1.1}Literature Review}{1}
 \contentsline {section}{\numberline {1.2}Contribution}{2}
-\contentsline {section}{\numberline {1.3}Organization}{3}
-\contentsline {chapter}{\numberline {2}PROBLEM STATEMENT}{4}
-\contentsline {chapter}{\numberline {3}METHODOLOGY}{5}
-\contentsline {section}{\numberline {3.1}Guidance Law}{5}
-\contentsline {subsection}{\numberline {3.1.1}Equations of Motion}{5}
-\contentsline {subsection}{\numberline {3.1.2}Performance Index}{6}
-\contentsline {subsection}{\numberline {3.1.3}Guidance solution}{7}
-\contentsline {subsection}{\numberline {3.1.4}Time-to-go}{8}
-\contentsline {subsection}{\numberline {3.1.5}Ignition Timing}{10}
-\contentsline {section}{\numberline {3.2}Simulation}{11}
-\contentsline {subsection}{\numberline {3.2.1}Numerical Integration}{12}
-\contentsline {subsection}{\numberline {3.2.2}Guidance Computer}{13}
-\contentsline {subsection}{\numberline {3.2.3}Ignition trigger}{13}
-\contentsline {subsection}{\numberline {3.2.4}Navigation Module}{14}
-\contentsline {subsection}{\numberline {3.2.5}Aerodynamic Model}{14}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Atmosphere Model}{14}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Lift and Drag}{15}
-\contentsline {subsubsection}{\numberline {3.2.5.3}Orientation}{15}
-\contentsline {subsection}{\numberline {3.2.6}Monte Carlo}{16}
-\contentsline {subsection}{\numberline {3.2.7}Initial Condition}{17}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{21}
-\contentsline {subsection}{\numberline {4.0.1}Comparison of E-Guidance with Advanced E-Guidance}{21}
-\contentsline {subsection}{\numberline {4.0.2}Navigation Error}{25}
-\contentsline {subsection}{\numberline {4.0.3}Vacuum Performance}{26}
-\contentsline {subsection}{\numberline {4.0.4}Atmospheric Performance}{26}
-\contentsline {subsection}{\numberline {4.0.5}Discussion}{27}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{28}
-\contentsline {chapter}{\numberline {6}REFERENCING}{29}
-\contentsline {schapter}{BIBLIOGRAPHY}{30}
+\contentsline {section}{\numberline {1.3}Organization}{2}
+\contentsline {section}{\numberline {1.4}Problem Statement}{3}
+\contentsline {subsection}{\numberline {1.4.1}CobraMRV}{3}
+\contentsline {chapter}{\numberline {2}METHODOLOGY}{5}
+\contentsline {section}{\numberline {2.1}Notation}{5}
+\contentsline {section}{\numberline {2.2}Coordinate Frame}{6}
+\contentsline {section}{\numberline {2.3}Guidance Law}{7}
+\contentsline {subsection}{\numberline {2.3.1}Equations of Motion}{7}
+\contentsline {subsection}{\numberline {2.3.2}E-Guidance}{8}
+\contentsline {subsection}{\numberline {2.3.3}Optimality}{9}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{9}
+\contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{9}
+\contentsline {subsection}{\numberline {2.3.4}Apollo Lunar Descent Guidance}{10}
+\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{11}
+\contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{13}
+\contentsline {chapter}{\numberline {3}SIMULATION}{16}
+\contentsline {section}{\numberline {3.1}Numerical Integration}{16}
+\contentsline {section}{\numberline {3.2}Guidance Computer}{17}
+\contentsline {section}{\numberline {3.3}Ignition trigger}{18}
+\contentsline {section}{\numberline {3.4}Navigation Module}{18}
+\contentsline {section}{\numberline {3.5}Aerodynamic Model}{19}
+\contentsline {subsection}{\numberline {3.5.1}Atmosphere Model}{19}
+\contentsline {subsection}{\numberline {3.5.2}Lift and Drag}{19}
+\contentsline {subsection}{\numberline {3.5.3}Orientation}{20}
+\contentsline {section}{\numberline {3.6}Monte Carlo}{20}
+\contentsline {section}{\numberline {3.7}Initial Condition}{21}
+\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{25}
+\contentsline {subsection}{\numberline {4.0.1}Comparison of E-Guidance with APDG}{25}
+\contentsline {subsection}{\numberline {4.0.2}Navigation Error}{29}
+\contentsline {subsection}{\numberline {4.0.3}Vacuum Performance}{30}
+\contentsline {subsection}{\numberline {4.0.4}Atmospheric Performance}{32}
+\contentsline {subsection}{\numberline {4.0.5}Discussion}{33}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{34}
+\contentsline {chapter}{\numberline {6}REFERENCING}{35}
+\contentsline {schapter}{BIBLIOGRAPHY}{36}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{31}
+\contentsline {chaphd}{APPENDICES}{37}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{32}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{45}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{38}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{48}

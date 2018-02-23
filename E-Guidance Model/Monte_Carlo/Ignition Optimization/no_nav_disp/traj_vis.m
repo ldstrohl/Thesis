@@ -11,7 +11,7 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_lawcompfigs.mat';
+filename = 'traj_vac2.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
 save_figs = 0; % 1 to generate jpgs
 
@@ -83,7 +83,6 @@ for j = 2:data_size(2)
     ylabel(sprintf('%s',var_names(j-1)))
     xlabel('Time (s)')
 %         legend(legend_entry)
-legend('E-Guidance','APDG')
     if save_figs
         saveas(gcf,sprintf('%s',var_names(j-1)),'jpeg')
     end
