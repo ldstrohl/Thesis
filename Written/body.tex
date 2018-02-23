@@ -741,7 +741,7 @@ r_{f_x}^* - (r_{0_x} + V_{0_x}t_{go})
 
 It can be shown that the equations in $\hat{y}$ and $\hat{z}$ take the same form. This $2x2$ $E$ matrix is the origin of the name \textit{E-Guidance}, the guidance law used in the Apollo lunar landing missions.
 
-\subsection{Apollo Lunar Descent Guidance} \label{sec:APDG}
+\subsection{Apollo Powered Descent Guidance} \label{sec:APDG}
 
 APDG enforces a final attitude constraint as a matter of practicality. A real rocket landing would typically require that the vehicle be oriented in a specific direction upon landing. Without explicitly enforcing a final attitude, the vehicle could touch down at a large angle while still satisfying final velocity and position constraints. For a vehicle whose attitude is determined by the thrust acceleration vector, this constraint can be implemented as a final thrust acceleration constraint as in Equation \ref{eqn:constraint_a}.
 
@@ -1571,64 +1571,64 @@ Comparing guidance laws
 
 The choice between E-Guidance of Equation\:\ref{eqn:simplelaw} as flown on the Apollo missions and APDG of Equation\:\ref{eqn:APDGlaw} is examined below. Results are first presented as nominal performance in atmosphere in order to investigate the individual performance of each law without the effects of dispersion. Beyond this section, results will be presented using APDG.
 
-Figures\:\ref{fig:trajEvsADPG} through\:\ref{fig:fatEvsADPG} show plotted quantities of a rocket in atmosphere employing the PDI strategy on approach to landing at the origin from Initial Condition Case 6 (Table\:\ref{tab:IC}). In Figure\:\ref{fig:trajEvsADPG} the trajectory with the steeper approach upon landing is flown by the APDG guidance law. 
+Figures\:\ref{fig:trajEvsAPDG} through\:\ref{fig:fatEvsAPDG} show plotted quantities of a rocket in atmosphere employing the PDI strategy on approach to landing at the origin from Initial Condition Case 6 (Table\:\ref{tab:IC}). In Figure\:\ref{fig:trajEvsAPDG} the trajectory with the steeper approach upon landing is flown by the APDG guidance law. 
 
-The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:trajEvsADPG} through\:\ref{fig:fatEvsADPG}. However, the thrust and therefore speed profiles are notably different, with the APDG law starting at a lower magnitude of thrust in Figure\:\ref{fig:thrEvsADPG} than the Simple law and their profiles roughly reversed. The pitch angle profiles in Figure\:\ref{fig:fatEvsADPG} are very different, with the APDG law providing a final pitch angle much closer to the horizontal. Also clear in this plot is the guidance update stoppage in the last half second to a poorly conditioned system in Equation\:\ref{eqn:APDGlaw}. This stoppage manifests as a constant pitch angle in Figure\:\ref{fig:fatEvsADPG} because the thrust acceleration command is not updated, so the vehicle's orientation remains constant.
+The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:trajEvsAPDG} through\:\ref{fig:fatEvsAPDG}. However, the thrust and therefore speed profiles are notably different, with the APDG law starting at a lower magnitude of thrust in Figure\:\ref{fig:thrEvsAPDG} than the Simple law and their profiles roughly reversed. The pitch angle profiles in Figure\:\ref{fig:fatEvsAPDG} are very different, with the APDG law providing a final pitch angle much closer to the horizontal. Also clear in this plot is the guidance update stoppage in the last half second to a poorly conditioned system in Equation\:\ref{eqn:APDGlaw}. This stoppage manifests as a constant pitch angle in Figure\:\ref{fig:fatEvsAPDG} because the thrust acceleration command is not updated, so the vehicle's orientation remains constant.
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/trajEvsADPG.pdf}
-		\caption{Trajectory: E-Guidance vs. APDG \label{fig:trajEvsADPG} }
+		\includegraphics[width=\linewidth]{Figures/trajEvsAPDG.pdf}
+		\caption{Trajectory: E-Guidance vs. APDG \label{fig:trajEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/altEvsADPG.pdf}
-		\caption{Altitude: E-Guidance vs. APDG \label{fig:altEvsADPG} }
+		\includegraphics[width=\linewidth]{Figures/altEvsAPDG.pdf}
+		\caption{Altitude: E-Guidance vs. APDG \label{fig:altEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/rngEvsADPG.pdf}
-		\caption{Ground Range: E-Guidance vs. APDG \label{fig:rngEvsADPG} }
+		\includegraphics[width=\linewidth]{Figures/rngEvsAPDG.pdf}
+		\caption{Ground Range: E-Guidance vs. APDG \label{fig:rngEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/spdEvsADPG.pdf}
-		\caption{Speed: E-Guidance vs. APDG \label{fig:spdEvsADPG} }
+		\includegraphics[width=\linewidth]{Figures/spdEvsAPDG.pdf}
+		\caption{Speed: E-Guidance vs. APDG \label{fig:spdEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/thrEvsADPG.pdf}
-		\caption{Thrust Magnitude: E-Guidance vs. APDG \label{fig:thrEvsADPG} }
+		\includegraphics[width=\linewidth]{Figures/thrEvsAPDG.pdf}
+		\caption{Thrust Magnitude: E-Guidance vs. APDG \label{fig:thrEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/fatEvsADPG.pdf}
-		\caption{Pitch: E-Guidance vs. APDG \label{fig:fatEvsADPG} }
+		\includegraphics[width=\linewidth]{Figures/fatEvsAPDG.pdf}
+		\caption{Pitch: E-Guidance vs. APDG \label{fig:fatEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
-Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsADPG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on landing and using more fuel. This speed inaccuracy will be addressed in Section\:\ref{sec:naverror}
+Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsAPDG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on landing and using more fuel. This speed inaccuracy will be addressed in Section\:\ref{sec:naverror}
 
 \begin{table}[ht]                                                                                              
 	\centering        
 	\caption{Comparison of Performance of E-Guidance with APDG}                     
-	\label{tab:EvsADPG}                                                                                              
+	\label{tab:EvsAPDG}                                                                                              
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
 		\hline                                                                                                        Guidance &      &   Fuel   &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
 		Law      & Runs & (kg)      & $\sigma$ &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
@@ -1650,7 +1650,7 @@ Atmospheric effects
 Dynamic Ignition Case
 Comparing Navigation Error vs. No Nav Error
 
-The final speeds shown in Table\:\ref{tab:EvsADPG} are not very accurate given the terminal velocity constraint magnitude of $1\:m/s$. This constraint is important since it determines how softly the vehicle will land. However, this final speed (and range) inaccuracy is due almost entirely to the navigation dispersion model outlined in Section\:\ref{sec:navmod}, as is clear from the results given in Table\:\ref{tab:navvsnonav}. Here the simulation was run with atmospheric effects, PDI, and full initial condition and rocket parameter dispersion. The cases differed only in whether navigation dispersion was active. The Nominal runs clearly show very accurate satisfaction of the terminal constraints. A higher fidelity model would include much lower navigation error near the landing site due to the availability of more accurate measurements through radar systems and short range devices and would result in similarly low inaccuracies. More sophisticated sensor models are not investigated here since they would only apply near the end of flight, resulting in little impact on fuel consumption. 
+The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given the terminal velocity constraint magnitude of $1\:m/s$. This constraint is important since it determines how softly the vehicle will land. However, this final speed (and range) inaccuracy is due almost entirely to the navigation dispersion model outlined in Section\:\ref{sec:navmod}, as is clear from the results given in Table\:\ref{tab:navvsnonav}. Here the simulation was run with atmospheric effects, PDI, and full initial condition and rocket parameter dispersion. The cases differed only in whether navigation dispersion was active. The Nominal runs clearly show very accurate satisfaction of the terminal constraints. A higher fidelity model would include much lower navigation error near the landing site due to the availability of more accurate measurements through radar systems and short range devices and would result in similarly low inaccuracies. More sophisticated sensor models are not investigated here since they would only apply near the end of flight, resulting in little impact on fuel consumption. 
 
 \begin{table}[ht]                                                                                              
 	\centering                             
@@ -1669,10 +1669,10 @@ The final speeds shown in Table\:\ref{tab:EvsADPG} are not very accurate given t
 	
 \end{table}   
 
-\subsection{Vacuum vs. Atmosphere With ADPG} \label{sec:atmovsvac}
-Here ADPG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
+\subsection{Vacuum vs. Atmosphere With APDG} \label{sec:atmovsvac}
+Here APDG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
 
-Figures\:\ref{fig:trajatmovsvac} through\:\ref{fig:massatmovsvac} show nominal profiles for the ADPG law in both atmosphere and vacuum. These trajectories start from Case 6 as listed in Table\:\ref{tab:IC}. Figures\:\ref{fig:trajatmovsvac} and\:\ref{fig:altatmovsvac} show that in atmosphere, the PDI strategy with the vehicle held at optimum angle of attack results in higher lift, meaning that the vehicle does not lose altitude as quickly as in vacuum, while Figure\:\ref{fig:spdatmovsvac} shows it losing speed much more quickly during this phase. This suggests that the aerodynamic effects have an appreciable effect on the energy ultimately required for powered descent and soft landing. 
+Figures\:\ref{fig:trajatmovsvac} through\:\ref{fig:massatmovsvac} show nominal profiles for the APDG law in both atmosphere and vacuum. These trajectories start from Case 6 as listed in Table\:\ref{tab:IC}. Figures\:\ref{fig:trajatmovsvac} and\:\ref{fig:altatmovsvac} show that in atmosphere, the PDI strategy with the vehicle held at optimum angle of attack results in higher lift, meaning that the vehicle does not lose altitude as quickly as in vacuum, while Figure\:\ref{fig:spdatmovsvac} shows it losing speed much more quickly during this phase. This suggests that the aerodynamic effects have an appreciable effect on the energy ultimately required for powered descent and soft landing. 
 
 Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same conclusion. Upon ignition, the thrust required in atmosphere is far lower than that required in vacuum, and the ship mass stays higher in atmosphere throughout most of the trajectory, particularly the ending mass, reflecting lower fuel consumption. The thrust profile in atmosphere suggests a fairly conservative ignition; since more energy is burned off through aerodynamic effects, less thrust is required than might be expected by the gravity turn solution which generates the operative time-to-go. This leaves appreciable margin for error, which is explored further in the dispersed results of Secion\:\ref{sec:atmoperf}.
 
@@ -1746,7 +1746,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/trajpowvac.pdf}
-		\caption{Trajectory: ADPG in Vacuum \label{fig:trajpowvac} }
+		\caption{Trajectory: APDG in Vacuum \label{fig:trajpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1754,7 +1754,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/spdpowvac.pdf}
-		\caption{Speed: ADPG in Vacuum \label{fig:spdpowvac} }
+		\caption{Speed: APDG in Vacuum \label{fig:spdpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1762,7 +1762,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/altpowvac.pdf}
-		\caption{Altitude: ADPG in Vacuum \label{fig:altpowvac} }
+		\caption{Altitude: APDG in Vacuum \label{fig:altpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1770,7 +1770,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/rngpowvac.pdf}
-		\caption{Ground Range: ADPG in Vacuum \label{fig:rngpowvac} }
+		\caption{Ground Range: APDG in Vacuum \label{fig:rngpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1778,7 +1778,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/thrpowvac.pdf}
-		\caption{Thrust Magnitude: ADPG in Vacuum \label{fig:thrpowvac} }
+		\caption{Thrust Magnitude: APDG in Vacuum \label{fig:thrpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1820,7 +1820,7 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/trajpowatmo.pdf}
-		\caption{Trajectory: ADPG in Atmosphere \label{fig:trajpowatmo} }
+		\caption{Trajectory: APDG in Atmosphere \label{fig:trajpowatmo} }
 	\end{minipage}
 \end{figure}
 
@@ -1828,7 +1828,7 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/altpowatmo.pdf}
-		\caption{Altitude: ADPG in Atmosphere \label{fig:altpowatmo} }
+		\caption{Altitude: APDG in Atmosphere \label{fig:altpowatmo} }
 	\end{minipage}
 \end{figure}
 
@@ -1836,7 +1836,7 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/rngpowatmo.pdf}
-		\caption{Ground Range: ADPG in Atmosphere \label{fig:rngpowatmo} }
+		\caption{Ground Range: APDG in Atmosphere \label{fig:rngpowatmo} }
 	\end{minipage}
 \end{figure}
 
@@ -1844,7 +1844,7 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/spdpowatmo.pdf}
-		\caption{Speed: ADPG in Atmosphere \label{fig:spdpowatmo} }
+		\caption{Speed: APDG in Atmosphere \label{fig:spdpowatmo} }
 	\end{minipage}
 \end{figure}
 
@@ -1852,7 +1852,7 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/thrpowatmo.pdf}
-		\caption{Thrust Magnitude: ADPG in Atmosphere \label{fig:thrpowatmo} }
+		\caption{Thrust Magnitude: APDG in Atmosphere \label{fig:thrpowatmo} }
 	\end{minipage}
 \end{figure}
 

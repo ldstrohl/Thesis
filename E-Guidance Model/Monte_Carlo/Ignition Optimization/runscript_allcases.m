@@ -5,14 +5,14 @@ close all
 
 %% Inputs
 runs = 1; % per case
-scenario = 6; % 1:6
+scenario = 7; % 1:6
 debug_mode = 0;
 debug_row = 12;
 
 % Data recording
 data_save_flag = 1; % save run data
 result_file = 'rundata.mat';
-traj_file = 'traj_simvsadv'; % prefix - case is appended
+traj_file = 'traj_vac'; % prefix - case is appended
 traj_rate = 1/1; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
@@ -33,7 +33,7 @@ threshhold = 1; % factor of T_max required for gravity turn
 % models
 rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
 IC_dispersion_flag  = 0; % on/off initial condition dispersion
-atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
+atmosphere_flag = 0; % on/off atmosphere model (off = vacuum)
 nav_flag = 0; % on/off navigation errors
 
 
@@ -177,6 +177,13 @@ for j = scenario
                 126.547356413357;...
                 616.543099680754];
         case 6
+            r0=[  -3395285.92438538;...
+                -255429.908623963;...
+                -30715.5304665501];
+            V0=[55.7770843260274;...
+                125.451270269588;...
+                644.130998398719];
+        case 7
             r0=[  -3395285.92438538;...
                 -255429.908623963;...
                 -30715.5304665501];

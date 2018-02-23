@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.3.3}Optimality}{9}
 \contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{9}
 \contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{9}
-\contentsline {subsection}{\numberline {2.3.4}Apollo Lunar Descent Guidance}{10}
+\contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{10}
 \contentsline {subsection}{\numberline {2.3.5}Time-to-go}{11}
 \contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{13}
 \contentsline {chapter}{\numberline {3}SIMULATION}{16}
@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{25}
 \contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{27}
 \contentsline {subsection}{\numberline {4.0.3}Navigation Error}{31}
-\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere With ADPG}{31}
+\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere With APDG}{31}
 \contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{35}
 \contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{38}
 \contentsline {subsection}{\numberline {4.0.7}Discussion}{41}
