@@ -3,31 +3,30 @@
 \contentsline {figure}{Figure\nobreakspace 3.2. \ignorespaces Unpowered Initial Trajectory In Vacuum Ground Range }{23}
 \contentsline {figure}{Figure\nobreakspace 3.3. \ignorespaces Unpowered Initial Trajectory in Atmosphere }{24}
 \contentsline {figure}{Figure\nobreakspace 3.4. \ignorespaces Unpowered Initial Trajectory in Atmosphere From Above }{24}
-\contentsline {figure}{Figure\nobreakspace 4.1. \ignorespaces Trajectory: Simple vs. APDG Guidance Laws }{26}
-\contentsline {figure}{Figure\nobreakspace 4.2. \ignorespaces Altitude: Simple vs. APDG Guidance Laws }{27}
-\contentsline {figure}{Figure\nobreakspace 4.3. \ignorespaces Ground Range: Simple vs. APDG Guidance Laws }{27}
-\contentsline {figure}{Figure\nobreakspace 4.4. \ignorespaces Speed: Simple vs. APDG Guidance Laws }{28}
-\contentsline {figure}{Figure\nobreakspace 4.5. \ignorespaces Thrust Magnitude: Simple vs. APDG Guidance Laws }{28}
-\contentsline {figure}{Figure\nobreakspace 4.6. \ignorespaces Angle of Attack: Simple vs. APDG Guidance Laws }{29}
-\contentsline {figure}{Figure\nobreakspace 4.7. \ignorespaces INSERT FIGURE CAPTION }{30}
-\contentsline {figure}{Figure\nobreakspace 4.8. \ignorespaces INSERT FIGURE CAPTION }{31}
-\contentsline {figure}{Figure\nobreakspace 4.9. \ignorespaces INSERT FIGURE CAPTION }{31}
-\contentsline {figure}{Figure\nobreakspace 4.10. \ignorespaces INSERT FIGURE CAPTION }{32}
-\contentsline {figure}{Figure\nobreakspace 4.11. \ignorespaces INSERT FIGURE CAPTION }{32}
-\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces INSERT FIGURE CAPTION }{39}
-\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces INSERT FIGURE CAPTION }{40}
-\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces INSERT FIGURE CAPTION }{40}
-\contentsline {figure}{Figure\nobreakspace A.4. \ignorespaces INSERT FIGURE CAPTION }{41}
-\contentsline {figure}{Figure\nobreakspace A.5. \ignorespaces INSERT FIGURE CAPTION }{41}
-\contentsline {figure}{Figure\nobreakspace A.6. \ignorespaces INSERT FIGURE CAPTION }{42}
-\contentsline {figure}{Figure\nobreakspace A.7. \ignorespaces INSERT FIGURE CAPTION }{42}
-\contentsline {figure}{Figure\nobreakspace A.8. \ignorespaces INSERT FIGURE CAPTION }{43}
-\contentsline {figure}{Figure\nobreakspace A.9. \ignorespaces INSERT FIGURE CAPTION }{43}
-\contentsline {figure}{Figure\nobreakspace A.10. \ignorespaces INSERT FIGURE CAPTION }{44}
-\contentsline {figure}{Figure\nobreakspace A.11. \ignorespaces INSERT FIGURE CAPTION }{44}
-\contentsline {figure}{Figure\nobreakspace A.12. \ignorespaces INSERT FIGURE CAPTION }{45}
-\contentsline {figure}{Figure\nobreakspace A.13. \ignorespaces INSERT FIGURE CAPTION }{45}
-\contentsline {figure}{Figure\nobreakspace A.14. \ignorespaces INSERT FIGURE CAPTION }{46}
-\contentsline {figure}{Figure\nobreakspace A.15. \ignorespaces INSERT FIGURE CAPTION }{46}
-\contentsline {figure}{Figure\nobreakspace A.16. \ignorespaces INSERT FIGURE CAPTION }{47}
-\contentsline {figure}{Figure\nobreakspace A.17. \ignorespaces INSERT FIGURE CAPTION }{47}
+\contentsline {figure}{Figure\nobreakspace 4.1. \ignorespaces PDI Criteria: Vacuum }{26}
+\contentsline {figure}{Figure\nobreakspace 4.2. \ignorespaces PDI Criteria: Atmopshere }{27}
+\contentsline {figure}{Figure\nobreakspace 4.3. \ignorespaces Trajectory: E-Guidance vs. APDG }{28}
+\contentsline {figure}{Figure\nobreakspace 4.4. \ignorespaces Altitude: E-Guidance vs. APDG }{28}
+\contentsline {figure}{Figure\nobreakspace 4.5. \ignorespaces Ground Range: E-Guidance vs. APDG }{29}
+\contentsline {figure}{Figure\nobreakspace 4.6. \ignorespaces Speed: E-Guidance vs. APDG }{29}
+\contentsline {figure}{Figure\nobreakspace 4.7. \ignorespaces Thrust Magnitude: E-Guidance vs. APDG }{30}
+\contentsline {figure}{Figure\nobreakspace 4.8. \ignorespaces Pitch: E-Guidance vs. APDG }{30}
+\contentsline {figure}{Figure\nobreakspace 4.9. \ignorespaces Trajectory: Vacuum vs. Atmosphere }{32}
+\contentsline {figure}{Figure\nobreakspace 4.10. \ignorespaces Altitude: Vacuum vs. Atmosphere }{33}
+\contentsline {figure}{Figure\nobreakspace 4.11. \ignorespaces Ground Range: Vacuum vs. Atmosphere }{33}
+\contentsline {figure}{Figure\nobreakspace 4.12. \ignorespaces Speed: Vacuum vs. Atmosphere }{34}
+\contentsline {figure}{Figure\nobreakspace 4.13. \ignorespaces Thrust Magnitude: Vacuum vs. Atmosphere }{34}
+\contentsline {figure}{Figure\nobreakspace 4.14. \ignorespaces Ship Mass: Vacuum vs. Atmosphere }{35}
+\contentsline {figure}{Figure\nobreakspace 4.15. \ignorespaces Trajectory: ADPG in Vacuum }{36}
+\contentsline {figure}{Figure\nobreakspace 4.16. \ignorespaces Speed: ADPG in Vacuum }{36}
+\contentsline {figure}{Figure\nobreakspace 4.17. \ignorespaces Altitude: ADPG in Vacuum }{37}
+\contentsline {figure}{Figure\nobreakspace 4.18. \ignorespaces Ground Range: ADPG in Vacuum }{37}
+\contentsline {figure}{Figure\nobreakspace 4.19. \ignorespaces Thrust Magnitude: ADPG in Vacuum }{38}
+\contentsline {figure}{Figure\nobreakspace 4.20. \ignorespaces Trajectory: ADPG in Atmosphere }{39}
+\contentsline {figure}{Figure\nobreakspace 4.21. \ignorespaces Altitude: ADPG in Atmosphere }{39}
+\contentsline {figure}{Figure\nobreakspace 4.22. \ignorespaces Ground Range: ADPG in Atmosphere }{40}
+\contentsline {figure}{Figure\nobreakspace 4.23. \ignorespaces Speed: ADPG in Atmosphere }{40}
+\contentsline {figure}{Figure\nobreakspace 4.24. \ignorespaces Thrust Magnitude: ADPG in Atmosphere }{41}
+\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces INSERT FIGURE CAPTION }{47}
+\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces INSERT FIGURE CAPTION }{48}
+\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces INSERT FIGURE CAPTION }{48}

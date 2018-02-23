@@ -10,7 +10,7 @@ debug_mode = 0;
 debug_row = 12;
 
 % Data recording
-data_save_flag = 1; % save run data
+data_save_flag = 0; % save run data
 result_file = 'rundata_ignopti_flip.mat';
 traj_file = 'traj_ignopti_flip_'; % prefix - case is appended
 traj_rate = 1/1000; % how many runs to record

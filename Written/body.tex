@@ -1022,7 +1022,7 @@ The initial conditions are listed in Table \ref{tab:IC}. They are provided in th
 	\end{minipage}
 \end{table}
 
-These conditions represent an entry trajectory that is slightly off-target for the landing site and requires both powered deceleration to avoid overshoot as well as redirection to correct the angle error. The trajectory traveled from the furthest starting condition unpowered in a vacuum is plotted in Figure \ref{fig:trajunpowvac_1}. Similarly, Figure \ref{fig:trajunpowatmo_1} shows the trajectory in atmosphere with the vehicle held at optimum angle of attack. Figure \ref{fig:trajunpowvacgr} shows the trajectory error in terms of ground range to landing site as the vacuum trajectory passes over at around 48 seconds.
+These conditions represent an entry trajectory that is slightly off-target for the landing site and requires both powered deceleration to avoid overshoot as well as redirection to correct the angle error. The trajectory traveled from the furthest starting condition (Case 6) unpowered in a vacuum is plotted in Figure \ref{fig:trajunpowvac_1} along with the starting positions for Cases 1 through 6, indicated by an X. Similarly, Figure \ref{fig:trajunpowatmo_1} shows the trajectory in atmosphere with the vehicle held at optimum angle of attack. Figure \ref{fig:trajunpowvacgr} shows the trajectory error in terms of ground range to landing site as the vacuum trajectory passes over at around 48 seconds.
 
 \begin{figure}[H]
 	\centering
@@ -1036,11 +1036,11 @@ These conditions represent an entry trajectory that is slightly off-target for t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/trajunpowvacgr.pdf}
-		\caption{Unpowered Initial Trajectory In Vacuum Ground Range \label{fig:trajunpowatmo_2} }
+		\caption{Unpowered Initial Trajectory In Vacuum Ground Range \label{fig:trajunpowgr} }
 	\end{minipage}
 \end{figure}
 
-As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatmo_2} by the placement of the initial conditions of the 6 cases, the initial conditions are chosen to represent the landing vehicle on aerodynamic approach making corrections toward the site. While employing the PDI strategy outlined in Section\:\ref{sec:ignitiontiming} the vehicle will travel along the atmospheric trajectory shown in Figures\:\ref{fig:trajunpowatmo_1} and\:\ref{fig:trajunpowatmo_2} until ignition.
+As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatmo_2} by the placement of the initial conditions of the 6 cases, the initial conditions are chosen to represent the landing vehicle on aerodynamic approach making corrections toward the site. While employing the PDI strategy outlined in Section\:\ref{sec:PDI} the vehicle will travel along the atmospheric trajectory shown in Figures\:\ref{fig:trajunpowatmo_1} and\:\ref{fig:trajunpowatmo_2} until ignition.
 
 \begin{figure}[H]
 	\centering
@@ -1536,6 +1536,31 @@ The third condition is the subject of this study. Whether dynamic PDI can reliab
 
 For dispersed cases the starting conditions are as listed in Table \ref{tab:IC} with the addition of Case 7, which represents the active PDI strategy. This Case is flown from the initial condition specified by Case 6, the first point on the trajectory, but with the engine off until one of the PDI criteria defined in Equations\:\ref{eqn:thrustcriterion} and\:\ref{eqn:rangecriterion} is met.
 
+\subsection{Adaptive PDI}
+The first result to investigate is the validity of the PDI criteria in Equations\:\ref{eqn:thrustcriterion} and\:\ref{eqn:rangecriterion}. For these criteria to serve as ignition criteria, they must reliably trigger in time to land the vehicle softly.
+
+Figure\:\ref{fig:gtcriteriavac} shows data from a vacuum case of APDG with PDI active during the unpowered phase, before PDI has been triggered. The required thrust acceleration magnitude $a_{GT}$for a gravity turn is shown monotonically increasing throughout the unpowered trajectory, and the required downrange travel $s_{GT}$ is monotonically decreasing. $a_{GT}$ and $s_{GT}$ reach their limits at almost the same time, but this would not be true of all trajectories.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/gtcriteriavac.pdf}
+		\caption{PDI Criteria: Vacuum \label{fig:gtcriteriavac} }
+	\end{minipage}
+\end{figure}
+
+Figure\:\ref{fig:gtcriteriaatmo} shows data from an atmospheric case of APDG with PDI active during the unpowered phase, before PDI has been triggered. Here the required thrust acceleration $a_{GT}$ is still monotonically increasing but not as quickly as it did in a vacuum, while $s_{GT}$ is decreasing similarly quickly. This behavior is examined in Section\:\ref{sec:atmovsvac}, where it is clear in Figures\:\ref{fig:altatmovsvac} and\:\ref{fig:spdatmovsvac} that the vehicle is able to provide significant lift while decelerating through drag during the unpowered phase in atmosphere. Figure\:\ref{fig:gtcriteriaatmo} clearly shows that the risk of overshoot, reflected in the downrange criterion, is much greater than exceeding the maximum thrust acceleration for this trajectory in atmosphere.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/gtcriteriaatmo.pdf}
+		\caption{PDI Criteria: Atmopshere \label{fig:gtcriteriaatmo} }
+	\end{minipage}
+\end{figure}
+
+
 \subsection{Comparison of E-Guidance with APDG}
 Table and figures for the following condition:
 Both guidance laws
@@ -1554,7 +1579,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/trajEvsADPG.pdf}
-		\caption{Trajectory: Simple vs. APDG Guidance Laws \label{fig:trajEvsADPG} }
+		\caption{Trajectory: E-Guidance vs. APDG \label{fig:trajEvsADPG} }
 	\end{minipage}
 \end{figure}
 
@@ -1562,7 +1587,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/altEvsADPG.pdf}
-		\caption{Altitude: Simple vs. APDG Guidance Laws \label{fig:altEvsADPG} }
+		\caption{Altitude: E-Guidance vs. APDG \label{fig:altEvsADPG} }
 	\end{minipage}
 \end{figure}
 
@@ -1570,7 +1595,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/rngEvsADPG.pdf}
-		\caption{Ground Range: Simple vs. APDG Guidance Laws \label{fig:rngEvsADPG} }
+		\caption{Ground Range: E-Guidance vs. APDG \label{fig:rngEvsADPG} }
 	\end{minipage}
 \end{figure}
 
@@ -1578,7 +1603,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/spdEvsADPG.pdf}
-		\caption{Speed: Simple vs. APDG Guidance Laws \label{fig:spdEvsADPG} }
+		\caption{Speed: E-Guidance vs. APDG \label{fig:spdEvsADPG} }
 	\end{minipage}
 \end{figure}
 
@@ -1586,7 +1611,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/thrEvsADPG.pdf}
-		\caption{Thrust Magnitude: Simple vs. APDG Guidance Laws \label{fig:thrEvsADPG} }
+		\caption{Thrust Magnitude: E-Guidance vs. APDG \label{fig:thrEvsADPG} }
 	\end{minipage}
 \end{figure}
 
@@ -1594,11 +1619,11 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/fatEvsADPG.pdf}
-		\caption{Angle of Attack: Simple vs. APDG Guidance Laws \label{fig:fatEvsADPG} }
+		\caption{Pitch: E-Guidance vs. APDG \label{fig:fatEvsADPG} }
 	\end{minipage}
 \end{figure}
 
-Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsADPG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on approach and using more fuel. This inaccuracy will be addressed in Section\:\ref{sec:naverror}
+Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsADPG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on landing and using more fuel. This speed inaccuracy will be addressed in Section\:\ref{sec:naverror}
 
 \begin{table}[ht]                                                                                              
 	\centering        
@@ -1644,16 +1669,84 @@ The final speeds shown in Table\:\ref{tab:EvsADPG} are not very accurate given t
 	
 \end{table}   
 
-\subsection{Vacuum Performance}
-Presented here are results for the Vacuum condition. 
+\subsection{Vacuum vs. Atmosphere With ADPG} \label{sec:atmovsvac}
+Here ADPG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
 
-Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results for all cases.
+Figures\:\ref{fig:trajatmovsvac} through\:\ref{fig:massatmovsvac} show nominal profiles for the ADPG law in both atmosphere and vacuum. These trajectories start from Case 6 as listed in Table\:\ref{tab:IC}. Figures\:\ref{fig:trajatmovsvac} and\:\ref{fig:altatmovsvac} show that in atmosphere, the PDI strategy with the vehicle held at optimum angle of attack results in higher lift, meaning that the vehicle does not lose altitude as quickly as in vacuum, while Figure\:\ref{fig:spdatmovsvac} shows it losing speed much more quickly during this phase. This suggests that the aerodynamic effects have an appreciable effect on the energy ultimately required for powered descent and soft landing. 
+
+Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same conclusion. Upon ignition, the thrust required in atmosphere is far lower than that required in vacuum, and the ship mass stays higher in atmosphere throughout most of the trajectory, particularly the ending mass, reflecting lower fuel consumption. The thrust profile in atmosphere suggests a fairly conservative ignition; since more energy is burned off through aerodynamic effects, less thrust is required than might be expected by the gravity turn solution which generates the operative time-to-go. This leaves appreciable margin for error, which is explored further in the dispersed results of Secion\:\ref{sec:atmoperf}.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajatmovsvac.pdf}
+		\caption{Trajectory: Vacuum vs. Atmosphere \label{fig:trajatmovsvac} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/altatmovsvac.pdf}
+		\caption{Altitude: Vacuum vs. Atmosphere \label{fig:altatmovsvac} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/rngatmovsvac.pdf}
+		\caption{Ground Range: Vacuum vs. Atmosphere \label{fig:rngatmovsvac} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/spdatmovsvac.pdf}
+		\caption{Speed: Vacuum vs. Atmosphere \label{fig:spdatmovsvac} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/thratmovsvac.pdf}
+		\caption{Thrust Magnitude: Vacuum vs. Atmosphere \label{fig:thratmovsvac} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/massatmovsvac.pdf}
+		\caption{Ship Mass: Vacuum vs. Atmosphere \label{fig:massatmovsvac} }
+	\end{minipage}
+\end{figure}
+
+
+
+\subsection{Vacuum Performance} \label{sec:vacperf}
+
+%Table and figures for the following condition:
+%APDG Guidance Law
+%Full dispersion (rocket, nav, IC)
+%Vacuum effects
+%All cases including dynamic ignition
+Presented here are results for the Vacuum condition, comparing the performance of PDI with specified ignition time in the form of predetermined initial conditions.
+
+Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results for all cases. This gives a baseline from which to evaluate the typical profiles of each Case and the PDI strategy. 
+
+Figure\:\ref{fig:trajpowvac} shows significant landing site overshoot on Case 1. The plot of Ground Range vs. Time in Figure\:\ref{fig:rngpowvac} tells a similar story, with the ground range nearly reaching zero before increasing at around 30 seconds before settling back toward zero. Figure\:\ref{fig:thrpowvac} is the most telling plot, with the Thrust Magnitude profiles for each case plotted vs. time. Cases 4 through 6 do not saturate at any point in their trajectories, either at the lower or upper bounds of thrust. Cases 1 through 3 do however, with Case 1 saturating at the upper bound for a large portion of its trajectory. 
+
+Case 7 representing the PDI strategy also saturates its thrust for part of its trajectory after ignition but settles out toward the middle of the range by the end of its flight. Its other plots are unique relative to the other cases as well, with Speed in Figure\:\ref{fig:spdpowvac} showing the characteristic increase in speed due to its ballistic trajectory until powered descent initiation unlike all other Cases. Its Altitude in Figure\:\ref{fig:altpowvac} starts in line with Case 6 but decreases more quickly and ends on a similar path as Case 4. Its Ground Range behaves similarly in Figure\:\ref{fig:rngpowvac}. Its trajectory in Figure\:\ref{fig:trajpowvac} stands out in red, clearly following a much different path than any of the other Cases.
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/trajpowvac.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:trajpowvac} }
+		\caption{Trajectory: ADPG in Vacuum \label{fig:trajpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1661,7 +1754,7 @@ Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results 
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/spdpowvac.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:spdpowvac} }
+		\caption{Speed: ADPG in Vacuum \label{fig:spdpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1669,7 +1762,7 @@ Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results 
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/altpowvac.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:altpowvac} }
+		\caption{Altitude: ADPG in Vacuum \label{fig:altpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1677,7 +1770,7 @@ Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results 
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/rngpowvac.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:rngpowvac} }
+		\caption{Ground Range: ADPG in Vacuum \label{fig:rngpowvac} }
 	\end{minipage}
 \end{figure}
 
@@ -1685,15 +1778,12 @@ Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results 
 	\centering
 	\begin{minipage}{4.5 in}
 		\includegraphics[width=\linewidth]{Figures/thrpowvac.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:thrpowvac} }
+		\caption{Thrust Magnitude: ADPG in Vacuum \label{fig:thrpowvac} }
 	\end{minipage}
 \end{figure}
 
-Table and figures for the following condition:
-APDG Guidance Law
-Full dispersion (rocket, nav, IC)
-Vacuum effects
-All cases including dynamic ignition
+Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of the Cases perform similarly in terms of deviation from the mean aside from Case 1. Case 1 shows much higher fuel consumption deviation, flight time deviation, final range deviation, and final speed deviation. 
+
 \begin{table}[ht]                                                                                              
 	\centering        
 	\caption{Performance of PD Guidance In Vacuum}                                                                 
@@ -1719,12 +1809,54 @@ All cases including dynamic ignition
 	\end{tabular}
 \end{table}    
 
-\subsection{Atmospheric Performance} \label{sec:results_atmosphere}
-Table and figures for the following condition:
-APDG Guidance Law
-Full dispersion (rocket, nav, IC)
-Atmospheric effects
-All cases including dynamic ignition
+\subsection{Atmospheric Performance} \label{sec:atmoperf}
+%Table and figures for the following condition:
+%APDG Guidance Law
+%Full dispersion (rocket, nav, IC)
+%Atmospheric effects
+%All cases including dynamic ignition
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/trajpowatmo.pdf}
+		\caption{Trajectory: ADPG in Atmosphere \label{fig:trajpowatmo} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/altpowatmo.pdf}
+		\caption{Altitude: ADPG in Atmosphere \label{fig:altpowatmo} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/rngpowatmo.pdf}
+		\caption{Ground Range: ADPG in Atmosphere \label{fig:rngpowatmo} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/spdpowatmo.pdf}
+		\caption{Speed: ADPG in Atmosphere \label{fig:spdpowatmo} }
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/thrpowatmo.pdf}
+		\caption{Thrust Magnitude: ADPG in Atmosphere \label{fig:thrpowatmo} }
+	\end{minipage}
+\end{figure}
+
+
 
 \begin{table}[ht]                                                                                                  
 	\centering        

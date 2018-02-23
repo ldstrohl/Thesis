@@ -445,12 +445,13 @@ if options(5)
     j = dt0*[1:length(a_GT_vis)];
     figure('Name','Gravity Turn')
     yyaxis left
-    plot(j,a_GT_vis)
+    plot(j,a_GT_vis,j,T_max/m0*ones(1,length(a_GT_vis)))
     yyaxis right
     plot(j,sf_vis,j,range(1:length(a_GT_vis)))
-    title('Gravity Turn')
+%     title('Gravity Turn')
     xlabel('Run time (s)')
-    legend({'a_{GT}','s_{GT}','Downrange'},'Location','Northwest')
+    legend({'a_{GT}','a_{max}','s_{GT}','Downrange'},'Location','Northwest')
+    grid on
     
     figure('Name','Thrust Vector')
     plot(dt0*[1:k-1],aT_tracking(1,:),...

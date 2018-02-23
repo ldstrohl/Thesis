@@ -36,16 +36,18 @@
 \contentsline {section}{\numberline {3.6}Monte Carlo}{20}
 \contentsline {section}{\numberline {3.7}Initial Condition}{21}
 \contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{25}
-\contentsline {subsection}{\numberline {4.0.1}Comparison of E-Guidance with APDG}{25}
-\contentsline {subsection}{\numberline {4.0.2}Navigation Error}{29}
-\contentsline {subsection}{\numberline {4.0.3}Vacuum Performance}{30}
-\contentsline {subsection}{\numberline {4.0.4}Atmospheric Performance}{32}
-\contentsline {subsection}{\numberline {4.0.5}Discussion}{33}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{34}
-\contentsline {chapter}{\numberline {6}REFERENCING}{35}
-\contentsline {schapter}{BIBLIOGRAPHY}{36}
+\contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{25}
+\contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{27}
+\contentsline {subsection}{\numberline {4.0.3}Navigation Error}{31}
+\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere With ADPG}{31}
+\contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{35}
+\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{38}
+\contentsline {subsection}{\numberline {4.0.7}Discussion}{41}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{42}
+\contentsline {chapter}{\numberline {6}REFERENCING}{43}
+\contentsline {schapter}{BIBLIOGRAPHY}{44}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{37}
+\contentsline {chaphd}{APPENDICES}{45}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{38}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{48}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{46}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{49}

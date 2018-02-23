@@ -1,0 +1,50 @@
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/altatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:altatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/massatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:massatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/rngatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:rngatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/spdatmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:spdatmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/thratmovsvac.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:thratmovsvac} }
+    \end{minipage}
+\end{figure}
+
+
+
