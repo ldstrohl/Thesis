@@ -11,10 +11,10 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_vac.mat';
+filename = 'traj_atmovsvac.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
 save_figs = 1; % 1 to generate jpgs
-fignamebase = 'powvac' % base of fig name (thesis section)
+fignamebase = 'atmovsvac' % base of fig name (thesis section)
 
 if variable_name_flag
     %     % input variable name strings
@@ -96,8 +96,8 @@ for j = 2:data_size(2)
 %     title(sprintf('%s vs. Time',var_names(j-1)))
     ylabel(sprintf('%s',var_names(j-1)))
     xlabel('Time (s)')
-            legend(legend_entry)
-%     legend('Atmosphere','Vacuum')
+%             legend(legend_entry)
+    legend('Atmosphere','Vacuum')
     if save_figs
         thesis_fig(gcf,strcat(sprintf('%s',var_names(j-1)),fignamebase))
     end

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  23 FEB 2018 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  23 FEB 2018 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,7 +728,7 @@ File: Figures/trajunpowatmo_1.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1048.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [23 <./Figures/trajunpowvacgr.pdf>]
-<Figures/trajunpowatmo_2.pdf, id=187, 421.575pt x 316.18124pt>
+<Figures/trajunpowatmo_2.pdf, id=186, 421.575pt x 316.18124pt>
 File: Figures/trajunpowatmo_2.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_2.pdf>
 Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1056.
@@ -740,47 +740,47 @@ CHAPTER 4.
 [25
 
 ]
-<Figures/gtcriteriavac.pdf, id=251, 421.575pt x 316.18124pt>
+<Figures/gtcriteriavac.pdf, id=250, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriavac.pdf Graphic file (type pdf)
 <use Figures/gtcriteriavac.pdf>
 Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1548.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/gtcriteriaatmo.pdf, id=252, 421.575pt x 316.18124pt>
+<Figures/gtcriteriaatmo.pdf, id=251, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriaatmo.pdf Graphic file (type pdf)
 <use Figures/gtcriteriaatmo.pdf>
 Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1558.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [26 <./Figures/gtcriteriavac.pdf>]
  Subsection 4.0.2.
-<Figures/trajEvsAPDG.pdf, id=273, 421.575pt x 316.18124pt>
+<Figures/trajEvsAPDG.pdf, id=272, 421.575pt x 316.18124pt>
 File: Figures/trajEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/trajEvsAPDG.pdf>
 Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1581.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
 [27 <./Figures/gtcriteriaatmo.pdf>]
-<Figures/altEvsAPDG.pdf, id=294, 421.575pt x 316.18124pt>
+<Figures/altEvsAPDG.pdf, id=293, 421.575pt x 316.18124pt>
 File: Figures/altEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/altEvsAPDG.pdf>
 Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1589.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/rngEvsAPDG.pdf, id=295, 421.575pt x 316.18124pt>
+<Figures/rngEvsAPDG.pdf, id=294, 421.575pt x 316.18124pt>
 File: Figures/rngEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/rngEvsAPDG.pdf>
 Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1597.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [28 <./Figures/trajEvsAPDG.pdf> <./Figures/altEvsAPDG.pdf>]
-<Figures/spdEvsAPDG.pdf, id=356, 421.575pt x 316.18124pt>
+<Figures/spdEvsAPDG.pdf, id=355, 421.575pt x 316.18124pt>
 File: Figures/spdEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/spdEvsAPDG.pdf>
 Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1605.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/thrEvsAPDG.pdf, id=357, 421.575pt x 316.18124pt>
+<Figures/thrEvsAPDG.pdf, id=356, 421.575pt x 316.18124pt>
 File: Figures/thrEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/thrEvsAPDG.pdf>
 Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1613.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [29 <./Figures/rngEvsAPDG.pdf> <./Figures/spdEvsAPDG.pdf>]
-<Figures/fatEvsAPDG.pdf, id=404, 421.575pt x 316.18124pt>
+<Figures/fatEvsAPDG.pdf, id=403, 421.575pt x 316.18124pt>
 File: Figures/fatEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/fatEvsAPDG.pdf>
 Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1621.
@@ -790,92 +790,92 @@ Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1621.
  Subsection 4.0.3.
  Subsection 4.0.4.
 [31]
-<Figures/trajatmovsvac.pdf, id=455, 421.575pt x 316.18124pt>
+<Figures/trajatmovsvac.pdf, id=454, 421.575pt x 316.18124pt>
 File: Figures/trajatmovsvac.pdf Graphic file (type pdf)
 <use Figures/trajatmovsvac.pdf>
 Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1683.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/altatmovsvac.pdf, id=456, 421.575pt x 316.18124pt>
+<Figures/altatmovsvac.pdf, id=455, 421.575pt x 316.18124pt>
 File: Figures/altatmovsvac.pdf Graphic file (type pdf)
 <use Figures/altatmovsvac.pdf>
 Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1691.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [32 <./Figures/trajatmovsvac.pdf>]
-<Figures/rngatmovsvac.pdf, id=500, 421.575pt x 316.18124pt>
+<Figures/rngatmovsvac.pdf, id=499, 421.575pt x 316.18124pt>
 File: Figures/rngatmovsvac.pdf Graphic file (type pdf)
 <use Figures/rngatmovsvac.pdf>
 Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1699.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/spdatmovsvac.pdf, id=501, 421.575pt x 316.18124pt>
+<Figures/spdatmovsvac.pdf, id=500, 421.575pt x 316.18124pt>
 File: Figures/spdatmovsvac.pdf Graphic file (type pdf)
 <use Figures/spdatmovsvac.pdf>
 Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1707.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [33 <./Figures/altatmovsvac.pdf> <./Figures/rngatmovsvac.pdf>]
-<Figures/thratmovsvac.pdf, id=549, 421.575pt x 316.18124pt>
+<Figures/thratmovsvac.pdf, id=548, 421.575pt x 316.18124pt>
 File: Figures/thratmovsvac.pdf Graphic file (type pdf)
 <use Figures/thratmovsvac.pdf>
 Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1715.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/massatmovsvac.pdf, id=550, 421.575pt x 316.18124pt>
+<Figures/massatmovsvac.pdf, id=549, 421.575pt x 316.18124pt>
 File: Figures/massatmovsvac.pdf Graphic file (type pdf)
 <use Figures/massatmovsvac.pdf>
 Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1723.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [34 <./Figures/spdatmovsvac.pdf> <./Figures/thratmovsvac.pdf>]
  Subsection 4.0.5.
-<Figures/trajpowvac.pdf, id=597, 421.575pt x 316.18124pt>
+<Figures/trajpowvac.pdf, id=596, 421.575pt x 316.18124pt>
 File: Figures/trajpowvac.pdf Graphic file (type pdf)
 <use Figures/trajpowvac.pdf>
 Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1748.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
 [35 <./Figures/massatmovsvac.pdf>]
-<Figures/spdpowvac.pdf, id=623, 421.575pt x 316.18124pt>
+<Figures/spdpowvac.pdf, id=621, 421.575pt x 316.18124pt>
 File: Figures/spdpowvac.pdf Graphic file (type pdf)
 <use Figures/spdpowvac.pdf>
 Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1756.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/altpowvac.pdf, id=624, 421.575pt x 316.18124pt>
+<Figures/altpowvac.pdf, id=622, 421.575pt x 316.18124pt>
 File: Figures/altpowvac.pdf Graphic file (type pdf)
 <use Figures/altpowvac.pdf>
 Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1764.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [36 <./Figures/trajpowvac.pdf> <./Figures/spdpowvac.pdf>]
-<Figures/rngpowvac.pdf, id=679, 421.575pt x 316.18124pt>
+<Figures/rngpowvac.pdf, id=677, 421.575pt x 316.18124pt>
 File: Figures/rngpowvac.pdf Graphic file (type pdf)
 <use Figures/rngpowvac.pdf>
 Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1772.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/thrpowvac.pdf, id=680, 421.575pt x 316.18124pt>
+<Figures/thrpowvac.pdf, id=678, 421.575pt x 316.18124pt>
 File: Figures/thrpowvac.pdf Graphic file (type pdf)
 <use Figures/thrpowvac.pdf>
 Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1780.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [37 <./Figures/altpowvac.pdf> <./Figures/rngpowvac.pdf>]
  Subsection 4.0.6.
-<Figures/trajpowatmo.pdf, id=721, 421.575pt x 316.18124pt>
+<Figures/trajpowatmo.pdf, id=719, 421.575pt x 316.18124pt>
 File: Figures/trajpowatmo.pdf Graphic file (type pdf)
 <use Figures/trajpowatmo.pdf>
 Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 1822.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
 [38 <./Figures/thrpowvac.pdf>]
-<Figures/altpowatmo.pdf, id=744, 421.575pt x 316.18124pt>
+<Figures/altpowatmo.pdf, id=742, 421.575pt x 316.18124pt>
 File: Figures/altpowatmo.pdf Graphic file (type pdf)
 <use Figures/altpowatmo.pdf>
 Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 1830.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/rngpowatmo.pdf, id=745, 421.575pt x 316.18124pt>
+<Figures/rngpowatmo.pdf, id=743, 421.575pt x 316.18124pt>
 File: Figures/rngpowatmo.pdf Graphic file (type pdf)
 <use Figures/rngpowatmo.pdf>
 Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 1838.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
  [39 <./Figures/trajpowatmo.pdf> <./Figures/altpowatmo.pdf>]
-<Figures/spdpowatmo.pdf, id=815, 421.575pt x 316.18124pt>
+<Figures/spdpowatmo.pdf, id=812, 421.575pt x 316.18124pt>
 File: Figures/spdpowatmo.pdf Graphic file (type pdf)
 <use Figures/spdpowatmo.pdf>
 Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 1846.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/thrpowatmo.pdf, id=816, 421.575pt x 316.18124pt>
+<Figures/thrpowatmo.pdf, id=813, 421.575pt x 316.18124pt>
 File: Figures/thrpowatmo.pdf Graphic file (type pdf)
 <use Figures/thrpowatmo.pdf>
 Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 1854.
@@ -897,22 +897,17 @@ APPENDIX A.
 [46
 
 ]
-<Figures/convtestatmo.pdf, id=903, 421.575pt x 316.18124pt>
+<Figures/convtestatmo.pdf, id=901, 421.575pt x 316.18124pt>
 File: Figures/convtestatmo.pdf Graphic file (type pdf)
 <use Figures/convtestatmo.pdf>
 Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 32.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
-<Figures/convtestvac.pdf, id=904, 421.575pt x 316.18124pt>
+<Figures/convtestvac.pdf, id=902, 421.575pt x 316.18124pt>
 File: Figures/convtestvac.pdf Graphic file (type pdf)
 <use Figures/convtestvac.pdf>
 Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 42.
 (pdftex.def)             Requested size: 325.215pt x 243.9138pt.
- [47 <./Figures/convtestatmo.pdf>]
-File: Figures/trajunpowvacgr.pdf Graphic file (type pdf)
-<use Figures/trajunpowvacgr.pdf>
-Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 68.
-(pdftex.def)             Requested size: 325.215pt x 243.9138pt.
- [48 <./Figures/convtestvac.pdf>]
+ [47 <./Figures/convtestatmo.pdf>] [48 <./Figures/convtestvac.pdf>]
 APPENDIX B.
 [49
 
@@ -922,10 +917,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9688 strings out of 492980
- 145202 string characters out of 6136208
- 279011 words of memory out of 5000000
- 12992 multiletter control sequences out of 15000+600000
+ 9687 strings out of 492980
+ 145185 string characters out of 6136208
+ 279000 words of memory out of 5000000
+ 12991 multiletter control sequences out of 15000+600000
  23142 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,16n,76p,1988b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -946,10 +941,10 @@ y8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/201
 7/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (61 pages, 4004916 bytes).
+Output written on thesis.pdf (61 pages, 4004734 bytes).
 PDF statistics:
- 1115 PDF objects out of 1200 (max. 8388607)
- 992 compressed objects within 10 object streams
+ 1113 PDF objects out of 1200 (max. 8388607)
+ 990 compressed objects within 10 object streams
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

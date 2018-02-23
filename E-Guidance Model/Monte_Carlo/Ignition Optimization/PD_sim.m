@@ -250,6 +250,8 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
             range_trigger = 1;
 %             fprintf('range\n')
         end
+        % SPECIAL CONFIG: UNPOWERED TRAJECTORY
+        range_trigger = 0;
         
         if range_trigger
             ignition_switch = 1;
