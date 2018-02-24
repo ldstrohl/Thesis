@@ -7,11 +7,12 @@
 \contentsline {chaphd}{CHAPTER}{1}
 \nopagebreak 
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
-\contentsline {section}{\numberline {1.1}Literature Review}{1}
-\contentsline {section}{\numberline {1.2}Contribution}{2}
-\contentsline {section}{\numberline {1.3}Organization}{2}
-\contentsline {section}{\numberline {1.4}Problem Statement}{3}
-\contentsline {subsection}{\numberline {1.4.1}CobraMRV}{3}
+\contentsline {section}{\numberline {1.1}Guidance and Control in Aerospace}{1}
+\contentsline {section}{\numberline {1.2}Literature Review}{1}
+\contentsline {section}{\numberline {1.3}Contribution}{2}
+\contentsline {section}{\numberline {1.4}Organization}{3}
+\contentsline {section}{\numberline {1.5}Problem Statement}{3}
+\contentsline {subsection}{\numberline {1.5.1}CobraMRV}{3}
 \contentsline {chapter}{\numberline {2}METHODOLOGY}{5}
 \contentsline {section}{\numberline {2.1}Notation}{5}
 \contentsline {section}{\numberline {2.2}Coordinate Frame}{6}
@@ -31,23 +32,28 @@
 \contentsline {section}{\numberline {3.4}Navigation Module}{18}
 \contentsline {section}{\numberline {3.5}Aerodynamic Model}{19}
 \contentsline {subsection}{\numberline {3.5.1}Atmosphere Model}{19}
-\contentsline {subsection}{\numberline {3.5.2}Lift and Drag}{19}
+\contentsline {subsection}{\numberline {3.5.2}Lift and Drag}{20}
 \contentsline {subsection}{\numberline {3.5.3}Orientation}{20}
 \contentsline {section}{\numberline {3.6}Monte Carlo}{20}
-\contentsline {section}{\numberline {3.7}Initial Condition}{21}
-\contentsline {chapter}{\numberline {4}RESULTS AND DISCUSSION}{25}
-\contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{25}
-\contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{27}
-\contentsline {subsection}{\numberline {4.0.3}Navigation Error}{31}
-\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere With APDG}{31}
-\contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{35}
-\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{38}
-\contentsline {subsection}{\numberline {4.0.7}Discussion}{41}
-\contentsline {chapter}{\numberline {5}CONCLUSIONS AND FUTURE WORK}{42}
-\contentsline {chapter}{\numberline {6}REFERENCING}{43}
-\contentsline {schapter}{BIBLIOGRAPHY}{44}
+\contentsline {section}{\numberline {3.7}Initial Condition}{22}
+\contentsline {chapter}{\numberline {4}RESULTS}{26}
+\contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{26}
+\contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{28}
+\contentsline {subsection}{\numberline {4.0.3}Navigation Error}{32}
+\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere}{32}
+\contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{36}
+\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{40}
+\contentsline {chapter}{\numberline {5}DISCUSSION}{44}
+\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{44}
+\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{46}
+\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{46}
+\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{47}
+\contentsline {section}{\numberline {6.1}PDI}{47}
+\contentsline {section}{\numberline {6.2}Future Work}{47}
+\contentsline {chapter}{\numberline {7}REFERENCING}{48}
+\contentsline {schapter}{BIBLIOGRAPHY}{49}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{45}
+\contentsline {chaphd}{APPENDICES}{50}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{46}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{49}
+\contentsline {chapter}{\numberline {A}PLACEHOLDER}{51}
+\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{53}

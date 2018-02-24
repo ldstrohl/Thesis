@@ -16,6 +16,10 @@ A manned Mars mission places a heavy penalty on propellant inefficiency. This is
 % By labeling the chapter, I can refer to it later using the
 % label. (\ref{chap:intro}, \pageref{chap:intro}) Latex will take care
 % of the numbering.
+
+\section{Guidance and Control in Aerospace} \label{sec:guidancevcontrol}
+There is a difference between guidance and control in engineering. Here I describe what that difference is.
+
 \section{Literature Review}
 The problem of powered descent guidance has been studied extensively throughout the last century, particularly since The Space Race of the 1960s and the Apollo program which spawned E-Guidance, presented first in Cherry\:1964\:\cite{CHERRY}. These analyses have approached the problem in several different ways, but they generally share the requirement that the solution ensure soft landing in vacuum conditions. Most if not all of these analyses attempt to optimize fuel consumption due to the heavy penalty imposed on payload mass by inefficient propellant use when landing on an extraterrestrial body. Almost all approaches also share the assumption of a fixed final time, computed or chosen in various ways. Few of them address the problem of PDI, or when to start powered descent guidance. None investigate PDI with E-Guidance in the context of a manned mission landing in atmosphere. Some work has been done in mission phase planning but little optimization has been done for an  initial trajectory with free ignition time.
 
@@ -871,8 +875,8 @@ The full simulation code is wrapped in a Monte-Carlo script. The Monte-Carlo scr
 
 Further detail for each part of the simulation follows.
 
-\section{Numerical Integration}
-The numerical time integration is done via a standard Runge-Kutta formulation, presented here as in Ferziger and Peri\'c\:\cite{FERZIGER}. The state vector $\bm{\phi}$ is passed to the equations of motion $\bm{f}(\bm{\phi},t)$ several times as in Equation \ref{eqn:RK4}.
+\section{Numerical Integration} \label{sec:RK4}
+The numerical time integration is done via a standard Runge-Kutta formulation, presented here as in Ferziger and Peri\'c\:\cite{FERZIGER}. The state vector $\bm{\phi}$ is passed to the equations of motion $\bm{f}(\bm{\phi},t)$ several times as in Equation \ref{eqn:RK4}. $\Delta t$, the time integration step for the simulation, is fixed at 1 millisecond ($10^{-3}$ s). This is shown to be sufficiently small in Section\:\ref{sec:convergence}.
 
 \begin{align}
 \label{eqn:RK4}
@@ -894,26 +898,28 @@ The EOM function computes the derivative of the state vector $\bm{\phi}$. It is 
 \label{eqn:EoM_sim1}
 \bm{\dot{r}} &= \bm{V}\\
 \label{eqn:EoM_sim2}
-\bm{\dot{V}} &= \bm{g(r)} + \bm{a_T} + \bm{F}_{LD}
+\bm{\dot{V}} &= \bm{g(r)} + \bm{a_T} + \frac{\bm{F}_{LD}}{m}
 \end{align}
 
-For simplicity, the vehicle's thrust acceleration response to a guidance command is modeled as zero-lag, i.e. perfect control. It assumes that the vehicle instantly and perfectly responds to the commanded $\bm{a}_T$, so the command from the guidance computer, after being put through a thrust magnitude limiter, is the same as the term in Equation \ref{eqn:EoM_sim2}.
+For simplicity, the vehicle's thrust acceleration response to a guidance command is modeled as zero-lag, i.e. perfect control. It assumes that the vehicle instantly and perfectly responds to the commanded $\bm{a}_T$, so the command from the guidance computer, after being put through a thrust magnitude limiter, is the same as the term in Equation \ref{eqn:EoM_sim2}. This is done to separate the study of Guidance laws from the performance of Control laws, as discussed in Section\:\ref{sec:guidancevcontrol}.
 
 \section{Guidance Computer} \label{sec:guidancecomp}
 The guidance computer takes as input the current state as provided by the navigation system, the terminal constraints (final position and velocity in the case of E-Guidance, with final acceleration as well in the case of APDG), nominal rocket max thrust, current vehicle mass, time-to-go, and selection of guidance law.
 
 The output is a throttle setting as a fraction of the nominal max thrust and a direction for the thrust acceleration $\bm{a}_T$. These values are unlimited at the level of the guidance computer, i.e. the throttle setting can be larger than 1 requiring thrust magnitude greater than $T_{max}$. 
 
-In this implementation, the throttle is limited after being passed out of the guidance computer to satisfy the real performance constraint represented in Equation \ref{eqn:thrustlimit}. Since the guidance computer only receives nominal $T_{max}$ upon which to base its throttle setting, the resultant command can be off due to engine performance dispersion.
+In this implementation, the throttle is limited after being passed out of the guidance computer to reflect the real performance constraint represented in Equation \ref{eqn:thrustlimit}. Since the guidance computer only receives nominal $T_{max}$ upon which to base its throttle setting, the resultant command can be off due to engine performance dispersion.
 
-The guidance command is updated periodically at a rate lower than the simulation rate. It must also stop updating when $t_{go}$ becomes small due to its presence in the denominator for several entries in the E matrices of Equations \ref{eqn:E_system} and \ref{eqn:E_system_adv}. For the last half second the thrust acceleration is held constant. This has very little impact on landing precision.
+The guidance command is updated periodically at a rate lower than the simulation rate. Here the guidance is refreshed at 5 Hz. It must also stop updating when $t_{go}$ becomes small due to its presence in the denominator for several entries in the E matrices of Equations \ref{eqn:E_system} and \ref{eqn:APDGlaw}. For the last half second the thrust acceleration is held constant. This has very little impact on landing precision.
 
-The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on the current conditions and then allowed to run open-loop until simulation stop. The safety factor applied depends upon conditions. In vacuum, a factor of $1.2$ is necessarily applied to ensure soft landing when using the ignition optimization strategy. With atmospheric conditions the additional factor is unnecessary, as will be demonstrated in section \ref{sec:results_atmosphere}.
+The time-to-go computation takes place in the guidance module. The computation method is as described in \ref{sec:Time-to-go}. A gravity turn estimate is used to initialize the simulation, but it is reset upon ignition based on the current conditions and then allowed to run open-loop until simulation stop. The safety factor applied depends upon conditions. In vacuum, a factor of $1.2$ is necessarily applied to ensure soft landing when using the ignition optimization strategy. With atmospheric conditions the additional factor is unnecessary, as will be demonstrated in section \ref{sec:atmoperf}.
+
+The guidance solution requires specification of the terminal constraints. In both E-Guidance and APDG, the terminal constraints for position and velocity are specified in the same frame as the initial conditions. For the initial conditions listed in Table\:\ref{tab:IC}, the final position constraint is the origin. The simulation operates in a Mars centered frame in order to simplify gravitational calculations and model a spherical body easily, so the final position constraint seen by the guidance computer is $\bm{r}_f = [0,0,R_M]^T$, where $R_M$ is the radius of Mars. The final velocity is chosen as 1 m/s in the down direction. For APDG the final thrust acceleration is given as Equation\:\ref{eqn:constraint_ag}, where c is chosen to be 2. This more strongly enforces the final attitude constraint than a smaller scalar without imposing too strong a requirement to the detriment of propellant performance.
 
 \section{Ignition trigger}
-Ignition time is determined by checking the two criterion discussed in Section \ref{sec:ignitiontiming}: required thrust acceleration magnitude $\bm{a}_{GT}$ and downrange distanced traveled by a gravity turn maneuver $s_{GT}$. The vehicle is started in atmosphere on a trajectory roughly in line with the landing site. As the vehicle travels along its trajectory with its engine off, these two criterion are constantly checked. Once either one is satisfied, the engine is ignited and the time-to-go estimate is updated as described in Section \ref{sec:guidancecomp}. Implementation of the ignition switch is performed in the simulation script by a simple flag that is checked upon guidance updates.
+Ignition time is determined by checking the two criterion discussed in Section \ref{sec:PDI}: required thrust acceleration magnitude $\bm{a}_{GT}$ and downrange distanced traveled by a gravity turn maneuver $s_{GT}$. The vehicle is started in atmosphere on a trajectory roughly in line with the landing site. As the vehicle travels along its trajectory with its engine off, these two criterion are constantly checked. Once either one is satisfied, the engine is ignited and the time-to-go estimate is updated as described in Section \ref{sec:guidancecomp}. Implementation of the ignition switch is performed in the simulation script by a simple flag that is checked upon guidance updates.
 
-It is important to be certain that the criteria are met at some point in the flight. This strategy ensures that the ignition trigger is flipped in time as is clear in Figure \ref{fig:criteriaGT}. Gravity turn required thrust acceleration magnitude monotonically increases throughout the unpowered trajectory, and downrange distance traveled in a gravity turn maneuver decreases faster than the vehicle's range from landing site.
+It is important to be certain that the criteria are met at some point in the flight. This strategy ensures that the ignition trigger is flipped in time as is discussed in Section\:\ref{sec:PDIres}. Gravity turn required thrust acceleration magnitude monotonically increases throughout the unpowered trajectory, and downrange distance traveled in a gravity turn maneuver decreases faster than the vehicle's range from landing site.
 
 \section{Navigation Module} \label{sec:navmod}
 The navigation module is fairly simplistic. It has two functions. 
@@ -927,7 +933,7 @@ The second function is to filter the noisy navigation measurements to produce a 
 \bm{x}_{est} = \alpha \bm{x}_{prev} + (1-\alpha) \bm{x}
 \end{equation}
 
-A Kalman filter would likely be used on a more sophisticated navigation system for a real aerospace vehicle, but given the simplicity of the navigation error and perfect knowledge of the noise distrubution, modeling a Kalman filter would likely provide too good an estimate effectively canceling the effects of simulated navigation error.
+A Kalman filter would likely be used on a more sophisticated navigation system for a real aerospace vehicle, but given the simplicity of the navigation error and perfect knowledge of the noise distribution, modeling a Kalman filter would likely provide too good an estimate effectively canceling the effects of simulated navigation error.
 
 \section{Aerodynamic Model}
 The Aerodynamic model is comprised of Mars atmosphere data from (insert atmosphere data reference), and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
@@ -952,7 +958,7 @@ A particular feature of the powered descent phase is the change in drag calculat
 \subsection{Lift and Drag}
 The vehicle aerodynamic model is based on the work of Cerimele\:et\:al\:\cite{CERIMELE}. 
 
-The work of Cerimele er al provides a model of the lift and drag coeffecients $C_L$ and $C_D$ based on vehicle Mach number and angle of attack. Vehicle angle of attack is determined directly from the thrust acceleration vector $\bm{a}_T$ and the vehicle velocity vector $\bm{V}$. 
+The work of Cerimele er al provides a model of the lift and drag coefficients $C_L$ and $C_D$ based on vehicle Mach number and angle of attack. Vehicle angle of attack is determined directly from the thrust acceleration vector $\bm{a}_T$ and the vehicle velocity vector $\bm{V}$. 
 
 During the unpowered phase of approach when PDI is being optimized, the vehicle is held at a constant angle of attack of $55^{\circ}$ to achieve maximum drag. 
 
@@ -973,8 +979,6 @@ The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body a
 \label{eqn:body_R}
 \bm{body}_R = \bm{body}_Y \times \bm{body}_R
 \end{equation}
-
-This calculation ensures zero side-slip, that the vehicle will always be pointed in the direction it is traveling. Figure \ref{fig:EulerAngles} shows a small changing yaw angle throughout flight since it is computed relative to a fixed guidance frame centered on the landing site, and the vehicle's initial condition is rotated around the curvature of the planet. 
 
 \section{Monte Carlo}
 The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parameters, initial condition, and navigation uncertainty. This allows each individual run to have dispersed conditions without modification of the code. The Monte-Carlo script allows choice of initial condition, fixed or dynamic, as well as specification of rocket parameter dispersion, initial condition dispersion in position and velocity, and navigation noise distribution.
@@ -1519,7 +1523,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %Math in section titles need to be \textbf{bold}, but cannot be bold in
 %the Table of Contents.
 
-\chapter{RESULTS AND DISCUSSION} \label{chap:results}
+\chapter{RESULTS} \label{chap:results}
 In this chapter results are presented for several simulated conditions.
 
 \begin{enumerate}
@@ -1536,7 +1540,7 @@ The third condition is the subject of this study. Whether dynamic PDI can reliab
 
 For dispersed cases the starting conditions are as listed in Table \ref{tab:IC} with the addition of Case 7, which represents the active PDI strategy. This Case is flown from the initial condition specified by Case 6, the first point on the trajectory, but with the engine off until one of the PDI criteria defined in Equations\:\ref{eqn:thrustcriterion} and\:\ref{eqn:rangecriterion} is met.
 
-\subsection{Adaptive PDI}
+\subsection{Adaptive PDI} \label{sec:PDIres}
 The first result to investigate is the validity of the PDI criteria in Equations\:\ref{eqn:thrustcriterion} and\:\ref{eqn:rangecriterion}. For these criteria to serve as ignition criteria, they must reliably trigger in time to land the vehicle softly.
 
 Figure\:\ref{fig:gtcriteriavac} shows data from a vacuum case of APDG with PDI active during the unpowered phase, before PDI has been triggered. The required thrust acceleration magnitude $a_{GT}$for a gravity turn is shown monotonically increasing throughout the unpowered trajectory, and the required downrange travel $s_{GT}$ is monotonically decreasing. $a_{GT}$ and $s_{GT}$ reach their limits at almost the same time, but this would not be true of all trajectories.
@@ -1669,7 +1673,7 @@ The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given t
 	
 \end{table}   
 
-\subsection{Vacuum vs. Atmosphere With APDG} \label{sec:atmovsvac}
+\subsection{Vacuum vs. Atmosphere} \label{sec:atmovsvac}
 Here APDG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
 
 Figures\:\ref{fig:trajatmovsvac} through\:\ref{fig:massatmovsvac} show nominal profiles for the APDG law in both atmosphere and vacuum. These trajectories start from Case 6 as listed in Table\:\ref{tab:IC}. Figures\:\ref{fig:trajatmovsvac} and\:\ref{fig:altatmovsvac} show that in atmosphere, the PDI strategy with the vehicle held at optimum angle of attack results in higher lift, meaning that the vehicle does not lose altitude as quickly as in vacuum, while Figure\:\ref{fig:spdatmovsvac} shows it losing speed much more quickly during this phase. This suggests that the aerodynamic effects have an appreciable effect on the energy ultimately required for powered descent and soft landing. 
@@ -1734,7 +1738,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 %Full dispersion (rocket, nav, IC)
 %Vacuum effects
 %All cases including dynamic ignition
-Presented here are results for the Vacuum condition, comparing the performance of PDI with specified ignition time in the form of predetermined initial conditions.
+Presented here are results for the vacuum condition, comparing the performance and robustness of APDG with adaptive PDI against specified ignition time in the form of predetermined initial conditions for a mission without aerodynamic effects. This is similar to the conditions experienced by the Apollo missions, though the simulation's parameters reflect a Martian gravitational field. As discussed in Section\:\ref{sec:guidancecomp}, there is a $1.2$ safety factor applied to the time-to-go as provided by Equation\:\ref{eqn:tgoGT} upon ignition for all cases in vacuum.
 
 Figures\:\ref{fig:trajpowvac} through\:\ref{fig:thrpowvac} show nominal results for all cases. This gives a baseline from which to evaluate the typical profiles of each Case and the PDI strategy. 
 
@@ -1784,6 +1788,12 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 
 Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of the Cases perform similarly in terms of deviation from the mean aside from Case 1. Case 1 shows much higher fuel consumption deviation, flight time deviation, final range deviation, and final speed deviation. 
 
+These deviations are due to failed landings; fully 45 of the 1000 runs of Case 1 in vacuum failed to land softly. All other runs had final ranges below 16 m, and all 45 of these failed landings had final ranges of over 600 m. Similarly, the 45 failed landings had final speeds in excess of 90 m/s, compared to the 16 m/s for all other Case 1 runs. Since the standard deviations of the other successful cases are in line with the errors expected from Navigation uncertainty in Section\:\ref{sec:naverror}, 16 m/s can be considered a bound on the error due to Navigation uncertainty, so these 45 landings are clearly cases where the guidance system failed.
+
+None of the other cases had any such landing failures.
+
+The lowest mean propellant consumption is given by Case 2, as well as the highest standard deviation in propellant consumption aside from Case 1.
+
 \begin{table}[ht]                                                                                              
 	\centering        
 	\caption{Performance of PD Guidance In Vacuum}                                                                 
@@ -1815,6 +1825,10 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 %Full dispersion (rocket, nav, IC)
 %Atmospheric effects
 %All cases including dynamic ignition
+
+Presented here are results for the atmospheric condition, comparing the performance and robustness of APDG with adaptive PDI against specified ignition time in the form of predetermined initial conditions for a mission with aerodynamic effects. This is representative of a Martian mission, the intended purpose of the CobraMRV. As discussed in Section\:\ref{sec:guidancecomp}, there is no safety factor applied to the time-to-go as provided by Equation\:\ref{eqn:tgoGT} upon ignition for any case in atmosphere. 
+
+Figures\:\ref{fig:trajpowatmo} through\:\ref{fig:thrpowatmo} show nominal trajectories from each of the 6 Cases outlined in Table\:\ref{tab:IC} as well as Case 7 representing the adaptive PDI strategy from the starting condition of Case 6. Figures\:\ref{fig:altpowatmo} and\:\ref{fig:spdpowatmo} show the behavior discussed in Section\:\ref{sec:atmovsvac} in which PDI's unpowered glide retains altitude while shedding speed. Figure\:\ref{fig:spdpowatmo} also shows odd behavior in Case 6, explained easily by Figure\:\ref{fig:thrpowatmo} in which the thrust saturates on the lower bound. Figure\:\ref{fig:thrpowatmo} shows PDI operating in the middle of the thrust range throughout the trajectory after ignition.
 
 \begin{figure}[H]
 	\centering
@@ -1856,7 +1870,9 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\end{minipage}
 \end{figure}
 
+Introducing dispersion produces Table\:\ref{tab:disppowatmo}. Again we see Case 1 showing failed landings. In atmosphere only 13 landings of 1000 failed, with range misses in excess of 152 m and speeds in excess of 32 m/s. These figures are lower than in vacuum.
 
+PDI shows the best propellant performance in atmosphere, and no landing failures. Its final range and speed accuracy is well in line with the other Cases and the error introduced by Navigation uncertainty discussed in Section\:\ref{sec:naverror}.
 
 \begin{table}[ht]                                                                                                  
 	\centering        
@@ -1883,8 +1899,57 @@ Introducing dispersion gives the results in Table\:\ref{tab:disppowvac}. Most of
 	\end{tabular}
 \end{table}   
 
-\subsection{Discussion}
-Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.
+\chapter{DISCUSSION}
+%Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.
+
+The results in Chapter\:\ref{chap:results} have many implications on the guidance approach of APDG as well as the adaptive powered descent initiation strategy of Section\:\ref{sec:PDI}. They will be discussed here, as well as the validity of the results themselves.
+
+\section{Simulation Error Analysis} \label{sec:convergence}
+As discussed in Section\:\ref{sec:RK4}, the numerical integration technique employed is a Runge-Kutta $4^{th}$ order method. This method is particularly attractive in computationally expensive applications because the total accumulated error due to time integration reduces on the order $O(\Delta t^4)$ where $\Delta t$ is the time integration step size, while the computational expense increases on the order $O(\Delta t)$. This means that a larger step size can produce the same order of error as a simulation using a first order scheme, saving significant computational and engineering time resources. There is a limit to the error reduction in that any finite computation produces machine error in rounding and variable storage. This simulation was run on a system with a machine error $\epsilon \approx 2*10^{-16}$.
+
+To trust the validity of a simulation's results, it must be shown that the simulation is running within the numerical integration scheme's asymptotic convergence. In essence, the error should demonstrate the expected order behavior. 
+
+
+A $4^{th}$ order scheme should show this error behavior. However, Figure\:\ref{fig:convtestatmo} clearly shows a linear error behavior, with error reducing with order $O(\Delta t)$. Error of order $O(\Delta t)$ and $O(\Delta t ^4)$ is shown for reference. This figure was generated by testing a particular moment in the simulation near the end of the trajectory without dispersion, with atmospheric effects and powered descent guidance. The baseline against which the error is measured is the finest resolution, i.e. the smallest time step, $\Delta t = 2^{-13} \approx 1.2*10^{-4}$. Running the same test with an explicit $1^{st}$ order Euler scheme produces a similar result. 
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/convtestatmo.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:convtestatmo} }
+	\end{minipage}
+\end{figure}
+
+
+The reason is that the derivative cannot be calculated at each intermediate step required for the RK4 scheme. Specifically, the terms $\bm{a}_T$ and $\frac{\bm{F}_{LD}}{m}$ representing the thrust acceleration and the aerodynamic effects in Equation\:\ref{eqn:EoM_sim2} must be held constant for the intermediate derivatives. These terms are actually also functions of the state $\bm{x}$, but they are highly non-linear. The thrust acceleration term is often held actually constant between steps since the guidance update rate is lower than the time integration rate, but every 200 time steps this assumption fails and error accumulates. Similarly, the aerodynamic model is never actually constant between time steps.
+
+Holding terms which are functions of the state $\bm{\phi}$ constant between time steps reduces the integration method to Explicit Euler, given in Equation\:\ref{eqn:euler}. 
+
+\begin{equation}
+\label{eqn:euler}
+\bm{\phi}_{n+1} = \bm{\phi}_n + \Delta t \bm{f}(t_n,\bm{\phi}_n)
+\end{equation}
+
+If these terms are removed from the simulation, representing vacuum conditions with an unpowered trajectory, the error behavior is significantly different as demonstrated in Figure\:\ref{fig:convtestvac}. Here we see that the magnitude of the total error is drastically lower, a factor of $10^-7$ times the atmospheric error, yet no longer decreasing with $\Delta t$. This is because all remaining error in the solution is due to machine error for any practical time step size. Testing larger time steps would lead to unrealistic guidance update rates, making the simulation invalid or impractical.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/convtestvac.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:convtestvac} }
+	\end{minipage}
+\end{figure}
+
+However, since the simulation error is dominated by the atmospheric and thrust acceleration terms and has reached the asymptotic convergence range for these terms, the results can be taken as valid.
+
+\section{Apollo Powered Descent Guidance}
+The performance of APDG relative to E-Guidance is discussed here. The motivation is to show that, while not fuel optimal, it does produce reasonable results and can be expected to perform well while ensuring the practical mission consideration of final attitude constraints.
+
+\section{Adaptive Powered Descent Initiation}
+The performance of PDI is examined. Discuss its raw propellant impact and explain the results (not the absolute lowest possible in vacuum, but the lowest in atmosphere). Discuss the failure of pre-determined ignition conditions in Case 1 and 6 and how PDI deals with this. Do this by examining both Case 1 as the "too late" condition and case 6 in atmosphere as the "too early" condition. Talk about how PDI can be adjusted to account for dispersions, atmospheres, etc. 
+
+
+
 
 %Middle chapter.  Here we put the middle things, that is, things that
 %are in the middle and not in the beginning or in the end.  Here we
@@ -1921,7 +1986,11 @@ Here we interpret results, discussing agreement and disagreement with expected p
 
 \chapter{CONCLUSIONS AND FUTURE WORK}
 
+\section{PDI}
+Discuss its wider applicability to any powered descent problem in which engines have upper or lower bounds of thrust. 
 
+\section{Future Work}
+Discuss refinements to PDI; tgo safety factor as function of conditions for mission planning, or directly optimal approach of some kind.
 
 \chapter{REFERENCING}
 

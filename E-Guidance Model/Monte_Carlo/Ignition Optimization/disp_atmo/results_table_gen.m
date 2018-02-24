@@ -2,7 +2,7 @@
 clear
 close all
 
-latex_flag = 1;
+latex_flag = 0;
 input.tableCaption = 'Performance of PD Guidance With Aerodynamic Effects';
 input.tableLabel = 'tab:disppowatmo';
 input.tablePlacement = 'ht';

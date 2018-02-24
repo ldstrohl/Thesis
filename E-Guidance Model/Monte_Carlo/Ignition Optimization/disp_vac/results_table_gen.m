@@ -2,7 +2,7 @@
 clear
 close all
 
-latex_flag = 1;
+latex_flag = 0;
 input.tableCaption = 'Performance of PD Guidance In Vacuum';
 input.tableLabel = 'tab:disppowvac';
 input.tablePlacement = 'ht';
