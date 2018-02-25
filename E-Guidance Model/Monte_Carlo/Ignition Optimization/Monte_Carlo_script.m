@@ -12,7 +12,7 @@ debug_row = 12;
 % Data recording
 data_save_flag = 1; % save run data
 result_file = 'rundata_ignopti_flip.mat';
-traj_file = 'traj_IC'; % prefix - case is appended
+traj_file = 'traj_tgofac'; % prefix - case is appended
 traj_rate = 1/1; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
