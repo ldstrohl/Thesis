@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  25 FEB 2018 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.2.3)  25 FEB 2018 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,8 +676,8 @@ CHAPTER 3.
  Section 3.2.
 [19]
  Section 3.3.
- Section 3.4.
 [20]
+ Section 3.4.
  Section 3.5.
  Subsection 3.5.1.
 [21]
@@ -935,7 +935,7 @@ y8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/201
 7/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (70 pages, 4042270 bytes).
+Output written on thesis.pdf (70 pages, 4042472 bytes).
 PDF statistics:
  1185 PDF objects out of 1200 (max. 8388607)
  1050 compressed objects within 11 object streams
