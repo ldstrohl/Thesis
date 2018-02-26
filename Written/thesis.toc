@@ -52,7 +52,7 @@
 \contentsline {section}{\numberline {6.2}Future Work}{51}
 \contentsline {schapter}{BIBLIOGRAPHY}{54}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDICES}{55}
+\contentsline {chaphd}{APPENDIX}{55}
 \nopagebreak 
-\contentsline {chapter}{\numberline {A}PLACEHOLDER}{56}
-\contentsline {chapter}{\numberline {B}PLACEHOLDER REDUX}{58}
+\contentsline {chapter}{PLACEHOLDER}{55}
+\contentsline {chapter}{PLACEHOLDER REDUX}{57}

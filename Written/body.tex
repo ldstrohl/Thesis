@@ -125,7 +125,7 @@ Chapter\:\ref{chap:conclusions} states the conclusions of the study and makes re
 %text to include.
 %
 %For a general reference it is recommended that the student obtain the
-%user's guide and reference manual of Leslie Lamport \cite{LAM}. The
+%user's guide and reference manual of Leslie Lamport\:\cite{LAM}. The
 %student should obtain copies of the files used to generate this
 %document, then examine the ASCII files used to generate the document
 %and the \LaTeX\ output.  The files for this example thesis are the
@@ -176,8 +176,8 @@ Chapter\:\ref{chap:conclusions} states the conclusions of the study and makes re
 %such as when a section header starts at the bottom of a page or when
 %paragraphs have widows or orphans.
 %
-%Bibliographical citations are relatively easy.  Here is one \cite{ART}
-%and another citation \cite{Lehto:1976} and we can't forget Milnor
+%Bibliographical citations are relatively easy.  Here is one\:\cite{ART}
+%and another citation\:\cite{Lehto:1976} and we can't forget Milnor
 %\cite{Milnor:topdiff}.  Look at \verb+thbib.bib+ to see how to create
 %the database for the bibliography.
 %
@@ -339,9 +339,7 @@ The soft landing problem in atmosphere must be studied with a vehicle model. The
 In their paper, Cerimele et. al 2017\:\cite{CERIMELE} provide maximum thrust $T_{max}$ as well as mass, lift and drag characteristics, and other factors important for physical modeling and simulation to be described in more detail in Section\:\ref{chap:simulation}. The maximum thrust magnitude $T_{max}$ is given as $800\:kN$, and the vehicle's mass as the start of powered descent initiation is $58,000 kg$. 
 
 \chapter{METHODOLOGY} \label{chap:methodology}
-To investigate a guidance law with careful focus on the time-to-go approach, a law must be developed and implemented in a simulation framework. The Law's derivation is presented here in the context of optimal control, as is the time-to-go approach. 
-
-The simulation methodology is also described, including the numerical methods and the aerodynamic model.
+To investigate a guidance law with careful focus on the time-to-go approach, a law must be developed and implemented in a simulation framework. The derivation of E-Guidance is presented here in the context of optimal control, as is the time-to-go approach. The derivation of APDG is also presented without claim of optimality.
 
 %In this chapter we see how equations, theorems, figures and tables are
 %created, enumerated and referenced.  We also play around with lengths
@@ -960,7 +958,7 @@ The second function is to filter the noisy navigation measurements to produce a 
 A Kalman filter would likely be used on a more sophisticated navigation system for a real aerospace vehicle, but given the simplicity of the navigation error and perfect knowledge of the noise distribution, modeling a Kalman filter would likely provide too good an estimate effectively canceling the effects of simulated navigation error.
 
 \section{Aerodynamic Model}
-The Aerodynamic model is comprised of Mars atmosphere data from (insert atmosphere data reference), and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
+The Aerodynamic model is comprised of Mars atmosphere data from NASA's Mars-GRAM 2010\:\cite{MARSGRAM}, and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
 
 \subsection{Atmosphere Model}
 The atmosphere model is based on NASA's Mars-GRAM 2010\:\cite{MARSGRAM}, an engineering-level atmospheric model of the Martian atmosphere. The model used for this simulation is an empirically developed equation to represent the Martian atmosphere data within the mission's envelope. Mars-GRAM 2010 is based on NASA Ames Mars General Circulation Model for altitudes under 80 km.
@@ -1174,7 +1172,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %%        include the FULL CITATION, e.g.~} Source: Montezuma
 %%      Publishing, San Diego State University Dissertation and Thesis
 %%      Manual: Policies, Procedures and Format, Spring
-%%      2010. \cite[\S 4.10.4 Figures]{DTM2010spring}}
+%%      2010.\:\cite[\S 4.10.4 Figures]{DTM2010spring}}
 %%  \end{minipage}
 %%\end{figure}
 %
@@ -1210,7 +1208,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %should be easily readable and properly labeled according to the
 %regulations in the SDSU Thesis Manual. In this section we want to
 %demonstrate how \LaTeX\ handles tables. More complicated examples can
-%be found in Lamport's book \cite{LAM,LAM2}. We begin with a small table,
+%be found in Lamport's book\:\cite{LAM,LAM2}. We begin with a small table,
 %given by Table\:\ref{tab1} which inserts nicely into the text.  Note
 %that the same centering trick as was employed for figures is done here
 %and we set the width of the \texttt{minipage} environment to 1.9
@@ -1436,7 +1434,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %subfig problems.
 %
 %
-%Table captions (``table titles'' \cite{DTM2010spring}) go
+%Table captions (``table titles''\:\cite{DTM2010spring}) go
 %ABOVE\marginpar{\small\textbf{\textit{Style note}}} the table, must be
 %in \emph{headline style} where ``all major words are capitalized,''
 %and there is no period at the end of the caption; in figure captions
@@ -1445,7 +1443,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %  HAVE TO DO IT MANUALLY.}
 %
 %Charts, graphs, diagrams, maps, photographs, and other graphic
-%illustrations should all be labeled as \emph{Figures} \cite[\S4.6.9,
+%illustrations should all be labeled as \emph{Figures}\:\cite[\S4.6.9,
 %and \S4.10.4]{DTM2010spring}.  Figure captions are capitalized
 %sentence style in the text; therefore, the List of Figures entries
 %should be in sentence style.
@@ -1590,12 +1588,12 @@ Figure\:\ref{fig:gtcriteriaatmo} shows data from an atmospheric case of APDG wit
 
 
 \subsection{Comparison of E-Guidance with APDG} \label{sec:lawcomp}
-Table and figures for the following condition:
-Both guidance laws
-Full dispersion (Rocket, IC, Nav)
-Atmospheric effects
-Dynamic Ignition Case
-Comparing guidance laws
+%Table and figures for the following condition:
+%Both guidance laws
+%Full dispersion (Rocket, IC, Nav)
+%Atmospheric effects
+%Dynamic Ignition Case
+%Comparing guidance laws
 
 The choice between E-Guidance of Equation\:(\ref{eqn:simplelaw}) as flown on the Apollo missions and APDG of Equation\:(\ref{eqn:APDGlaw}) is examined below. Results are first presented as nominal performance in atmosphere in order to investigate the individual performance of each law without the effects of dispersion. Beyond this section, results will be presented using APDG.
 

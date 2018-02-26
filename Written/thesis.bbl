@@ -12,6 +12,11 @@ G.~W. Cherry.
   spaceflight.
 \newblock {\em AIAA Paper}, 64-638, 1964.
 
+\bibitem{CITRON}
+S.~J. Citron, S.~E. Dunin, and H.~F. Meissinger.
+\newblock A terminal guidance technique for lunar landing.
+\newblock {\em AIAA Journal}, 2:503--509, 1964.
+
 \bibitem{DSOUZA}
 C.~S. D'Souza.
 \newblock An optimal guidance law for planetary landing.
@@ -22,13 +27,8 @@ J.~H. Ferziger and M.~Peri\'c.
 \newblock {\em Computational Methods for Fluid Dynamics}.
 \newblock Springer, Berlin, 2002.
 
-\bibitem{CITRON}
-S~J.~Citron, S~E.~Dunin, and H~F.~Meissinger.
-\newblock A terminal guidance technique for lunar landing.
-\newblock {\em AIAA Journal}, 2:503--509, 1964.
-
 \bibitem{MARSGRAM}
-Hilary~L. Justh.
+H.~L. Justh.
 \newblock Mars global reference atmospheric model.
 \newblock NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February
   2018, 2010.
@@ -44,7 +44,7 @@ G.~Leitmann.
 \newblock {\em Journal of the Aerospace Sciences}, 26:586--591, 1959.
 
 \bibitem{LU}
-Ping Lu.
+P.~Lu.
 \newblock Propellant-optimal powered descent guidance.
 \newblock {\em Journal of Guidance, Control, and Dynamics}, pages 1--14, Dec
   2017.
