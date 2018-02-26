@@ -18,36 +18,49 @@ A manned Mars mission places a heavy penalty on propellant inefficiency. This is
 % of the numbering.
 
 \section{Guidance and Control in Aerospace} \label{sec:guidancevcontrol}
-The powered descent guidance and soft landing problem under investigation is a problem requiring consideration of Guidance, Navigation, and Control principals and application. 
+The powered descent guidance and soft landing problem under investigation is a problem requiring consideration of Guidance, Navigation, and Control principles and application. 
 
-Guidance refers to trajectory planning of a vehicle to satisfy mission conditions and constraints. For the soft landing problem these conditions are the vehicle's initial state vector upon powered descent guidance initiation including its position and velocity, and the constraints are the final desired landing site, speed, and approach angle.
+Guidance refers to trajectory planning of a vehicle to satisfy mission conditions and constraints. For the soft landing problem these conditions are the vehicle's initial state vector upon powered descent guidance initiation including its position and velocity, and the constraints are the desired final landing site, speed, and approach angle.
 
-Navigation refers to the determination of the vehicle's state. For the soft landing problem the navigation systems available may be restricted to an internal inertial navigation system (INS), which numerically propagates an estimate of the vehicle's state based on measured accelerations. The vehicle may also have various other sensors which provide updates to its navigation system's state estimate and improve accuracy. These sensors include radar, barometers, and the like.
+Navigation refers to the determination of the vehicle's state. For a manned Mars mission the navigation systems available may be restricted to an internal inertial navigation system (INS), which numerically propagates an estimate of the vehicle's state based on measured accelerations. The vehicle may also have various other sensors which provide updates to its INS state estimate to improve accuracy. These sensors include radar, barometers, and the like.
 
 Control refers to the manipulation of forces to induce a desired trajectory, orientation, or change of state. For the soft landing problem these manipulations may be realized through aerodynamic surfaces, thrusters, rockets, or other systems which exert force on the vehicle.
 
 This paper seeks to investigate the trajectory planning aspect of powered descent guidance for soft landing in the context of a manned Mars mission. It does not examine Control or Navigation strategies in detail, though it does illustrate their importance.
 
 \section{Literature Review}
-The problem of powered descent guidance has been studied extensively throughout the last century, particularly since The Space Race of the 1960s and the Apollo program which spawned E-Guidance, presented first in Cherry\:1964\:\cite{CHERRY}. These analyses have approached the problem in several different ways, but they generally share the requirement that the solution ensure soft landing in vacuum conditions. Most if not all of these analyses attempt to optimize fuel consumption due to the heavy penalty imposed on payload mass by inefficient propellant use when landing on an extraterrestrial body. Almost all approaches also share the assumption of a fixed final time, computed or chosen in various ways. Few of them address the problem of PDI, or when to start powered descent guidance. None investigate PDI with E-Guidance in the context of a manned mission landing in atmosphere. Some work has been done in mission phase planning but little optimization has been done for an  initial trajectory with free ignition time.
+The problem of powered descent guidance has been studied extensively throughout the last century, particularly since The Space Race of the 1960s and the Apollo program which spawned E-Guidance, presented first in Cherry\:1964\:\cite{CHERRY}. These analyses have approached the problem in several different ways, but they generally share the requirement that the solution ensure soft landing in vacuum conditions. Most if not all of these analyses attempt to optimize fuel consumption due to the heavy penalty imposed on inefficient propellant use when landing on an extraterrestrial body. Almost all approaches also share the assumption of a fixed final time, computed or chosen in various ways. Few of them address the problem of powered descent initiation, or when to start powered descent guidance. None investigate powered descent initiation with E-Guidance in the context of a manned mission landing in atmosphere. Work has been done in mission phase planning but little optimization has been done for an  initial trajectory with free ignition time.
 
-Apollo Powered Descent Guidance (APDG) solves the Equations of Motion \ref{eqn:EoM1} and \ref{eqn:EoM2} by defining a linear or quadratic thrust acceleration profile which ensures satisfaction of the terminal constraints \ref{eqn:constraint_r}, \ref{eqn:constraint_V}, and (for constrained final attitude with quadratic thrust profile) \ref{eqn:constraint_a}. These two methods require choosing a fixed final time $t_f$, and Cherry proposes an algorithm similar to Algorithm \ref{eqn:FPI}. The final time $t_f$ is dependent upon the initial conditions assuming the powered descent guidance is active.
+Cherry developed E-Guidance, of which Apollo Powered Descent Guidance (APDG) is a version. APDG solves the Equations of Motion \ref{eqn:EoM1} and \ref{eqn:EoM2} by defining a linear or quadratic thrust acceleration profile which ensures satisfaction of the terminal constraints \ref{eqn:constraint_r}, \ref{eqn:constraint_V}, and (for constrained final attitude) \ref{eqn:constraint_a}. These two methods require choosing a fixed final time $t_f$, and Cherry proposes an algorithm similar to Algorithm \ref{eqn:FPI}. The final time $t_f$ is dependent upon the initial conditions and assumes powered descent guidance is active.
 
-D'Souza did take consideration of an optimal time-to-go in his paper "An Optimal Guidance Law for Planetary Landing"\:\cite{DSOUZA}. D'Souza's solution minimizes a weighted function of the time-to-go and the performance index given in Equation \ref{eqn:performanceindex}. As discussed below, minimizing this performance index is not fuel optimal but by minimizing the time-to-go a better performance can be realized, as demonstrated in D'Souza's paper. However, this approach still only considers the problem after ignition, when the powered descent guidance phase has already begun.
+D'Souza 1997\:\cite{DSOUZA} did consider an optimal time-to-go, the remaining flight time at any given moment of the powered descent trajectory. D'Souza's solution minimizes a weighted function of the time-to-go and the performance index given in Equation \ref{eqn:performanceindex}. As discussed below, minimizing this performance index is not fuel optimal but by minimizing the time-to-go a better performance can be realized, as demonstrated in D'Souza's paper. However, this approach still only considers the problem after ignition, when the powered descent guidance phase has already begun.
 
-Rea and Bishop examine the fuel optimal powered descent guidance problem in their paper, "Analytical Dimensional Reduction of a Fuel Optimal Powered Descent Subproblem"\:\cite{REA}. Rea and Bishop explore a time-to-go which optimizes their fuel optimal performance index, but it only considers the portion of flight after a deorbiting "braking" maneuver which ends when the vehicle altitude reaches some pre-designated altitude. They also discuss the approaches previously explored and the limitations of these approaches. These approaches do not explore PDI optimization either.
+Rea and Bishop 2010\:\cite{REA} examinded the fuel optimal powered descent guidance problem. They explored a time-to-go which optimizes their fuel optimal performance index, but it only considers the portion of flight after a deorbiting "braking" maneuver which ends when the vehicle altitude reaches some pre-designated altitude. They also discuss the approaches previously explored and the limitations of these approaches. These approaches do not explore PDI optimization either.
 
-Meditch showed that the fuel optimal thrust profile for a vertical landing given lower and upper thrust bounds is a "bang-bang" style thrust, where the thrust switches between its upper and lower bounds with at most one switch between the bounds during landing. The paper, "On the Problem of Optimal Thrust Programming For a Lunar Soft Landing,"\:\cite{MEDITCH} examined the one-dimensional fuel-optimal powered descent in a uniform gravitational field. This strategy may be directly applicable for the final touchdown phase, during which the E-Guidance solution must be stopped when time-to-go gets small as discussed in Section \ref{sec:guidancecomp}.
+Meditch 1964\:\cite{MEDITCH} showed that the fuel optimal thrust profile for a vertical landing given lower and upper thrust bounds is a "bang-bang" style thrust, where the thrust switches between its upper and lower bounds with at most one switch between the bounds during descent. The paper examined the one-dimensional fuel-optimal powered descent in a uniform gravitational field. This strategy may be directly applicable for the final touchdown phase, during which the E-Guidance solution must be stopped when time-to-go gets small as discussed in Section \ref{sec:guidancecomp}.
 
-Leitmann also examined a set of two-dimensional rocket flight problems including the two-dimensional powered descent and landing problem, similar to the problem under examination. Leitmann also showed that the fuel optimal thrust profile is "bang-bang," with up to two switches, in his paper "Class of Variational Problems in Rocket Flight."\:\cite{LEITMANN} 
+Leitmann 1959\:\cite{LEITMANN} also examined a set of two-dimensional rocket flight problems including the two-dimensional powered descent and landing problem, similar to the problem under examination. Leitmann also showed that the fuel optimal thrust profile is "bang-bang," with up to two switches.
 
 
 \section{Contribution}
-This paper seeks to improve upon APDG's fuel performance in the context of a manned Mars mission. The unique requirements of such a mission include high payload mass, aerodynamics of the landing vehicle, critical safety requirements, and the very high penalty for propellant inefficiency. The method by which APDG is improved is through adaptive PDI, pushing the solution closer to fuel optimality by making use of a longer glide slope during which energy is shed through lift and drag effects and driving the thrust profile closer to fuel optimal. The solution presented is equally as computationally expensive as traditional E-Guidance and does not rely on high rate thrust magnitude switching. The guidance law has been studied extensively and flown on real spacecraft.
+This paper seeks to improve upon APDG's fuel performance in the context of a manned Mars mission. The unique requirements of this mission include high payload mass, aerodynamics of the landing vehicle, critical safety requirements, and the very high penalty for propellant inefficiency. The method by which APDG is improved is through adaptive powered descent initiation (PDI) which enhances fuel efficiency by making use of a longer glide slope during which energy is shed through lift and drag effects without thrust while delaying ignition to reduce burn time and more closely approximate the optimal thrust profile. The solution presented is equally as computationally expensive as traditional E-Guidance and does not rely on high rate thrust magnitude switching. The guidance law has been studied extensively and flown on real spacecraft.
 
 The strategy of adaptive PDI is applicable beyond the implementation of APDG. This strategy is valid for any multi-phase mission involving powered descent and could be employed in many other contexts. It has particular applicability for atmospheric landings due to the increased efficiency gained from aerodynamic effects, safely extending the glide and aerobraking phase.
 
 \section{Organization}
+This thesis consists of a Methodology chapter in which equations are derived defining APDG and the adaptive PDI strategy, a simulation chapter which details the simulation architecture and numerical implementation schemes used to test APDG and adaptive PDI, a Results chapter in which the results of simulation are presented, a Discussion chapter in which the results are examined and interpreted, and a Conclusions chapter in which conclusions are drawn from the results and future work is recommended on the topic of adaptive PDI.
+
+Chapter\:\ref{chap:intro} introduces the soft landing problem and the motivation for adaptive PDI. It defines the mission framework in which PDI is studied, and defines the powered descent guidance problem for derivation of APDG. It presents the relevant literature and prior work done on the topic of powered descent guidance and the contribution this thesis makes to that literature.
+
+Chapter\:\ref{chap:methodology} derives E-Guidance and APDG, then presents the adaptive PDI strategy and the relevant equations. It begins by defining the required notation and the coordinate frame used for the problem formulation.
+
+Chapter\:\ref{chap:simulation} details the simulation architecture and numerical schemes used to implement adaptive PDI with APDG and test its performance and robustness. The aerodynamic model is defined as well as the dispersion model for Monte Carlo testing. The initial conditions representing pre-determined Mars mission profile are given in Section\:\ref{sec:IC}.
+
+Chapter\:\ref{chap:results} presents the results of simulation of the mission and makes several comparisons between various configurations. Section\:\ref{sec:PDIres} investigates the reliability of the adaptive PDI strategy and its applicability for a practical mission. Section\:\ref{sec:lawcomp} compares the performance of APDG with E-Guidance, since APDG is less well tested and no claims are made about its optimality. Section\:\ref{sec:naverror} investigates the effects of navigation error. Sections\:\ref{sec:atmovsvac} through\:\ref{sec:atmoperf} presents results of simulation of a Mars mission and a similar mission in vacuum, comparing adaptive PDI's performance to a traditional pre-determined ignition strategy. 
+
+Chapter\:\ref{chap:discussion} discusses the results of Chapter\:\ref{chap:results} and verifies the simulation output through error analysis.
+
+Chapter\:\ref{chap:conclusions} states the conclusions of the study and makes recommendations for future study of the adaptive PDI strategy.
 
 %You can save yourself 12 minutes now by not reading this document;
 %later on the average payback is 105-fold when you run into problems.
@@ -323,9 +336,9 @@ The soft landing problem in atmosphere must be studied with a vehicle model. The
 	\end{minipage}
 \end{figure}
 
-In their paper, Cerimele et. al\:\cite{CERIMELE} provide maximum thrust $T_{max}$ as well as mass, lift and drag characteristics, and other factors important for physical modeling and simulation to be described in more detail in Section\:\ref{chap:simulation}. The maximum thrust magnitude $T_{max}$ is given as $800\:kN$, and the vehicle's mass as the start of powered descent initiation is $58,000 kg$. 
+In their paper, Cerimele et. al 2017\:\cite{CERIMELE} provide maximum thrust $T_{max}$ as well as mass, lift and drag characteristics, and other factors important for physical modeling and simulation to be described in more detail in Section\:\ref{chap:simulation}. The maximum thrust magnitude $T_{max}$ is given as $800\:kN$, and the vehicle's mass as the start of powered descent initiation is $58,000 kg$. 
 
-\chapter{METHODOLOGY}
+\chapter{METHODOLOGY} \label{chap:methodology}
 To investigate a guidance law with careful focus on the time-to-go approach, a law must be developed and implemented in a simulation framework. The Law's derivation is presented here in the context of optimal control, as is the time-to-go approach. 
 
 The simulation methodology is also described, including the numerical methods and the aerodynamic model.
@@ -436,6 +449,8 @@ For convenience these Initial Conditions are presented in Table\:\ref{tab:IC} af
 
 \section{Guidance Law} \label{sec:guidancelaw}
 The guidance law under investigation is Apollo Powered Descent Guidance (APDG), first presented in Cherry\:1964\:\cite{CHERRY}. APDG is a version of E-Guidance, which was developed empirically by integrating the equations of motion and choosing basis functions for the thrust acceleration $\bm{a}_T$ that provided the necessary degrees of freedom to satisfy the terminal constraints in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. With control over thrust acceleration (and therefore total acceleration), satisfying the initial conditions after integration of the equations of motion requires two basis functions with vector coefficients. APDG extends this approach to controlled final attitude by adding an additional constraint on final thrust acceleration $\bm{a}^*_{T_f}$ as in Equation\:\ref{eqn:constraint_a}, and satisfying these three vector constraints requires a further third basis function. 
+
+Guidance laws are typically presented as functions or systems defined over a range of time-to-go $t_{go} \epsilon [t_{go_0}, 0)$. If the guidance command were recomputed without updated state information in nominal conditions and with an extremely accurate physical model the vehicle would satisfy the terminal constraints without issue. However, in the presence of measurement error this open-loop strategy, which does not feed back the current state, will fail. Instead, these guidance laws can be recomputed at each update treating the current vehicle state as the initial condition for the guidance problem to be solved. In this was the state feedback results in a closed-loop formulation that is robust and can much more accurately satisfy constraints in real world applications. Good guidance law formulations result in arbitrary initial conditions such that the law can be implemented in a closed-loop fashion.
 
 The derivation of E-Guidance as developed by Cherry proceeds below, followed by its formulation as an optimal guidance problem. APDG is then derived as developed by Cherry in a similar fashion though no claim is made about its optimality. The relative performance of the two laws is examined in Chapter\:\ref{chap:results}.
 
@@ -817,7 +832,7 @@ Each guidance update uses the previous update's $t_{go}$ minus clock time as its
 
 This algorithm requires an assumption about a fixed mass flow rate $\dot{m}$ which is not guaranteed by the guidance law. Adjustment of this mass flow rate estimate is very particular to the initial conditions of the mission, resulting in a necessarily conservative $t_{go}$ to account for initial condition dispersion.
 
-One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. Equation \ref{eqn:tgoGT} for a gravity turn time-to-go, $t_{go_{GT}}$, was presented in Citron, Dunin, and Meissinger's paper\:\cite{CITRON}. After engine ignition and initiation of Powered Descent Guidance, the updated time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time. The algorithm for time-to-go using a gravity turn maneuver is given in Equation \ref{eqn:tgoGT}, where $a_{GT}$ is the thrust acceleration magnitude applied during the maneuver. This equation gives two roots for $a_{GT}$, a positive root and a negative root. The desired root is positive, making it a simple matter to find. This quantity will be important in section\:\ref{sec:PDI}.
+One attractive open-loop option is the time to perform a gravity turn landing at maximum thrust. Equation \ref{eqn:tgoGT} for a gravity turn time-to-go, $t_{go_{GT}}$, was presented in Citron, Dunin, and Meissinger 1964\:\cite{CITRON}. After engine ignition and initiation of Powered Descent Guidance, the updated time-to-go is computed as $t_{go_{GT}}$ minus elapsed clock time. The algorithm for time-to-go using a gravity turn maneuver is given in Equation \ref{eqn:tgoGT}, where $a_{GT}$ is the thrust acceleration magnitude applied during the maneuver. This equation gives two roots for $a_{GT}$, a positive root and a negative root. The desired root is positive, making it a simple matter to find. This quantity will be important in section\:\ref{sec:PDI}.
 
 \begin{align}
 \label{eqn:tgoGT}
@@ -837,7 +852,7 @@ t_{go_{GT}} &= \frac{V_m}{2} \left(\frac{1+sin(\gamma)}{a_{GT} + g_m} + \frac{1-
 A gravity turn landing does not directly apply to the general powered descent guidance problem under investigation because it does not seek to satisfy the constraints given in Equations \ref{eqn:constraint_r} and \ref{eqn:constraint_V}. However, if the magnitude of the terminal velocity target in Equation \ref{eqn:constraint_V} is small, the required time to decelerate from an initial $\bm{V}_0$ under only the forces of thrust acceleration $\bm{a}_T$ and gravity $\bm{g}$ is, at minimum, the gravity turn solution $t_{go_{GT}}$. Since the terminal position $\bm{r}_f$ is specified, the vehicle necessarily needs more time than given by the gravity turn solution to satisfy it. Assuming a small trajectory error requiring a small diversion to landing site, a small constant factor $ c_t \approxeq 1.2$ can be applied to the gravity turn time-to-go to allow for redirection. The choice of $c_t = 1.2$ will prove to be sufficiently conservative to survive initial condition dispersion, rocket parameter dispersion, and navigation error. 
 
 \section{Adaptive Powered Descent Initiation} \label{sec:PDI}
-The central focus of this thesis is the use of Adaptive Powered Descent Initiation (PDI) to improve the fuel performance of APDG. This is accomplished by choosing an ignition time which results in superior propellant consumption. From Leitmann's\:\cite{LEITMANN} and Meditch's\:\cite{MEDITCH} work it is expected that a "bang-bang" style thrust profile is desirable. Lu shows in his paper\:\cite{LU} that for the three-dimensional problem, the propellant optimal thrust profile is indeed "bang-bang" style and may have up to two switches. He also shows that the profile is further constrained to a final thrust value $T(tf) = T_{max}$ in order to satisfy the final position and velocity constraints. With APDG controlling the thrust acceleration vector $\bm{a}_T$, a "bang-bang" style thrust profile will not be realized due to the continuous nature of the boundary-value problem presented, but the ignition time may be chosen to force a thrust profile closer to optimum. By choosing a time-to-go carefully, nearly optimal fuel performance may be expected. 
+The central focus of this thesis is the use of Adaptive Powered Descent Initiation (PDI) to improve the fuel performance of APDG. This is accomplished by choosing an ignition time which results in superior propellant consumption. From Leitmann's\:\cite{LEITMANN} and Meditch's\:\cite{MEDITCH} work it is expected that a "bang-bang" style thrust profile is desirable. Lu 2017 \:\cite{LU} shows that for the three-dimensional problem, the propellant optimal thrust profile is indeed "bang-bang" style and may have up to two switches. He also shows that the profile is further constrained to a final thrust value $T(tf) = T_{max}$ in order to satisfy the final position and velocity constraints. With APDG controlling the thrust acceleration vector $\bm{a}_T$, a "bang-bang" style thrust profile will not be realized due to the continuous nature of the boundary-value problem presented, but the ignition time may be chosen to force a thrust profile closer to optimum. By choosing a time-to-go carefully, nearly optimal fuel performance may be expected. 
 
 Since APDG does not take the thrust acceleration limits of Equation \ref{eqn:thrustlimit} into account directly the time-to-go must do so or risk the required thrust command exceeding the capabilities of the landing vehicle. One approach is to make use of the gravity turn solution as discussed in Section \ref{sec:Time-to-go}, Equation \ref{eqn:tgoGT}. This equation provides one criterion for ignition through the specified thrust acceleration $\bm{a}_{GT}$ as in Algorithm \ref{eqn:thrustcriterion}. If the gravity turn time-to-go $t_{go_{GT}}$ is used and the engine ignited for APDG the moment the magnitude of the specified thrust acceleration $\bm{a}_{GT}$ reaches or exceeds the known maximum thrust acceleration magnitude $a_{max}$, APDG will command a large initial thrust acceleration which may exceed the rocket's limits and the thrust will be nearly or copmletely saturated at its upper limit. Using a padded $t_{go_{GT}}$ helps ensure that there is some margin for error.
 
@@ -885,7 +900,7 @@ The full simulation code is wrapped in a Monte-Carlo script. The Monte-Carlo scr
 Further detail for each part of the simulation follows.
 
 \section{Numerical Integration} \label{sec:RK4}
-The numerical time integration is done via a standard Runge-Kutta formulation, presented here as in Ferziger and Peri\'c\:\cite{FERZIGER}. The state vector $\bm{\phi}$ is passed to the equations of motion $\bm{f}(\bm{\phi},t)$ several times as in Equation \ref{eqn:RK4}. $\Delta t$, the time integration step for the simulation, is fixed at 1 millisecond ($10^{-3}$ s). This is shown to be sufficiently small in Section\:\ref{sec:convergence}.
+The numerical time integration is done via a standard Runge-Kutta formulation, presented here as in Ferziger and Peri\'c 2002\:\cite{FERZIGER}. The state vector $\bm{\phi}$ is passed to the equations of motion $\bm{f}(\bm{\phi},t)$ several times as in Equation \ref{eqn:RK4}. $\Delta t$, the time integration step for the simulation, is fixed at 1 millisecond ($10^{-3}$ s). This is shown to be sufficiently small in Section\:\ref{sec:convergence}.
 
 \begin{align}
 \label{eqn:RK4}
@@ -948,7 +963,7 @@ A Kalman filter would likely be used on a more sophisticated navigation system f
 The Aerodynamic model is comprised of Mars atmosphere data from (insert atmosphere data reference), and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
 
 \subsection{Atmosphere Model}
-The atmosphere model is based on NASA's Mars-GRAM\:\cite{MARSGRAM}, an engineering-level atmospheric model of the Martian atmosphere. The model used for this simulation is an empirically developed equation to represent the Martian atmosphere data within the mission's envelope. Mars-GRAM 2010 is based on NASA Ames Mars General Circulation Model for altitudes under 80 km.
+The atmosphere model is based on NASA's Mars-GRAM 2010\:\cite{MARSGRAM}, an engineering-level atmospheric model of the Martian atmosphere. The model used for this simulation is an empirically developed equation to represent the Martian atmosphere data within the mission's envelope. Mars-GRAM 2010 is based on NASA Ames Mars General Circulation Model for altitudes under 80 km.
 
 For this simulation, the Mars-GRAM data is used to calculate a density $\rho$ and a speed of sound $V_{sound}$, from which Mach number is calculated as $|V|/V_{sound}$ and lift and drag are calculated as in Equations \ref{eqn:drag} and \ref{eqn:lift}, where S is a reference area.
 
@@ -994,7 +1009,7 @@ The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parame
 
 The Monte-Carlo script is designed to allow testing of various scenarios and includes initial condition selection among a set of cases. The cases simulated here are points along a trajectory that passes nearly over the landing site, simulating the trajectory resulting from a typical re-entry and aerobraking glide phase. These cases also include initial velocity information that coincides with the vehicle having traveled unpowered along its trajectory. In fixed initial condition mode, the user specifies which initial conditions to test, the initial states are dispersed, and the simulations are run from the nominally fixed starting conditions. In ignition optimization mode, the Monte-Carlo script automatically chooses the nominal starting condition as the first point along this trajectory. It then disperses the starting point according to dispersion specifications and performs the number of runs specified by the user.
 
-The dispersion factors are chosen to reflect realistic parameter dispersion. Navigation error is modeled using a normal distribution with standard deviations in accordance with Moesser's\:\cite{MOESSER} work as described in Section \ref{sec:navmod}. Rocket parameter dispersion is modeled as a uniform distribution of 2\% of the parameter. Equation \ref{eqn:thrustdisp} shows this calculation for the maximum thrust dispersion, where $T_{max_{nom}}$ is the nominal maximum thrust expected by the guidance computer and $rand$ is a uniformly distributed random number between zero and one.
+The dispersion factors are chosen to reflect realistic parameter dispersion. Navigation error is modeled using a normal distribution with standard deviations in accordance with Moesser's 2010\:\cite{MOESSER} work as described in Section \ref{sec:navmod}. Rocket parameter dispersion is modeled as a uniform distribution of 2\% of the parameter. Equation \ref{eqn:thrustdisp} shows this calculation for the maximum thrust dispersion, where $T_{max_{nom}}$ is the nominal maximum thrust expected by the guidance computer and $rand$ is a uniformly distributed random number between zero and one.
 
 \begin{equation}
 \label{eqn:thrustdisp}
@@ -1009,7 +1024,7 @@ Initial condition values are normally distributed about their nominal values. Th
 
 The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
 
-\section{Initial Condition}
+\section{Initial Condition} \label{sec:IC}
 The initial conditions are listed in Table \ref{tab:IC}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed "East", $\hat{\bm{e}}_y$ is pointed "North", and $\hat{\bm{e}}_z$ is pointed "Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
 
 \begin{table}[hbt]
@@ -1574,7 +1589,7 @@ Figure\:\ref{fig:gtcriteriaatmo} shows data from an atmospheric case of APDG wit
 \end{figure}
 
 
-\subsection{Comparison of E-Guidance with APDG}
+\subsection{Comparison of E-Guidance with APDG} \label{sec:lawcomp}
 Table and figures for the following condition:
 Both guidance laws
 Full dispersion (Rocket, IC, Nav)
@@ -1908,7 +1923,7 @@ PDI shows the best propellant performance in atmosphere, and no landing failures
 	\end{tabular}
 \end{table}   
 
-\chapter{DISCUSSION}
+\chapter{DISCUSSION} \label{chap:discussion}
 %Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.
 
 The results in Chapter\:\ref{chap:results} have many implications on the guidance approach of APDG as well as the adaptive powered descent initiation strategy of Section\:\ref{sec:PDI}. They will be discussed here, as well as the validity of the results themselves.
@@ -2002,7 +2017,8 @@ In atmosphere PDI's advantage grows as evidenced by Table\:\ref{tab:disppowatmo}
 %Some paragraph text.  You never really get this deep --- don't be
 %ridiculous.
 
-\chapter{CONCLUSIONS AND FUTURE WORK}
+\chapter{CONCLUSIONS AND FUTURE WORK} \label{chap:conclusions}
+This chapter discusses the implications of the adaptive PDI strategy and its wider applicability to guidance laws beyond APDG or E-Guidance. Section\:\ref{sec:futurework} recommends future study of PDI and particular avenues to explore.
 
 \section{PDI}
 As discussed in Section\:\ref{sec:PDIdisc}, PDI helps provides good fuel performance as well as a safety margin in combination with APDG. However, any guidance system operating with a vehicle subject to thrust acceleration limits as in Equation\:\ref{eqn:thrustlimit} would benefit from use of the Adaptive PDI strategy. Indeed, Lu recommends this PDI strategy in cooperation with his propellant optimal guidance solution\:\cite{LU}. For a lower bound limit, once the engine is ignited there is an absolute minimum amount of fuel that will be consumed. PDI helps reduce that minimum by not igniting the engine until necessary. For the upper bound limit, PDI ensures that the engine is ignited in time to land safely, while predetermined ignition Cases as in Table\:\ref{tab:IC} make no such assurances. These cases can be chosen carefully but there are inherently open-loop and cannot adjust to dispersed conditions resulting from trajectory errors or unexpected rocket parameter dispersions like reduced thrust performance in transit to the mission target planet.
@@ -2011,7 +2027,7 @@ PDI's closed-loop strategy which actively takes into account current vehicle con
 
 
 
-\section{Future Work}
+\section{Future Work} \label{sec:futurework}
 %Discuss refinements to PDI; tgo safety factor as function of conditions for mission planning, or directly optimal approach of some kind.
 
 The wider applicability of PDI should be studied further. In particular, there are two major variables for implementation of PDI which depend upon proper mission planning. These variables reflect PDI's handling of the upper and lower thrust acceleration limits as well as the strength of aerodynamic effects.
