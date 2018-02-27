@@ -23,7 +23,7 @@
 \contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{11}
 \contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{11}
 \contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{13}
-\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{13}
+\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{14}
 \contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{15}
 \contentsline {chapter}{\numberline {3}SIMULATION}{18}
 \contentsline {section}{\numberline {3.1}Numerical Integration}{18}
@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {3.5.1}Atmosphere Model}{21}
 \contentsline {subsection}{\numberline {3.5.2}Lift and Drag}{22}
 \contentsline {subsection}{\numberline {3.5.3}Orientation}{22}
-\contentsline {section}{\numberline {3.6}Monte Carlo}{22}
+\contentsline {section}{\numberline {3.6}Monte Carlo}{23}
 \contentsline {section}{\numberline {3.7}Initial Condition}{24}
 \contentsline {chapter}{\numberline {4}RESULTS}{28}
 \contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{28}
@@ -48,7 +48,7 @@
 \contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{48}
 \contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{49}
 \contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{51}
-\contentsline {section}{\numberline {6.1}PDI}{51}
+\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{51}
 \contentsline {section}{\numberline {6.2}Future Work}{51}
 \contentsline {schapter}{BIBLIOGRAPHY}{54}
 \pagebreak [3]
