@@ -323,20 +323,7 @@ It is desired to minimize propellant usage required by APDG through Adaptive PDI
 The last assumption is only relevant when ignition is started; APDG does not demand large instantaneous throttle responses. Taking into account ignition lag would be simple and not affect performance significantly, but it is not modeled here.
 
 
-\subsection{CobraMRV} \label{sec:CobraMRV}
-
-The soft landing problem in atmosphere must be studied with a vehicle model. The vehicle model is taken from Cerimele et. al\:\cite{CERIMELE}, the CobraMRV, a ``rigid, enclosed, elongated lifting body shape that provides a higher lift-to-drag ratio (L/D) than a typical entry capsule...". It was designed as an atmospheric entry and powered descent and landing vehicle for manned Mars missions compatible with the current NASA Human Mars mission architectures. These missions require delivery of roughly 20 tonnes of cargo to the surface. This vehicle, rendered in Figure\:\ref{fig:CobraMRV} taken from Cerimele et. al, is designed such that its thrust vector is fixed opposite the body yaw axis, i.e. its thrust is oriented down when it is flying horizontally relative to the surface. 
-
-\begin{figure}[H]
-	\centering
-	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/CobraMRV.png}
-		\caption{CobraMRV Design. Source: C. Cerimele et al. A rigid mid lift-to-drag ratio approach to human mars entry, descent,
-			and landing. AIAA Paper, 2017-1898, 2017. \label{fig:CobraMRV} }
-	\end{minipage}
-\end{figure}
-
-In their paper, Cerimele et. al 2017\:\cite{CERIMELE} provide maximum thrust $T_{max}$ as well as mass, lift and drag characteristics, and other factors important for physical modeling and simulation to be described in more detail in Section\:\ref{chap:simulation}. The maximum thrust magnitude $T_{max}$ is given as $800\:kN$, and the vehicle's mass as the start of powered descent initiation is $58,000 kg$. 
+ 
 
 \chapter{METHODOLOGY} \label{chap:methodology}
 To investigate a guidance law with careful focus on the time-to-go approach, a law must be developed and implemented in a simulation framework. The derivation of E-Guidance is presented here in the context of optimal control, as is the time-to-go approach. The derivation of APDG is also presented without claim of optimality.
@@ -444,6 +431,25 @@ The guidance algorithm is developed within the guidance coordinate frame $\bm{\h
 
 For convenience these Initial Conditions are presented in Table\:\ref{tab:IC} after a coordinate transformation to a frame centered on the landing cite so that the final position constraint\:(\ref{eqn:constraint_r}) is at the origin. This frame is a right-handed system such that the first coordinate is Mars East, the second is Mars North, and the third is Mars up (the direction opposite the local gravitational acceleration, $-\hat{\bm{g}}$). This E-N-U frame is intuitive because mission conditions such as ground range and altitude are directly represented.  
 
+The vehicle's aerodynamics depend upon its orientation, which can best be described in terms of its body axes as shown in Figure\:\ref{fig:bodyaxes}. This figure shows the classic definitions of body axes for Aerospace vehicles in atmosphere. The aircraft's orientation is defined as rotation of the body frame relative to the guidance frame. As depicted in the figure, the body frame of Equation\:\ref{eqn:bodyframe} consists of the yaw, pitch, and roll body axes. Orientations are thus defined as rotations about the yaw axis, then the pitch axis, then the roll axis in a traditional Euler 3-2-1 sequence.
+
+\begin{equation}
+\label{eqn:bodyframe}
+\hat{\bm{b}} = 
+\begin{bmatrix}
+\hat{\bm{b}_y} \\
+\hat{\bm{b}_p} \\
+\hat{\bm{b}_r}
+\end{bmatrix}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/bodyaxes.jpg}
+		\caption{Vehicle Body Axes. Source: Hall, N. Aircraft Rotations Body Axes. NASA Glenn Research Center, https://www.grc.nasa.gov/www/k-12/airplane/rotations.html, accessed February 2018 \label{fig:bodyaxes} }
+	\end{minipage}
+\end{figure}
 
 \section{Guidance Law} \label{sec:guidancelaw}
 The guidance law under investigation is Apollo Powered Descent Guidance (APDG), first presented in Cherry\:1964\:\cite{CHERRY}. APDG is a version of E-Guidance, which was developed empirically by integrating the equations of motion and choosing basis functions for the total acceleration $\bm{a}$ that provided the necessary degrees of freedom to satisfy the terminal constraints in Equations\:(\ref{eqn:constraint_r}) and\:(\ref{eqn:constraint_V}). With control over thrust acceleration (and therefore total acceleration), satisfying the initial conditions after integration of the equations of motion requires two basis functions with vector coefficients. APDG extends this approach to controlled final attitude by adding an additional constraint on final thrust acceleration $\bm{a}^*_{T_f}$ as in Equation\:(\ref{eqn:constraint_a}), and satisfying these three vector constraints requires a further third basis function. 
@@ -967,10 +973,31 @@ A Kalman filter would likely be used on a more sophisticated navigation system f
 \section{Aerodynamic Model}
 The Aerodynamic model is comprised of Mars atmosphere data from NASA's Mars-GRAM 2010\:\cite{MARSGRAM}, and the vehicle model was developed by Cerimele et. al\:\cite{CERIMELE}
 
+\subsection{CobraMRV} \label{sec:CobraMRV}
+The vehicle model is taken from the CobraMRV design by Cerimele et. al\:\cite{CERIMELE}. The CobraMRV is a ``rigid, enclosed, elongated lifting body shape that provides a higher lift-to-drag ratio (L/D) than a typical entry capsule...". It was designed as an atmospheric entry and powered descent and landing vehicle for manned Mars missions compatible with the current NASA Human Mars mission architectures. These missions require delivery of roughly 20 tonnes of cargo to the surface. This vehicle, rendered in Figure\:\ref{fig:CobraMRV} taken from Cerimele et. al, is designed such that its thrust vector is fixed in the direction of the body yaw axis, i.e. its thrust is oriented down when it is flying horizontally relative to the surface. 
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/CobraMRV.png}
+		\caption{CobraMRV Design. Source: C. Cerimele et al. A rigid mid lift-to-drag ratio approach to human mars entry, descent,
+			and landing. AIAA Paper, 2017-1898, 2017. \label{fig:CobraMRV} }
+	\end{minipage}
+\end{figure}
+
+In their paper, Cerimele et. al 2017\:\cite{CERIMELE} provide maximum thrust $T_{max}$ as well as mass, lift and drag characteristics, and other factors important for physical modeling and simulation. The maximum thrust magnitude $T_{max}$ is given as $800\:kN$, and the vehicle's mass as the start of powered descent initiation is $58,000 kg$.
+
+The CobraMRV lift and drag coefficients $C_L$ and $C_D$ are modeled based on vehicle Mach number and angle of attack. Vehicle angle of attack is determined directly from the thrust acceleration vector $\bm{a}_T$ and the vehicle velocity vector $\bm{V}$.
+
+Cerimele also provide the reference area S as 62.21 $m^2$. Upon ignition, the vehicle lift and drag is reduced due to the aerodynamic effects of the exhaust plume. This is modeled simply by reducing the reference area to S/2. This effect obviously impacts the fuel performance of APDG, but it does not qualitatively affect the performance of Adaptive PDI as will be clear in Chapter\:\ref{chap:results}.
+
+During the unpowered phase of approach when PDI is being optimized, the vehicle is held at a constant angle of attack of $55^{\circ}$ to achieve maximum drag. 
+
 \subsection{Atmosphere Model}
 The atmosphere model is based on NASA's Mars-GRAM 2010\:\cite{MARSGRAM}, an engineering-level atmospheric model of the Martian atmosphere. The model used for this simulation is an empirically developed equation to represent the Martian atmosphere data within the mission's envelope. Mars-GRAM 2010 is based on NASA Ames Mars General Circulation Model for altitudes under 80 km.
 
 For this simulation, the Mars-GRAM data is used to calculate a density $\rho$ and a speed of sound $V_{sound}$, from which Mach number is calculated as $||\bm{V}||/V_{sound}$ and lift and drag are calculated as in Equations\:(\ref{eqn:drag}) and\:(\ref{eqn:lift}), where S is a reference area.
+
 
 \begin{equation}
 \label{eqn:lift}
@@ -983,15 +1010,6 @@ D = \frac{1}{2} \rho |V|^2 S C_D
 \end{equation}
 
 A particular feature of the powered descent phase is the change in drag calculation while the engine is ignited. When the guidance system is operating and the rocket is firing, the drag is modeled as half the value computed when the vehicle is unpowered, i.e. during glide. This is due to the rocket plume's aerodynamics. This change is accomplished in the simulation during the PDI phase by simply dividing the reference area by a factor of 2. 
-
-\subsection{Lift and Drag}
-The vehicle aerodynamic model is based on the work of Cerimele\:et\:al\:\cite{CERIMELE}. 
-
-The work of Cerimele er al provides a model of the lift and drag coefficients $C_L$ and $C_D$ based on vehicle Mach number and angle of attack. Vehicle angle of attack is determined directly from the thrust acceleration vector $\bm{a}_T$ and the vehicle velocity vector $\bm{V}$.
-
-Cerimele also provide the reference area S as 62.21 $m^2$. Upon ignition, the vehicle lift and drag is reduced due to the aerodynamic effects of the exhaust plume. This is modeled simply by reducing the reference area to S/2. This effect obviously impacts the fuel performance of APDG, but it does not qualitatively affect the performance of Adaptive PDI as will be clear in Chapter\:\ref{chap:results}.
-
-During the unpowered phase of approach when PDI is being optimized, the vehicle is held at a constant angle of attack of $55^{\circ}$ to achieve maximum drag. 
 
 \subsection{Orientation}
 The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body axes. Since the simulation assumes perfect control, the body axes are computed as Equations\:(\ref{eqn:body_Y}),\:(\ref{eqn:body_P}), and\:(\ref{eqn:body_R}). Pitch, yaw, and roll are then calculated as the angles between the body axes and the planet-fixed guidance frame $\hat{\bm{e}}$. Angle of attack is similarly calculated using the body axes and the velocity vector. The CobraMRV's configuration determines that the thrust acceleration vector be in the direction of the vehicle yaw axis.

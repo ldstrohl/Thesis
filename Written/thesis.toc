@@ -12,10 +12,9 @@
 \contentsline {section}{\numberline {1.3}Contribution}{3}
 \contentsline {section}{\numberline {1.4}Organization}{3}
 \contentsline {section}{\numberline {1.5}Problem Statement}{4}
-\contentsline {subsection}{\numberline {1.5.1}CobraMRV}{5}
-\contentsline {chapter}{\numberline {2}METHODOLOGY}{7}
-\contentsline {section}{\numberline {2.1}Notation}{7}
-\contentsline {section}{\numberline {2.2}Coordinate Frame}{8}
+\contentsline {chapter}{\numberline {2}METHODOLOGY}{6}
+\contentsline {section}{\numberline {2.1}Notation}{6}
+\contentsline {section}{\numberline {2.2}Coordinate Frame}{7}
 \contentsline {section}{\numberline {2.3}Guidance Law}{9}
 \contentsline {subsection}{\numberline {2.3.1}Equations of Motion}{9}
 \contentsline {subsection}{\numberline {2.3.2}E-Guidance}{10}
@@ -23,7 +22,7 @@
 \contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{11}
 \contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{11}
 \contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{13}
-\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{14}
+\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{13}
 \contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{15}
 \contentsline {chapter}{\numberline {3}SIMULATION}{18}
 \contentsline {section}{\numberline {3.1}Numerical Integration}{18}
@@ -31,28 +30,28 @@
 \contentsline {section}{\numberline {3.3}Ignition trigger}{20}
 \contentsline {section}{\numberline {3.4}Navigation Module}{21}
 \contentsline {section}{\numberline {3.5}Aerodynamic Model}{21}
-\contentsline {subsection}{\numberline {3.5.1}Atmosphere Model}{21}
-\contentsline {subsection}{\numberline {3.5.2}Lift and Drag}{22}
-\contentsline {subsection}{\numberline {3.5.3}Orientation}{22}
+\contentsline {subsection}{\numberline {3.5.1}CobraMRV}{21}
+\contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{22}
+\contentsline {subsection}{\numberline {3.5.3}Orientation}{23}
 \contentsline {section}{\numberline {3.6}Monte Carlo}{23}
-\contentsline {section}{\numberline {3.7}Initial Condition}{24}
-\contentsline {chapter}{\numberline {4}RESULTS}{28}
-\contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{28}
-\contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{30}
-\contentsline {subsection}{\numberline {4.0.3}Navigation Error}{34}
-\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere}{34}
-\contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{38}
-\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{42}
-\contentsline {chapter}{\numberline {5}DISCUSSION}{46}
-\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{46}
-\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{48}
-\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{49}
-\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{51}
-\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{51}
-\contentsline {section}{\numberline {6.2}Future Work}{51}
-\contentsline {schapter}{BIBLIOGRAPHY}{54}
+\contentsline {section}{\numberline {3.7}Initial Condition}{25}
+\contentsline {chapter}{\numberline {4}RESULTS}{29}
+\contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{29}
+\contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{31}
+\contentsline {subsection}{\numberline {4.0.3}Navigation Error}{35}
+\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere}{35}
+\contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{39}
+\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{43}
+\contentsline {chapter}{\numberline {5}DISCUSSION}{47}
+\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{47}
+\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{49}
+\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{50}
+\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{52}
+\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{52}
+\contentsline {section}{\numberline {6.2}Future Work}{52}
+\contentsline {schapter}{BIBLIOGRAPHY}{55}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDIX}{55}
+\contentsline {chaphd}{APPENDIX}{56}
 \nopagebreak 
-\contentsline {chapter}{PLACEHOLDER}{55}
-\contentsline {chapter}{PLACEHOLDER REDUX}{57}
+\contentsline {chapter}{PLACEHOLDER}{56}
+\contentsline {chapter}{PLACEHOLDER REDUX}{58}
