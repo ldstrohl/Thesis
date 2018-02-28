@@ -1036,10 +1036,15 @@ The Monte-Carlo script is designed to allow testing of various scenarios and inc
 
 The dispersion factors are chosen to reflect realistic parameter dispersion. Navigation error is modeled using a normal distribution with standard deviations in accordance with Moesser's 2010\:\cite{MOESSER} work as described in Section\:\ref{sec:navmod}. Rocket parameter dispersion is modeled as a uniform distribution of 2\% of the parameter. Equation\:(\ref{eqn:thrustdisp}) shows this calculation for the maximum thrust dispersion, where $T_{max_{nom}}$ is the nominal maximum thrust expected by the guidance computer and $rand$ is a uniformly distributed random number between zero and one.
 
+
 \begin{equation}
 \label{eqn:thrustdisp}
 T_{max} = T_{max_{nom}}*(1+0.02*(1-2*rand))
 \end{equation}
+
+%\begin{table}[ht]                                                                
+%	\centering                                                                       
+%	\begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
 
 Each rocket parameter is modeled in this fashion. Only the nominal rocket parameters and dispersed navigation values can be known to the guidance computer, and the modular design allows this distinction to be made easily. The simulation script calls the guidance computer with nominal max thrust and the guidance computer outputs a throttle setting based on that nominal value, but the simulation script applies thrust limits based on the real dispersed values. 
 
@@ -1048,6 +1053,7 @@ The separation between nominal and dispersed rocket parameters is also important
 Initial condition values are normally distributed about their nominal values. The dispersion is applied such that three standard deviations in position dispersion is 1000 m from the mean, and three standard deviations in velocity dispersion is 10 m/s from the mean. 
 
 The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
+
 
 \section{Initial Condition} \label{sec:IC}
 The initial conditions are listed in Table\:\ref{tab:IC}. These are representative of a trajectory of the CobraMRV vehicle on approach after a de-orbit burn and subsequent targeting, from the work of Cerimele\:et\:al\:\cite{CERIMELE}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed ``East", $\hat{\bm{e}}_y$ is pointed ``North", and $\hat{\bm{e}}_z$ is pointed ``Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
@@ -1678,22 +1684,50 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsAPDG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on landing and using more fuel. This speed inaccuracy will be addressed in Section\:\ref{sec:naverror}
 
-\begin{table}[ht]                                                                                              
-	\centering        
-	\caption{Comparison of Performance of E-Guidance with APDG}                     
-	\label{tab:EvsAPDG}                                                                                              
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                        Guidance &      &   Fuel   &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
-		Law      & Runs & (kg)      & $\sigma$ &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
-		
-		\hline                                                                                                         
-		E-Guidance  & 1000 & 9707.4 & 280.1 & 95.2 & 2.0 & 1.9 & 1.5 & 5.9 & 3.1 \\                                     
-		\hline                                                                                                         
-		APDG  & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                       
-		\hline                                                                                                         
-	\end{tabular}                                                                                                  
-	
-\end{table}      
+\begin{table}[H]                                              
+	\centering                                                     
+	\begin{tabularx}{\textwidth}{@{}lYY@{}}                             
+		\toprule                                                         
+		\bfseries Guidance Law & \bfseries E-Guidance & \bfseries APDG \\                                 
+		\toprule                                                     
+	Runs & 1000 & 1000 \\                                      
+    		\toprule                                                                                                   
+	Fuel (kg) & 9707.4 & 9849.8 \\                              
+                                                    
+	Fuel $\sigma$ & 280.1 & 287.3 \\                           
+                                                 
+	Fuel max & 10665.2 & 10698.2 \\                            
+                                            
+	Fuel min & 8792.3 & 8924.6 \\                              
+	\toprule
+	Flight Time (s) & 95.2 & 95.0 \\                           
+
+	FT $\sigma$ & 2.0 & 2.0 \\                                 
+
+	FT max & 102.3 & 101.5 \\                                  
+
+	FT min & 88.9 & 88.4 \\                                    
+	\toprule
+	Range (m) & 1.9 & 2.5 \\                                   
+
+	Range $\sigma$ & 1.5 & 1.9 \\                              
+
+	Range max & 8.4 & 8.8 \\                                   
+
+	Range min & 0.0 & 0.0 \\                                   
+	\toprule
+	Speed (m/s) & 5.9 & 8.0 \\                                 
+
+	Speed $\sigma$ & 3.1 & 3.6 \\                              
+
+	Speed max & 14.9 & 15.5 \\                                 
+
+	Speed min & 0.4 & 0.3 \\                                   
+	\bottomrule
+\end{tabularx}                                              
+\caption{Comparison of Performance of E-Guidance with APDG}
+\label{tab:EvsAPDG}                                        
+\end{table}   
 
 \subsection{Navigation Error} \label{sec:naverror}
 %Table and figures for the following condition:
@@ -1705,22 +1739,50 @@ Including dispersion results in similar profiles which will be examined more clo
 
 The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given the terminal velocity constraint magnitude of $1\:m/s$. This constraint is important since it determines how softly the vehicle will land. However, this final speed (and range) inaccuracy is due almost entirely to the navigation dispersion model outlined in Section\:\ref{sec:navmod}, as is clear from the results given in Table\:\ref{tab:navvsnonav}. Here the simulation was run with atmospheric effects, PDI, and full initial condition and rocket parameter dispersion. The cases differed only in whether navigation dispersion was active. The Nominal runs show very accurate satisfaction of the terminal constraints in spite of the guidance update stop for the last half second. A higher fidelity model would include much lower navigation error near the landing site due to the availability of more accurate measurements through radar systems and short range devices and would result in similarly low inaccuracies. More sophisticated sensor models are not investigated here since they would only apply near the end of flight, resulting in little impact on fuel consumption or performance of the PDI strategy.
 
-\begin{table}[ht]                                                                                              
-	\centering                             
-	\caption{Comparison of Performance With and Without Navigation Error}                                          
-	\label{tab:navvsnonav}                                                                          
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                        Nav &      &   Fuel    &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
-		& Runs & (kg)      & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
-		
-		\hline                                                                                                         
-		Dispersed & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                      
-		\hline                                                                                                         
-		Nominal & 1000 & 9761.8 & 270.8 & 95.2 & 2.0 & 0.1 & 0.0 & 1.0 & 0.0 \\                                   
-		\hline                                                                                                         
-	\end{tabular}                                                                                                  
-	
-\end{table}   
+\begin{table}[ht]                                              
+	\centering                                                     
+	\begin{tabularx}{\textwidth}{@{}lYY@{}}                             
+		\toprule                                                         
+		\bfseries Navigation & \bfseries Nominal & \bfseries Dispersed \\                                 
+        \toprule                                                
+		Runs & 1000 & 1000 \\                                          
+        \toprule                                                
+		Fuel (kg) & 9761.8 & 9849.8 \\                                  
+                                                       
+		Fuel $\sigma$ & 270.8 & 287.3 \\                               
+                                                      
+		Fuel max & 10526.1 & 10698.2 \\                                
+                                                       
+		Fuel min & 8939.5 & 8924.6 \\                                  
+	    \toprule                                                   
+		Flight Time (s) & 95.2 & 95.0 \\                               
+                                                        
+		FT $\sigma$ & 2.0 & 2.0 \\                                     
+                                                        
+		FT max & 102.5 & 101.5 \\                                      
+	                                                        
+		FT min & 89.0 & 88.4 \\                                        
+        \toprule                                              
+		Range (m) & 0.1 & 2.5 \\                                       
+	                                                       
+		Range $\sigma$ & 0.0 & 1.9 \\                                  
+                                                        
+		Range max & 0.2 & 8.8 \\                                       
+                                                       
+		Range min & 0.0 & 0.0 \\                                       
+        \toprule                                             
+		Speed (m/s) & 1.0 & 8.0 \\                                     
+                                                        
+		Speed $\sigma$ & 0.0 & 3.6 \\                                  
+                                                      
+		Speed max & 1.1 & 15.5 \\                                      
+                                                        
+		Speed min & 1.0 & 0.3 \\                                       
+        \bottomrule                                             
+	\end{tabularx}                                                  
+	\caption{Performance of APDG With and Without Navigation Error}
+	\label{tab:navvsnonav}                                         
+\end{table}      
 
 \subsection{Vacuum vs. Atmosphere} \label{sec:atmovsvac}
 Here APDG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
@@ -1843,30 +1905,60 @@ None of the other cases had any such landing failures.
 
 The lowest mean propellant consumption is given by Case 2, as well as the highest standard deviation in propellant consumption aside from Case 1.
 
-\begin{table}[ht]                                                                                              
-	\centering        
-	\caption{Performance of PD Guidance In Vacuum}                                                                 
-	\label{tab:disppowvac}                                                                                                                     
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                        Case &      &   Fuel   &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
-		     & Runs & (kg)     & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
-		\hline                                                                                                         
-		1 & 1000 & 11650.1 & 605.8 & 66.0 & 5.7 & 54.3 & 244.5 & 11.5 & 15.8 \\                                        
-		\hline                                                                                                         
-		2 & 1000 & 11184.7 & 308.2 & 72.7 & 3.4 & 2.5 & 2.0 & 8.3 & 3.7 \\                                             
-		\hline                                                                                                         
-		3 & 1000 & 11264.0 & 264.9 & 78.3 & 3.1 & 2.5 & 2.0 & 8.0 & 3.7 \\                                             
-		\hline                                                                                                         
-		4 & 1000 & 11634.4 & 247.0 & 88.9 & 3.1 & 2.6 & 2.0 & 8.3 & 3.8 \\                                             
-		\hline                                                                                                         
-		5 & 1000 & 12032.7 & 259.6 & 98.6 & 3.1 & 2.7 & 2.1 & 8.5 & 3.7 \\                                             
-		\hline                                                                                                         
-		6 & 1000 & 12436.7 & 241.9 & 107.7 & 3.0 & 2.5 & 2.1 & 8.3 & 3.8 \\                                            
-		\hline                                                                                                         
-		7 & 1000 & 11885.2 & 257.9 & 90.1 & 3.7 & 2.7 & 2.0 & 8.4 & 3.7 \\                                             
-		\hline                                                                                                         
-	\end{tabular}
-\end{table}    
+\begin{table}[ht]                                                                
+	\centering                                                                       
+%	\begin{tabular}{|c|c|c|c|c|c|c|c|}       
+\begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
+                                        
+		\toprule                                                                   
+		\bfseries Case 
+		& \multicolumn{1}{r}{\bfseries 1}
+		& \multicolumn{1}{r}{\bfseries 2}
+		& \multicolumn{1}{r}{\bfseries 3}
+		& \multicolumn{1}{r}{\bfseries 4}
+		& \multicolumn{1}{r}{\bfseries 5}
+		& \multicolumn{1}{r}{\bfseries 6}
+		& \multicolumn{1}{r}{\bfseries 7}
+		 \\                                                  
+		\toprule                                                                           
+		Runs & 1000 & 1000 & 1000 & 1000 & 1000 & 1000 & 1000 \\                         
+		\toprule                                                                            
+		Fuel (kg) & 11650.1 & 11184.7 & 11264.0 & 11634.4 & 12032.7 & 12436.7 & 11885.2 \\
+                                                                         
+		Fuel $\sigma$ & 605.8 & 308.2 & 264.9 & 247.0 & 259.6 & 241.9 & 257.9 \\         
+                                                                          
+		Fuel max & 13482.2 & 12306.1 & 12188.7 & 12330.1 & 12936.5 & 13189.6 & 12706.8 \\
+                                                                         
+		Fuel min & 8258.6 & 10078.8 & 10495.6 & 10977.1 & 11230.6 & 11710.8 & 11123.6 \\ 
+		\toprule                                                                           
+		Flight Time (s) & 66.0 & 72.7 & 78.3 & 88.9 & 98.6 & 107.7 & 90.1 \\             
+                                                                        
+		FT $\sigma$ & 5.7 & 3.4 & 3.1 & 3.1 & 3.1 & 3.0 & 3.7 \\                         
+                                                                        
+		FT max & 79.1 & 83.3 & 89.1 & 99.1 & 108.5 & 116.9 & 109.5 \\                    
+                                                                         
+		FT min & 37.6 & 63.2 & 69.0 & 78.2 & 88.7 & 97.2 & 82.4 \\                       
+		\toprule                                                                           
+		Range (m) & 54.3 & 2.5 & 2.5 & 2.6 & 2.7 & 2.5 & 2.7 \\                          
+                                                                         
+		Range $\sigma$ & 244.5 & 2.0 & 2.0 & 2.0 & 2.1 & 2.1 & 2.0 \\                    
+                                                                          
+		Range max & 1789.8 & 8.4 & 8.7 & 9.3 & 9.6 & 8.8 & 10.4 \\                       
+                                                                        
+		Range min & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\                           
+		\toprule                                                                           
+		Speed (m/s) & 11.5 & 8.3 & 8.0 & 8.3 & 8.5 & 8.3 & 8.4 \\                        
+                                                                         
+		Speed $\sigma$ & 15.8 & 3.7 & 3.7 & 3.8 & 3.7 & 3.8 & 3.7 \\                     
+                                                                        
+		Speed max & 110.1 & 15.4 & 15.4 & 15.7 & 16.1 & 15.8 & 17.0 \\                   
+                                                                        
+		Speed min & 0.7 & 0.3 & 0.5 & 0.3 & 0.5 & 0.5 & 0.7 \\                           
+		\bottomrule                                                                           
+	\end{tabularx}                                                                    
+	\caption{Performance of APDG In Vacuum}                                          
+	\label{tab:disppowvac}                                                     
+\end{table}  
 
 \subsection{Atmospheric Performance} \label{sec:atmoperf}
 %Table and figures for the following condition:
@@ -1923,30 +2015,82 @@ Introducing dispersion produces Table\:\ref{tab:disppowatmo}. Again we see Case 
 
 PDI shows the best propellant performance in atmosphere, and no landing failures. Its final range and speed accuracy is well in line with the other Cases and the error introduced by Navigation uncertainty discussed in Section\:\ref{sec:naverror}.
 
-\begin{table}[ht]                                                                                                  
-	\centering        
-	\caption{Performance of PD Guidance With Aerodynamic Effects}                                                  
-	\label{tab:disppowatmo}                                                                                                
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
-		\hline                                                                                                        Case  &      &   Fuel    &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
-		      & Runs & (kg)      & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
-		\hline                                                                                                        
-		1 & 1000 & 10141.2 & 357.5 & 55.8 & 3.2 & 9.1 & 60.2 & 8.8 & 7.4 \\                                            
-		\hline                                                                                                        
-		2 & 1000 & 9947.4 & 267.2 & 60.7 & 2.6 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
-		\hline                                                                                                        
-		3 & 1000 & 9918.5 & 264.8 & 65.4 & 2.8 & 2.6 & 1.9 & 8.2 & 3.5 \\                                              
-		\hline                                                                                                        
-		4 & 1000 & 9900.6 & 244.9 & 74.0 & 2.5 & 2.6 & 2.0 & 8.1 & 3.5 \\                                              
-		\hline                                                                                                        
-		5 & 1000 & 10010.2 & 217.6 & 82.0 & 2.7 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
-		\hline                                                                                                        
-		6 & 1000 & 10413.7 & 210.5 & 89.5 & 2.6 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
-		\hline                                                                                                        
-		7 & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
-		\hline                                                                                                        
-	\end{tabular}
-\end{table}   
+%\begin{table}[ht]                                                                                                  
+%	\centering        
+%	\caption{Performance of PD Guidance With Aerodynamic Effects}                                                  
+%	\label{tab:disppowatmo}                                                                                                
+%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}                                                                         
+%		\hline                                                                                                        Case  &      &   Fuel    &    Fuel   & Flight    &   FT     &  Range    &  Range   & Speed   &   Speed  \\ 
+%		      & Runs & (kg)      & $\sigma$  &  Time (s) & $\sigma$ &  (m) &    $  \sigma$ & (m/s)   & $\sigma$ \\
+%		\hline                                                                                                        
+%		1 & 1000 & 10141.2 & 357.5 & 55.8 & 3.2 & 9.1 & 60.2 & 8.8 & 7.4 \\                                            
+%		\hline                                                                                                        
+%		2 & 1000 & 9947.4 & 267.2 & 60.7 & 2.6 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
+%		\hline                                                                                                        
+%		3 & 1000 & 9918.5 & 264.8 & 65.4 & 2.8 & 2.6 & 1.9 & 8.2 & 3.5 \\                                              
+%		\hline                                                                                                        
+%		4 & 1000 & 9900.6 & 244.9 & 74.0 & 2.5 & 2.6 & 2.0 & 8.1 & 3.5 \\                                              
+%		\hline                                                                                                        
+%		5 & 1000 & 10010.2 & 217.6 & 82.0 & 2.7 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
+%		\hline                                                                                                        
+%		6 & 1000 & 10413.7 & 210.5 & 89.5 & 2.6 & 2.5 & 1.9 & 8.1 & 3.5 \\                                             
+%		\hline                                                                                                        
+%		7 & 1000 & 9849.8 & 287.3 & 95.0 & 2.0 & 2.5 & 1.9 & 8.0 & 3.6 \\                                              
+%		\hline                                                                                                        
+%	\end{tabular}
+%\end{table}   
+\begin{table}[ht]                                                                
+	\centering                                                                       
+\begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
+		\toprule                                                                   
+\bfseries Case 
+& \multicolumn{1}{r}{\bfseries 1}
+& \multicolumn{1}{r}{\bfseries 2}
+& \multicolumn{1}{r}{\bfseries 3}
+& \multicolumn{1}{r}{\bfseries 4}
+& \multicolumn{1}{r}{\bfseries 5}
+& \multicolumn{1}{r}{\bfseries 6}
+& \multicolumn{1}{r}{\bfseries 7}
+\\                                                  
+\toprule                                                                                        
+		Runs & 1000 & 1000 & 1000 & 1000 & 1000 & 1000 & 1000 \\                         
+\toprule                                                                          
+		Fuel (kg) & 10141.2 & 9947.4 & 9918.5 & 9900.6 & 10010.2 & 10413.7 & 9849.8 \\    
+                                                                          
+		Fuel $\sigma$ & 357.5 & 267.2 & 264.8 & 244.9 & 217.6 & 210.5 & 287.3 \\         
+                                                                         
+		Fuel max & 11490.2 & 10865.0 & 10668.1 & 10633.8 & 10751.3 & 11049.1 & 10698.2 \\
+                                                                         
+		Fuel min & 8499.9 & 9254.0 & 9120.9 & 9128.9 & 9487.3 & 9877.5 & 8924.6 \\       
+        \toprule                                                                 
+		Flight Time (s) & 55.8 & 60.7 & 65.4 & 74.0 & 82.0 & 89.5 & 95.0 \\              
+                                                                          
+		FT $\sigma$ & 3.2 & 2.6 & 2.8 & 2.5 & 2.7 & 2.6 & 2.0 \\                         
+                                                                          
+		FT max & 63.6 & 67.9 & 75.2 & 81.3 & 91.5 & 97.7 & 101.5 \\                      
+                                                                         
+		FT min & 38.0 & 51.0 & 56.4 & 65.7 & 73.6 & 82.7 & 88.4 \\                       
+            \toprule                                                              
+		Range (m) & 9.1 & 2.5 & 2.6 & 2.6 & 2.5 & 2.5 & 2.5 \\                           
+                                                                          
+		Range $\sigma$ & 60.2 & 1.9 & 1.9 & 2.0 & 1.9 & 1.9 & 1.9 \\                     
+                                                                         
+		Range max & 684.5 & 8.8 & 9.1 & 8.8 & 8.6 & 8.4 & 8.8 \\                         
+                                                                         
+		Range min & 0.0 & 0.0 & 0.1 & 0.1 & 0.0 & 0.1 & 0.0 \\                           
+             \toprule                                                             
+		Speed (m/s) & 8.8 & 8.0 & 8.2 & 8.1 & 8.1 & 8.1 & 8.0 \\                         
+                                                                         
+		Speed $\sigma$ & 7.4 & 3.6 & 3.5 & 3.5 & 3.5 & 3.5 & 3.6 \\                      
+                                                                      
+		Speed max & 77.7 & 14.9 & 15.7 & 15.7 & 15.1 & 14.8 & 15.5 \\                    
+                                                                         
+		Speed min & 0.3 & 0.5 & 0.6 & 0.5 & 0.6 & 0.6 & 0.3 \\                           
+\bottomrule                                                                          
+	\end{tabularx}                                                                    
+	\caption{Performance of APDG In Atmosphere}                                      
+	\label{tab:disppowatmo}                                                          
+\end{table}  
 
 \chapter{DISCUSSION} \label{chap:discussion}
 %Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.
