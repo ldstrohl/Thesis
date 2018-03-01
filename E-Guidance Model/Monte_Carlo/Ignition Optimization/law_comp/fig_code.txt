@@ -1,0 +1,30 @@
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hfuelEvsAPDG.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hfuelEvsAPDG} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hrngEvsAPDG.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hrngEvsAPDG} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hspdEvsAPDG.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hspdEvsAPDG} }
+    \end{minipage}
+\end{figure}
+
+
+

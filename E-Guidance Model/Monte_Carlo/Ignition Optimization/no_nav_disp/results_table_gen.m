@@ -2,7 +2,7 @@
 clear
 close all
 
-latex_flag = 1;
+latex_flag = 0;
 histogram_flag = 1;
 
 fig_base = 'navvsnonav';
@@ -36,6 +36,15 @@ speed_max = flight_time;
 speed_min = flight_time;
 run_count = flight_time;
 
+if histogram_flag
+    h_fuel = figure('Name','Fuel');
+    set(gcf,'pos',[10 10 600 1500])
+    h_spd = figure('Name','Speed');
+    set(gcf,'pos',[10 10 600 1500])
+    h_rng = figure('Name','Range');
+    set(gcf,'pos',[10 10 600 1500])
+end
+
 % scrape and analyze
 for k = 1:length(scenario)
     A = rundata(rundata(:,1)==scenario(k),:);
@@ -56,18 +65,31 @@ for k = 1:length(scenario)
     speed_max(k) = max(A(:,7));
     speed_std(k) = std(A(:,7));
     run_count(k) = length(A(:,1));
-        if histogram_flag && scenario(k) == 7
+    if histogram_flag && scenario(k) == 7
         % Fuel
-        h = figure('Name','Nominal');
+        figure(h_fuel);
         subplot(2,1,1)
-        histogram(A(:,5))
-        xlabel('Fuel (kg)')
-        ylabel('Run Count')
-        subplot(2,1,2)
-        histogram(A(:,7))
-        xlabel('Speed (m/s)')
-        ylabel('Run Count')
-%         thesis_fig(h,strcat('histN',fig_base))
+        histogram(A(:,5),[8900:100:10700])
+        ylabel('Nominal')
+        axis_resize(gca)
+        set(gca,'xtick',[])
+        
+        % Range
+        figure(h_rng)
+        subplot(2,1,1)
+        histogram(A(:,6),[0:.5:9])
+        ylabel('Nominal')
+        axis_resize(gca)
+        set(gca,'xtick',[])
+        
+        % Speed
+        figure(h_spd)
+        subplot(2,1,1)
+        histogram(A(:,7),[0:.5:15.5])
+        ylabel('Nominal')
+        axis_resize(gca)
+        set(gca,'xtick',[])
+%         thesis_fig(h,strcat('histE',fig_base))
     end
 end
 
@@ -120,18 +142,37 @@ for k = 1:length(scenario)
     speed_max(k) = max(A(:,7));
     speed_std(k) = std(A(:,7));
     run_count(k) = length(A(:,1));
-        if histogram_flag && scenario(k) == 7
+if histogram_flag && scenario(k) == 7
         % Fuel
-        h = figure('Name','Dispersed');
-        subplot(2,1,1)
-        histogram(A(:,5))
-        xlabel('Fuel (kg)')
-        ylabel('Run Count')
+        figure(h_fuel);
         subplot(2,1,2)
-        histogram(A(:,7))
+        histogram(A(:,5),[8900:100:10700])
+        ylabel('Dispersed')
+        xlabel('Fuel (kg)')
+        axis_resize(gca)
+        saveas(h_fuel,strcat('hfuel',fig_base),'pdf')
+%         set(gca,'xtick',[])
+        
+        % Range
+        figure(h_rng)
+        subplot(2,1,2)
+        histogram(A(:,6),[0:.5:9])
+        ylabel('Dispersed')
+        xlabel('Range (m)')
+        axis_resize(gca)
+        saveas(h_rng,strcat('hrng',fig_base),'pdf')
+%         set(gca,'xtick',[])
+        
+        % Speed
+        figure(h_spd)
+        subplot(2,1,2)
+        histogram(A(:,7),[0:.5:15.5])
+        ylabel('Dispersed')
         xlabel('Speed (m/s)')
-        ylabel('Run Count')
-%         thesis_fig(h,strcat('histD',fig_base))
+        axis_resize(gca)
+        saveas(h_spd,strcat('hspd',fig_base),'pdf')
+%         set(gca,'xtick',[])
+%         thesis_fig(h,strcat('histE',fig_base))
     end
 end
 

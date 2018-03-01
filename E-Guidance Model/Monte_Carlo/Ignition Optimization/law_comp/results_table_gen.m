@@ -36,6 +36,15 @@ speed_max = flight_time;
 speed_min = flight_time;
 run_count = flight_time;
 
+if histogram_flag
+    h_fuel = figure('Name','Fuel');
+    set(gcf,'pos',[10 10 600 1500])
+    h_spd = figure('Name','Speed');
+    set(gcf,'pos',[10 10 600 1500])
+    h_rng = figure('Name','Range');
+    set(gcf,'pos',[10 10 600 1500])
+end
+
 % scrape and analyze
 for k = 1:length(scenario)
     A = rundata(rundata(:,1)==scenario(k),:);
@@ -58,15 +67,28 @@ for k = 1:length(scenario)
     run_count(k) = length(A(:,1));
     if histogram_flag && scenario(k) == 7
         % Fuel
-        h = figure('Name','E-Guidance');
+        figure(h_fuel);
         subplot(2,1,1)
-        histogram(A(:,5))
-        xlabel('Fuel (kg)')
-        ylabel('Run Count')
-        subplot(2,1,2)
-        histogram(A(:,7))
-        xlabel('Speed (m/s)')
-        ylabel('Run Count')
+        histogram(A(:,5),[8700:100:10700])
+        ylabel('E-Guidance')
+        axis_resize(gca)
+        set(gca,'xtick',[])
+        
+        % Range
+        figure(h_rng)
+        subplot(2,1,1)
+        histogram(A(:,6),[0:.5:9])
+        ylabel('E-Guidance')
+        axis_resize(gca)
+        set(gca,'xtick',[])
+        
+        % Speed
+        figure(h_spd)
+        subplot(2,1,1)
+        histogram(A(:,7),[0:.5:15.5])
+        ylabel('E-Guidance')
+        axis_resize(gca)
+        set(gca,'xtick',[])
 %         thesis_fig(h,strcat('histE',fig_base))
     end
 end
@@ -122,17 +144,48 @@ for k = 1:length(scenario)
     run_count(k) = length(A(:,1));
     if histogram_flag && scenario(k) == 7
         % Fuel
-        h = figure('Name','APDG');
-        subplot(2,1,1)
-        histogram(A(:,5))
-        xlabel('Fuel (kg)')
-        ylabel('Run Count')
+        figure(h_fuel);
         subplot(2,1,2)
-        histogram(A(:,7))
+        histogram(A(:,5),[8700:100:10700])
+        ylabel('APDG')
+        xlabel('Fuel (kg)')
+        axis_resize(gca)
+        saveas(h_fuel,strcat('hfuel',fig_base),'pdf')
+%         set(gca,'xtick',[])
+        
+        % Range
+        figure(h_rng)
+        subplot(2,1,2)
+        histogram(A(:,6),[0:.5:9])
+        ylabel('APDG')
+        xlabel('Range (m)')
+        axis_resize(gca)
+        saveas(h_rng,strcat('hrng',fig_base),'pdf')
+%         set(gca,'xtick',[])
+        
+        % Speed
+        figure(h_spd)
+        subplot(2,1,2)
+        histogram(A(:,7),[0:.5:15.5])
+        ylabel('APDG')
         xlabel('Speed (m/s)')
-        ylabel('Run Count')
-%         thesis_fig(h,strcat('histAPDG',fig_base))
+        axis_resize(gca)
+        saveas(h_spd,strcat('hspd',fig_base),'pdf')
+%         set(gca,'xtick',[])
+%         thesis_fig(h,strcat('histE',fig_base))
     end
+end
+
+if histogram_flag
+    figure(h_fuel)
+    saveas(h_fuel,strcat('hfuel',fig_base),'pdf')
+    
+    figure(h_spd)
+    saveas(h_spd,strcat('hspd',fig_base),'pdf')
+    
+    figure(h_rng)
+    saveas(h_rng,strcat('hrng',fig_base),'pdf')
+    
 end
 
 row2 = [run_count(end),...

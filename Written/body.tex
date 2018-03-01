@@ -1042,7 +1042,7 @@ The dispersion factors are chosen to reflect realistic parameter dispersion. Nav
 T_{max} = T_{max_{nom}}*(1+0.02*(1-2*rand))
 \end{equation}
 
-%\begin{table}[ht]                                                                
+%\begin{table}[H]                                                                
 %	\centering                                                                       
 %	\begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
 
@@ -1054,6 +1054,31 @@ Initial condition values are normally distributed about their nominal values. Th
 
 The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
 
+\begin{table}[H]                                              
+	\centering                                                     
+	\begin{tabularx}{0.65\textwidth}{@{}lccc@{}}                             
+		\toprule                                                         
+		\bfseries Parameter & \bfseries Distribution & \bfseries 3 $\sigma$ & \bfseries Width \\                                 
+		\toprule                                                
+		IC Position & Gaussian & 1000 (m) & \\                                          
+		                                                
+		IC Velocity (kg) & Gaussian & 10 (m/s) & \\                                  
+		
+		Nav Position $\sigma$ & Gaussian & 1 (m/s) & \\                               
+		
+		Nav Velocity max & Gaussian & 3 (m) & \\                                
+		\toprule
+		IC $m_{0}$ & Uniform &  & 2\% \\        
+
+		$T_{max}$ \& $T_{min}$ & Uniform &  & 2\% \\                                  
+		                                                   
+        $v_{ex}$ & Uniform &  & 2\% \\              
+		
+		\bottomrule                                             
+	\end{tabularx}                                                  
+	\caption{Monte-Carlo Dispersion Settings}
+	\label{tab:mcdisps}                                         
+\end{table}      
 
 \section{Initial Condition} \label{sec:IC}
 The initial conditions are listed in Table\:\ref{tab:IC}. These are representative of a trajectory of the CobraMRV vehicle on approach after a de-orbit burn and subsequent targeting, from the work of Cerimele\:et\:al\:\cite{CERIMELE}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed ``East", $\hat{\bm{e}}_y$ is pointed ``North", and $\hat{\bm{e}}_z$ is pointed ``Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
@@ -1135,7 +1160,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %must include a Bounding Box line which is named \texttt{fname.ps} you
 %do the following:
 %\\
-%\texttt{ \hspace*{0.5in} $\backslash$begin\{figure\}[ht]
+%\texttt{ \hspace*{0.5in} $\backslash$begin\{figure\}[H]
 %  \\
 %  \hspace*{0.75in}
 %  $\backslash$includegraphics[width=$\backslash$linewidth]\{fname.eps\}
@@ -1145,19 +1170,19 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %  \\
 %  \hspace*{0.5in} $\backslash$end\{figure\} }
 %\\
-%to produce the figure. The \textbf{[ht]} argument to the figure
+%to produce the figure. The \textbf{[H]} argument to the figure
 %command is a \emph{suggestion} to \LaTeX\ to put the figure
-%\textbf{[h]}ere, or at the \textbf{[t]}op of the page; \textbf{[p]}
+%\textbf{[H]}ere, or at the \textbf{[t]}op of the page; \textbf{[p]}
 %for a separate page is also possible.
 %Avoid\marginpar{\small\textbf{\textit{Style note}}} putting tables and
 %figures at the \textbf{[b]}ottom of the page as this is frowned upon
 %by the thesis manual; the
 %preference\marginpar{\scriptsize\raggedright\textbf{NEVER put anything
 %    in the margin like this!!!}} is to put tables and figures right
-%after they are first referenced, \emph{i.e.}\ \textbf{[h]}ere, but
+%after they are first referenced, \emph{i.e.}\ \textbf{[H]}ere, but
 %at the \textbf{[t]}op of the following page is acceptable in cases
-%where it does not fit \textbf{[h]}ere.  You can make the suggestion
-%stronger by saying \textbf{[h!]}  for ``\textbf{[h]}ere\textbf{!},''
+%where it does not fit \textbf{[H]}ere.  You can make the suggestion
+%stronger by saying \textbf{[h!]}  for ``\textbf{[H]}ere\textbf{!},''
 %but the internal rules may still override your suggestion.
 %``\verb+\linewidth+'' above can be replaced by some
 %number of inches (or other size \LaTeX{} size measure such as
@@ -1165,7 +1190,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %figure.  Centering is a little more complicated.  We place everything
 %in a \texttt{minipage} environment:
 %\\
-%\texttt{ \hspace*{0.5in} $\backslash$begin\{figure\}[ht]
+%\texttt{ \hspace*{0.5in} $\backslash$begin\{figure\}[H]
 %  \\
 %  \hspace*{0.75in} $\backslash$centering
 %  \\
@@ -1195,7 +1220,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %viewed is $t \in [-5,5]$. The figure reference should be denoted by
 %either Fig.~\ref{fig1} or by Figure~\ref{fig1} with specific figures
 %capitalized as noted here.
-%%\begin{figure}[ht]
+%%\begin{figure}[H]
 %%  \centering
 %%  \begin{minipage}{4.5in}
 %%    \includegraphics[width=\linewidth]{Figures/plot2.eps}
@@ -1209,7 +1234,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %%  \end{minipage}
 %%\end{figure}
 %
-%%\begin{figure}[ht]
+%%\begin{figure}[H]
 %%  \centering
 %%  \begin{minipage}{4.5in}
 %%    \includegraphics[width=\linewidth]{Figures/mapping.eps}
@@ -1496,7 +1521,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %and add it in a minipage and center that.  For example if our table is
 %2 inches wide when typeset, then we could do
 %\begin{verbatim}
-%\begin{table}[ht]
+%\begin{table}[H]
 %  \centering
 %  \begin{minipage}{2in}
 %    \caption{Caption goes here}
@@ -1729,6 +1754,40 @@ Including dispersion results in similar profiles which will be examined more clo
 \label{tab:EvsAPDG}                                        
 \end{table}   
 
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hfuelEvsAPDG.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:hfuelEvsAPDG} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hrngEvsAPDG.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:hrngEvsAPDG} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hspdEvsAPDG.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:hspdEvsAPDG} }
+	\end{minipage}
+\end{figure}
+
+
+
+
+
+
+
 \subsection{Navigation Error} \label{sec:naverror}
 %Table and figures for the following condition:
 %APDG Guidance Law
@@ -1739,7 +1798,7 @@ Including dispersion results in similar profiles which will be examined more clo
 
 The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given the terminal velocity constraint magnitude of $1\:m/s$. This constraint is important since it determines how softly the vehicle will land. However, this final speed (and range) inaccuracy is due almost entirely to the navigation dispersion model outlined in Section\:\ref{sec:navmod}, as is clear from the results given in Table\:\ref{tab:navvsnonav}. Here the simulation was run with atmospheric effects, PDI, and full initial condition and rocket parameter dispersion. The cases differed only in whether navigation dispersion was active. The Nominal runs show very accurate satisfaction of the terminal constraints in spite of the guidance update stop for the last half second. A higher fidelity model would include much lower navigation error near the landing site due to the availability of more accurate measurements through radar systems and short range devices and would result in similarly low inaccuracies. More sophisticated sensor models are not investigated here since they would only apply near the end of flight, resulting in little impact on fuel consumption or performance of the PDI strategy.
 
-\begin{table}[ht]                                              
+\begin{table}[H]                                              
 	\centering                                                     
 	\begin{tabularx}{\textwidth}{@{}lYY@{}}                             
 		\toprule                                                         
@@ -1783,6 +1842,34 @@ The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given t
 	\caption{Performance of APDG With and Without Navigation Error}
 	\label{tab:navvsnonav}                                         
 \end{table}      
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hfuelnavvsnonav.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:hfuelnavvsnonav} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hrngnavvsnonav.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:hrngnavvsnonav} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hspdnavvsnonav.pdf}
+		\caption{INSERT FIGURE CAPTION \label{fig:hspdnavvsnonav} }
+	\end{minipage}
+\end{figure}
 
 \subsection{Vacuum vs. Atmosphere} \label{sec:atmovsvac}
 Here APDG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
@@ -1905,7 +1992,7 @@ None of the other cases had any such landing failures.
 
 The lowest mean propellant consumption is given by Case 2, as well as the highest standard deviation in propellant consumption aside from Case 1.
 
-\begin{table}[ht]                                                                
+\begin{table}[H]                                                                
 	\centering                                                                       
 %	\begin{tabular}{|c|c|c|c|c|c|c|c|}       
 \begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
@@ -1959,6 +2046,48 @@ The lowest mean propellant consumption is given by Case 2, as well as the highes
 	\caption{Performance of APDG In Vacuum}                                          
 	\label{tab:disppowvac}                                                     
 \end{table}  
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hfueldisppowvac.pdf}
+		\caption{Fuel Histogram: APDG in Vacuum \label{fig:hfueldisppowvac} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hrngdisppowvac.pdf}
+		\caption{Ground Range Histogram: APDG in Vacuum \label{fig:hrngdisppowvac} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hspddisppowvac.pdf}
+		\caption{Speed Histogram: APDG in Vacuum \label{fig:hspddisppowvac} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hspdfaildisppowvac.pdf}
+		\caption{Failures Histogram: APDG in Vacuum \label{fig:hspdfaildisppowvac} }
+	\end{minipage}
+\end{figure}
+
+
+
+
 
 \subsection{Atmospheric Performance} \label{sec:atmoperf}
 %Table and figures for the following condition:
@@ -2015,7 +2144,7 @@ Introducing dispersion produces Table\:\ref{tab:disppowatmo}. Again we see Case 
 
 PDI shows the best propellant performance in atmosphere, and no landing failures. Its final range and speed accuracy is well in line with the other Cases and the error introduced by Navigation uncertainty discussed in Section\:\ref{sec:naverror}.
 
-%\begin{table}[ht]                                                                                                  
+%\begin{table}[H]                                                                                                  
 %	\centering        
 %	\caption{Performance of PD Guidance With Aerodynamic Effects}                                                  
 %	\label{tab:disppowatmo}                                                                                                
@@ -2039,7 +2168,7 @@ PDI shows the best propellant performance in atmosphere, and no landing failures
 %		\hline                                                                                                        
 %	\end{tabular}
 %\end{table}   
-\begin{table}[ht]                                                                
+\begin{table}[H]                                                                
 	\centering                                                                       
 \begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
 		\toprule                                                                   
@@ -2091,6 +2220,44 @@ PDI shows the best propellant performance in atmosphere, and no landing failures
 	\caption{Performance of APDG In Atmosphere}                                      
 	\label{tab:disppowatmo}                                                          
 \end{table}  
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hfueldisppowatmo.pdf}
+		\caption{Fuel Histogram: APDG in Atmosphere \label{fig:hfueldisppowatmo} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hrngdisppowatmo.pdf}
+		\caption{Ground Range Histogram: APDG in Atmosphere \label{fig:hrngdisppowatmo} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hspddisppowatmo.pdf}
+		\caption{Speed Histogram: APDG in Atmosphere \label{fig:hspddisppowatmo} }
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{4.5 in}
+		\includegraphics[width=\linewidth]{Figures/hspdfaildisppowatmo.pdf}
+		\caption{Failures Histogram: APDG in Atmosphere \label{fig:hspdfaildisppowatmo} }
+	\end{minipage}
+\end{figure}
 
 \chapter{DISCUSSION} \label{chap:discussion}
 %Here we interpret results, discussing agreement and disagreement with expected performance as well as sources of error and mitigation methods.

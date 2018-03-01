@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.28)  27 FEB 2018 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.28)  28 FEB 2018 14:36
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -777,11 +777,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [10]
+ [10] [11]
 No file thesis.gls.
-[11
+[12
 
-] [12
+] [13
 
 ] (body.tex
 CHAPTER 1.
@@ -807,7 +807,7 @@ CHAPTER 2.
 
 ] [8]
  Section 2.2.
-<Figures/bodyaxes.jpg, id=77, 533.74406pt x 401.24907pt>
+<Figures/bodyaxes.jpg, id=80, 533.74406pt x 401.24907pt>
 File: Figures/bodyaxes.jpg Graphic file (type jpg)
 <use Figures/bodyaxes.jpg>
 Package pdftex.def Info: Figures/bodyaxes.jpg  used on input line 449. on input
@@ -853,7 +853,7 @@ CHAPTER 3.
 [24]
  Section 3.5.
  Subsection 3.5.1.
-<Figures/CobraMRV.png, id=134, 816.1692pt x 542.5068pt>
+<Figures/CobraMRV.png, id=138, 816.1692pt x 542.5068pt>
 File: Figures/CobraMRV.png Graphic file (type png)
 <use Figures/CobraMRV.png>
 Package pdftex.def Info: Figures/CobraMRV.png  used on input line 982. on input
@@ -867,458 +867,583 @@ Package pdftex.def Info: Requested size: 325.215pt x 216.17108pt on input line
 [27]
  Section 3.6.
 [28]
- Section 3.7.
+Underfull \hbox (badness 10000) in alignment at lines 1078--1078
+[][][][] 
+ []
+
 [29]
-<Figures/trajunpowvac_1.pdf, id=153, pagebox=cropbox, 421.575pt x 316.18124pt>
+ Section 3.7.
+[30]
+<Figures/trajunpowvac_1.pdf, id=160, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvac_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowvac_1.pdf>
-Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 1089. o
-n input line 1089.
+Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 1114. o
+n input line 1114.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-089.
- [30]
-<Figures/trajunpowvacgr.pdf, id=157, pagebox=cropbox, 421.575pt x 316.18124pt>
+114.
+<Figures/trajunpowvacgr.pdf, id=161, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvacgr.pdf Graphic file (type pdf)
 <use Figures/trajunpowvacgr.pdf>
-Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 1097. o
-n input line 1097.
+Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 1122. o
+n input line 1122.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-097.
+122.
  [31 <./Figures/trajunpowvac_1.pdf>]
-<Figures/trajunpowatmo_1.pdf, id=196, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajunpowatmo_1.pdf, id=199, pagebox=cropbox, 421.575pt x 316.18124pt>
 
 File: Figures/trajunpowatmo_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_1.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1107. 
-on input line 1107.
+Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1132. 
+on input line 1132.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-107.
+132.
  [32 <./Figures/trajunpowvacgr.pdf>]
-<Figures/trajunpowatmo_2.pdf, id=217, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajunpowatmo_2.pdf, id=220, pagebox=cropbox, 421.575pt x 316.18124pt>
 
 File: Figures/trajunpowatmo_2.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_2.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1115. 
-on input line 1115.
+Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1140. 
+on input line 1140.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-115.
- [33 <./Figures/trajunpowatmo_1.pdf>] [34 <./Figures/trajunpowatmo_2.pdf>]
+140.
+
+[33 <./Figures/trajunpowatmo_1.pdf>] [34 <./Figures/trajunpowatmo_2.pdf>]
 CHAPTER 4.
 [35
 
 ]
  Subsection 4.0.1.
-<Figures/gtcriteriavac.pdf, id=284, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/gtcriteriavac.pdf, id=287, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriavac.pdf Graphic file (type pdf)
 <use Figures/gtcriteriavac.pdf>
-Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1607. on
- input line 1607.
+Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1632. on
+ input line 1632.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-607.
+632.
 [36 <./Figures/gtcriteriavac.pdf>]
-<Figures/gtcriteriaatmo.pdf, id=304, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/gtcriteriaatmo.pdf, id=308, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriaatmo.pdf Graphic file (type pdf)
 <use Figures/gtcriteriaatmo.pdf>
-Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1617. o
-n input line 1617.
+Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1642. o
+n input line 1642.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-617.
+642.
 
  Subsection 4.0.2.
 [37 <./Figures/gtcriteriaatmo.pdf>]
-<Figures/trajEvsAPDG.pdf, id=325, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajEvsAPDG.pdf, id=328, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/trajEvsAPDG.pdf>
-Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1640. on i
-nput line 1640.
+Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1665. on i
+nput line 1665.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-640.
-<Figures/altEvsAPDG.pdf, id=326, pagebox=cropbox, 421.575pt x 316.18124pt>
+665.
+<Figures/altEvsAPDG.pdf, id=329, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/altEvsAPDG.pdf>
-Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1648. on in
-put line 1648.
+Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1673. on in
+put line 1673.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-648.
+673.
  [38 <./Figures/trajEvsAPDG.pdf>]
-<Figures/rngEvsAPDG.pdf, id=364, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/rngEvsAPDG.pdf, id=367, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/rngEvsAPDG.pdf>
-Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1656. on in
-put line 1656.
+Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1681. on in
+put line 1681.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-656.
+681.
  [39 <./Figures/altEvsAPDG.pdf>]
-<Figures/spdEvsAPDG.pdf, id=391, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/spdEvsAPDG.pdf, id=394, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/spdEvsAPDG.pdf>
-Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1664. on in
-put line 1664.
+Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1689. on in
+put line 1689.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-664.
+689.
  [40 <./Figures/rngEvsAPDG.pdf>]
-<Figures/thrEvsAPDG.pdf, id=416, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/thrEvsAPDG.pdf, id=419, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/thrEvsAPDG.pdf>
-Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1672. on in
-put line 1672.
+Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1697. on in
+put line 1697.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-672.
+697.
  [41 <./Figures/spdEvsAPDG.pdf>]
-<Figures/fatEvsAPDG.pdf, id=441, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/fatEvsAPDG.pdf, id=444, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/fatEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/fatEvsAPDG.pdf>
-Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1680. on in
-put line 1680.
+Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1705. on in
+put line 1705.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-680.
+705.
  [42 <./Figures/thrEvsAPDG.pdf>] [43 <./Figures/fatEvsAPDG.pdf>]
+<Figures/hfuelEvsAPDG.pdf, id=496, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hfuelEvsAPDG.pdf Graphic file (type pdf)
+<use Figures/hfuelEvsAPDG.pdf>
+Package pdftex.def Info: Figures/hfuelEvsAPDG.pdf  used on input line 1760. on 
+input line 1760.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+1760.
+ [44]
+<Figures/hrngEvsAPDG.pdf, id=500, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hrngEvsAPDG.pdf Graphic file (type pdf)
+<use Figures/hrngEvsAPDG.pdf>
+Package pdftex.def Info: Figures/hrngEvsAPDG.pdf  used on input line 1770. on i
+nput line 1770.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+1770.
+
+[45 <./Figures/hfuelEvsAPDG.pdf>]
+<Figures/hspdEvsAPDG.pdf, id=508, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hspdEvsAPDG.pdf Graphic file (type pdf)
+<use Figures/hspdEvsAPDG.pdf>
+Package pdftex.def Info: Figures/hspdEvsAPDG.pdf  used on input line 1780. on i
+nput line 1780.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+1780.
+ [46 <./Figures/hrngEvsAPDG.pdf>]
  Subsection 4.0.3.
-[44]
+[47 <./Figures/hspdEvsAPDG.pdf>]
+<Figures/hfuelnavvsnonav.pdf, id=523, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hfuelnavvsnonav.pdf Graphic file (type pdf)
+<use Figures/hfuelnavvsnonav.pdf>
+Package pdftex.def Info: Figures/hfuelnavvsnonav.pdf  used on input line 1849. 
+on input line 1849.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+1849.
+ [48]
+<Figures/hrngnavvsnonav.pdf, id=528, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hrngnavvsnonav.pdf Graphic file (type pdf)
+<use Figures/hrngnavvsnonav.pdf>
+Package pdftex.def Info: Figures/hrngnavvsnonav.pdf  used on input line 1859. o
+n input line 1859.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+1859.
+ [49 <./Figures/hfuelnavvsnonav.pdf>]
+<Figures/hspdnavvsnonav.pdf, id=536, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hspdnavvsnonav.pdf Graphic file (type pdf)
+<use Figures/hspdnavvsnonav.pdf>
+Package pdftex.def Info: Figures/hspdnavvsnonav.pdf  used on input line 1869. o
+n input line 1869.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+1869.
+
+[50 <./Figures/hrngnavvsnonav.pdf>]
  Subsection 4.0.4.
-[45]
-<Figures/trajatmovsvac.pdf, id=499, pagebox=cropbox, 421.575pt x 316.18124pt>
+[51 <./Figures/hspdnavvsnonav.pdf>]
+<Figures/trajatmovsvac.pdf, id=551, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajatmovsvac.pdf Graphic file (type pdf)
 <use Figures/trajatmovsvac.pdf>
-Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1798. on
- input line 1798.
+Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1885. on
+ input line 1885.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-798.
- [46]
-<Figures/altatmovsvac.pdf, id=503, pagebox=cropbox, 421.575pt x 316.18124pt>
+885.
+ [52]
+<Figures/altatmovsvac.pdf, id=555, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altatmovsvac.pdf Graphic file (type pdf)
 <use Figures/altatmovsvac.pdf>
-Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1806. on 
-input line 1806.
+Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1893. on 
+input line 1893.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-806.
- [47 <./Figures/trajatmovsvac.pdf>]
-<Figures/rngatmovsvac.pdf, id=545, pagebox=cropbox, 421.575pt x 316.18124pt>
+893.
+ [53 <./Figures/trajatmovsvac.pdf>]
+<Figures/rngatmovsvac.pdf, id=597, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngatmovsvac.pdf Graphic file (type pdf)
 <use Figures/rngatmovsvac.pdf>
-Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1814. on 
-input line 1814.
+Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1901. on 
+input line 1901.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-814.
- [48 <./Figures/altatmovsvac.pdf>]
-<Figures/spdatmovsvac.pdf, id=572, pagebox=cropbox, 421.575pt x 316.18124pt>
+901.
+
+[54 <./Figures/altatmovsvac.pdf>]
+<Figures/spdatmovsvac.pdf, id=625, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdatmovsvac.pdf Graphic file (type pdf)
 <use Figures/spdatmovsvac.pdf>
-Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1822. on 
-input line 1822.
+Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1909. on 
+input line 1909.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-822.
-
-[49 <./Figures/rngatmovsvac.pdf>]
-<Figures/thratmovsvac.pdf, id=598, pagebox=cropbox, 421.575pt x 316.18124pt>
+909.
+ [55 <./Figures/rngatmovsvac.pdf>]
+<Figures/thratmovsvac.pdf, id=650, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thratmovsvac.pdf Graphic file (type pdf)
 <use Figures/thratmovsvac.pdf>
-Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1830. on 
-input line 1830.
+Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1917. on 
+input line 1917.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-830.
- [50 <./Figures/spdatmovsvac.pdf>]
-<Figures/massatmovsvac.pdf, id=623, pagebox=cropbox, 421.575pt x 316.18124pt>
+917.
+ [56 <./Figures/spdatmovsvac.pdf>]
+<Figures/massatmovsvac.pdf, id=675, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/massatmovsvac.pdf Graphic file (type pdf)
 <use Figures/massatmovsvac.pdf>
-Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1838. on
- input line 1838.
+Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1925. on
+ input line 1925.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-838.
- [51 <./Figures/thratmovsvac.pdf>]
+925.
+ [57 <./Figures/thratmovsvac.pdf>]
  Subsection 4.0.5.
-[52 <./Figures/massatmovsvac.pdf>]
-<Figures/trajpowvac.pdf, id=672, pagebox=cropbox, 421.575pt x 316.18124pt>
+[58 <./Figures/massatmovsvac.pdf>]
+<Figures/trajpowvac.pdf, id=724, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajpowvac.pdf Graphic file (type pdf)
 <use Figures/trajpowvac.pdf>
-Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1863. on in
-put line 1863.
+Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1950. on in
+put line 1950.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-863.
-<Figures/spdpowvac.pdf, id=673, pagebox=cropbox, 421.575pt x 316.18124pt>
+950.
+<Figures/spdpowvac.pdf, id=725, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdpowvac.pdf Graphic file (type pdf)
 <use Figures/spdpowvac.pdf>
-Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1871. on inp
-ut line 1871.
+Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1958. on inp
+ut line 1958.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-871.
- [53 <./Figures/trajpowvac.pdf>]
-<Figures/altpowvac.pdf, id=711, pagebox=cropbox, 421.575pt x 316.18124pt>
+958.
+ [59 <./Figures/trajpowvac.pdf>]
+<Figures/altpowvac.pdf, id=763, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altpowvac.pdf Graphic file (type pdf)
 <use Figures/altpowvac.pdf>
-Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1879. on inp
-ut line 1879.
+Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1966. on inp
+ut line 1966.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-879.
- [54 <./Figures/spdpowvac.pdf>]
-<Figures/rngpowvac.pdf, id=732, pagebox=cropbox, 421.575pt x 316.18124pt>
+966.
+ [60 <./Figures/spdpowvac.pdf>]
+<Figures/rngpowvac.pdf, id=785, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngpowvac.pdf Graphic file (type pdf)
 <use Figures/rngpowvac.pdf>
-Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1887. on inp
-ut line 1887.
+Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1974. on inp
+ut line 1974.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-887.
- [55 <./Figures/altpowvac.pdf>]
-<Figures/thrpowvac.pdf, id=756, pagebox=cropbox, 421.575pt x 316.18124pt>
+974.
+ [61 <./Figures/altpowvac.pdf>]
+<Figures/thrpowvac.pdf, id=808, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrpowvac.pdf Graphic file (type pdf)
 <use Figures/thrpowvac.pdf>
-Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1895. on inp
-ut line 1895.
+Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1982. on inp
+ut line 1982.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-895.
- [56 <./Figures/rngpowvac.pdf>]
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+982.
+ [62 <./Figures/rngpowvac.pdf>]
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11650.1|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11184.7|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11264.0|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11634.4|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12032.7|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12436.7|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11885.2|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 13482.2|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12306.1|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12188.7|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12330.1|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12936.5|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 13189.6|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 12706.8|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 10078.8|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 10495.6|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 10977.1|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11230.6|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11710.8|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 1958--1958
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2045--2045
  []|\OT1/ptm/m/n/12 11123.6|
  []
 
-[57 <./Figures/thrpowvac.pdf>]
+[63 <./Figures/thrpowvac.pdf>]
+<Figures/hfueldisppowvac.pdf, id=850, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hfueldisppowvac.pdf Graphic file (type pdf)
+<use Figures/hfueldisppowvac.pdf>
+Package pdftex.def Info: Figures/hfueldisppowvac.pdf  used on input line 2053. 
+on input line 2053.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+2053.
+ [64]
+<Figures/hrngdisppowvac.pdf, id=854, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hrngdisppowvac.pdf Graphic file (type pdf)
+<use Figures/hrngdisppowvac.pdf>
+Package pdftex.def Info: Figures/hrngdisppowvac.pdf  used on input line 2063. o
+n input line 2063.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+2063.
+ [65 <./Figures/hfueldisppowvac.pdf>]
+<Figures/hspddisppowvac.pdf, id=867, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hspddisppowvac.pdf Graphic file (type pdf)
+<use Figures/hspddisppowvac.pdf>
+Package pdftex.def Info: Figures/hspddisppowvac.pdf  used on input line 2073. o
+n input line 2073.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+2073.
+
+[66 <./Figures/hrngdisppowvac.pdf>]
+<Figures/hspdfaildisppowvac.pdf, id=881, pagebox=cropbox, 421.575pt x 316.18124
+pt>
+File: Figures/hspdfaildisppowvac.pdf Graphic file (type pdf)
+<use Figures/hspdfaildisppowvac.pdf>
+Package pdftex.def Info: Figures/hspdfaildisppowvac.pdf  used on input line 208
+3. on input line 2083.
+Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
+083.
+ [67 <./Figures/hspddisppowvac.pdf>]
  Subsection 4.0.6.
-<Figures/trajpowatmo.pdf, id=798, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajpowatmo.pdf, id=894, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajpowatmo.pdf Graphic file (type pdf)
 <use Figures/trajpowatmo.pdf>
-Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 1977. on i
-nput line 1977.
-Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-977.
-[58]
-<Figures/altpowatmo.pdf, id=802, pagebox=cropbox, 421.575pt x 316.18124pt>
+Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 2106. on i
+nput line 2106.
+Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
+106.
+[68 <./Figures/hspdfaildisppowvac.pdf>]
+<Figures/altpowatmo.pdf, id=901, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altpowatmo.pdf Graphic file (type pdf)
 <use Figures/altpowatmo.pdf>
-Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 1985. on in
-put line 1985.
-Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-985.
- [59 <./Figures/trajpowatmo.pdf>]
-<Figures/rngpowatmo.pdf, id=848, pagebox=cropbox, 421.575pt x 316.18124pt>
+Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 2114. on in
+put line 2114.
+Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
+114.
+ [69 <./Figures/trajpowatmo.pdf>]
+<Figures/rngpowatmo.pdf, id=947, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngpowatmo.pdf Graphic file (type pdf)
 <use Figures/rngpowatmo.pdf>
-Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 1993. on in
-put line 1993.
-Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 1
-993.
- [60 <./Figures/altpowatmo.pdf>]
-<Figures/spdpowatmo.pdf, id=875, pagebox=cropbox, 421.575pt x 316.18124pt>
+Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 2122. on in
+put line 2122.
+Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
+122.
+
+[70 <./Figures/altpowatmo.pdf>]
+<Figures/spdpowatmo.pdf, id=974, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdpowatmo.pdf Graphic file (type pdf)
 <use Figures/spdpowatmo.pdf>
-Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 2001. on in
-put line 2001.
+Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 2130. on in
+put line 2130.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
-001.
- [61 <./Figures/rngpowatmo.pdf>]
-<Figures/thrpowatmo.pdf, id=901, pagebox=cropbox, 421.575pt x 316.18124pt>
+130.
+ [71 <./Figures/rngpowatmo.pdf>]
+<Figures/thrpowatmo.pdf, id=999, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrpowatmo.pdf Graphic file (type pdf)
 <use Figures/thrpowatmo.pdf>
-Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 2009. on in
-put line 2009.
+Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 2138. on in
+put line 2138.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
-009.
- [62 <./Figures/spdpowatmo.pdf>]
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+138.
+ [72 <./Figures/spdpowatmo.pdf>]
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10141.2|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10010.2|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10413.7|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 11490.2|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10865.0|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10668.1|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10633.8|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10751.3|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 11049.1|
  []
 
 
-Overfull \hbox (0.74948pt too wide) in paragraph at lines 2090--2090
+Overfull \hbox (0.74948pt too wide) in paragraph at lines 2219--2219
  []|\OT1/ptm/m/n/12 10698.2|
  []
 
-[63 <./Figures/thrpowatmo.pdf>] [64]
+[73 <./Figures/thrpowatmo.pdf>]
+<Figures/hfueldisppowatmo.pdf, id=1050, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hfueldisppowatmo.pdf Graphic file (type pdf)
+<use Figures/hfueldisppowatmo.pdf>
+Package pdftex.def Info: Figures/hfueldisppowatmo.pdf  used on input line 2227.
+ on input line 2227.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+2227.
+ [74]
+<Figures/hrngdisppowatmo.pdf, id=1054, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hrngdisppowatmo.pdf Graphic file (type pdf)
+<use Figures/hrngdisppowatmo.pdf>
+Package pdftex.def Info: Figures/hrngdisppowatmo.pdf  used on input line 2237. 
+on input line 2237.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+2237.
+ [75 <./Figures/hfueldisppowatmo.pdf>]
+<Figures/hspddisppowatmo.pdf, id=1067, pagebox=cropbox, 614.295pt x 794.97pt>
+File: Figures/hspddisppowatmo.pdf Graphic file (type pdf)
+<use Figures/hspddisppowatmo.pdf>
+Package pdftex.def Info: Figures/hspddisppowatmo.pdf  used on input line 2247. 
+on input line 2247.
+Package pdftex.def Info: Requested size: 325.215pt x 420.87114pt on input line 
+2247.
+
+[76 <./Figures/hrngdisppowatmo.pdf>]
+<Figures/hspdfaildisppowatmo.pdf, id=1080, pagebox=cropbox, 421.575pt x 316.181
+24pt>
+File: Figures/hspdfaildisppowatmo.pdf Graphic file (type pdf)
+<use Figures/hspdfaildisppowatmo.pdf>
+Package pdftex.def Info: Figures/hspdfaildisppowatmo.pdf  used on input line 22
+57. on input line 2257.
+Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
+257.
+ [77 <./Figures/hspddisppowatmo.pdf>]
+[78 <./Figures/hspdfaildisppowatmo.pdf>]
 CHAPTER 5.
  Section 5.1.
-<Figures/convtestatmo.pdf, id=954, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/convtestatmo.pdf, id=1100, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/convtestatmo.pdf Graphic file (type pdf)
 <use Figures/convtestatmo.pdf>
-Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 2110. on 
-input line 2110.
+Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 2277. on 
+input line 2277.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
-110.
-[65
+277.
+[79
 
-] [66 <./Figures/convtestatmo.pdf>]
-<Figures/convtestvac.pdf, id=1021, pagebox=cropbox, 421.575pt x 316.18124pt>
+] [80 <./Figures/convtestatmo.pdf>]
+<Figures/convtestvac.pdf, id=1167, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/convtestvac.pdf Graphic file (type pdf)
 <use Figures/convtestvac.pdf>
-Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 2131. on i
-nput line 2131.
+Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 2298. on i
+nput line 2298.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
-131.
+298.
 
  Section 5.2.
-[67 <./Figures/convtestvac.pdf>]
+[81 <./Figures/convtestvac.pdf>]
  Section 5.3.
-[68] [69]
+[82] [83]
 CHAPTER 6.
  Section 6.1.
  Section 6.2.
-[70
+[84
 
 ]
-<Figures/thrtgofac.pdf, id=1110, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/thrtgofac.pdf, id=1256, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrtgofac.pdf Graphic file (type pdf)
 <use Figures/thrtgofac.pdf>
-Package pdftex.def Info: Figures/thrtgofac.pdf  used on input line 2209. on inp
-ut line 2209.
+Package pdftex.def Info: Figures/thrtgofac.pdf  used on input line 2376. on inp
+ut line 2376.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
-209.
- [71]
-<Figures/spdtgofac.pdf, id=1114, pagebox=cropbox, 421.575pt x 316.18124pt>
+376.
+ [85]
+<Figures/spdtgofac.pdf, id=1260, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdtgofac.pdf Graphic file (type pdf)
 <use Figures/spdtgofac.pdf>
-Package pdftex.def Info: Figures/spdtgofac.pdf  used on input line 2217. on inp
-ut line 2217.
+Package pdftex.def Info: Figures/spdtgofac.pdf  used on input line 2384. on inp
+ut line 2384.
 Package pdftex.def Info: Requested size: 325.215pt x 243.9138pt on input line 2
-217.
- [72 <./Figures/thrtgofac.pdf>]) (thesis.bbl [73 <./Figures/spdtgofac.pdf>] [74
+384.
+ [86 <./Figures/thrtgofac.pdf>]) (thesis.bbl [87 <./Figures/spdtgofac.pdf>] [88
 
 ]) (append.tex
 APPENDIX A.
-[75
+[89
 
-] [76]
+] [90]
 APPENDIX B.
-[77
+[91
 
-]) [78] (thesis.aux) ) 
+]) [92] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 10334 strings out of 493312
- 159677 string characters out of 3129391
- 311269 words of memory out of 3000000
- 13594 multiletter control sequences out of 15000+200000
+ 10419 strings out of 493312
+ 162322 string characters out of 3129391
+ 311448 words of memory out of 3000000
+ 13665 multiletter control sequences out of 15000+200000
  23142 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,16n,76p,1989b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1345,9 +1470,9 @@ Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on thesis.pdf (90 pages, 4249141 bytes).
+Output written on thesis.pdf (105 pages, 4335007 bytes).
 PDF statistics:
- 1238 PDF objects out of 1440 (max. 8388607)
+ 1384 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

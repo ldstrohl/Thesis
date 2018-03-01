@@ -1,0 +1,30 @@
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hfuelnavvsnonav.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hfuelnavvsnonav} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hrngnavvsnonav.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hrngnavvsnonav} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hspdnavvsnonav.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hspdnavvsnonav} }
+    \end{minipage}
+\end{figure}
+
+
+

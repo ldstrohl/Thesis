@@ -1,0 +1,40 @@
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hfueldisppowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hfueldisppowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hrngdisppowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hrngdisppowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hspddisppowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hspddisppowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{4.5 in}
+        \includegraphics[width=\linewidth]{Figures/hspdfaildisppowatmo.pdf}
+        \caption{INSERT FIGURE CAPTION \label{fig:hspdfaildisppowatmo} }
+    \end{minipage}
+\end{figure}
+
+
+
