@@ -1,70 +1,79 @@
 \begin{thebibliography}{10}
 
 \bibitem{CERIMELE}
-C.~Cerimele~et al.
-\newblock A rigid mid lift-to-drag ratio approach to human mars entry, descent,
-  and landing.
-\newblock {\em AIAA Paper}, 2017-1898, 2017.
+{\sc C.~Cerimele~et al.}, {\em A rigid mid lift-to-drag ratio approach to human
+  mars entry, descent, and landing}, AIAA Paper, 2017-1898 (2017).
 
 \bibitem{CHERRY}
-G.~W. Cherry.
-\newblock A general, explicit, optimizing guidance law for rocket-propelled
-  spaceflight.
-\newblock {\em AIAA Paper}, 64-638, 1964.
+{\sc G.~W. Cherry}, {\em A general, explicit, optimizing guidance law for
+  rocket-propelled spaceflight}, AIAA Paper, 64-638 (1964).
+
+\bibitem{CHOMEL}
+{\sc C.~Chomel}, {\em Development of an Analytical Guidance Algorithm for Lunar
+  Descent}, PhD thesis, The University of Texas at Austin, Austin, TX, 2007.
 
 \bibitem{CITRON}
-S.~J. Citron, S.~E. Dunin, and H.~F. Meissinger.
-\newblock A terminal guidance technique for lunar landing.
-\newblock {\em AIAA Journal}, 2:503--509, 1964.
+{\sc S.~J. Citron, S.~E. Dunin, and H.~F. Meissinger}, {\em A terminal guidance
+  technique for lunar landing}, AIAA Journal, 2 (1964), pp.~503--509.
 
 \bibitem{DSOUZA}
-C.~S. D'Souza.
-\newblock An optimal guidance law for planetary landing.
-\newblock {\em AIAA Paper}, 97-3709, 1997.
+{\sc C.~S. D'Souza}, {\em An optimal guidance law for planetary landing}, AIAA
+  Paper, 97-3709 (1997).
 
 \bibitem{FERZIGER}
-J.~H. Ferziger and M.~Peri\'c.
-\newblock {\em Computational Methods for Fluid Dynamics}.
-\newblock Springer, Berlin, 2002.
+{\sc J.~H. Ferziger and M.~Peri\'c}, {\em Computational Methods for Fluid
+  Dynamics}, Springer, Berlin, 2002.
 
 \bibitem{MARSGRAM}
-H.~L. Justh.
-\newblock Mars global reference atmospheric model.
+{\sc H.~L. Justh}, {\em Mars global reference atmospheric model}.
 \newblock NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February
   2018.
 
 \bibitem{KLUMPP}
-A.~R. Klumpp.
-\newblock Apollo lunar descent guidance.
-\newblock {\em Automatica}, 10:133--146, 1974.
+{\sc A.~R. Klumpp}, {\em Apollo lunar descent guidance}, Automatica, 10 (1974),
+  pp.~133--146.
 
 \bibitem{LEITMANN}
-G.~Leitmann.
-\newblock Class of variational problems in rocket flight.
-\newblock {\em Journal of the Aerospace Sciences}, 26:586--591, 1959.
+{\sc G.~Leitmann}, {\em Class of variational problems in rocket flight},
+  Journal of the Aerospace Sciences, 26 (1959), pp.~586--591.
 
 \bibitem{LU}
-P.~Lu.
-\newblock Propellant-optimal powered descent guidance.
-\newblock {\em Journal of Guidance, Control, and Dynamics}, pages 1--14, Dec
-  2017.
+{\sc P.~Lu}, {\em Propellant-optimal powered descent guidance}, Journal of
+  Guidance, Control, and Dynamics,  (2017), pp.~1--14.
+
+\bibitem{MCINNES}
+{\sc C.~R. McInnes}, {\em Path shaping gudiance for terminal lunar descent},
+  Acta Astronautica, 36 (1995), pp.~367--377.
 
 \bibitem{MEDITCH}
-J.~J. Meditch.
-\newblock On the problem of optimal thrust programming for a lunar soft
-  landing.
-\newblock {\em IEEE Transactions on Automatic Control}, 9:477--484, 1964.
+{\sc J.~J. Meditch}, {\em On the problem of optimal thrust programming for a
+  lunar soft landing}, IEEE Transactions on Automatic Control, 9 (1964),
+  pp.~477--484.
 
 \bibitem{MOESSER}
-T.~J. Moesser.
-\newblock Guidance and navigation linear covariance analysis for lunar powered
-  descent.
-\newblock Master's thesis, Utah State University, Logan, UT, 2010.
+{\sc T.~J. Moesser}, {\em Guidance and navigation linear covariance analysis
+  for lunar powered descent}, Master's thesis, Utah State University, Logan,
+  UT, 2010.
+
+\bibitem{NAJSON}
+{\sc F.~Najson and K.~D. Mease}, {\em Computationally inexpensive guidance
+  algorithm for fuel-efficient terminal descent}, Journal of Guidance, Control,
+  and Dynamics, 29 (2006), pp.~955--964.
+
+\bibitem{PLOEN}
+{\sc S.~R. Ploen, A.~B. Acikmese, and A.~Wolf}, {\em A comparison of powered
+  descent guidance laws for mars pinpoint landing}, AIAA, 2006-6676 (2006).
 
 \bibitem{REA}
-J.~R. Rea and R.~H. Bishop.
-\newblock Analytical dimensional reduction of a fuel optimal powered descent
-  subproblem.
-\newblock {\em AIAA Paper}, 2010-8026, 2010.
+{\sc J.~R. Rea and R.~H. Bishop}, {\em Analytical dimensional reduction of a
+  fuel optimal powered descent subproblem}, AIAA Paper, 2010-8026 (2010).
+
+\bibitem{ROSS}
+{\sc I.~M. Ross}, {\em How to find minimum-fuel controllers}, AIAA, 2004-5346
+  (2004).
+
+\bibitem{SOSTARIC}
+{\sc R.~R. Sostaric and J.~R. Rea}, {\em Powered descent guidance methods for
+  the moon and mars}, AIAA, 2005-6287 (2005).
 
 \end{thebibliography}

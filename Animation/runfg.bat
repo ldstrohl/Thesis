@@ -1,6 +1,5 @@
 C:
-cd C:\Program Files\FlightGear 2017.1.3\data
+cd C:\Program Files\FlightGear
 
-SET FG_ROOT=C:\Program Files\FlightGear 2017.1.3\data
-..\\bin\fgfs --aircraft=HL20 --fdm=network,localhost,5501,5502,5503 --fog-fastest --disable-clouds --start-date-lat=2004:06:01:09:00:00 --disable-sound --in-air --enable-freeze --airport=KSFO --runway=10L --altitude=7224 --heading=113 --offset-distance=4.72 --offset-azimuth=0
---prop:/sim/rendering/shaders/quality-level=0 
+SET FG_ROOT=C:\Program Files\FlightGear\data
+.\\bin\fgfs --aircraft=HL20 --fdm=network,localhost,5501,5502,5503 --fog-fastest --disable-clouds --start-date-lat=2004:06:01:09:00:00 --disable-sound --in-air --enable-freeze --airport=KPSP --runway=31L --altitude=7224 --heading=113 --offset-distance=4.72 --offset-azimuth=0

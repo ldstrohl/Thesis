@@ -33,7 +33,7 @@ The problem of powered descent guidance has been studied extensively throughout 
 
 Cherry developed E-Guidance, of which Apollo Powered Descent Guidance (APDG) is a version. APDG solves the Equations of Motion\:(\ref{eqn:EoM1}) and\:(\ref{eqn:EoM2}) by defining a linear or quadratic thrust acceleration profile which ensures satisfaction of the terminal constraints\:(\ref{eqn:constraint_r}),\:(\ref{eqn:constraint_V}), and (for constrained final attitude)\:(\ref{eqn:constraint_a}). These two methods require choosing a fixed final time $t_f$, and Cherry proposes an algorithm similar to Algorithm\:(\ref{eqn:FPI}). The final time $t_f$ is dependent upon the initial conditions and assumes powered descent guidance is active. Other work has been done regarding the performance of APDG including landing site redesignation\:[\cite{SOSTARIC},\:\cite{PLOEN}] as well as robustness\:[\cite{KLUMPP}]. 
 
-Insert gravity turn references here [\cite{MCINNES},\:\cite{CHOMEL},\:\cite{CITRON}]
+One well-studied powered descent solution is given by a gravity turn maneuver [\cite{MCINNES},\:\cite{CHOMEL},\:\cite{CITRON}], which does not consider landing site redesignation but can be carefully initiated to achieve a predetermined landing site and ensures soft landing. Formulations of the gravity turn solution differ in application and approach, but in essence the maneuver involves providing a thrust acceleration to exactly cancel the velocity vector upon landing. This approach does not reliably satisfy the full powered descent guidance problem under study with designated landing sites and dispersed trajectories, but its analysis proves useful in determining a time-to-go and criteria for Adaptive Powered Descent Initiation.
 
 D'Souza 1997\:\cite{DSOUZA} did consider an optimal time-to-go, the remaining flight time at any given moment of the powered descent trajectory. D'Souza's solution minimizes a weighted function of the time-to-go and the performance index given in Equation\:(\ref{eqn:performanceindex}. As discussed below, minimizing this performance index is not fuel optimal but by minimizing the time-to-go a better performance can be realized, as demonstrated in D'Souza's paper as well as several others\:[\cite{NAJSON},\:\cite{ROSS}]\. However, these approaches still only consider the problem after ignition, when the powered descent guidance phase has already begun.
 
@@ -302,9 +302,7 @@ Chapter\:\ref{chap:conclusions} states the conclusions of the study and makes re
 
 \section{Problem Statement}
 
-Powered descent and landing is presented in the context of a manned Mars mission. This mission proceeds such that the powered descent guidance takes over after a successful de-orbiting and aerobraking maneuver, when the vehicle is aerodynamically controllable (in a glide) near the landing site. 
-
-The guidance algorithm for powered descent and soft landing is formulated under the following assumptions:
+Powered descent and landing is presented in the context of a manned Mars mission. This mission proceeds such that the powered descent guidance takes over after a successful de-orbiting and aerobraking maneuver, when the vehicle is aerodynamically controllable (in a glide) near the landing site. The guidance algorithm for powered descent and soft landing is formulated under the following assumptions:
 
 \begin{enumerate}
 	\item Atmospheric forces can be neglected
@@ -318,11 +316,7 @@ The guidance algorithm for powered descent and soft landing is formulated under 
 	\item Upon ignition, the vehicle can obtain commanded thrust within its upper and lower bounds instantaneously
 \end{enumerate}
 
-Implicit in these assumptions is a specified landing condition which defines the guidance frame $\bm{\hat{e}}$. 
-
-It is desired to minimize propellant usage required by APDG through Adaptive PDI. It is essential that the solution is robust and reliable given the safety criticality of a manned mission.
-
-The last assumption is only relevant when ignition is started; APDG does not demand large instantaneous throttle responses. Taking into account ignition lag would be simple and not affect performance significantly, but it is not modeled here.
+Implicit in these assumptions is a specified landing condition which defines the guidance frame $\bm{\hat{e}}$. It is desired to minimize propellant usage required by APDG through Adaptive PDI. It is essential that the solution is robust and reliable given the safety criticality of a manned mission. The last assumption is only relevant when ignition is started; APDG does not demand large instantaneous throttle responses. Taking into account ignition lag would be simple and not affect performance significantly, but it is not modeled here.
 
 
  
@@ -447,7 +441,7 @@ The vehicle's aerodynamics depend upon its orientation, which can best be descri
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/bodyaxes.jpg}
 		\caption{Vehicle Body Axes. Source: Hall, N. Aircraft Rotations Body Axes. NASA Glenn Research Center, https://www.grc.nasa.gov/www/k-12/airplane/rotations.html, accessed February 2018 \label{fig:bodyaxes} }
 	\end{minipage}
@@ -900,7 +894,7 @@ Notably, Cerimele et. al\:\cite{CERIMELE} recognize in the design of the CobraMR
 
 \chapter{SIMULATION} \label{chap:simulation}
 
-The powered descent simulation (PD Sim) is developed using standard programming techniques and numerical methods. The code is modular to facilitate design and reflect the functions of a mission computer. The simulation has three degrees of freedom (3-DoF) with derived orientation for force modeling. The simulation takes a set of initial conditions $\bm{r}_0$ and $\bm{V}_0$, a set of final conditions $\bm{r}_f$ and $\bm{V}_f$, dispersed rocker parameters, and nominal rocket parameters for the guidance module to use in its calculations of throttle setting.
+The powered descent simulation (PD Sim) is developed using standard programming techniques and numerical methods. The code is modular to facilitate design and reflect the functions of a mission computer. The simulation has three degrees of freedom (3-DoF) with derived orientation for force modeling. The simulation takes a set of initial conditions $\bm{r}_0$ and $\bm{V}_0$, a set of final conditions $\bm{r}_f$ and $\bm{V}_f$, dispersed rocket parameters, and nominal rocket parameters for the guidance module to use in its calculations of throttle setting.
 
 At the core of the simulation is numerical time integration. The method employed is a 4th order Runge-Kutta (RK4). The RK4 function is called at each time step to progress the simulation forward.
 
@@ -980,7 +974,7 @@ The vehicle model is taken from the CobraMRV design by Cerimele et. al\:\cite{CE
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/CobraMRV.png}
 		\caption{CobraMRV Design. Source: C. Cerimele et al. A rigid mid lift-to-drag ratio approach to human mars entry, descent,
 			and landing. AIAA Paper, 2017-1898, 2017. \label{fig:CobraMRV} }
@@ -1032,29 +1026,11 @@ The vehicle's body Euler angles are computed in a 3-2-1 sequence from the body a
 \end{equation}
 
 \section{Monte Carlo}
-The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parameters, initial condition, and navigation uncertainty. This allows each individual run to have dispersed conditions without modification of the code. The Monte-Carlo script allows choice of initial condition, fixed or dynamic, as well as specification of rocket parameter dispersion, initial condition dispersion in position and velocity, and navigation noise distribution.
+The Monte-Carlo script calls the PD Sim with simulation settings, vehicle parameters, initial condition, and navigation uncertainty. This allows each individual run to have dispersed conditions without modification of the code. The Monte-Carlo script allows choice of initial condition, fixed or Adaptive PDI, as well as specification of rocket parameter dispersion, initial condition dispersion in position and velocity, and navigation noise distribution.
 
-The Monte-Carlo script is designed to allow testing of various scenarios and includes initial condition selection among a set of cases. The cases simulated here are points along a trajectory that passes nearly over the landing site, simulating the trajectory resulting from a typical re-entry and aerobraking glide phase. These cases also include initial velocity information that coincides with the vehicle having traveled unpowered along its trajectory. In fixed initial condition mode the user specifies which initial conditions to test, the initial states are dispersed, and the simulations are run from the dispersed starting conditions. In Adaptive PDI mode the Monte-Carlo script automatically chooses the nominal starting condition as the first point along this trajectory. It then disperses the starting point according to dispersion specifications and performs the number of runs specified by the user.
+The Monte-Carlo script is designed to allow testing of various scenarios and includes initial condition selection among a set of cases. The cases simulated here are points along a trajectory that passes nearly over the landing site, simulating the trajectory resulting from a typical re-entry and aerobraking glide phase. These cases also include initial velocity information that coincides with the vehicle having traveled unpowered along its trajectory. In fixed initial condition mode the user specifies which initial conditions to test, the initial states are dispersed, and the simulations are run from the dispersed starting conditions. In Adaptive PDI mode the Monte-Carlo script automatically chooses the nominal starting condition as the first point along this trajectory. It then performs the number of runs specified by the user and disperses the starting point each run according to dispersion specifications.
 
-The dispersion factors are chosen to reflect realistic parameter dispersion. Navigation error is modeled using a normal distribution with standard deviations in accordance with Moesser's 2010\:\cite{MOESSER} work as described in Section\:\ref{sec:navmod}. Rocket parameter dispersion is modeled as a uniform distribution of 2\% of the parameter. Equation\:(\ref{eqn:thrustdisp}) shows this calculation for the maximum thrust dispersion, where $T_{max_{nom}}$ is the nominal maximum thrust expected by the guidance computer and $rand$ is a uniformly distributed random number between zero and one.
-
-
-\begin{equation}
-\label{eqn:thrustdisp}
-T_{max} = T_{max_{nom}}*(1+0.02*(1-2*rand))
-\end{equation}
-
-%\begin{table}[H]                                                                
-%	\centering                                                                       
-%	\begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
-
-Each rocket parameter is modeled in this fashion. Only the nominal rocket parameters and dispersed navigation values can be known to the guidance computer, and the modular design allows this distinction to be made easily. The simulation script calls the guidance computer with nominal max thrust and the guidance computer outputs a throttle setting based on that nominal value, but the simulation script applies thrust limits based on the real dispersed values. 
-
-The separation between nominal and dispersed rocket parameters is also important to the PDI strategy, ideally performed within the guidance computer. The PDI required acceleration criterion is implemented as in Algorithm\:(\ref{eqn:thrustcriterion}), but the guidance computer only has the nominal maximum thrust available to it. Similarly, it only has the dispersed navigation values available for the range criterion in Algorithm\:(\ref{eqn:rangecriterion}).
-
-Initial condition values are normally distributed about their nominal values. The dispersion is applied such that three standard deviations in position dispersion is 1000 m from the mean, and three standard deviations in velocity dispersion is 10 m/s from the mean. 
-
-The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
+The dispersion factors are chosen to reflect realistic parameter dispersion. Navigation error is modeled using a normal (Gaussian) distribution with standard deviations in accordance with Moesser's 2010\:\cite{MOESSER} work as described in Section\:\ref{sec:navmod}. Rocket parameter dispersion is modeled as a uniform distribution of 2\% of the parameter. Initial condition values are normally distributed about their nominal values. The dispersion is applied such that three standard deviations in position dispersion is 1000 m from the mean, and three standard deviations in velocity dispersion is 10 m/s from the mean. These distributions are all tabulated in Table\:\ref{tab:dispersion}, with the Gaussian distributions described using the $3\sigma$ convention representing the range which encompasses $\approx\:99.7\%$ of resulting values. 
 
 \begin{table}[H]                                              
 	\centering                                                     
@@ -1063,7 +1039,7 @@ The Monte-Carlo script maintains repeatable randomness for testing. Each of the 
 		\bfseries Parameter & \bfseries Distribution & \bfseries 3 $\sigma$ & \bfseries Width \\                                 
 		\toprule                                                
 		IC Position & Gaussian & 1000 (m) & \\                                          
-		                                                
+		
 		IC Velocity (kg) & Gaussian & 10 (m/s) & \\                                  
 		
 		Nav Position $\sigma$ & Gaussian & 1 (m/s) & \\                               
@@ -1071,16 +1047,35 @@ The Monte-Carlo script maintains repeatable randomness for testing. Each of the 
 		Nav Velocity max & Gaussian & 3 (m) & \\                                
 		\toprule
 		IC $m_{0}$ & Uniform &  & 2\% \\        
-
+		
 		$T_{max}$ \& $T_{min}$ & Uniform &  & 2\% \\                                  
-		                                                   
-        $v_{ex}$ & Uniform &  & 2\% \\              
+		
+		$v_{ex}$ & Uniform &  & 2\% \\              
 		
 		\bottomrule                                             
 	\end{tabularx}                                                  
 	\caption{Monte-Carlo Dispersion Settings}
-	\label{tab:mcdisps}                                         
+	\label{tab:dispersion}                                         
 \end{table}      
+%Equation\:(\ref{eqn:thrustdisp}) shows this calculation for the maximum thrust dispersion, where $T_{max_{nom}}$ is the nominal maximum thrust expected by the guidance computer and $rand$ is a uniformly distributed random number between zero and one.
+%
+%
+%\begin{equation}
+%\label{eqn:thrustdisp}
+%T_{max} = T_{max_{nom}}*(1+0.02*(1-2*rand))
+%\end{equation}
+%
+%%\begin{table}[H]                                                                
+%%	\centering                                                                       
+%%	\begin{tabularx}{\textwidth}{@{}lYYYYYYYY@{}}
+
+Each rocket parameter dispersion is modeled as uniform, and each state dispersion is modeled as Gaussian. Only the nominal rocket parameters and dispersed navigation values can be known to the guidance computer, and the modular design allows this distinction to be made easily. The simulation script calls the guidance computer with nominal max thrust and the guidance computer outputs a throttle setting based on that nominal value, but the simulation script applies thrust limits based on the real dispersed values. 
+
+The separation between nominal and dispersed rocket parameters is also important to the PDI strategy, ideally performed within the guidance computer. The PDI required acceleration criterion is implemented as in Algorithm\:(\ref{eqn:thrustcriterion}), but the guidance computer only has the nominal maximum thrust available to it. Similarly, it only has the dispersed navigation values available for the range criterion in Algorithm\:(\ref{eqn:rangecriterion}).
+
+The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
+
+
 
 \section{Initial Condition} \label{sec:IC}
 The initial conditions are listed in Table\:\ref{tab:IC}. These are representative of a trajectory of the CobraMRV vehicle on approach after a de-orbit burn and subsequent targeting, from the work of Cerimele\:et\:al\:\cite{CERIMELE}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed ``East", $\hat{\bm{e}}_y$ is pointed ``North", and $\hat{\bm{e}}_z$ is pointed ``Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
@@ -1112,7 +1107,7 @@ These conditions represent an entry trajectory that is slightly off-target for t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajunpowvac_1.pdf}
 		\caption{Unpowered Initial Trajectory in Vacuum \label{fig:trajunpowvac_1} }
 	\end{minipage}
@@ -1120,7 +1115,7 @@ These conditions represent an entry trajectory that is slightly off-target for t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajunpowvacgr.pdf}
 		\caption{Ground Range: Unpowered Initial Trajectory In Vacuum \label{fig:trajunpowvacgr} }
 	\end{minipage}
@@ -1130,7 +1125,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajunpowatmo_1.pdf}
 		\caption{Unpowered Initial Trajectory in Atmosphere \label{fig:trajunpowatmo_1} }
 	\end{minipage}
@@ -1138,7 +1133,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajunpowatmo_2.pdf}
 		\caption{Unpowered Initial Trajectory in Atmosphere From Above \label{fig:trajunpowatmo_2} }
 	\end{minipage}
@@ -1630,7 +1625,7 @@ Figure\:\ref{fig:gtcriteriavac} shows data from a vacuum case of APDG with PDI a
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/gtcriteriavac.pdf}
 		\caption{PDI Criteria: Vacuum \label{fig:gtcriteriavac} }
 	\end{minipage}
@@ -1640,7 +1635,7 @@ Figure\:\ref{fig:gtcriteriaatmo} shows data from an atmospheric case of APDG wit
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/gtcriteriaatmo.pdf}
 		\caption{PDI Criteria: Atmopshere \label{fig:gtcriteriaatmo} }
 	\end{minipage}
@@ -1663,7 +1658,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajEvsAPDG.pdf}
 		\caption{Trajectory: E-Guidance vs. APDG \label{fig:trajEvsAPDG} }
 	\end{minipage}
@@ -1671,7 +1666,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/altEvsAPDG.pdf}
 		\caption{Altitude: E-Guidance vs. APDG \label{fig:altEvsAPDG} }
 	\end{minipage}
@@ -1679,7 +1674,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/rngEvsAPDG.pdf}
 		\caption{Ground Range: E-Guidance vs. APDG \label{fig:rngEvsAPDG} }
 	\end{minipage}
@@ -1687,7 +1682,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/spdEvsAPDG.pdf}
 		\caption{Speed: E-Guidance vs. APDG \label{fig:spdEvsAPDG} }
 	\end{minipage}
@@ -1695,7 +1690,7 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/thrEvsAPDG.pdf}
 		\caption{Thrust Magnitude: E-Guidance vs. APDG \label{fig:thrEvsAPDG} }
 	\end{minipage}
@@ -1703,13 +1698,13 @@ The laws each result in similar trajectories as evidenced by Figures\:\ref{fig:t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/fatEvsAPDG.pdf}
 		\caption{Pitch: E-Guidance vs. APDG \label{fig:fatEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
-Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsAPDG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on landing and using more fuel. This speed inaccuracy will be addressed in Section\:\ref{sec:naverror}
+Including dispersion results in similar profiles which will be examined more closely in later sections, but a numerical comparison of the laws' performance is given in Table\:\ref{tab:EvsAPDG}. Each law was in control for 1000 runs. Results are presented as mean values and standard deviations $\sigma$. Both laws perform similarly with the APDG law showing slightly higher speed on landing and using more fuel. This speed inaccuracy will be addressed in Section\:\ref{sec:naverror}.
 
 \begin{table}[H]                                              
 	\centering                                                     
@@ -1756,11 +1751,13 @@ Including dispersion results in similar profiles which will be examined more clo
 \label{tab:EvsAPDG}                                        
 \end{table}   
 
+These parameters give bounds on the results, but do not provide much information on the underlying distributions. What we see in histograms of the data in Figure\:\ref{fig:hfuelEvsAPDG} is that fuel consumption for both E-Guidance and APDG follows a normal distribution fairly well, with APDG using slightly more fuel on average. Figures\:\ref{fig:hrngEvsAPDG} and\:\ref{fig:hspdEvsAPDG} do not show normal distributions, with Range heavily weighted toward zero and Speed being much less centrally organized.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hfuelEvsAPDG.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:hfuelEvsAPDG} }
+		\caption{Propellant Use Distribution: E-Guidance vs. APDG \label{fig:hfuelEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
@@ -1768,9 +1765,9 @@ Including dispersion results in similar profiles which will be examined more clo
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hrngEvsAPDG.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:hrngEvsAPDG} }
+		\caption{Ground Range Distribution: E-Guidance vs. APDG \label{fig:hrngEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
@@ -1778,9 +1775,9 @@ Including dispersion results in similar profiles which will be examined more clo
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hspdEvsAPDG.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:hspdEvsAPDG} }
+		\caption{Speed Distribution: E-Guidance vs. APDG \label{fig:hspdEvsAPDG} }
 	\end{minipage}
 \end{figure}
 
@@ -1845,11 +1842,13 @@ The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given t
 	\label{tab:navvsnonav}                                         
 \end{table}      
 
+Histograms of the data show more clearly the effects of Navigation error. Figure\:\ref{fig:hfuelnavvsnonav} still shows a normal distribution of propellant use for both Dispersed and Nominal cases. Figure\:\ref{fig:hrngEvsAPDG} however gives a sharp contrast between the two conditions. The Dispersed case is identical to the APDG plot in Figure\:\ref{fig:hrngEvsAPDG} (as it shows the same data) with a lopsided distribution of final Ground Range. The Nominal case is a single vertical bucket, indicating that all 1000 runs were within 0.5 m of the landing site. Table\:\ref{tab:navvsnonav} indicates that they were in fact all within 0.2 m. The landing speed shown in Figure\:\ref{fig:hspdnavvsnonav} tells a similar story with slightly higher error in the nominal case than in Ground Range.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hfuelnavvsnonav.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:hfuelnavvsnonav} }
+		\caption{Propellant Use Distribution: Nominal vs. Dispersed Navigation \label{fig:hfuelnavvsnonav} }
 	\end{minipage}
 \end{figure}
 
@@ -1857,9 +1856,9 @@ The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hrngnavvsnonav.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:hrngnavvsnonav} }
+		\caption{Ground Range Distribution: Nominal vs. Dispersed Navigation \label{fig:hrngnavvsnonav} }
 	\end{minipage}
 \end{figure}
 
@@ -1867,9 +1866,9 @@ The final speeds shown in Table\:\ref{tab:EvsAPDG} are not very accurate given t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hspdnavvsnonav.pdf}
-		\caption{INSERT FIGURE CAPTION \label{fig:hspdnavvsnonav} }
+		\caption{Speed Distribution: Nominal vs. Dispersed Navigation \label{fig:hspdnavvsnonav} }
 	\end{minipage}
 \end{figure}
 
@@ -1883,7 +1882,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajatmovsvac.pdf}
 		\caption{Trajectory: Vacuum vs. Atmosphere \label{fig:trajatmovsvac} }
 	\end{minipage}
@@ -1891,7 +1890,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/altatmovsvac.pdf}
 		\caption{Altitude: Vacuum vs. Atmosphere \label{fig:altatmovsvac} }
 	\end{minipage}
@@ -1899,7 +1898,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/rngatmovsvac.pdf}
 		\caption{Ground Range: Vacuum vs. Atmosphere \label{fig:rngatmovsvac} }
 	\end{minipage}
@@ -1907,7 +1906,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/spdatmovsvac.pdf}
 		\caption{Speed: Vacuum vs. Atmosphere \label{fig:spdatmovsvac} }
 	\end{minipage}
@@ -1915,7 +1914,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/thratmovsvac.pdf}
 		\caption{Thrust Magnitude: Vacuum vs. Atmosphere \label{fig:thratmovsvac} }
 	\end{minipage}
@@ -1923,7 +1922,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/massatmovsvac.pdf}
 		\caption{Ship Mass: Vacuum vs. Atmosphere \label{fig:massatmovsvac} }
 	\end{minipage}
@@ -1948,7 +1947,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajpowvac.pdf}
 		\caption{Trajectory: APDG in Vacuum \label{fig:trajpowvac} }
 	\end{minipage}
@@ -1956,7 +1955,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/spdpowvac.pdf}
 		\caption{Speed: APDG in Vacuum \label{fig:spdpowvac} }
 	\end{minipage}
@@ -1964,7 +1963,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/altpowvac.pdf}
 		\caption{Altitude: APDG in Vacuum \label{fig:altpowvac} }
 	\end{minipage}
@@ -1972,7 +1971,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/rngpowvac.pdf}
 		\caption{Ground Range: APDG in Vacuum \label{fig:rngpowvac} }
 	\end{minipage}
@@ -1980,7 +1979,7 @@ Case 7 representing the PDI strategy also saturates its thrust for part of its t
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/thrpowvac.pdf}
 		\caption{Thrust Magnitude: APDG in Vacuum \label{fig:thrpowvac} }
 	\end{minipage}
@@ -2049,39 +2048,19 @@ The lowest mean propellant consumption is given by Case 2, as well as the highes
 	\label{tab:disppowvac}                                                     
 \end{table}  
 
+The histogram data similarly shows Adaptive PDI's fuel performance as middling in Figure\:\ref{fig:hfueldisppowvac}. It also demonstrates the Gaussian characteristic of the propellant usage distribution. Speed and Range histograms are shown in the Appendix as they are very similar to the relationship demonstrated in Section\:\ref{sec:naverror}, with the exception of Case 1. As discussed, Figure\:\ref{fig:hfueldisppowvac} shows the failures of Case 1 very clearly with the disorderly grouping below 16 m/s representing successful landings, but the much higher speeds shown with a wide separation from the successes. These failures also correspond to the uncharacteristically low propellant runs in Figure\:\ref{fig:hfueldisppowvac}.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hfueldisppowvac.pdf}
 		\caption{Fuel Histogram: APDG in Vacuum \label{fig:hfueldisppowvac} }
 	\end{minipage}
 \end{figure}
 
-
-
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/hrngdisppowvac.pdf}
-		\caption{Ground Range Histogram: APDG in Vacuum \label{fig:hrngdisppowvac} }
-	\end{minipage}
-\end{figure}
-
-
-
-\begin{figure}[H]
-	\centering
-	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/hspddisppowvac.pdf}
-		\caption{Speed Histogram: APDG in Vacuum \label{fig:hspddisppowvac} }
-	\end{minipage}
-\end{figure}
-
-
-
-\begin{figure}[H]
-	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hspdfaildisppowvac.pdf}
 		\caption{Failures Histogram: APDG in Vacuum \label{fig:hspdfaildisppowvac} }
 	\end{minipage}
@@ -2104,7 +2083,7 @@ Figures\:\ref{fig:trajpowatmo} through\:\ref{fig:thrpowatmo} show nominal trajec
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/trajpowatmo.pdf}
 		\caption{Trajectory: APDG in Atmosphere \label{fig:trajpowatmo} }
 	\end{minipage}
@@ -2112,7 +2091,7 @@ Figures\:\ref{fig:trajpowatmo} through\:\ref{fig:thrpowatmo} show nominal trajec
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/altpowatmo.pdf}
 		\caption{Altitude: APDG in Atmosphere \label{fig:altpowatmo} }
 	\end{minipage}
@@ -2120,7 +2099,7 @@ Figures\:\ref{fig:trajpowatmo} through\:\ref{fig:thrpowatmo} show nominal trajec
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/rngpowatmo.pdf}
 		\caption{Ground Range: APDG in Atmosphere \label{fig:rngpowatmo} }
 	\end{minipage}
@@ -2128,7 +2107,7 @@ Figures\:\ref{fig:trajpowatmo} through\:\ref{fig:thrpowatmo} show nominal trajec
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/spdpowatmo.pdf}
 		\caption{Speed: APDG in Atmosphere \label{fig:spdpowatmo} }
 	\end{minipage}
@@ -2136,7 +2115,7 @@ Figures\:\ref{fig:trajpowatmo} through\:\ref{fig:thrpowatmo} show nominal trajec
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/thrpowatmo.pdf}
 		\caption{Thrust Magnitude: APDG in Atmosphere \label{fig:thrpowatmo} }
 	\end{minipage}
@@ -2223,41 +2202,14 @@ PDI shows the best propellant performance in atmosphere, and no landing failures
 	\label{tab:disppowatmo}                                                          
 \end{table}  
 
+Figure\:\ref{fig:hfueldisppowatmo} again demonstrates the characteristic Gaussian distribution in propellant consumption, with fewer outlying low consumption runs in Case 1. Adapative PDI (Case 7) shows a lower mean than all other cases and maintains a similar distribution as the other cases. Range, speed, and failure histograms are given in the Appendix as they are qualitatively similar to the vacuum performance figures in Section\:\ref{sec:vacperf}.
+
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/hfueldisppowatmo.pdf}
 		\caption{Fuel Histogram: APDG in Atmosphere \label{fig:hfueldisppowatmo} }
-	\end{minipage}
-\end{figure}
-
-
-
-\begin{figure}[H]
-	\centering
-	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/hrngdisppowatmo.pdf}
-		\caption{Ground Range Histogram: APDG in Atmosphere \label{fig:hrngdisppowatmo} }
-	\end{minipage}
-\end{figure}
-
-
-
-\begin{figure}[H]
-	\centering
-	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/hspddisppowatmo.pdf}
-		\caption{Speed Histogram: APDG in Atmosphere \label{fig:hspddisppowatmo} }
-	\end{minipage}
-\end{figure}
-
-
-
-\begin{figure}[H]
-	\centering
-	\begin{minipage}{4.5 in}
-		\includegraphics[width=\linewidth]{Figures/hspdfaildisppowatmo.pdf}
-		\caption{Failures Histogram: APDG in Atmosphere \label{fig:hspdfaildisppowatmo} }
 	\end{minipage}
 \end{figure}
 
@@ -2275,7 +2227,7 @@ To trust the validity of a simulation's results, it must be shown that the simul
 A $4^{th}$ order scheme should show this error behavior. However, Figure\:\ref{fig:convtestatmo} clearly shows a linear error behavior, with error reducing with order $O(\Delta t)$. Error of order $O(\Delta t)$ and $O(\Delta t ^4)$ is shown for reference. This figure was generated by testing a particular moment in the simulation near the end of the trajectory without dispersion, with atmospheric effects and powered descent guidance. The baseline against which the error is measured is the a simulation result at the finest resolution, i.e. the smallest time step, $\Delta t = 2^{-13} \approx 1.2*10^{-4}$. Running the same test with an explicit $1^{st}$ order Euler scheme produces a similar result. 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/convtestatmo.pdf}
 		\caption{Convergence Test: Powered in Atmosphere \label{fig:convtestatmo} }
 	\end{minipage}
@@ -2296,7 +2248,7 @@ If these terms are removed from the simulation, representing vacuum conditions w
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/convtestvac.pdf}
 		\caption{Convergence Test: Unpowered in Vacuum \label{fig:convtestvac} }
 	\end{minipage}
@@ -2316,7 +2268,7 @@ The primary motivation in choice of APDG is to ensure a practical final attitude
 
 Section\:\ref{sec:PDIres} shows that the criteria in Equations\:(\ref{eqn:thrustcriterion}) and\:(\ref{eqn:rangecriterion}) are satisfied for the trajectories presented in Figure\:\ref{fig:trajunpowatmo_1}. It is clear that either the required thrust acceleration for a gravity turn $a_{GT}$ must at some point in the trajectory exceed the maximum thrust acceleration provided by the vehicle $a_{max}$, or the trajectory must be aligned such that the downrange distance to the landing site necessarily becomes smaller than the downrange distance traveled by a gravity turn maneuver $s_{GT}$. Figures\:\ref{fig:gtcriteriavac} and\:\ref{fig:gtcriteriaatmo} show that one or both of these requirements are satisfied. Further, it can be shown that one of these criteria will always trigger ignition for PDI. This is because $a_{GT}$ reflects, at minimum, the acceleration required to slow the vehicle from its current speed to the final landing speed. Since the PDI approach uses the time-to-go provided by a gravity turn maneuver, as the altitude approaches zero the time-to-go also approaches zero. With an increasing speed due to a ballistic trajectory and a decreasing time to go, $a_{GT}$ will obviously increase until it crosses the threshold $a_{max}$. Similarly, if the thrust acceleration criterion is not triggered, the trajectory will necessarily overshoot the landing site. Since the downrange distance traveled is roughly proportional to the speed squared as in Equation\:(\ref{eqn:rangeGT}), the range criterion will be triggered at some point before overshoot.
 
-Confident that Adaptive PDI will trigger, the question of its performance arises. For vacuum, Table\:\ref{tab:disppowvac} shows PDI's propellant performance (Case 7) as middle-of-the-road compared to the other predetermined starting points. However, without knowledge of these results each starting point may seem as feasible as the others. Indeed, driving the initial condition closer to the landing site along the trajectory in Figure\:\ref{fig:trajunpowatmo_1} seems ideal as the propellant requirement drops according to Table\:\ref{tab:disppowvac}, with the minimum occurring for Case 2. But driving the ignition point too close to the landing site can result in unacceptable failure rates. Case 1 results in failures 45 out of 1000 runs, or a rate of $4.5\%$, wildly dangerous for a manned mission. Even in vacuum PDI provides decent fuel performance and removes the guesswork inherent in choosing predetermined ignition conditions.
+Confident that Adaptive PDI will trigger, the question of its performance arises. For vacuum, Table\:\ref{tab:disppowvac} shows PDI's propellant performance (Case 7) as middle-of-the-road compared to the other predetermined starting points. Figure\:\ref{fig:hfueldisppowvac} also shows that its fuel distribution is similar to the fixed initial condition cases, suggesting a similar mission risk analysis. However, without knowledge of these results each starting point may seem as feasible as the others. Indeed, driving the initial condition closer to the landing site along the trajectory in Figure\:\ref{fig:trajunpowatmo_1} seems ideal as the propellant requirement drops according to Table\:\ref{tab:disppowvac}, with the minimum occurring for Case 2. But driving the ignition point too close to the landing site can result in unacceptable failure rates. Case 1 results in failures 45 out of 1000 runs, or a rate of $4.5\%$, wildly dangerous for a manned mission. Even in vacuum PDI provides decent fuel performance and removes the guesswork inherent in choosing predetermined ignition conditions.
 
 In atmosphere PDI's advantage grows as evidenced by Table\:\ref{tab:disppowatmo}. Not only does Case 1 show an unacceptable manned mission failure rate of $1.3\%$, but PDI actually provides the best propellant performance of any Case. PDI's fuel savings come primarily from its unpowered flight. During the first 20 seconds in Figure\:\ref{fig:thrpowatmo} PDI does not burn any fuel, but it manages to reduce speed and altitude for free in Figures\:\ref{fig:spdpowatmo} and\:\ref{fig:altpowatmo}. Figure\:\ref{fig:massatmovsvac} comparing ship mass for the vacuum and atmospheric conditions using PDI shows the cumulative, increasing savings from aerodynamic effects.  In thicker atmospheres one should expect larger savings since PDI automatically takes advantage of these effects. Rather than risking failure for reduced propellant consumption, PDI ensures safety and performance.
 
@@ -2374,7 +2326,7 @@ The first is the time-to-go safety factor $c_t$ as described in Section\:\ref{se
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/thrtgofac.pdf}
 		\caption{PDI Time-to-go Factor: Thrust \label{fig:thrtgofac} }
 	\end{minipage}
@@ -2382,7 +2334,7 @@ The first is the time-to-go safety factor $c_t$ as described in Section\:\ref{se
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{4.5 in}
+	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/spdtgofac.pdf}
 		\caption{PDI Time-to-go Factor: Speed \label{fig:spdtgofac} }
 	\end{minipage}

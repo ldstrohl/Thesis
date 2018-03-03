@@ -61,7 +61,7 @@ h.TimeseriesSource = ts;
 % number, the aircraft geometry model, and the network information for
 % FlightGear flight simulator. 
 
-h.FlightGearBaseDirectory = 'C:\Program Files\FlightGear 2017.1.3';
+h.FlightGearBaseDirectory = 'C:\Program Files\FlightGear';
 h.FlightGearVersion = '2016.1';
 h.GeometryModelName = 'HL20';
 h.DestinationIpAddress = '127.0.0.1';
@@ -71,8 +71,8 @@ h.DestinationPort = '5502';
 % Set the desired initial conditions (location and orientation) for
 % FlightGear flight simulator.  
 
-h.AirportId = 'KSFO';
-h.RunwayId = '10L';
+h.AirportId = 'KPSP';
+h.RunwayId = '31L';
 h.InitialAltitude = 7224;
 h.InitialHeading = 113;
 h.OffsetDistance = 4.72;
@@ -80,7 +80,7 @@ h.OffsetAzimuth = 0;
 
 %%
 % Set the seconds of animation data per second of wall-clock time.
-h.TimeScaling = 5;
+h.TimeScaling = 2;
 
 %%
 % Use get(h) to check the FlightGearAnimation object properties and their
@@ -96,7 +96,7 @@ get(h)
 % saves the run script as a text file named 'runfg.bat'.
 
 %%
-% GenerateRunScript(h)
+GenerateRunScript(h)
 
 %%
 % You do not need to generate this file each time the data is viewed.
@@ -109,7 +109,7 @@ get(h)
 % to execute the run script created by *GenerateRunScript*.
 
 %%
-system('runfg.bat &');
+% system('runfg.bat &');
 
 %%
 % *Tip:* With the FlightGear window in focus, press the V key to alternate
@@ -123,7 +123,7 @@ system('runfg.bat &');
 % with FlightGear, use the *play* command.
 
 %%
-play(h)
+% play(h)
 
 %%
 % % To display a screenshot of the flight animation, use the MATLAB *image* command.
