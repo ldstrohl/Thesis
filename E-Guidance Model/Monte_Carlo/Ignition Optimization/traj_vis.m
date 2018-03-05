@@ -11,7 +11,7 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_IC6.mat';
+filename = 'traj_aniv2.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
 save_figs = 0; % 1 to generate jpgs
 fignamebase = 'tgofac' % base of fig name (thesis section)
@@ -105,7 +105,7 @@ for j = 2:data_size(2)
     xlabel('Time (s)')
                 legend(legend_entry)
 %         legend('Atmosphere','Vacuum')
-    legend('c_t = 1.0','c_t = 1.2')
+%     legend('c_t = 1.0','c_t = 1.2')
 %     legend('E-Guidance','APDG')
     if save_figs
         thesis_fig(gcf,strcat(sprintf('%s',fig_names(j-1)),fignamebase))
@@ -134,3 +134,5 @@ if save_figs
     saveas(gcf,'traj_simvsadv','fig')
 end
 hold off
+
+

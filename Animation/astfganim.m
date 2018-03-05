@@ -16,8 +16,9 @@
 % separated value formatted file.  Use *dlmread* to read the data from 
 % the file starting at row 1 and column 0 skipping the header information.
 
-tdata = dlmread('asthl20log.csv',',',1,0);
-
+% [time lat lon alt 
+% tdata = dlmread('asthl20log.csv',',',1,0);
+% tdata(:,4) = tdata(:,4)+ones(length(tdata(:,4)),1)*20;
 %% Create a Time Series Object from Trajectory Data
 %
 % Use the MATLAB(R) *timeseries* command to create the time series object, 
@@ -62,7 +63,7 @@ h.TimeseriesSource = ts;
 % FlightGear flight simulator. 
 
 h.FlightGearBaseDirectory = 'C:\Program Files\FlightGear';
-h.FlightGearVersion = '2017.1';
+h.FlightGearVersion = '2016.1';
 h.GeometryModelName = 'HL20';
 h.DestinationIpAddress = '127.0.0.1';
 h.DestinationPort = '5502';
@@ -80,12 +81,11 @@ h.OffsetAzimuth = 0;
 
 %%
 % Set the seconds of animation data per second of wall-clock time.
-h.TimeScaling = 5;
+h.TimeScaling = 1;
 
 %%
 % Use get(h) to check the FlightGearAnimation object properties and their
 % values.
-
 get(h)
 
 %% Create a Run Script to Launch FlightGear Flight Simulator
@@ -96,7 +96,7 @@ get(h)
 % saves the run script as a text file named 'runfg.bat'.
 
 %%
-GenerateRunScript(h)
+% GenerateRunScript(h)
 
 %%
 % You do not need to generate this file each time the data is viewed.
@@ -109,7 +109,7 @@ GenerateRunScript(h)
 % to execute the run script created by *GenerateRunScript*.
 
 %%
-system('runfg.bat &');
+% system('runfg.bat &');
 
 %%
 % *Tip:* With the FlightGear window in focus, press the V key to alternate
@@ -123,13 +123,13 @@ system('runfg.bat &');
 % with FlightGear, use the *play* command.
 
 %%
-play(h)
+% play(h)
 
 %%
-% To display a screenshot of the flight animation, use the MATLAB *image* command.
-image(imread([matlabroot filesep fullfile('toolbox','aero','astdemos','figures','astfganim01.png')],'png'));
-axis off;
-set(gca,'Position',[ 0 0 1 1 ]);
-set(gcf,'MenuBar','none');
-
-displayEndOfDemoMessage(mfilename)
+% % To display a screenshot of the flight animation, use the MATLAB *image* command.
+% image(imread([matlabroot filesep fullfile('toolbox','aero','astdemos','figures','astfganim01.png')],'png'));
+% axis off;
+% set(gca,'Position',[ 0 0 1 1 ]);
+% set(gcf,'MenuBar','none');
+% 
+% displayEndOfDemoMessage(mfilename)
