@@ -1,11 +1,17 @@
 clear
 close all
 % Generate FlightGear 6-DoF array from single trajectory
-filename = 'traj_ani.mat';
+filename = 'traj_aniv2.mat';
 
-lat_LS = 35.028257;
-lon_LS = -111.021208;
-alt_LS = 157;
+% % Meteor Crater
+% lat_LS = 35.028257;
+% lon_LS = -111.021208;
+% alt_LS = 1571;
+
+% Wadi Rum
+lat_LS = 29.525665;
+lon_LS = 35.444366;
+alt_LS = 1571;
 
 
 %% File read
@@ -30,9 +36,14 @@ trajlen= size(data,1);
     E = data(1:trajlen,3);
     N = data(1:trajlen,4);
     U = data(1:trajlen,2);
-    pitch = lpf(data(1:trajlen,10));
+    pitch = data(1:trajlen,10);
+    pitch = lpf(pitch);
     yaw = data(1:trajlen, 11);
+   yaw(yaw>10*pi/180) = 10*pi/180;
+   yaw = lpf(yaw);
     roll = data(1:trajlen,12);
+    roll(roll<-10*pi/180) = -10*pi/180;
+    roll = lpf(roll);
     t = data(1:trajlen,1);
     [lat,lon] = utm2ll(E,N,12);
     lat_del = lat-lat(end);
