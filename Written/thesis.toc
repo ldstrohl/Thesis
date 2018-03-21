@@ -1,8 +1,7 @@
 \contentsline {schapter}{ABSTRACT}{iv}
 \contentsline {schapter}{LIST OF TABLES}{vii}
 \contentsline {schapter}{LIST OF FIGURES}{viii}
-\contentsline {schapter}{GLOSSARY}{xi}
-\contentsline {schapter}{ACKNOWLEDGMENTS}{xii}
+\contentsline {schapter}{ACKNOWLEDGMENTS}{xi}
 \pagebreak [3]
 \contentsline {chaphd}{CHAPTER}{1}
 \nopagebreak 
@@ -41,16 +40,16 @@
 \contentsline {subsection}{\numberline {4.0.3}Navigation Error}{46}
 \contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere}{51}
 \contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{56}
-\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{62}
-\contentsline {chapter}{\numberline {5}DISCUSSION}{68}
-\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{68}
-\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{70}
-\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{71}
-\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{73}
-\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{73}
-\contentsline {section}{\numberline {6.2}Future Work}{73}
-\contentsline {schapter}{BIBLIOGRAPHY}{77}
+\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{63}
+\contentsline {chapter}{\numberline {5}DISCUSSION}{70}
+\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{70}
+\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{72}
+\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{73}
+\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{75}
+\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{75}
+\contentsline {section}{\numberline {6.2}Future Work}{75}
+\contentsline {schapter}{BIBLIOGRAPHY}{79}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDIX}{79}
+\contentsline {chaphd}{APPENDIX}{81}
 \nopagebreak 
-\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{79}
+\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{81}

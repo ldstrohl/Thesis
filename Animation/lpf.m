@@ -9,7 +9,7 @@
 function y = lpf(x)
 
 % filter coefficient
-c = 0.01;
+c = 0.5;
 
 y =  x;
 

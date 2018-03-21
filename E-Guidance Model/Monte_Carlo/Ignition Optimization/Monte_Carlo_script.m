@@ -10,17 +10,17 @@ debug_mode = 0;
 debug_row = 12;
 
 % Data recording
-data_save_flag = 1; % save run data
+data_save_flag = 0; % save run data
 result_file = 'rundata_ignopti_flip.mat';
 traj_file = 'traj_tgofac'; % prefix - case is appended
-traj_rate = 1/1; % how many runs to record
+traj_rate = 1/1000000; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
 run_and_seed = 0;
 run_results = 1;
 case_results = 0;
-vis_flag = 0; % plots of each run
+vis_flag = 1; % plots of each run
 
 % Simulation settings
 guidance_law = 2; % 1 for simple, 2 for final commanded thrust
@@ -33,7 +33,7 @@ threshhold = 1; % factor of T_max required for gravity turn
 % models
 rocket_dispersion_flag = 0; % 1 turns on rocket paramter dispersion, 0 for off
 IC_dispersion_flag  = 0; % on/off initial condition dispersion
-atmosphere_flag = 0; % on/off atmosphere model (off = vacuum)
+atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
 nav_flag = 0; % on/off navigation errors
 
 

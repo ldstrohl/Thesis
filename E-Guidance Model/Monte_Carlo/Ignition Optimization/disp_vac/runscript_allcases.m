@@ -6,19 +6,19 @@ close all
 
 %% Inputs
 runs = 1000; % per case
-scenario = 7; % 1:6
+scenario = 1; % 1:6
 debug_mode = 0;
 debug_row = 12;
 
 % Data recording
 data_save_flag = 1; % save run data
-result_file = 'rundata_vac.mat';
-traj_file = 'traj_vac'; % prefix - case is appended
-traj_rate = 1/5; % how many runs to record
+result_file = 'rundata_atmo_bull.mat';
+traj_file = 'traj_atmo_bull'; % prefix - case is appended
+traj_rate = 1/100000; % how many runs to record
 traj_step = 200; % time steps per recorded line
 
 % Messages (1 on, 0 off)
-run_and_seed = 0;
+run_and_seed = 1;
 run_results = 0;
 case_results = 1;
 vis_flag = 0; % plots of each run
@@ -34,7 +34,7 @@ threshhold = 1; % factor of T_max required for gravity turn
 % models
 rocket_dispersion_flag = 1; % 1 turns on rocket paramter dispersion, 0 for off
 IC_dispersion_flag  = 1; % on/off initial condition dispersion
-atmosphere_flag = 0; % on/off atmosphere model (off = vacuum)
+atmosphere_flag = 1; % on/off atmosphere model (off = vacuum)
 nav_flag = 1; % on/off navigation errors
 
 
@@ -95,7 +95,7 @@ end
 run_fid = fopen(result_file);
 if data_save_flag
     if run_fid == -1
-        rundata = zeros(runs*length(scenario),8);
+        rundata = zeros(runs*length(scenario),11);
         % rundata(1,:) = {'Case','Run','Flight Time','Fuel','Range','Speed','Angle'};
         save(result_file,'rundata');
         prev_rows = 0;
@@ -107,7 +107,7 @@ if data_save_flag
         rundata = rundata(rundata(:,1)~=0,:);
         prev_rows = size(rundata);
         prev_rows = prev_rows(1);
-        rundata = [rundata;zeros(runs*length(scenario),8)];
+        rundata = [rundata;zeros(runs*length(scenario),11)];
     end
 else
     prev_rows = 0;
@@ -269,18 +269,15 @@ for j = scenario
         dr = ICr_disp*randn(3,1)*drmax;
         r0_disp = r0 + dr;
         V0_disp = V0 + dV;
-        
-
-%         fprintf('dr outside: %.1f\n',dr)
-        
+              
         % create sim inputs
         IC = [r0_disp,V0_disp,dr];
         FC = [rf,Vf,af];
         rocket_disp = [m0;v_ex;T_max;T_min;S];
         rocket_nom = [m0_nom;m0_dry;v_ex_nom;T_max_nom;T_min_nom];
         options = [guidance_law;tgo_method;r_sig;V_sig;vis_flag;threshhold];
-%         seed = rng;
         
+        % Run simulation
         [sim_data,traj_add] = PD_sim(IC,FC,rocket_disp,rocket_nom,options,...
             traj_record_flag,traj_step,rng);
         
@@ -294,8 +291,11 @@ for j = scenario
         flight_time(k) = sim_data(1);
         fuel(k) = sim_data(2);
         range_f(k) = sim_data(3);
-        speed_f(k) = sim_data(4);
-        angle_f(k) = sim_data(5);
+        xE_f(k) = sim_data(4);
+        xN_f(k) = sim_data(5);
+        xU_f(k) = sim_data(6);
+        speed_f(k) = sim_data(7);
+        angle_f(k) = sim_data(8);
         if run_results == 1
             fprintf('Flight time: %.1f (s)\n',flight_time(k))
             fprintf('Range: %.1f (m)\n',range_f(k))
@@ -305,7 +305,7 @@ for j = scenario
         
         if data_save_flag
             rundata((q-1)*runs+k+prev_rows,:) = [j,k,seed(k)...
-                flight_time(k),fuel(k),range_f(k),speed_f(k),angle_f(k)];
+                flight_time(k),fuel(k),range_f(k),xE_f(k),xN_f(k),xU_f(k),speed_f(k),angle_f(k)];
             save(result_file,'rundata')
         end
     end

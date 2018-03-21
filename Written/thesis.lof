@@ -30,20 +30,22 @@
 \contentsline {figure}{Figure\nobreakspace 4.23. \ignorespaces Altitude: APDG in Vacuum }{58}
 \contentsline {figure}{Figure\nobreakspace 4.24. \ignorespaces Ground Range: APDG in Vacuum }{58}
 \contentsline {figure}{Figure\nobreakspace 4.25. \ignorespaces Thrust Magnitude: APDG in Vacuum }{59}
-\contentsline {figure}{Figure\nobreakspace 4.26. \ignorespaces Fuel Histogram: APDG in Vacuum }{61}
-\contentsline {figure}{Figure\nobreakspace 4.27. \ignorespaces Failures Histogram: APDG in Vacuum }{62}
-\contentsline {figure}{Figure\nobreakspace 4.28. \ignorespaces Trajectory: APDG in Atmosphere }{63}
-\contentsline {figure}{Figure\nobreakspace 4.29. \ignorespaces Altitude: APDG in Atmosphere }{63}
-\contentsline {figure}{Figure\nobreakspace 4.30. \ignorespaces Ground Range: APDG in Atmosphere }{64}
-\contentsline {figure}{Figure\nobreakspace 4.31. \ignorespaces Speed: APDG in Atmosphere }{64}
-\contentsline {figure}{Figure\nobreakspace 4.32. \ignorespaces Thrust Magnitude: APDG in Atmosphere }{65}
-\contentsline {figure}{Figure\nobreakspace 4.33. \ignorespaces Fuel Histogram: APDG in Atmosphere }{67}
-\contentsline {figure}{Figure\nobreakspace 5.1. \ignorespaces Convergence Test: Powered in Atmosphere }{69}
-\contentsline {figure}{Figure\nobreakspace 5.2. \ignorespaces Convergence Test: Unpowered in Vacuum }{70}
-\contentsline {figure}{Figure\nobreakspace 6.1. \ignorespaces PDI Time-to-go Factor: Thrust }{75}
-\contentsline {figure}{Figure\nobreakspace 6.2. \ignorespaces PDI Time-to-go Factor: Speed }{75}
-\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces Ground Range Histogram: APDG in Vacuum }{81}
-\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces Speed Histogram: APDG in Vacuum }{82}
-\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces Ground Range Histogram: APDG in Atmosphere }{83}
-\contentsline {figure}{Figure\nobreakspace A.4. \ignorespaces Speed Histogram: APDG in Atmosphere }{84}
-\contentsline {figure}{Figure\nobreakspace A.5. \ignorespaces Failures Histogram: APDG in Atmosphere }{85}
+\contentsline {figure}{Figure\nobreakspace 4.26. \ignorespaces Case 1 Landing Sites: APDG in Vacuum }{61}
+\contentsline {figure}{Figure\nobreakspace 4.27. \ignorespaces Fuel Histogram: APDG in Vacuum }{62}
+\contentsline {figure}{Figure\nobreakspace 4.28. \ignorespaces Failures Histogram: APDG in Vacuum }{63}
+\contentsline {figure}{Figure\nobreakspace 4.29. \ignorespaces Trajectory: APDG in Atmosphere }{64}
+\contentsline {figure}{Figure\nobreakspace 4.30. \ignorespaces Altitude: APDG in Atmosphere }{65}
+\contentsline {figure}{Figure\nobreakspace 4.31. \ignorespaces Ground Range: APDG in Atmosphere }{65}
+\contentsline {figure}{Figure\nobreakspace 4.32. \ignorespaces Speed: APDG in Atmosphere }{66}
+\contentsline {figure}{Figure\nobreakspace 4.33. \ignorespaces Thrust Magnitude: APDG in Atmosphere }{66}
+\contentsline {figure}{Figure\nobreakspace 4.34. \ignorespaces Case 1 Landing Sites: APDG in Atmosphere }{67}
+\contentsline {figure}{Figure\nobreakspace 4.35. \ignorespaces Fuel Histogram: APDG in Atmosphere }{69}
+\contentsline {figure}{Figure\nobreakspace 5.1. \ignorespaces Convergence Test: Powered in Atmosphere }{71}
+\contentsline {figure}{Figure\nobreakspace 5.2. \ignorespaces Convergence Test: Unpowered in Vacuum }{72}
+\contentsline {figure}{Figure\nobreakspace 6.1. \ignorespaces PDI Time-to-go Factor: Thrust }{77}
+\contentsline {figure}{Figure\nobreakspace 6.2. \ignorespaces PDI Time-to-go Factor: Speed }{77}
+\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces Ground Range Histogram: APDG in Vacuum }{83}
+\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces Speed Histogram: APDG in Vacuum }{84}
+\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces Ground Range Histogram: APDG in Atmosphere }{85}
+\contentsline {figure}{Figure\nobreakspace A.4. \ignorespaces Speed Histogram: APDG in Atmosphere }{86}
+\contentsline {figure}{Figure\nobreakspace A.5. \ignorespaces Failures Histogram: APDG in Atmosphere }{87}

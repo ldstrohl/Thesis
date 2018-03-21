@@ -81,7 +81,7 @@ h.OffsetAzimuth = 0;
 
 %%
 % Set the seconds of animation data per second of wall-clock time.
-h.TimeScaling = 10;
+h.TimeScaling = 2;
 
 %%
 % Use get(h) to check the FlightGearAnimation object properties and their

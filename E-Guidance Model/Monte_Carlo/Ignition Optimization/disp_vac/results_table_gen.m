@@ -3,7 +3,7 @@ clear
 close all
 
 latex_flag = 0;
-histogram_flag = 1;
+histogram_flag = 0;
 
 fig_base = 'disppowvac';
 
@@ -11,7 +11,7 @@ input.tableCaption = 'Performance of APDG In Vacuum';
 input.tableLabel = 'tab:disppowvac';
 input.tablePlacement = 'ht';
 
-load('rundata_vac.mat') % run results file
+load('rundata_atmo_bull.mat') % run results file
 % case, run, flight_time, fuel, range, speed, angle
 
 
@@ -54,14 +54,14 @@ for k = 1:length(scenario)
     fuel_min(k) = min(A(:,5));
     fuel_max(k) = max(A(:,5));
     fuel_std(k) = std(A(:,5));
-    range(k) = mean(A(:,6));
-    range_min(k) = min(A(:,6));
-    range_max(k) = max(A(:,6));
-    range_std(k) = std(A(:,6));
-    speed(k) = mean(A(:,7));
-    speed_min(k) = min(A(:,7));
-    speed_max(k) = max(A(:,7));
-    speed_std(k) = std(A(:,7));
+    range(k) = mean(A(:,9));
+    range_min(k) = min(A(:,9));
+    range_max(k) = max(A(:,9));
+    range_std(k) = std(A(:,9));
+    speed(k) = mean(A(:,10));
+    speed_min(k) = min(A(:,10));
+    speed_max(k) = max(A(:,10));
+    speed_std(k) = std(A(:,10));
     run_count(k) = length(A(:,1));
     if histogram_flag
         % Fuel
@@ -77,7 +77,7 @@ for k = 1:length(scenario)
         % Speed
         figure(h_spd)
         subplot(7,1,k)
-        histogram(A(:,7),[0:0.5:16])
+        histogram(A(:,10),[0:0.5:16])
         ylabel(sprintf('Case: %s',num2str(scenario(k))))
         
         axis_resize(gca)
@@ -86,7 +86,7 @@ for k = 1:length(scenario)
         % Range
         figure(h_rng)
         subplot(7,1,k)
-        histogram(A(:,6),[0:0.5:9.5])
+        histogram(A(:,9),[0:0.5:9.5])
         ylabel(sprintf('Case: %s',num2str(scenario(k))))
         
         axis_resize(gca)
@@ -106,7 +106,7 @@ if histogram_flag
     saveas(h_spd,strcat('hspd',fig_base),'pdf')
     
     A = rundata(rundata(:,1)==scenario(1),:);
-    spd1 = A(:,7);
+    spd1 = A(:,10);
     h_spd1 = figure('Name','h_spd1');
     histogram(spd1,[0:.5:80])
     xlabel('Speed (m/s)')
@@ -126,19 +126,19 @@ end
 
 
 
-% % display table
-% results = table(run_count,...
-%     fuel,fuel_std,...
-%     flight_time,flight_time_std,...
-%     range,range_std,...
-%     speed,speed_std,...
-%     'RowNames',num2cell(num2str(scenario)),...
-%     'VariableNames',...
-%     {'Runs',...
-%     'Fuel', 'Fuel_dev',...
-%     'Flight_Time','FT_dev',...
-%     'Range','Range_dev',...
-%     'Speed','Speed_dev'})
+% display table
+results = table(run_count,...
+    fuel,fuel_std,...
+    flight_time,flight_time_std,...
+    range,range_std,...
+    speed,speed_std,...
+    'RowNames',num2cell(num2str(scenario)),...
+    'VariableNames',...
+    {'Runs',...
+    'Fuel', 'Fuel_dev',...
+    'Flight_Time','FT_dev',...
+    'Range','Range_dev',...
+    'Speed','Speed_dev'})
 
 if latex_flag
     input.data = [run_count,...

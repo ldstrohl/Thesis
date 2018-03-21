@@ -448,11 +448,13 @@ if options(5)
     figure('Name','Gravity Turn')
     yyaxis left
     plot(j,a_GT_vis,j,T_max/m0*ones(1,length(a_GT_vis)))
+    ylabel('Thrust acceleration (m/s^2)')
     yyaxis right
     plot(j,sf_vis,j,range(1:length(a_GT_vis)))
 %     title('Gravity Turn')
+    ylabel('Downrange (m)')
     xlabel('Run time (s)')
-    legend({'a_{GT}','a_{max}','s_{GT}','Downrange'},'Location','Northwest')
+    legend({'a_{GT}','a_{max}','s_{GT}','Downrange'},'Location','Best')
     grid on
     
     figure('Name','Thrust Vector')

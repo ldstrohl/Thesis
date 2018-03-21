@@ -1,15 +1,8 @@
 \relax 
-\providecommand\@newglossary[4]{}
-\@newglossary{main}{glg}{gls}{glo}
-\providecommand\@glsorder[1]{}
-\providecommand\@istfilename[1]{}
-\@istfilename{thesis.ist}
-\@glsorder{word}
 \@writefile{toc}{\contentsline {schapter}{ABSTRACT}{iv}}
 \@writefile{toc}{\contentsline {schapter}{LIST OF TABLES}{vii}}
 \@writefile{toc}{\contentsline {schapter}{LIST OF FIGURES}{viii}}
-\@writefile{toc}{\contentsline {schapter}{GLOSSARY}{xi}}
-\@writefile{toc}{\contentsline {schapter}{ACKNOWLEDGMENTS}{xii}}
+\@writefile{toc}{\contentsline {schapter}{ACKNOWLEDGMENTS}{xi}}
 \@writefile{toc}{\pagebreak [3]}
 \@writefile{toc}{\contentsline {chaphd}{CHAPTER}{1}}
 \@writefile{toc}{\nopagebreak }
@@ -130,13 +123,16 @@
 \newlabel{fig:CobraMRV}{{3.2}{27}}
 \citation{MARSGRAM}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{28}}
+\newlabel{sec:atmosphere}{{3.5.2}{28}}
 \newlabel{eqn:lift}{{3.5}{28}}
 \newlabel{eqn:drag}{{3.6}{28}}
+\newlabel{eqn:FLD}{{3.7}{28}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Orientation}{28}}
-\newlabel{eqn:body_Y}{{3.7}{28}}
+\newlabel{sec:orientation}{{3.5.3}{28}}
 \citation{MOESSER}
-\newlabel{eqn:body_P}{{3.8}{29}}
-\newlabel{eqn:body_R}{{3.9}{29}}
+\newlabel{eqn:body_Y}{{3.8}{29}}
+\newlabel{eqn:body_P}{{3.9}{29}}
+\newlabel{eqn:body_R}{{3.10}{29}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.6}Monte Carlo}{29}}
 \@writefile{lot}{\contentsline {table}{Table\nobreakspace  3.1. \ignorespaces Monte-Carlo Dispersion Settings}{30}}
 \newlabel{tab:dispersion}{{3.1}{30}}
@@ -221,48 +217,52 @@
 \newlabel{fig:thrpowvac}{{4.25}{59}}
 \@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.3. \ignorespaces Performance of APDG In Vacuum}{60}}
 \newlabel{tab:disppowvac}{{4.3}{60}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.26. \ignorespaces Fuel Histogram: APDG in Vacuum  }{61}}
-\newlabel{fig:hfueldisppowvac}{{4.26}{61}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.27. \ignorespaces Failures Histogram: APDG in Vacuum  }{62}}
-\newlabel{fig:hspdfaildisppowvac}{{4.27}{62}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{62}}
-\newlabel{sec:atmoperf}{{4.0.6}{62}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.28. \ignorespaces Trajectory: APDG in Atmosphere  }{63}}
-\newlabel{fig:trajpowatmo}{{4.28}{63}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.29. \ignorespaces Altitude: APDG in Atmosphere  }{63}}
-\newlabel{fig:altpowatmo}{{4.29}{63}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.30. \ignorespaces Ground Range: APDG in Atmosphere  }{64}}
-\newlabel{fig:rngpowatmo}{{4.30}{64}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.31. \ignorespaces Speed: APDG in Atmosphere  }{64}}
-\newlabel{fig:spdpowatmo}{{4.31}{64}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.32. \ignorespaces Thrust Magnitude: APDG in Atmosphere  }{65}}
-\newlabel{fig:thrpowatmo}{{4.32}{65}}
-\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.4. \ignorespaces Performance of APDG In Atmosphere}{66}}
-\newlabel{tab:disppowatmo}{{4.4}{66}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.33. \ignorespaces Fuel Histogram: APDG in Atmosphere  }{67}}
-\newlabel{fig:hfueldisppowatmo}{{4.33}{67}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}DISCUSSION}{68}}
-\newlabel{chap:discussion}{{5}{68}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{68}}
-\newlabel{sec:convergence}{{5.1}{68}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  5.1. \ignorespaces Convergence Test: Powered in Atmosphere  }{69}}
-\newlabel{fig:convtestatmo}{{5.1}{69}}
-\newlabel{eqn:euler}{{5.1}{69}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  5.2. \ignorespaces Convergence Test: Unpowered in Vacuum  }{70}}
-\newlabel{fig:convtestvac}{{5.2}{70}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{70}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{71}}
-\newlabel{sec:PDIdisc}{{5.3}{71}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.26. \ignorespaces Case 1 Landing Sites: APDG in Vacuum  }{61}}
+\newlabel{fig:bulldisppowvac}{{4.26}{61}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.27. \ignorespaces Fuel Histogram: APDG in Vacuum  }{62}}
+\newlabel{fig:hfueldisppowvac}{{4.27}{62}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.28. \ignorespaces Failures Histogram: APDG in Vacuum  }{63}}
+\newlabel{fig:hspdfaildisppowvac}{{4.28}{63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{63}}
+\newlabel{sec:atmoperf}{{4.0.6}{63}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.29. \ignorespaces Trajectory: APDG in Atmosphere  }{64}}
+\newlabel{fig:trajpowatmo}{{4.29}{64}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.30. \ignorespaces Altitude: APDG in Atmosphere  }{65}}
+\newlabel{fig:altpowatmo}{{4.30}{65}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.31. \ignorespaces Ground Range: APDG in Atmosphere  }{65}}
+\newlabel{fig:rngpowatmo}{{4.31}{65}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.32. \ignorespaces Speed: APDG in Atmosphere  }{66}}
+\newlabel{fig:spdpowatmo}{{4.32}{66}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.33. \ignorespaces Thrust Magnitude: APDG in Atmosphere  }{66}}
+\newlabel{fig:thrpowatmo}{{4.33}{66}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.34. \ignorespaces Case 1 Landing Sites: APDG in Atmosphere  }{67}}
+\newlabel{fig:bulldisppowatmo}{{4.34}{67}}
+\@writefile{lot}{\contentsline {table}{Table\nobreakspace  4.4. \ignorespaces Performance of APDG In Atmosphere}{68}}
+\newlabel{tab:disppowatmo}{{4.4}{68}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  4.35. \ignorespaces Fuel Histogram: APDG in Atmosphere  }{69}}
+\newlabel{fig:hfueldisppowatmo}{{4.35}{69}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}DISCUSSION}{70}}
+\newlabel{chap:discussion}{{5}{70}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{70}}
+\newlabel{sec:convergence}{{5.1}{70}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  5.1. \ignorespaces Convergence Test: Powered in Atmosphere  }{71}}
+\newlabel{fig:convtestatmo}{{5.1}{71}}
+\newlabel{eqn:euler}{{5.1}{71}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  5.2. \ignorespaces Convergence Test: Unpowered in Vacuum  }{72}}
+\newlabel{fig:convtestvac}{{5.2}{72}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{72}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{73}}
+\newlabel{sec:PDIdisc}{{5.3}{73}}
 \citation{LU}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{73}}
-\newlabel{chap:conclusions}{{6}{73}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{73}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Future Work}{73}}
-\newlabel{sec:futurework}{{6.2}{73}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  6.1. \ignorespaces PDI Time-to-go Factor: Thrust  }{75}}
-\newlabel{fig:thrtgofac}{{6.1}{75}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  6.2. \ignorespaces PDI Time-to-go Factor: Speed  }{75}}
-\newlabel{fig:spdtgofac}{{6.2}{75}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{75}}
+\newlabel{chap:conclusions}{{6}{75}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{75}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Future Work}{75}}
+\newlabel{sec:futurework}{{6.2}{75}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  6.1. \ignorespaces PDI Time-to-go Factor: Thrust  }{77}}
+\newlabel{fig:thrtgofac}{{6.1}{77}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  6.2. \ignorespaces PDI Time-to-go Factor: Speed  }{77}}
+\newlabel{fig:spdtgofac}{{6.2}{77}}
 \bibstyle{siammod}
 \bibdata{thbib}
 \bibcite{CERIMELE}{1}
@@ -280,21 +280,21 @@
 \bibcite{MOESSER}{13}
 \bibcite{NAJSON}{14}
 \bibcite{PLOEN}{15}
-\@writefile{toc}{\contentsline {schapter}{BIBLIOGRAPHY}{77}}
+\@writefile{toc}{\contentsline {schapter}{BIBLIOGRAPHY}{79}}
 \bibcite{REA}{16}
 \bibcite{ROSS}{17}
 \bibcite{SOSTARIC}{18}
 \@writefile{toc}{\pagebreak [3]}
-\@writefile{toc}{\contentsline {chaphd}{APPENDIX}{79}}
+\@writefile{toc}{\contentsline {chaphd}{APPENDIX}{81}}
 \@writefile{toc}{\nopagebreak }
-\@writefile{toc}{\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{79}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.1. \ignorespaces Ground Range Histogram: APDG in Vacuum  }{81}}
-\newlabel{fig:hrngdisppowvac}{{A.1}{81}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.2. \ignorespaces Speed Histogram: APDG in Vacuum  }{82}}
-\newlabel{fig:hspddisppowvac}{{A.2}{82}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.3. \ignorespaces Ground Range Histogram: APDG in Atmosphere  }{83}}
-\newlabel{fig:hrngdisppowatmo}{{A.3}{83}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.4. \ignorespaces Speed Histogram: APDG in Atmosphere  }{84}}
-\newlabel{fig:hspddisppowatmo}{{A.4}{84}}
-\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.5. \ignorespaces Failures Histogram: APDG in Atmosphere  }{85}}
-\newlabel{fig:hspdfaildisppowatmo}{{A.5}{85}}
+\@writefile{toc}{\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{81}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.1. \ignorespaces Ground Range Histogram: APDG in Vacuum  }{83}}
+\newlabel{fig:hrngdisppowvac}{{A.1}{83}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.2. \ignorespaces Speed Histogram: APDG in Vacuum  }{84}}
+\newlabel{fig:hspddisppowvac}{{A.2}{84}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.3. \ignorespaces Ground Range Histogram: APDG in Atmosphere  }{85}}
+\newlabel{fig:hrngdisppowatmo}{{A.3}{85}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.4. \ignorespaces Speed Histogram: APDG in Atmosphere  }{86}}
+\newlabel{fig:hspddisppowatmo}{{A.4}{86}}
+\@writefile{lof}{\contentsline {figure}{Figure\nobreakspace  A.5. \ignorespaces Failures Histogram: APDG in Atmosphere  }{87}}
+\newlabel{fig:hspdfaildisppowatmo}{{A.5}{87}}

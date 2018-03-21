@@ -303,7 +303,7 @@ while altitude(k) > 0 && dt ~= tgo(k-1)
     end
     
     % atmospheric model
-    % SPECIAL CONFIGURATION: NO ATMOSPHERE CALL
+%     SPECIAL CONFIGURATION: NO ATMOSPHERE CALL
 %     [L,D,Mach(k)] = atmosphere_model(altitude(k),V(:,k),alpha(k),S,body_P);
 
    L = 0;
@@ -457,7 +457,11 @@ if options(5)
     legend('Up','East','North','Location','Northwest')
 end
 
-results = [(k-1)*dt0;m_tot(end);range(end);speed(end);...
+xfE = r(2,end)-rf(2);
+xfN = r(3,end)-rf(3);
+xfU = r(1,end)-rf(1);
+
+results = [(k-1)*dt0;m_tot(end);range(end);xfE;xfN;xfU;speed(end);...
     acosd(-aT'*g/(norm(aT)*norm(g)))];
 
 end

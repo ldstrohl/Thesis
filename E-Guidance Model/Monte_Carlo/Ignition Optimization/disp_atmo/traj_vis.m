@@ -11,7 +11,7 @@ clear
 close all
 
 %% Inputs
-filename = 'traj_vac2.mat';
+filename = 'traj_atmo_7.mat';
 variable_name_flag = 1; % 1 to input variable names, 0 to auto generate
 save_figs = 0; % 1 to generate jpgs
 
