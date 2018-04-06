@@ -898,7 +898,7 @@ don't use the twocolumn option}
   \oddsidemargin 0pt
   \evensidemargin 0pt
   \pagestyle{empty}
-  \thispagestyle{empty}
+%  \thispagestyle{empty}
   \ssp %
   \begingroup
     \centering

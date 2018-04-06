@@ -1,55 +1,55 @@
-\contentsline {schapter}{ABSTRACT}{iv}
-\contentsline {schapter}{LIST OF TABLES}{vii}
-\contentsline {schapter}{LIST OF FIGURES}{viii}
-\contentsline {schapter}{ACKNOWLEDGMENTS}{xi}
+\contentsline {schapter}{ABSTRACT}{iv}{Doc-Start}
+\contentsline {schapter}{LIST OF TABLES}{vii}{Doc-Start}
+\contentsline {schapter}{LIST OF FIGURES}{viii}{Doc-Start}
+\contentsline {schapter}{ACKNOWLEDGMENTS}{x}{Doc-Start}
 \pagebreak [3]
-\contentsline {chaphd}{CHAPTER}{1}
+\contentsline {chaphd}{CHAPTER}{1}{Doc-Start}
 \nopagebreak 
-\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
-\contentsline {section}{\numberline {1.1}Guidance and Control in Aerospace}{1}
-\contentsline {section}{\numberline {1.2}Literature Review}{2}
-\contentsline {section}{\numberline {1.3}Contribution}{3}
-\contentsline {section}{\numberline {1.4}Organization}{4}
-\contentsline {section}{\numberline {1.5}Problem Statement}{5}
-\contentsline {chapter}{\numberline {2}METHODOLOGY}{7}
-\contentsline {section}{\numberline {2.1}Notation}{7}
-\contentsline {section}{\numberline {2.2}Coordinate Frame}{9}
-\contentsline {section}{\numberline {2.3}Guidance Law}{10}
-\contentsline {subsection}{\numberline {2.3.1}Equations of Motion}{11}
-\contentsline {subsection}{\numberline {2.3.2}E-Guidance}{12}
-\contentsline {subsection}{\numberline {2.3.3}Optimality}{13}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{13}
-\contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{13}
-\contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{15}
-\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{16}
-\contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{18}
-\contentsline {chapter}{\numberline {3}SIMULATION}{21}
-\contentsline {section}{\numberline {3.1}Numerical Integration}{22}
-\contentsline {section}{\numberline {3.2}Guidance Computer}{23}
-\contentsline {section}{\numberline {3.3}Ignition trigger}{24}
-\contentsline {section}{\numberline {3.4}Navigation Module}{25}
-\contentsline {section}{\numberline {3.5}Aerodynamic Model}{26}
-\contentsline {subsection}{\numberline {3.5.1}CobraMRV}{26}
-\contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{28}
-\contentsline {subsection}{\numberline {3.5.3}Orientation}{28}
-\contentsline {section}{\numberline {3.6}Monte Carlo}{29}
-\contentsline {section}{\numberline {3.7}Initial Condition}{31}
-\contentsline {chapter}{\numberline {4}RESULTS}{36}
-\contentsline {subsection}{\numberline {4.0.1}Adaptive PDI}{37}
-\contentsline {subsection}{\numberline {4.0.2}Comparison of E-Guidance with APDG}{38}
-\contentsline {subsection}{\numberline {4.0.3}Navigation Error}{46}
-\contentsline {subsection}{\numberline {4.0.4}Vacuum vs. Atmosphere}{51}
-\contentsline {subsection}{\numberline {4.0.5}Vacuum Performance}{56}
-\contentsline {subsection}{\numberline {4.0.6}Atmospheric Performance}{63}
-\contentsline {chapter}{\numberline {5}DISCUSSION}{70}
-\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{70}
-\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{72}
-\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{73}
-\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{75}
-\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{75}
-\contentsline {section}{\numberline {6.2}Future Work}{75}
-\contentsline {schapter}{BIBLIOGRAPHY}{79}
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Guidance and Control in Aerospace}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Literature Review}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Contribution}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Organization}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Problem Statement}{4}{section.1.5}
+\contentsline {chapter}{\numberline {2}METHODOLOGY}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Notation}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Coordinate Frame}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Guidance Law}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Equations of Motion}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}E-Guidance}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Optimality}{11}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{11}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{12}{subsubsection.2.3.3.2}
+\contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{13}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{14}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{16}{section.2.4}
+\contentsline {chapter}{\numberline {3}SIMULATION}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Numerical Integration}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Guidance Computer}{20}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ignition trigger}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Navigation Module}{21}{section.3.4}
+\contentsline {section}{\numberline {3.5}Aerodynamic Model}{22}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}CobraMRV}{22}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{23}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Orientation}{24}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Monte Carlo}{24}{section.3.6}
+\contentsline {section}{\numberline {3.7}Initial Condition}{26}{section.3.7}
+\contentsline {chapter}{\numberline {4}RESULTS}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Adaptive PDI}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison of E-Guidance with APDG}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Navigation Error}{38}{section.4.3}
+\contentsline {section}{\numberline {4.4}Vacuum vs. Atmosphere}{42}{section.4.4}
+\contentsline {section}{\numberline {4.5}Vacuum Performance}{46}{section.4.5}
+\contentsline {section}{\numberline {4.6}Atmospheric Performance}{52}{section.4.6}
+\contentsline {chapter}{\numberline {5}DISCUSSION}{58}{chapter.5}
+\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{58}{section.5.1}
+\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{60}{section.5.2}
+\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{61}{section.5.3}
+\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{63}{section.6.2}
+\contentsline {schapter}{BIBLIOGRAPHY}{66}{figure.caption.52}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDIX}{81}
+\contentsline {chaphd}{APPENDIX}{68}{figure.caption.52}
 \nopagebreak 
-\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{81}
+\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{68}{appendix.A}

@@ -1,51 +1,51 @@
-\contentsline {figure}{Figure\nobreakspace 2.1. \ignorespaces Vehicle Body Axes. Source: Hall, N. Aircraft Rotations Body Axes. NASA Glenn Research Center, https://www.grc.nasa.gov/www/k-12/airplane/rotations.html, accessed February 2018 }{10}
-\contentsline {figure}{Figure\nobreakspace 3.1. \ignorespaces Simulation Architecture }{21}
-\contentsline {figure}{Figure\nobreakspace 3.2. \ignorespaces CobraMRV Design. Source: C. Cerimele et al. A rigid mid lift-to-drag ratio approach to human mars entry, descent, and landing. AIAA Paper, 2017-1898, 2017. }{27}
-\contentsline {figure}{Figure\nobreakspace 3.3. \ignorespaces Unpowered Initial Trajectory in Vacuum }{32}
-\contentsline {figure}{Figure\nobreakspace 3.4. \ignorespaces Ground Range: Unpowered Initial Trajectory In Vacuum }{33}
-\contentsline {figure}{Figure\nobreakspace 3.5. \ignorespaces Unpowered Initial Trajectory in Atmosphere }{34}
-\contentsline {figure}{Figure\nobreakspace 3.6. \ignorespaces Unpowered Initial Trajectory in Atmosphere From Above }{35}
-\contentsline {figure}{Figure\nobreakspace 4.1. \ignorespaces PDI Criteria: Vacuum }{37}
-\contentsline {figure}{Figure\nobreakspace 4.2. \ignorespaces PDI Criteria: Atmopshere }{38}
-\contentsline {figure}{Figure\nobreakspace 4.3. \ignorespaces Trajectory: E-Guidance vs. APDG }{39}
-\contentsline {figure}{Figure\nobreakspace 4.4. \ignorespaces Altitude: E-Guidance vs. APDG }{40}
-\contentsline {figure}{Figure\nobreakspace 4.5. \ignorespaces Ground Range: E-Guidance vs. APDG }{40}
-\contentsline {figure}{Figure\nobreakspace 4.6. \ignorespaces Speed: E-Guidance vs. APDG }{41}
-\contentsline {figure}{Figure\nobreakspace 4.7. \ignorespaces Thrust Magnitude: E-Guidance vs. APDG }{41}
-\contentsline {figure}{Figure\nobreakspace 4.8. \ignorespaces Pitch: E-Guidance vs. APDG }{42}
-\contentsline {figure}{Figure\nobreakspace 4.9. \ignorespaces Propellant Use Distribution: E-Guidance vs. APDG }{44}
-\contentsline {figure}{Figure\nobreakspace 4.10. \ignorespaces Ground Range Distribution: E-Guidance vs. APDG }{45}
-\contentsline {figure}{Figure\nobreakspace 4.11. \ignorespaces Speed Distribution: E-Guidance vs. APDG }{46}
-\contentsline {figure}{Figure\nobreakspace 4.12. \ignorespaces Propellant Use Distribution: Nominal vs. Dispersed Navigation }{49}
-\contentsline {figure}{Figure\nobreakspace 4.13. \ignorespaces Ground Range Distribution: Nominal vs. Dispersed Navigation }{50}
-\contentsline {figure}{Figure\nobreakspace 4.14. \ignorespaces Speed Distribution: Nominal vs. Dispersed Navigation }{51}
-\contentsline {figure}{Figure\nobreakspace 4.15. \ignorespaces Trajectory: Vacuum vs. Atmosphere }{53}
-\contentsline {figure}{Figure\nobreakspace 4.16. \ignorespaces Altitude: Vacuum vs. Atmosphere }{53}
-\contentsline {figure}{Figure\nobreakspace 4.17. \ignorespaces Ground Range: Vacuum vs. Atmosphere }{54}
-\contentsline {figure}{Figure\nobreakspace 4.18. \ignorespaces Speed: Vacuum vs. Atmosphere }{54}
-\contentsline {figure}{Figure\nobreakspace 4.19. \ignorespaces Thrust Magnitude: Vacuum vs. Atmosphere }{55}
-\contentsline {figure}{Figure\nobreakspace 4.20. \ignorespaces Vehicle Mass: Vacuum vs. Atmosphere }{55}
-\contentsline {figure}{Figure\nobreakspace 4.21. \ignorespaces Trajectory: APDG in Vacuum }{57}
-\contentsline {figure}{Figure\nobreakspace 4.22. \ignorespaces Speed: APDG in Vacuum }{57}
-\contentsline {figure}{Figure\nobreakspace 4.23. \ignorespaces Altitude: APDG in Vacuum }{58}
-\contentsline {figure}{Figure\nobreakspace 4.24. \ignorespaces Ground Range: APDG in Vacuum }{58}
-\contentsline {figure}{Figure\nobreakspace 4.25. \ignorespaces Thrust Magnitude: APDG in Vacuum }{59}
-\contentsline {figure}{Figure\nobreakspace 4.26. \ignorespaces Case 1 Landing Sites: APDG in Vacuum }{61}
-\contentsline {figure}{Figure\nobreakspace 4.27. \ignorespaces Fuel Histogram: APDG in Vacuum }{62}
-\contentsline {figure}{Figure\nobreakspace 4.28. \ignorespaces Failures Histogram: APDG in Vacuum }{63}
-\contentsline {figure}{Figure\nobreakspace 4.29. \ignorespaces Trajectory: APDG in Atmosphere }{64}
-\contentsline {figure}{Figure\nobreakspace 4.30. \ignorespaces Altitude: APDG in Atmosphere }{65}
-\contentsline {figure}{Figure\nobreakspace 4.31. \ignorespaces Ground Range: APDG in Atmosphere }{65}
-\contentsline {figure}{Figure\nobreakspace 4.32. \ignorespaces Speed: APDG in Atmosphere }{66}
-\contentsline {figure}{Figure\nobreakspace 4.33. \ignorespaces Thrust Magnitude: APDG in Atmosphere }{66}
-\contentsline {figure}{Figure\nobreakspace 4.34. \ignorespaces Case 1 Landing Sites: APDG in Atmosphere }{67}
-\contentsline {figure}{Figure\nobreakspace 4.35. \ignorespaces Fuel Histogram: APDG in Atmosphere }{69}
-\contentsline {figure}{Figure\nobreakspace 5.1. \ignorespaces Convergence Test: Powered in Atmosphere }{71}
-\contentsline {figure}{Figure\nobreakspace 5.2. \ignorespaces Convergence Test: Unpowered in Vacuum }{72}
-\contentsline {figure}{Figure\nobreakspace 6.1. \ignorespaces PDI Time-to-go Factor: Thrust }{77}
-\contentsline {figure}{Figure\nobreakspace 6.2. \ignorespaces PDI Time-to-go Factor: Speed }{77}
-\contentsline {figure}{Figure\nobreakspace A.1. \ignorespaces Ground Range Histogram: APDG in Vacuum }{83}
-\contentsline {figure}{Figure\nobreakspace A.2. \ignorespaces Speed Histogram: APDG in Vacuum }{84}
-\contentsline {figure}{Figure\nobreakspace A.3. \ignorespaces Ground Range Histogram: APDG in Atmosphere }{85}
-\contentsline {figure}{Figure\nobreakspace A.4. \ignorespaces Speed Histogram: APDG in Atmosphere }{86}
-\contentsline {figure}{Figure\nobreakspace A.5. \ignorespaces Failures Histogram: APDG in Atmosphere }{87}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Vehicle Body Axes. Source: Hall, N. Aircraft Rotations Body Axes. NASA Glenn Research Center, https://www.grc.nasa.gov/www/k-12/airplane/rotations.html, accessed February 2018 \relax }}{9}{figure.caption.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Simulation Architecture \relax }}{18}{figure.caption.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces CobraMRV Design. Source: C. Cerimele et al. A rigid mid lift-to-drag ratio approach to human mars entry, descent, and landing. AIAA Paper, 2017-1898, 2017. \relax }}{22}{figure.caption.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Unpowered Initial Trajectory in Vacuum \relax }}{27}{figure.caption.6}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ground Range: Unpowered Initial Trajectory In Vacuum \relax }}{27}{figure.caption.7}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Unpowered Initial Trajectory in Atmosphere \relax }}{28}{figure.caption.8}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Unpowered Initial Trajectory in Atmosphere From Above \relax }}{28}{figure.caption.9}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces PDI Criteria: Vacuum \relax }}{30}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PDI Criteria: Atmopshere \relax }}{31}{figure.caption.11}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Trajectory: E-Guidance vs. APDG \relax }}{32}{figure.caption.12}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Altitude: E-Guidance vs. APDG \relax }}{32}{figure.caption.13}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ground Range: E-Guidance vs. APDG \relax }}{33}{figure.caption.14}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Speed: E-Guidance vs. APDG \relax }}{33}{figure.caption.15}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Thrust Magnitude: E-Guidance vs. APDG \relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Pitch: E-Guidance vs. APDG \relax }}{34}{figure.caption.17}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Propellant Use Distribution: E-Guidance vs. APDG \relax }}{36}{figure.caption.19}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Ground Range Distribution: E-Guidance vs. APDG \relax }}{37}{figure.caption.20}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Speed Distribution: E-Guidance vs. APDG \relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Propellant Use Distribution: Nominal vs. Dispersed Navigation \relax }}{40}{figure.caption.23}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Ground Range Distribution: Nominal vs. Dispersed Navigation \relax }}{41}{figure.caption.24}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Speed Distribution: Nominal vs. Dispersed Navigation \relax }}{42}{figure.caption.25}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Trajectory: Vacuum vs. Atmosphere \relax }}{43}{figure.caption.26}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Altitude: Vacuum vs. Atmosphere \relax }}{44}{figure.caption.27}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Ground Range: Vacuum vs. Atmosphere \relax }}{44}{figure.caption.28}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Speed: Vacuum vs. Atmosphere \relax }}{45}{figure.caption.29}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Thrust Magnitude: Vacuum vs. Atmosphere \relax }}{45}{figure.caption.30}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Vehicle Mass: Vacuum vs. Atmosphere \relax }}{46}{figure.caption.31}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Trajectory: APDG in Vacuum \relax }}{47}{figure.caption.32}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Speed: APDG in Vacuum \relax }}{47}{figure.caption.33}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Altitude: APDG in Vacuum \relax }}{48}{figure.caption.34}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Ground Range: APDG in Vacuum \relax }}{48}{figure.caption.35}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Thrust Magnitude: APDG in Vacuum \relax }}{49}{figure.caption.36}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Case 1 Landing Sites: APDG in Vacuum \relax }}{50}{figure.caption.38}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Fuel Histogram: APDG in Vacuum \relax }}{51}{figure.caption.39}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Failures Histogram: APDG in Vacuum \relax }}{52}{figure.caption.40}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Trajectory: APDG in Atmosphere \relax }}{53}{figure.caption.41}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Altitude: APDG in Atmosphere \relax }}{53}{figure.caption.42}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Ground Range: APDG in Atmosphere \relax }}{54}{figure.caption.43}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Speed: APDG in Atmosphere \relax }}{54}{figure.caption.44}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Thrust Magnitude: APDG in Atmosphere \relax }}{55}{figure.caption.45}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Case 1 Landing Sites: APDG in Atmosphere \relax }}{55}{figure.caption.46}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Fuel Histogram: APDG in Atmosphere \relax }}{57}{figure.caption.48}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Convergence Test: Powered in Atmosphere \relax }}{59}{figure.caption.49}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Convergence Test: Unpowered in Vacuum \relax }}{60}{figure.caption.50}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces PDI Time-to-go Factor: Thrust \relax }}{64}{figure.caption.51}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces PDI Time-to-go Factor: Speed \relax }}{65}{figure.caption.52}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ground Range Histogram: APDG in Vacuum \relax }}{69}{figure.caption.53}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Speed Histogram: APDG in Vacuum \relax }}{70}{figure.caption.54}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Ground Range Histogram: APDG in Atmosphere \relax }}{71}{figure.caption.55}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Speed Histogram: APDG in Atmosphere \relax }}{72}{figure.caption.56}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Failures Histogram: APDG in Atmosphere \relax }}{73}{figure.caption.57}

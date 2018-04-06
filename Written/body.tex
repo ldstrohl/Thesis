@@ -1086,7 +1086,7 @@ The separation between nominal and dispersed rocket parameters is also important
 The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
 
 
-
+\pagebreak
 \section{Initial Condition} \label{sec:IC}
 The initial conditions are listed in Table\:\ref{tab:IC}. These are representative of a trajectory of the CobraMRV vehicle on approach after a de-orbit burn and subsequent targeting, from the work of Cerimele\:et\:al\:\cite{CERIMELE}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed ``East", $\hat{\bm{e}}_y$ is pointed ``North", and $\hat{\bm{e}}_z$ is pointed ``Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
 
@@ -1627,7 +1627,7 @@ The third condition is the subject of this study. Whether Adaptive PDI can relia
 
 For dispersed cases the starting conditions are as listed in Table\:\ref{tab:IC} with the addition of Case 7, which represents the active PDI strategy. This Case is flown from the initial condition specified by Case 6, the first point on the trajectory, but with the engine off until one of the PDI criteria defined in Equations\:(\ref{eqn:thrustcriterion}) and\:(\ref{eqn:rangecriterion}) is met.
 
-\subsection{Adaptive PDI} \label{sec:PDIres}
+\section{Adaptive PDI} \label{sec:PDIres}
 The first result to investigate is the validity of the PDI criteria in Equations\:(\ref{eqn:thrustcriterion}) and\:(\ref{eqn:rangecriterion}). For these criteria to serve as ignition criteria, they must reliably trigger in time to land the vehicle softly.
 
 Figure\:\ref{fig:gtcriteriavac} shows data from a vacuum case of APDG with PDI active during the unpowered phase, before PDI has been triggered. The required thrust acceleration magnitude $a_{GT}$for a gravity turn is shown monotonically increasing throughout the unpowered trajectory, and the required downrange travel $s_{GT}$ is monotonically decreasing. $a_{GT}$ and $s_{GT}$ reach their limits at almost the same time, but this would not be true of all trajectories.
@@ -1652,7 +1652,7 @@ Figure\:\ref{fig:gtcriteriaatmo} shows data from an atmospheric case of APDG wit
 \end{figure}
 
 
-\subsection{Comparison of E-Guidance with APDG} \label{sec:lawcomp}
+\section{Comparison of E-Guidance with APDG} \label{sec:lawcomp}
 %Table and figures for the following condition:
 %Both guidance laws
 %Full dispersion (Rocket, IC, Nav)
@@ -1797,7 +1797,7 @@ These parameters give bounds on the results, but do not provide much information
 
 
 
-\subsection{Navigation Error} \label{sec:naverror}
+\section{Navigation Error} \label{sec:naverror}
 %Table and figures for the following condition:
 %APDG Guidance Law
 %Rocket and IC Dispersion
@@ -1882,7 +1882,7 @@ Histograms of the data show more clearly the effects of Navigation error. Figure
 	\end{minipage}
 \end{figure}
 
-\subsection{Vacuum vs. Atmosphere} \label{sec:atmovsvac}
+\section{Vacuum vs. Atmosphere} \label{sec:atmovsvac}
 Here APDG's performance is compared with and without aerodynamic effects. This is an important comparison to make because, as stated in Section\:\ref{sec:EOMS}, the guidance law is derived without consideration of aerodynamic effects. There is no guarantee it will perform well in atmosphere. Only nominal results will be presented here, as the dispersed results are presented in Sections\:\ref{sec:vacperf} and\:\ref{sec:atmoperf} in the context of adaptive powered descent initiation (PDI) vs. predetermined ignition time.
 
 Figures\:\ref{fig:trajatmovsvac} through\:\ref{fig:massatmovsvac} show nominal profiles for the APDG law in both atmosphere and vacuum. These trajectories start from Case 6 as listed in Table\:\ref{tab:IC}. Figures\:\ref{fig:trajatmovsvac} and\:\ref{fig:altatmovsvac} show that in atmosphere, the PDI strategy with the vehicle held at optimum angle of attack results in higher lift, meaning that the vehicle does not lose altitude as quickly as in vacuum, while Figure\:\ref{fig:spdatmovsvac} shows it losing speed much more quickly during this phase. This suggests that the aerodynamic effects have an appreciable effect on the energy in the form of propellant ultimately required for powered descent and soft landing. 
@@ -1940,7 +1940,7 @@ Figures\:\ref{fig:thratmovsvac} and\:\ref{fig:massatmovsvac} suggest the same co
 
 
 
-\subsection{Vacuum Performance} \label{sec:vacperf}
+\section{Vacuum Performance} \label{sec:vacperf}
 
 %Table and figures for the following condition:
 %APDG Guidance Law
@@ -2085,7 +2085,7 @@ The lowest mean propellant consumption is given by Case 2, as well as the highes
 The histogram data similarly shows Adaptive PDI's fuel performance as middling in Figure\:\ref{fig:hfueldisppowvac}. It also demonstrates the Gaussian characteristic of the propellant usage distribution. Speed and Range histograms are shown in the Appendix as they are very similar to the relationship demonstrated in Section\:\ref{sec:naverror}, with the exception of Case 1. As discussed, Figure\:\ref{fig:hfueldisppowvac} shows the failures of Case 1 very clearly with the disorderly grouping below 16 m/s representing successful landings, but the much higher speeds shown with a wide separation from the successes. These failures also correspond to the uncharacteristically low propellant runs in Figure\:\ref{fig:hfueldisppowvac}.
 
 
-\subsection{Atmospheric Performance} \label{sec:atmoperf}
+\section{Atmospheric Performance} \label{sec:atmoperf}
 %Table and figures for the following condition:
 %APDG Guidance Law
 %Full dispersion (rocket, nav, IC)

@@ -13,7 +13,7 @@
 % Then you need to use the dvips command to get postscript output
 % 
 % See the README file for more information
-% % tester
+
 \documentclass{sdsu-thesis}
 %
 % 
@@ -45,6 +45,7 @@
 \usepackage{epsfig}
 \usepackage{graphicx}
 
+\usepackage[bookmarks]{hyperref}
 % These packages may also be useful for pictures...
 % \usepackage{color}
 % \usepackage{eepic}
@@ -84,7 +85,8 @@
 \usepackage{longtable}
 % For pretty tables
 \usepackage{booktabs,tabularx}
-\usepackage{geometry} % set margins to meet your document's needs
+\usepackage[left=1.25in, top=1in, right = 1in, bottom = 1in, headsep=34pt]{geometry} % set margins to meet your document's needs
+%\usepackage{geometry}
 \newcolumntype{Y}{>{\raggedleft\arraybackslash}X} 
 
 
@@ -177,9 +179,9 @@
 %\degreeTHREE{Mathematics}
 
 % Degree (with Concentration)
-\degreeONE{Master of Science in Aerospace Engineering}
-\degreeTWO{with a Concentration in}
-\degreeTHREE{Guidance, Navigation, and Controls}
+\degreeONE{Master of Science}
+\degreeTWO{in}
+\degreeTHREE{Aerospace Engineering}
 
 % Degree (dual, concurrent)
 %\degreeONE{Master of Science in Applied Mathematics}

@@ -1,0 +1,49 @@
+\BOOKMARK [0][-]{Doc-Start}{ABSTRACT}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{LIST OF TABLES}{}% 2
+\BOOKMARK [0][-]{Doc-Start}{LIST OF FIGURES}{}% 3
+\BOOKMARK [0][-]{Doc-Start}{ACKNOWLEDGMENTS}{}% 4
+\BOOKMARK [0][-]{Doc-Start}{CHAPTER}{}% 5
+\BOOKMARK [0][-]{chapter.1}{INTRODUCTION}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Guidance and Control in Aerospace}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Literature Review}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Contribution}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Organization}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Problem Statement}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{METHODOLOGY}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Notation}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Coordinate Frame}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Guidance Law}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.3.1}{Equations of Motion}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{E-Guidance}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{Optimality}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.4}{Apollo Powered Descent Guidance}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.5}{Time-to-go}{section.2.3}% 20
+\BOOKMARK [1][-]{section.2.4}{Adaptive Powered Descent Initiation}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{SIMULATION}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Numerical Integration}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Guidance Computer}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Ignition trigger}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{Navigation Module}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.5}{Aerodynamic Model}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.5.1}{CobraMRV}{section.3.5}% 28
+\BOOKMARK [2][-]{subsection.3.5.2}{Atmosphere Model}{section.3.5}% 29
+\BOOKMARK [2][-]{subsection.3.5.3}{Orientation}{section.3.5}% 30
+\BOOKMARK [1][-]{section.3.6}{Monte Carlo}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.7}{Initial Condition}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{RESULTS}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Adaptive PDI}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Comparison of E-Guidance with APDG}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.3}{Navigation Error}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{Vacuum vs. Atmosphere}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.5}{Vacuum Performance}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.6}{Atmospheric Performance}{chapter.4}% 39
+\BOOKMARK [0][-]{chapter.5}{DISCUSSION}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Simulation Error Analysis}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Apollo Powered Descent Guidance}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Adaptive Powered Descent Initiation}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONS AND FUTURE WORK}{}% 44
+\BOOKMARK [1][-]{section.6.1}{Adaptive Powered Descent Initiation}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 46
+\BOOKMARK [0][-]{figure.caption.52}{BIBLIOGRAPHY}{}% 47
+\BOOKMARK [0][-]{figure.caption.52}{APPENDIX}{}% 48
+\BOOKMARK [0][-]{appendix.A}{DISPERSED TRAJECTORY FIGURES}{}% 49
