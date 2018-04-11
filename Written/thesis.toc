@@ -33,23 +33,23 @@
 \contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{23}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Orientation}{24}{subsection.3.5.3}
 \contentsline {section}{\numberline {3.6}Monte Carlo}{24}{section.3.6}
-\contentsline {section}{\numberline {3.7}Initial Condition}{26}{section.3.7}
-\contentsline {chapter}{\numberline {4}RESULTS}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Adaptive PDI}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Comparison of E-Guidance with APDG}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Navigation Error}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Vacuum vs. Atmosphere}{42}{section.4.4}
-\contentsline {section}{\numberline {4.5}Vacuum Performance}{46}{section.4.5}
-\contentsline {section}{\numberline {4.6}Atmospheric Performance}{52}{section.4.6}
-\contentsline {chapter}{\numberline {5}DISCUSSION}{58}{chapter.5}
-\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{58}{section.5.1}
-\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{60}{section.5.2}
-\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{61}{section.5.3}
-\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{63}{chapter.6}
-\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{63}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{63}{section.6.2}
-\contentsline {schapter}{BIBLIOGRAPHY}{66}{figure.caption.52}
+\contentsline {section}{\numberline {3.7}Initial Condition}{27}{section.3.7}
+\contentsline {chapter}{\numberline {4}RESULTS}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}Adaptive PDI}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Comparison of E-Guidance with APDG}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Navigation Error}{39}{section.4.3}
+\contentsline {section}{\numberline {4.4}Vacuum vs. Atmosphere}{43}{section.4.4}
+\contentsline {section}{\numberline {4.5}Vacuum Performance}{47}{section.4.5}
+\contentsline {section}{\numberline {4.6}Atmospheric Performance}{53}{section.4.6}
+\contentsline {chapter}{\numberline {5}DISCUSSION}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{59}{section.5.1}
+\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{61}{section.5.2}
+\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{62}{section.5.3}
+\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{64}{chapter.6}
+\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{64}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{64}{section.6.2}
+\contentsline {schapter}{BIBLIOGRAPHY}{67}{figure.caption.52}
 \pagebreak [3]
-\contentsline {chaphd}{APPENDIX}{68}{figure.caption.52}
+\contentsline {chaphd}{APPENDIX}{69}{figure.caption.52}
 \nopagebreak 
-\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{68}{appendix.A}
+\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{69}{appendix.A}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.28)  5 APR 2018 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.28)  7 APR 2018 15:37
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -237,6 +237,24 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip49
 \dth@everypar=\toks21
 )
+("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlecaps\titleca
+ps.sty"
+Package: titlecaps 2015/01/30 V1.2 Routines for setting rich-text input into Ti
+tling Caps
+
+("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifnextok\ifnextok
+.sty"
+Package: ifnextok 2011/06/27 v0.3 test next token (UL)
+)
+("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@lcword@index=\count103
+\c@word@count=\count104
+\c@lc@words=\count105
+\c@dia@count=\count106
+\c@arg@@@index=\count107
+)
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
 ty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -262,7 +280,7 @@ See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p {\ssp \raggedright \bfseries #1. #2\par } \vskip \belowcaptionskip .
-\c@ContinuedFloat=\count103
+\c@ContinuedFloat=\count108
 Package caption Info: hyperref package is loaded.
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algori
@@ -272,17 +290,14 @@ nment
 
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count104
+\c@float@type=\count109
 \float@exts=\toks22
 \float@box=\box26
 \@float@everytoks=\toks23
 \@floatcapt=\box27
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
-"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks24
-\c@algorithm=\count105
+\c@algorithm=\count110
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algp
 seudocode.sty"
@@ -293,15 +308,15 @@ rithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count106
-\c@ALG@rem=\count107
-\c@ALG@nested=\count108
+\c@ALG@line=\count111
+\c@ALG@rem=\count112
+\c@ALG@nested=\count113
 \ALG@tlm=\skip50
 \ALG@thistlm=\skip51
-\c@ALG@Lnr=\count109
-\c@ALG@blocknr=\count110
-\c@ALG@storecount=\count111
-\c@ALG@tmpcounter=\count112
+\c@ALG@Lnr=\count114
+\c@ALG@blocknr=\count115
+\c@ALG@storecount=\count116
+\c@ALG@tmpcounter=\count117
 \ALG@tmplength=\skip52
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -313,16 +328,16 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip54
 \LTpre=\skip55
 \LTpost=\skip56
-\LTchunksize=\count113
+\LTchunksize=\count118
 \LTcapwidth=\dimen120
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count114
-\LT@rows=\count115
-\c@LT@tables=\count116
-\c@LT@chunks=\count117
+\LT@cols=\count119
+\LT@rows=\count120
+\c@LT@tables=\count121
+\c@LT@chunks=\count122
 \LT@p@ftn=\toks25
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
@@ -338,12 +353,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen128
 \cmidrulekern=\dimen129
 \defaultaddspace=\dimen130
-\@cmidla=\count118
-\@cmidlb=\count119
+\@cmidla=\count123
+\@cmidlb=\count124
 \@aboverulesep=\dimen131
 \@belowrulesep=\dimen132
-\@thisruleclass=\count120
-\@lastruleclass=\count121
+\@thisruleclass=\count125
+\@lastruleclass=\count126
 \@thisrulewidth=\dimen133
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.st
@@ -362,15 +377,15 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@old@col=\dimen138
 \TX@target=\dimen139
 \TX@delta=\dimen140
-\TX@cols=\count122
+\TX@cols=\count127
 \TX@ftn=\toks27
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
 .sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count123
-\Gm@cntv=\count124
-\c@Gm@tempcnt=\count125
+\Gm@cnth=\count128
+\Gm@cntv=\count129
+\c@Gm@tempcnt=\count130
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -389,7 +404,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \UL@skip=\skip59
 \UL@hook=\toks29
 \UL@height=\dimen149
-\UL@pe=\count126
+\UL@pe=\count131
 \UL@pixel=\dimen150
 \ULC@box=\box34
 Package: ulem 2012/05/18
@@ -410,7 +425,7 @@ s.tex"
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count127
+\XKV@depth=\count132
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
@@ -419,12 +434,12 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty
 "
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count128
+\c@su@anzahl=\count133
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
 .sty"
 Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count129
+\etb@tempcnta=\count134
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool
 -base.sty"
@@ -457,13 +472,13 @@ LaTeX Info: Redefining \boldsymbol on input line 28.
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count130
+\inf@bad=\count135
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count131
-\leftroot@=\count132
+\uproot@=\count136
+\leftroot@=\count137
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count133
-\DOTSCASE@=\count134
+\classnum@=\count138
+\DOTSCASE@=\count139
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -472,15 +487,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen154
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count135
-\c@MaxMatrixCols=\count136
+\macc@depth=\count140
+\c@MaxMatrixCols=\count141
 \dotsspace@=\muskip11
-\c@parentequation=\count137
-\dspbrk@lvl=\count138
+\c@parentequation=\count142
+\dspbrk@lvl=\count143
 \tag@help=\toks33
-\row@=\count139
-\column@=\count140
-\maxfields@=\count141
+\row@=\count144
+\column@=\count145
+\maxfields@=\count146
 \andhelp@=\toks34
 \eqnshift@=\dimen155
 \alignsep@=\dimen156
@@ -504,19 +519,19 @@ Package: fp 1995/04/02
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty
 "
 Package: defpattern 1994/10/12
-\actioncount=\count142
+\actioncount=\count147
 ) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty
 "
 Package: fp-basic 1996/05/13
-\FP@xs=\count143
-\FP@xia=\count144
-\FP@xib=\count145
-\FP@xfa=\count146
-\FP@xfb=\count147
-\FP@rega=\count148
-\FP@regb=\count149
-\FP@regs=\count150
-\FP@times=\count151
+\FP@xs=\count148
+\FP@xia=\count149
+\FP@xib=\count150
+\FP@xfa=\count151
+\FP@xfb=\count152
+\FP@rega=\count153
+\FP@regb=\count154
+\FP@regs=\count155
+\FP@times=\count156
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
 Package: fp-addons 1995/03/15
@@ -532,7 +547,7 @@ Package: fp-pas 1994/08/29
 ) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.st
 y"
 Package: fp-random 1995/02/23
-\FPseed=\count152
+\FPseed=\count157
 ) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
 ) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
@@ -541,31 +556,31 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks37
-\@dtl@tmpcount=\count153
+\@dtl@tmpcount=\count158
 \dtl@tmplength=\skip63
-\dtl@sortresult=\count154
-\@dtl@numgrpsepcount=\count155
-\@dtl@datatype=\count156
-\dtl@codeA=\count157
-\dtl@codeB=\count158
-\@dtl@foreach@level=\count159
+\dtl@sortresult=\count159
+\@dtl@numgrpsepcount=\count160
+\@dtl@datatype=\count161
+\dtl@codeA=\count162
+\dtl@codeB=\count163
+\@dtl@foreach@level=\count164
 )
-\dtlcolumnnum=\count160
-\dtlrownum=\count161
+\dtlcolumnnum=\count165
+\dtlrownum=\count166
 \@dtl@before=\toks38
 \@dtl@after=\toks39
 \@dtl@colhead=\toks40
 \dtlcurrentrow=\toks41
 \dtlbeforerow=\toks42
 \dtlafterrow=\toks43
-\dtlforeachlevel=\count162
-\c@DTLrowi=\count163
-\c@DTLrowii=\count164
-\c@DTLrowiii=\count165
-\c@DTLrow=\count166
-\dtl@rowi=\count167
-\dtl@rowii=\count168
-\dtl@rowiii=\count169
+\dtlforeachlevel=\count167
+\c@DTLrowi=\count168
+\c@DTLrowii=\count169
+\c@DTLrowiii=\count170
+\c@DTLrow=\count171
+\dtl@rowi=\count172
+\dtl@rowii=\count173
+\dtl@rowiii=\count174
 \@dtl@curi=\toks44
 \@dtl@previ=\toks45
 \@dtl@nexti=\toks46
@@ -575,7 +590,7 @@ Package: fp-eval 1995/04/03
 \@dtl@curiii=\toks50
 \@dtl@previii=\toks51
 \@dtl@nextiii=\toks52
-\@dtl@elements=\count170
+\@dtl@elements=\count175
 \@dtl@list=\toks53
 \@dtl@rowa=\toks54
 \@dtl@rowb=\toks55
@@ -583,14 +598,14 @@ Package: fp-eval 1995/04/03
 \@dtl@toksB=\toks57
 \@dtl@write=\write3
 \@dtl@read=\read1
-\dtl@entrycr=\count171
-\dtl@omitlines=\count172
+\dtl@entrycr=\count176
+\dtl@omitlines=\count177
 )
-\c@corollary=\count173
-\c@definition=\count174
-\c@lemma=\count175
-\c@proposition=\count176
-\c@theorem=\count177
+\c@corollary=\count178
+\c@definition=\count179
+\c@lemma=\count180
+\c@proposition=\count181
+\c@theorem=\count182
  (thesis.aux)
 \openout1 = `thesis.aux'.
 
@@ -619,16 +634,16 @@ Note: longtable package detected, redefining the caption printing
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count178
+\scratchcounter=\count183
 \scratchdimen=\dimen161
 \scratchbox=\box37
-\nofMPsegments=\count179
-\nofMParguments=\count180
+\nofMPsegments=\count184
+\nofMParguments=\count185
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count181
+\MPscratchCnt=\count186
 \MPscratchDim=\dimen162
-\MPnumerator=\count182
-\makeMPintoPDFobject=\count183
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
 \everyMPtoPDFconversion=\toks59
 )
 ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
@@ -657,7 +672,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 lestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count184
+\c@section@level=\count189
 )
 LaTeX Info: Redefining \ref on input line 219.
 LaTeX Info: Redefining \pageref on input line 219.
@@ -844,7 +859,7 @@ CHAPTER 2.
 ]
  Section 2.2.
 [7]
-<Figures/bodyaxes.jpg, id=520, 533.74406pt x 401.24907pt>
+<Figures/bodyaxes.jpg, id=523, 533.74406pt x 401.24907pt>
 File: Figures/bodyaxes.jpg Graphic file (type jpg)
 <use Figures/bodyaxes.jpg>
 Package pdftex.def Info: Figures/bodyaxes.jpg  used on input line 445. on input
@@ -881,7 +896,7 @@ put line 815.
  Section 2.4.
 [16] [17]
 CHAPTER 3.
-<Figures/simarch.jpg, id=637, 704.6325pt x 572.1375pt>
+<Figures/simarch.jpg, id=639, 704.6325pt x 572.1375pt>
 File: Figures/simarch.jpg Graphic file (type jpg)
 <use Figures/simarch.jpg>
 Package pdftex.def Info: Figures/simarch.jpg  used on input line 896. on input 
@@ -900,438 +915,445 @@ e 896.
 [21]
  Section 3.5.
  Subsection 3.5.1.
-<Figures/CobraMRV.png, id=692, 816.1692pt x 542.5068pt>
+<Figures/CobraMRV.png, id=694, 816.1692pt x 542.5068pt>
 File: Figures/CobraMRV.png Graphic file (type png)
 <use Figures/CobraMRV.png>
 Package pdftex.def Info: Figures/CobraMRV.png  used on input line 981. on input
  line 981.
 Package pdftex.def Info: Requested size: 310.76122pt x 206.56035pt on input lin
 e 981.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 985.
+
+Underfull \hbox (badness 1661) in paragraph at lines 985--985
+\OT1/ptm/b/n/12 CHRISTO-PHER, ROBERT-SON, ED-WARD, SOSTARIC,
+ []
+
 [22 <./Figures/CobraMRV.png>]
  Subsection 3.5.2.
- Subsection 3.5.3.
 [23]
+ Subsection 3.5.3.
  Section 3.6.
 [24]
-Underfull \hbox (badness 10000) in alignment at lines 1066--1066
+Underfull \hbox (badness 10000) in alignment at lines 1068--1068
 [][][][] 
  []
 
-[25]
+[25] [26]
  Section 3.7.
-<Figures/trajunpowvac_1.pdf, id=739, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajunpowvac_1.pdf, id=746, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvac_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowvac_1.pdf>
-Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 1121. o
-n input line 1121.
+Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 1123. o
+n input line 1123.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1121.
-[26]
-<Figures/trajunpowvacgr.pdf, id=744, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1123.
+[27]
+<Figures/trajunpowvacgr.pdf, id=752, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvacgr.pdf Graphic file (type pdf)
 <use Figures/trajunpowvacgr.pdf>
-Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 1129. o
-n input line 1129.
+Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 1131. o
+n input line 1131.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1129.
-<Figures/trajunpowatmo_1.pdf, id=750, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1131.
+<Figures/trajunpowatmo_1.pdf, id=758, pagebox=cropbox, 421.575pt x 316.18124pt>
 
 File: Figures/trajunpowatmo_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_1.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1139. 
-on input line 1139.
+Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1141. 
+on input line 1141.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1139.
- [27 <./Figures/trajunpowvac_1.pdf> <./Figures/trajunpowvacgr.pdf>]
-<Figures/trajunpowatmo_2.pdf, id=807, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1141.
+ [28 <./Figures/trajunpowvac_1.pdf> <./Figures/trajunpowvacgr.pdf>]
+<Figures/trajunpowatmo_2.pdf, id=814, pagebox=cropbox, 421.575pt x 316.18124pt>
 
 File: Figures/trajunpowatmo_2.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_2.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1147. 
-on input line 1147.
+Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1149. 
+on input line 1149.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1147.
+e 1149.
 
-[28 <./Figures/trajunpowatmo_1.pdf> <./Figures/trajunpowatmo_2.pdf>]
+[29 <./Figures/trajunpowatmo_1.pdf> <./Figures/trajunpowatmo_2.pdf>]
 CHAPTER 4.
 pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1617 	\item N
+l.1619 	\item N
                ominal vs. dispersed parameterspdfTeX warning (ext4): destinatio
 n with the same identifier (name{enumi.0}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.1618 	\item A
+l.1620 	\item A
                tmosphere vs. vacuumpdfTeX warning (ext4): destination with the 
 same identifier (name{enumi.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1619 	\item S
+l.1621 	\item S
                tatic initial conditions vs. Adaptive PDI
  Section 4.1.
-[29
+[30
 
 ]
-<Figures/gtcriteriavac.pdf, id=880, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/gtcriteriavac.pdf, id=887, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriavac.pdf Graphic file (type pdf)
 <use Figures/gtcriteriavac.pdf>
-Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1639. on
- input line 1639.
+Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1641. on
+ input line 1641.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1639.
-<Figures/gtcriteriaatmo.pdf, id=886, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1641.
+<Figures/gtcriteriaatmo.pdf, id=893, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriaatmo.pdf Graphic file (type pdf)
 <use Figures/gtcriteriaatmo.pdf>
-Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1649. o
-n input line 1649.
+Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1651. o
+n input line 1651.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1649.
- [30 <./Figures/gtcriteriavac.pdf>]
+e 1651.
+ [31 <./Figures/gtcriteriavac.pdf>]
  Section 4.2.
-<Figures/trajEvsAPDG.pdf, id=917, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajEvsAPDG.pdf, id=924, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/trajEvsAPDG.pdf>
-Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1672. on i
-nput line 1672.
+Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1674. on i
+nput line 1674.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1672.
-[31 <./Figures/gtcriteriaatmo.pdf>]
-<Figures/altEvsAPDG.pdf, id=938, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1674.
+[32 <./Figures/gtcriteriaatmo.pdf>]
+<Figures/altEvsAPDG.pdf, id=945, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/altEvsAPDG.pdf>
-Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1680. on in
-put line 1680.
+Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1682. on in
+put line 1682.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1680.
-<Figures/rngEvsAPDG.pdf, id=939, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1682.
+<Figures/rngEvsAPDG.pdf, id=946, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/rngEvsAPDG.pdf>
-Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1688. on in
-put line 1688.
+Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1690. on in
+put line 1690.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1688.
- [32 <./Figures/trajEvsAPDG.pdf> <./Figures/altEvsAPDG.pdf>]
-<Figures/spdEvsAPDG.pdf, id=1001, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1690.
+ [33 <./Figures/trajEvsAPDG.pdf> <./Figures/altEvsAPDG.pdf>]
+<Figures/spdEvsAPDG.pdf, id=1009, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/spdEvsAPDG.pdf>
-Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1696. on in
-put line 1696.
+Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1698. on in
+put line 1698.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1696.
-<Figures/thrEvsAPDG.pdf, id=1002, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1698.
+<Figures/thrEvsAPDG.pdf, id=1010, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/thrEvsAPDG.pdf>
-Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1704. on in
-put line 1704.
+Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1706. on in
+put line 1706.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1704.
- [33 <./Figures/rngEvsAPDG.pdf> <./Figures/spdEvsAPDG.pdf>]
-<Figures/fatEvsAPDG.pdf, id=1050, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1706.
+ [34 <./Figures/rngEvsAPDG.pdf> <./Figures/spdEvsAPDG.pdf>]
+<Figures/fatEvsAPDG.pdf, id=1057, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/fatEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/fatEvsAPDG.pdf>
-Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1712. on in
-put line 1712.
+Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1714. on in
+put line 1714.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1712.
+e 1714.
 
-[34 <./Figures/thrEvsAPDG.pdf> <./Figures/fatEvsAPDG.pdf>]
-<Figures/hfuelEvsAPDG.pdf, id=1104, pagebox=cropbox, 614.295pt x 794.97pt>
+[35 <./Figures/thrEvsAPDG.pdf> <./Figures/fatEvsAPDG.pdf>]
+<Figures/hfuelEvsAPDG.pdf, id=1111, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hfuelEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/hfuelEvsAPDG.pdf>
-Package pdftex.def Info: Figures/hfuelEvsAPDG.pdf  used on input line 1769. on 
-input line 1769.
+Package pdftex.def Info: Figures/hfuelEvsAPDG.pdf  used on input line 1771. on 
+input line 1771.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 1769.
- [35]
-<Figures/hrngEvsAPDG.pdf, id=1109, pagebox=cropbox, 614.295pt x 794.97pt>
+ 1771.
+ [36]
+<Figures/hrngEvsAPDG.pdf, id=1116, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hrngEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/hrngEvsAPDG.pdf>
-Package pdftex.def Info: Figures/hrngEvsAPDG.pdf  used on input line 1779. on i
-nput line 1779.
+Package pdftex.def Info: Figures/hrngEvsAPDG.pdf  used on input line 1781. on i
+nput line 1781.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 1779.
- [36 <./Figures/hfuelEvsAPDG.pdf>]
-<Figures/hspdEvsAPDG.pdf, id=1118, pagebox=cropbox, 614.295pt x 794.97pt>
+ 1781.
+ [37 <./Figures/hfuelEvsAPDG.pdf>]
+<Figures/hspdEvsAPDG.pdf, id=1125, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hspdEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/hspdEvsAPDG.pdf>
-Package pdftex.def Info: Figures/hspdEvsAPDG.pdf  used on input line 1789. on i
-nput line 1789.
+Package pdftex.def Info: Figures/hspdEvsAPDG.pdf  used on input line 1791. on i
+nput line 1791.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 1789.
- [37 <./Figures/hrngEvsAPDG.pdf>]
+ 1791.
+ [38 <./Figures/hrngEvsAPDG.pdf>]
  Section 4.3.
-[38 <./Figures/hspdEvsAPDG.pdf>]
-<Figures/hfuelnavvsnonav.pdf, id=1143, pagebox=cropbox, 614.295pt x 794.97pt>
+[39 <./Figures/hspdEvsAPDG.pdf>]
+<Figures/hfuelnavvsnonav.pdf, id=1151, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hfuelnavvsnonav.pdf Graphic file (type pdf)
 <use Figures/hfuelnavvsnonav.pdf>
-Package pdftex.def Info: Figures/hfuelnavvsnonav.pdf  used on input line 1860. 
-on input line 1860.
+Package pdftex.def Info: Figures/hfuelnavvsnonav.pdf  used on input line 1862. 
+on input line 1862.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 1860.
- [39]
-<Figures/hrngnavvsnonav.pdf, id=1149, pagebox=cropbox, 614.295pt x 794.97pt>
+ 1862.
+ [40]
+<Figures/hrngnavvsnonav.pdf, id=1156, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hrngnavvsnonav.pdf Graphic file (type pdf)
 <use Figures/hrngnavvsnonav.pdf>
-Package pdftex.def Info: Figures/hrngnavvsnonav.pdf  used on input line 1870. o
-n input line 1870.
+Package pdftex.def Info: Figures/hrngnavvsnonav.pdf  used on input line 1872. o
+n input line 1872.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 1870.
- [40 <./Figures/hfuelnavvsnonav.pdf>]
-<Figures/hspdnavvsnonav.pdf, id=1158, pagebox=cropbox, 614.295pt x 794.97pt>
+ 1872.
+ [41 <./Figures/hfuelnavvsnonav.pdf>]
+<Figures/hspdnavvsnonav.pdf, id=1165, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hspdnavvsnonav.pdf Graphic file (type pdf)
 <use Figures/hspdnavvsnonav.pdf>
-Package pdftex.def Info: Figures/hspdnavvsnonav.pdf  used on input line 1880. o
-n input line 1880.
+Package pdftex.def Info: Figures/hspdnavvsnonav.pdf  used on input line 1882. o
+n input line 1882.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 1880.
+ 1882.
 
-[41 <./Figures/hrngnavvsnonav.pdf>]
+[42 <./Figures/hrngnavvsnonav.pdf>]
  Section 4.4.
-[42 <./Figures/hspdnavvsnonav.pdf>]
-<Figures/trajatmovsvac.pdf, id=1187, pagebox=cropbox, 421.575pt x 316.18124pt>
+[43 <./Figures/hspdnavvsnonav.pdf>]
+<Figures/trajatmovsvac.pdf, id=1194, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajatmovsvac.pdf Graphic file (type pdf)
 <use Figures/trajatmovsvac.pdf>
-Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1896. on
- input line 1896.
+Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1898. on
+ input line 1898.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1896.
-<Figures/altatmovsvac.pdf, id=1188, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1898.
+<Figures/altatmovsvac.pdf, id=1195, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altatmovsvac.pdf Graphic file (type pdf)
 <use Figures/altatmovsvac.pdf>
-Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1904. on 
-input line 1904.
+Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1906. on 
+input line 1906.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1904.
- [43 <./Figures/trajatmovsvac.pdf>]
-<Figures/rngatmovsvac.pdf, id=1231, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1906.
+ [44 <./Figures/trajatmovsvac.pdf>]
+<Figures/rngatmovsvac.pdf, id=1238, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngatmovsvac.pdf Graphic file (type pdf)
 <use Figures/rngatmovsvac.pdf>
-Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1912. on 
-input line 1912.
+Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1914. on 
+input line 1914.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1912.
-<Figures/spdatmovsvac.pdf, id=1232, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1914.
+<Figures/spdatmovsvac.pdf, id=1239, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdatmovsvac.pdf Graphic file (type pdf)
 <use Figures/spdatmovsvac.pdf>
-Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1920. on 
-input line 1920.
+Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1922. on 
+input line 1922.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1920.
- [44 <./Figures/altatmovsvac.pdf> <./Figures/rngatmovsvac.pdf>]
-<Figures/thratmovsvac.pdf, id=1281, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1922.
+ [45 <./Figures/altatmovsvac.pdf> <./Figures/rngatmovsvac.pdf>]
+<Figures/thratmovsvac.pdf, id=1289, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thratmovsvac.pdf Graphic file (type pdf)
 <use Figures/thratmovsvac.pdf>
-Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1928. on 
-input line 1928.
+Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1930. on 
+input line 1930.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1928.
-<Figures/massatmovsvac.pdf, id=1282, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1930.
+<Figures/massatmovsvac.pdf, id=1290, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/massatmovsvac.pdf Graphic file (type pdf)
 <use Figures/massatmovsvac.pdf>
-Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1936. on
- input line 1936.
+Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1938. on
+ input line 1938.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1936.
- [45 <./Figures/spdatmovsvac.pdf> <./Figures/thratmovsvac.pdf>]
+e 1938.
+ [46 <./Figures/spdatmovsvac.pdf> <./Figures/thratmovsvac.pdf>]
  Section 4.5.
-[46 <./Figures/massatmovsvac.pdf>]
-<Figures/trajpowvac.pdf, id=1366, pagebox=cropbox, 421.575pt x 316.18124pt>
+[47 <./Figures/massatmovsvac.pdf>]
+<Figures/trajpowvac.pdf, id=1373, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajpowvac.pdf Graphic file (type pdf)
 <use Figures/trajpowvac.pdf>
-Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1961. on in
-put line 1961.
+Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1963. on in
+put line 1963.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1961.
-<Figures/spdpowvac.pdf, id=1367, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1963.
+<Figures/spdpowvac.pdf, id=1374, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdpowvac.pdf Graphic file (type pdf)
 <use Figures/spdpowvac.pdf>
-Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1969. on inp
-ut line 1969.
+Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1971. on inp
+ut line 1971.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1969.
-<Figures/altpowvac.pdf, id=1368, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1971.
+<Figures/altpowvac.pdf, id=1375, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altpowvac.pdf Graphic file (type pdf)
 <use Figures/altpowvac.pdf>
-Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1977. on inp
-ut line 1977.
+Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1979. on inp
+ut line 1979.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1977.
- [47 <./Figures/trajpowvac.pdf> <./Figures/spdpowvac.pdf>]
-<Figures/rngpowvac.pdf, id=1424, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1979.
+ [48 <./Figures/trajpowvac.pdf> <./Figures/spdpowvac.pdf>]
+<Figures/rngpowvac.pdf, id=1431, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngpowvac.pdf Graphic file (type pdf)
 <use Figures/rngpowvac.pdf>
-Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1985. on inp
-ut line 1985.
+Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1987. on inp
+ut line 1987.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1985.
-<Figures/thrpowvac.pdf, id=1425, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 1987.
+<Figures/thrpowvac.pdf, id=1432, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrpowvac.pdf Graphic file (type pdf)
 <use Figures/thrpowvac.pdf>
-Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1993. on inp
-ut line 1993.
+Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1995. on inp
+ut line 1995.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 1993.
- [48 <./Figures/altpowvac.pdf> <./Figures/rngpowvac.pdf>] [49 <./Figures/thrpow
+e 1995.
+ [49 <./Figures/altpowvac.pdf> <./Figures/rngpowvac.pdf>] [50 <./Figures/thrpow
 vac.pdf>]
-<Figures/bulldisppowvac.pdf, id=1492, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/bulldisppowvac.pdf, id=1499, pagebox=cropbox, 421.575pt x 316.18124pt>
 
 File: Figures/bulldisppowvac.pdf Graphic file (type pdf)
 <use Figures/bulldisppowvac.pdf>
-Package pdftex.def Info: Figures/bulldisppowvac.pdf  used on input line 2064. o
-n input line 2064.
+Package pdftex.def Info: Figures/bulldisppowvac.pdf  used on input line 2066. o
+n input line 2066.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2064.
-<Figures/hfueldisppowvac.pdf, id=1493, pagebox=cropbox, 614.295pt x 794.97pt>
+e 2066.
+<Figures/hfueldisppowvac.pdf, id=1500, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hfueldisppowvac.pdf Graphic file (type pdf)
 <use Figures/hfueldisppowvac.pdf>
-Package pdftex.def Info: Figures/hfueldisppowvac.pdf  used on input line 2072. 
-on input line 2072.
+Package pdftex.def Info: Figures/hfueldisppowvac.pdf  used on input line 2074. 
+on input line 2074.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 2072.
- [50 <./Figures/bulldisppowvac.pdf>]
-<Figures/hspdfaildisppowvac.pdf, id=1514, pagebox=cropbox, 421.575pt x 316.1812
+ 2074.
+ [51 <./Figures/bulldisppowvac.pdf>]
+<Figures/hspdfaildisppowvac.pdf, id=1522, pagebox=cropbox, 421.575pt x 316.1812
 4pt>
 File: Figures/hspdfaildisppowvac.pdf Graphic file (type pdf)
 <use Figures/hspdfaildisppowvac.pdf>
 Package pdftex.def Info: Figures/hspdfaildisppowvac.pdf  used on input line 208
-0. on input line 2080.
+2. on input line 2082.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2080.
- [51 <./Figures/hfueldisppowvac.pdf>]
+e 2082.
+ [52 <./Figures/hfueldisppowvac.pdf>]
  Section 4.6.
-<Figures/trajpowatmo.pdf, id=1544, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/trajpowatmo.pdf, id=1551, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/trajpowatmo.pdf Graphic file (type pdf)
 <use Figures/trajpowatmo.pdf>
-Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 2102. on i
-nput line 2102.
+Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 2104. on i
+nput line 2104.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2102.
-[52 <./Figures/hspdfaildisppowvac.pdf>]
-<Figures/altpowatmo.pdf, id=1552, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 2104.
+[53 <./Figures/hspdfaildisppowvac.pdf>]
+<Figures/altpowatmo.pdf, id=1559, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/altpowatmo.pdf Graphic file (type pdf)
 <use Figures/altpowatmo.pdf>
-Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 2110. on in
-put line 2110.
+Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 2112. on in
+put line 2112.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2110.
-<Figures/rngpowatmo.pdf, id=1553, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 2112.
+<Figures/rngpowatmo.pdf, id=1560, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/rngpowatmo.pdf Graphic file (type pdf)
 <use Figures/rngpowatmo.pdf>
-Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 2118. on in
-put line 2118.
+Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 2120. on in
+put line 2120.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2118.
- [53 <./Figures/trajpowatmo.pdf> <./Figures/altpowatmo.pdf>]
-<Figures/spdpowatmo.pdf, id=1623, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 2120.
+ [54 <./Figures/trajpowatmo.pdf> <./Figures/altpowatmo.pdf>]
+<Figures/spdpowatmo.pdf, id=1630, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdpowatmo.pdf Graphic file (type pdf)
 <use Figures/spdpowatmo.pdf>
-Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 2126. on in
-put line 2126.
+Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 2128. on in
+put line 2128.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2126.
-<Figures/thrpowatmo.pdf, id=1624, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 2128.
+<Figures/thrpowatmo.pdf, id=1631, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrpowatmo.pdf Graphic file (type pdf)
 <use Figures/thrpowatmo.pdf>
-Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 2134. on in
-put line 2134.
+Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 2136. on in
+put line 2136.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2134.
- [54 <./Figures/rngpowatmo.pdf> <./Figures/spdpowatmo.pdf>]
-<Figures/bulldisppowatmo.pdf, id=1673, pagebox=cropbox, 421.575pt x 316.18124pt
+e 2136.
+ [55 <./Figures/rngpowatmo.pdf> <./Figures/spdpowatmo.pdf>]
+<Figures/bulldisppowatmo.pdf, id=1680, pagebox=cropbox, 421.575pt x 316.18124pt
 >
 File: Figures/bulldisppowatmo.pdf Graphic file (type pdf)
 <use Figures/bulldisppowatmo.pdf>
-Package pdftex.def Info: Figures/bulldisppowatmo.pdf  used on input line 2144. 
-on input line 2144.
+Package pdftex.def Info: Figures/bulldisppowatmo.pdf  used on input line 2146. 
+on input line 2146.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2144.
-[55 <./Figures/thrpowatmo.pdf> <./Figures/bulldisppowatmo.pdf>]
-<Figures/hfueldisppowatmo.pdf, id=1722, pagebox=cropbox, 614.295pt x 794.97pt>
+e 2146.
+[56 <./Figures/thrpowatmo.pdf> <./Figures/bulldisppowatmo.pdf>]
+<Figures/hfueldisppowatmo.pdf, id=1729, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hfueldisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hfueldisppowatmo.pdf>
-Package pdftex.def Info: Figures/hfueldisppowatmo.pdf  used on input line 2234.
- on input line 2234.
+Package pdftex.def Info: Figures/hfueldisppowatmo.pdf  used on input line 2236.
+ on input line 2236.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
- 2234.
- [56] [57 <./Figures/hfueldisppowatmo.pdf>]
+ 2236.
+ [57] [58 <./Figures/hfueldisppowatmo.pdf>]
 CHAPTER 5.
  Section 5.1.
-<Figures/convtestatmo.pdf, id=1745, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/convtestatmo.pdf, id=1752, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/convtestatmo.pdf Graphic file (type pdf)
 <use Figures/convtestatmo.pdf>
-Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 2254. on 
-input line 2254.
+Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 2256. on 
+input line 2256.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2254.
-[58
+e 2256.
+[59
 
 ]
-<Figures/convtestvac.pdf, id=1753, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/convtestvac.pdf, id=1760, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/convtestvac.pdf Graphic file (type pdf)
 <use Figures/convtestvac.pdf>
-Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 2275. on i
-nput line 2275.
+Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 2277. on i
+nput line 2277.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2275.
- [59 <./Figures/convtestatmo.pdf>]
+e 2277.
+ [60 <./Figures/convtestatmo.pdf>]
  Section 5.2.
-[60 <./Figures/convtestvac.pdf>]
+[61 <./Figures/convtestvac.pdf>]
  Section 5.3.
-[61] [62]
+[62] [63]
 CHAPTER 6.
  Section 6.1.
  Section 6.2.
-[63
+[64
 
 ]
-<Figures/thrtgofac.pdf, id=1941, pagebox=cropbox, 421.575pt x 316.18124pt>
+<Figures/thrtgofac.pdf, id=1948, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/thrtgofac.pdf Graphic file (type pdf)
 <use Figures/thrtgofac.pdf>
-Package pdftex.def Info: Figures/thrtgofac.pdf  used on input line 2353. on inp
-ut line 2353.
+Package pdftex.def Info: Figures/thrtgofac.pdf  used on input line 2355. on inp
+ut line 2355.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2353.
-<Figures/spdtgofac.pdf, id=1942, pagebox=cropbox, 421.575pt x 316.18124pt>
+e 2355.
+<Figures/spdtgofac.pdf, id=1949, pagebox=cropbox, 421.575pt x 316.18124pt>
 File: Figures/spdtgofac.pdf Graphic file (type pdf)
 <use Figures/spdtgofac.pdf>
-Package pdftex.def Info: Figures/spdtgofac.pdf  used on input line 2361. on inp
-ut line 2361.
+Package pdftex.def Info: Figures/spdtgofac.pdf  used on input line 2363. on inp
+ut line 2363.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
-e 2361.
- [64 <./Figures/thrtgofac.pdf>]) (thesis.bbl [65 <./Figures/spdtgofac.pdf>] [66
+e 2363.
+ [65 <./Figures/thrtgofac.pdf>]) (thesis.bbl [66 <./Figures/spdtgofac.pdf>] [67
 
-] [67]) (append.tex
+] [68]) (append.tex
 APPENDIX A.
-[68
+[69
 
 ]
-<Figures/hrngdisppowvac.pdf, id=2006, pagebox=cropbox, 614.295pt x 794.97pt>
+<Figures/hrngdisppowvac.pdf, id=2014, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hrngdisppowvac.pdf Graphic file (type pdf)
 <use Figures/hrngdisppowvac.pdf>
 Package pdftex.def Info: Figures/hrngdisppowvac.pdf  used on input line 15. on 
 input line 15.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
  15.
-<Figures/hspddisppowvac.pdf, id=2007, pagebox=cropbox, 614.295pt x 794.97pt>
+<Figures/hspddisppowvac.pdf, id=2015, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hspddisppowvac.pdf Graphic file (type pdf)
 <use Figures/hspddisppowvac.pdf>
 Package pdftex.def Info: Figures/hspddisppowvac.pdf  used on input line 25. on 
 input line 25.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
  25.
- [69 <./Figures/hrngdisppowvac.pdf>]
-<Figures/hrngdisppowatmo.pdf, id=2022, pagebox=cropbox, 614.295pt x 794.97pt>
+ [70 <./Figures/hrngdisppowvac.pdf>]
+<Figures/hrngdisppowatmo.pdf, id=2029, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hrngdisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hrngdisppowatmo.pdf>
 Package pdftex.def Info: Figures/hrngdisppowatmo.pdf  used on input line 33. on
  input line 33.
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
  33.
- [70 <./Figures/hspddisppowvac.pdf>]
-<Figures/hspddisppowatmo.pdf, id=2036, pagebox=cropbox, 614.295pt x 794.97pt>
+ [71 <./Figures/hspddisppowvac.pdf>]
+<Figures/hspddisppowatmo.pdf, id=2043, pagebox=cropbox, 614.295pt x 794.97pt>
 File: Figures/hspddisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hspddisppowatmo.pdf>
 Package pdftex.def Info: Figures/hspddisppowatmo.pdf  used on input line 43. on
@@ -1339,8 +1361,8 @@ Package pdftex.def Info: Figures/hspddisppowatmo.pdf  used on input line 43. on
 Package pdftex.def Info: Requested size: 310.76122pt x 402.1663pt on input line
  43.
 
-[71 <./Figures/hrngdisppowatmo.pdf>]
-<Figures/hspdfaildisppowatmo.pdf, id=2050, pagebox=cropbox, 421.575pt x 316.181
+[72 <./Figures/hrngdisppowatmo.pdf>]
+<Figures/hspdfaildisppowatmo.pdf, id=2057, pagebox=cropbox, 421.575pt x 316.181
 24pt>
 File: Figures/hspdfaildisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hspdfaildisppowatmo.pdf>
@@ -1348,10 +1370,10 @@ Package pdftex.def Info: Figures/hspdfaildisppowatmo.pdf  used on input line 53
 . on input line 53.
 Package pdftex.def Info: Requested size: 310.76122pt x 233.07309pt on input lin
 e 53.
- [72 <./Figures/hspddisppowatmo.pdf>])
+ [73 <./Figures/hspddisppowatmo.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
 
-[73 <./Figures/hspdfaildisppowatmo.pdf>]
+[74 <./Figures/hspdfaildisppowatmo.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
  (thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
@@ -1361,13 +1383,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
  ) 
 Here is how much of TeX's memory you used:
- 11696 strings out of 493312
- 175373 string characters out of 3129391
- 330666 words of memory out of 3000000
- 14715 multiletter control sequences out of 15000+200000
- 24866 words of font info for 60 fonts, out of 3000000 for 9000
+ 11922 strings out of 493312
+ 178264 string characters out of 3129391
+ 335207 words of memory out of 3000000
+ 14930 multiletter control sequences out of 15000+200000
+ 26495 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,16n,77p,1621b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,16n,77p,1621b,614s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
 c}<C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
@@ -1387,11 +1409,12 @@ msy10.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy6.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/stroll/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/stroll/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/stroll/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (83 pages, 4531519 bytes).
+s/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/stroll/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/stroll/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (84 pages, 4541633 bytes).
 PDF statistics:
- 2182 PDF objects out of 2487 (max. 8388607)
- 252 named destinations out of 1000 (max. 500000)
+ 2194 PDF objects out of 2487 (max. 8388607)
+ 253 named destinations out of 1000 (max. 500000)
  648 words of extra memory for PDF output out of 10000 (max. 10000000)
 
