@@ -16,15 +16,31 @@
 
 \documentclass{sdsu-thesis}
 
-% use chicago style manual
-%\usepackage[notes,backend=biber]{biblatex-chicago}  
-%\usepackage[style=chicago-notes, autocite=inline,backend=biber]{biblatex}
-\usepackage[style=chicago-notes, natbib=true, backend=biber]{biblatex}
+% Produce SDSU-flavored CMS citations and bibliography using bastardized MLA style
+\usepackage[
+bibstyle=mla,   % vanilla mla
+citestyle=numeric, % force numeric inline citations
+natbib=true,    % not sure why this is required
+backend=biber,  % compiling stuff
+maxnames=7,
+minnames=7,  
+showmedium=false,
+sorting=nty,
+language=american
+]{biblatex}
 \addbibresource{thbib.bib}
+\DefineBibliographyExtras{American}{}
+\AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\MakeUppercase{#1}}}
+\AtBeginBibliography{\renewcommand*{\mkbibnamegiven}[1]{\MakeUppercase{#1}}}
+\DeclareFieldFormat{journaltitle}{#1}
+\defbibheading{bibliography}{%
+	\section*{Bibliography}}
 
-% try natbib
-%\usepackage{natbib}
-%\setcitestyle{numbers}
+
+% include citation numbers in bibliography
+\AtEveryBibitem{[\printfield{labelnumber}]\addspace\addspace}%Numbers in the bib
+
+
 
 
 %
@@ -348,18 +364,10 @@ I would also like to thank Dr. Peter Blomgren both for his instruction and his w
 % 
 \input{body}
 
-% 
-% The bibliography page, must be between main body and appendices
-% 
-% You must have thbib.bib file in the current directory 
-
-% use customized bibliography file
-%\bibliographystyle{acm_mod}
-
-%\bibliographystyle{chicago-biblatex}
-%\bibliography{thbib}
-
-%% for chicago-biblatex
+% insert bibliography and ensure new page
+%\newpage
+%\printbibliography
+\newpage
 \printbibliography
 
 % This includes append.tex

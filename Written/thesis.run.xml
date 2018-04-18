@@ -54,9 +54,13 @@
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>blx-natbib.def</file>
-      <file>chicago-notes.bbx</file>
-      <file>chicago-notes.cbx</file>
+      <file>mla.bbx</file>
+      <file>standard.bbx</file>
+      <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
+      <file>american-mla.lbx</file>
+      <file>american.lbx</file>
+      <file>english-mla.lbx</file>
       <file>english.lbx</file>
     </requires>
   </internal>

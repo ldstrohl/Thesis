@@ -427,7 +427,7 @@ The guidance algorithm is developed within the guidance coordinate frame $\bm{\h
 
 For convenience, these Initial Conditions are presented in Table\:\ref{tab:IC} after a coordinate transformation to a frame centered on the landing citep so that the final position constraint\:(\ref{eqn:constraint_r}) is at the origin. This frame is a right-handed system such that the first coordinate is Mars East, the second is Mars North, and the third is Mars up (the direction opposite the local gravitational acceleration, $-\hat{\bm{g}}$). This E-N-U frame is intuitive because mission conditions such as ground range and altitude are directly represented.  
 
-The vehicle's aerodynamics depend upon its orientation, which can best be described in terms of its body axes as shown in Figure\:\ref{fig:bodyaxes}. This figure shows the classic definitions of body axes for Aerospace vehicles in atmosphere. The aircraft's orientation is described as a rotation of the body frame relative to the guidance frame. As depicted in the figure, the body frame of Equation\:\ref{eqn:bodyframe} consists of the yaw, pitch, and roll body axes. Orientations are thus defined as rotations about the yaw axis, then the pitch axis, then the roll axis in a traditional Euler 3-2-1 sequence.
+The vehicle's aerodynamics depend upon its orientation, which can best be described in terms of its body axes as shown in Figure\:\ref{fig:bodyaxes}\:\cite{BODYAXES}. This figure shows the classic definitions of body axes for Aerospace vehicles in atmosphere. The aircraft's orientation is described as a rotation of the body frame relative to the guidance frame. As depicted in the figure, the body frame of Equation\:\ref{eqn:bodyframe} consists of the yaw, pitch, and roll body axes. Orientations are thus defined as rotations about the yaw axis, then the pitch axis, then the roll axis in a traditional Euler 3-2-1 sequence.
 
 \begin{equation}
 \label{eqn:bodyframe}
@@ -443,7 +443,8 @@ The vehicle's aerodynamics depend upon its orientation, which can best be descri
 	\centering
 	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/bodyaxes.jpg}
-		\caption{Vehicle Body Axes. Source: Hall, N. Aircraft Rotations Body Axes. NASA Glenn Research Center, https://www.grc.nasa.gov/www/k-12/airplane/rotations.html, accessed February 2018 \label{fig:bodyaxes} }
+		\caption{Vehicle Body Axes. Source: HALL, NANCY. “Vehicle Body Axes.” NASA (2018).
+			<https://www.grc.nasa.gov/www/k-12/airplane/rotations.html>. \label{fig:bodyaxes} }
 	\end{minipage}
 \end{figure}
 
@@ -979,10 +980,11 @@ The vehicle model is taken from the CobraMRV design by Cerimele et. al\:\cite{CE
 	\centering
 	\begin{minipage}{4.3 in}
 		\includegraphics[width=\linewidth]{Figures/CobraMRV.png}
-		\caption{CobraMRV Design. Source: CERIMELE, CHRISTOPHER, ROBERTSON, EDWARD, SOSTARIC, RONALD,
-			CAMPBELL, CHARLES, ROBINSON, PHIL, MATZ, DANIEL, JOHNSON, BREANNA,
-			AND ET AL. ``A Rigid Mid Lift-To-Drag Ratio Approach To Human Mars Entry,
-			Descent, And Landing''. \emph{AIAA Paper 2017-1898} (2017) \label{fig:CobraMRV} }
+		\caption{CobraMRV Design. Source: CERIMELE, CHRISTOPHER, EDWARD ROBERTSON, RONALD SOSTARIC,
+			CHARLES CAMPBELL, PHIL ROBINSON, DANIEL MATZ,
+			BREANNA JOHNSON, et al. “A Rigid Mid Lift-to-Drag Ratio Approach to Human
+			Mars Entry, Descent, and Landing.” AIAA Guidance, Navigation, and Control
+			Conference. AIAA Paper 2017-1898 (2017). \label{fig:CobraMRV} }
 	\end{minipage}
 \end{figure}
 
@@ -994,6 +996,7 @@ Cerimele\:et\:al also provide a reference area S of 62.21 $m^2$. Upon ignition, 
 
 During the unpowered phase of approach when PDI is being optimized, the vehicle is held at a constant angle of attack of $55^{\circ}$ to achieve maximum drag. 
 
+\pagebreak
 \subsection{Atmosphere Model}\label{sec:atmosphere}
 The atmosphere model is based on NASA's Mars-GRAM 2010\:\cite{MARSGRAM}, an engineering-level atmospheric model of the Martian atmosphere. The model used for this simulation is an empirically developed equation to represent the Martian atmosphere data within the mission's envelope. Mars-GRAM 2010 is based on NASA Ames Mars General Circulation Model for altitudes under 80 km.
 
@@ -1088,7 +1091,6 @@ The separation between nominal and dispersed rocket parameters is also important
 The Monte-Carlo script maintains repeatable randomness for testing. Each of the individual runs starts with a seed to the simulation environment's random number generation algorithm such that re-running the simulation with the same seed will produce precisely identical results. This pseudo-random quality allows investigation of particular runs and helps the software development cycle immensely. The run seeds are stored directly with the run result data in a table so that if later evaluation shows an oddity that should be examined, the run can quickly be replicated.
 
 
-\pagebreak
 \section{Initial Condition} \label{sec:IC}
 The initial conditions are listed in Table\:\ref{tab:IC}. These are representative of a trajectory of the CobraMRV vehicle on approach after a de-orbit burn and subsequent targeting, from the work of Cerimele\:et\:al\:\cite{CERIMELE}. They are provided in the guidance frame $\hat{\bm{e}}$, which is oriented such that the origin is at the final landing site, $\hat{\bm{e}}_x$ is pointed ``East", $\hat{\bm{e}}_y$ is pointed ``North", and $\hat{\bm{e}}_z$ is pointed ``Up". The simulation itself runs in a Mars-centered Mars-fixed frame. 
 
@@ -1629,6 +1631,7 @@ The third condition is the subject of this study. Whether Adaptive PDI can relia
 
 For dispersed cases the starting conditions are as listed in Table\:\ref{tab:IC} with the addition of Case 7, which represents the active PDI strategy. This Case is flown from the initial condition specified by Case 6, the first point on the trajectory, but with the engine off until one of the PDI criteria defined in Equations\:(\ref{eqn:thrustcriterion}) and\:(\ref{eqn:rangecriterion}) is met.
 
+\pagebreak
 \section{Adaptive PDI} \label{sec:PDIres}
 The first result to investigate is the validity of the PDI criteria in Equations\:(\ref{eqn:thrustcriterion}) and\:(\ref{eqn:rangecriterion}). For these criteria to serve as ignition criteria, they must reliably trigger in time to land the vehicle softly.
 

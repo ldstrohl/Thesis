@@ -1,20 +1,22 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:302> INFO - This is Biber 2.10
 [0] Config.pm:305> INFO - Logfile is 'thesis.blg'
-[28] biber-MSWIN64:313> INFO - === 
-[62] Biber.pm:371> INFO - Reading 'thesis.bcf'
-[176] Biber.pm:857> INFO - Found 18 citekeys in bib section 0
-[193] Biber.pm:3976> INFO - Processing section 0
-[205] Biber.pm:4136> INFO - Looking for bibtex format file 'thbib.bib' for section 0
-[216] bibtex.pm:1500> INFO - LaTeX decoding ...
-[261] bibtex.pm:1316> INFO - Found BibTeX data source 'thbib.bib'
-[271] Utils.pm:193> WARN - month field 'August' in entry 'SOSTARIC' is not an integer - this will probably not sort properly.
-[276] Utils.pm:193> WARN - month field 'August' in entry 'PLOEN' is not an integer - this will probably not sort properly.
-[298] Utils.pm:193> WARN - month field 'August' in entry 'ROSS' is not an integer - this will probably not sort properly.
-[310] Utils.pm:193> WARN - month field 'Dec' in entry 'LU' is not an integer - this will probably not sort properly.
-[357] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[357] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[357] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[357] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[377] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[384] bbl.pm:720> INFO - Output to thesis.bbl
-[388] Biber.pm:110> INFO - WARNINGS: 4
+[37] biber-MSWIN32:313> INFO - === 
+[77] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[193] Biber.pm:857> INFO - Found 19 citekeys in bib section 0
+[215] Biber.pm:3976> INFO - Processing section 0
+[234] Biber.pm:4136> INFO - Looking for bibtex format file 'thbib.bib' for section 0
+[236] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
+[239] bibtex.pm:1490> INFO - LaTeX decoding ...
+[274] bibtex.pm:1306> INFO - Found BibTeX data source 'thbib.bib'
+[284] Utils.pm:193> WARN - month field 'August' in entry 'SOSTARIC' is not an integer - this will probably not sort properly.
+[290] Utils.pm:193> WARN - month field 'August' in entry 'PLOEN' is not an integer - this will probably not sort properly.
+[314] Utils.pm:193> WARN - month field 'August' in entry 'ROSS' is not an integer - this will probably not sort properly.
+[331] Utils.pm:193> WARN - month field 'Dec' in entry 'LU' is not an integer - this will probably not sort properly.
+[386] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[386] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[386] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[386] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[413] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'ascii'
+[418] Utils.pm:193> WARN - The entry 'FERZIGER' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[424] bbl.pm:720> INFO - Output to thesis.bbl
+[429] Biber.pm:110> INFO - WARNINGS: 5

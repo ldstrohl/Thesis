@@ -56,24 +56,25 @@
            familyi={J\bibinitperiod},
            given={Breanna},
            giveni={B\bibinitperiod}}}%
-        {{hash=c3b2ca4e1cd26593d202b777d068da34}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
+        {{hash=c42eb1bf94f0a17a88ffa763dbe5f363}{%
+           family={People},
+           familyi={P\bibinitperiod},
+           given={Other},
+           giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{5c64c0e07ee44a88bcd903e23aa93174}
-      \strng{fullhash}{b967750f8f2cdb975bdd47f4825de745}
-      \strng{bibnamehash}{5c64c0e07ee44a88bcd903e23aa93174}
-      \strng{authorbibnamehash}{5c64c0e07ee44a88bcd903e23aa93174}
-      \strng{authornamehash}{5c64c0e07ee44a88bcd903e23aa93174}
-      \strng{authorfullhash}{b967750f8f2cdb975bdd47f4825de745}
+      \strng{namehash}{262cb0d56dc4768cb2f124888c9e1f4c}
+      \strng{fullhash}{7eaef6118238d7a3037ac9195b3512af}
+      \strng{bibnamehash}{262cb0d56dc4768cb2f124888c9e1f4c}
+      \strng{authorbibnamehash}{262cb0d56dc4768cb2f124888c9e1f4c}
+      \strng{authornamehash}{262cb0d56dc4768cb2f124888c9e1f4c}
+      \strng{authorfullhash}{7eaef6118238d7a3037ac9195b3512af}
       \field{sortinit}{C}
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{AIAA Paper}
       \field{title}{A Rigid Mid Lift-to-Drag Ratio Approach to Human Mars Entry, Descent, and Landing}
+      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference}
       \field{volume}{2017-1898}
       \field{year}{2017}
     \endentry
@@ -97,6 +98,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{AIAA Paper}
       \field{title}{A General, Explicit, Optimizing Guidance Law for Rocket-Propelled Spaceflight}
+      \field{titleaddon}{AIAA/ION Astrodynamics Guidance and Control Conference}
       \field{volume}{64-638}
       \field{year}{1964}
     \endentry
@@ -110,9 +112,6 @@
       }
       \list{institution}{1}{%
         {The University of Texas at Austin}%
-      }
-      \list{location}{1}{%
-        {Austin, TX}%
       }
       \strng{namehash}{a62743d40676b9c50c013d0f1410816a}
       \strng{fullhash}{a62743d40676b9c50c013d0f1410816a}
@@ -183,6 +182,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{AIAA Paper}
       \field{title}{An Optimal Guidance Law for Planetary Landing}
+      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference}
       \field{volume}{97-3709}
       \field{year}{1997}
     \endentry
@@ -194,7 +194,7 @@
            given={Joel\bibnamedelima H.},
            giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
         {{hash=7b57139d1e85c76caf4a3f43473d3dec}{%
-           family={Perić},
+           family={Peri\'{c}},
            familyi={P\bibinitperiod},
            given={Milovan},
            giveni={M\bibinitperiod}}}%
@@ -217,6 +217,62 @@
       \field{labeltitlesource}{title}
       \field{title}{Computational Methods for Fluid Dynamics}
       \field{year}{2002}
+    \endentry
+    \entry{BODYAXES}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ce2d4e4b4d89664bcb3a2377d1afac27}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Nancy},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce2d4e4b4d89664bcb3a2377d1afac27}
+      \strng{fullhash}{ce2d4e4b4d89664bcb3a2377d1afac27}
+      \strng{bibnamehash}{ce2d4e4b4d89664bcb3a2377d1afac27}
+      \strng{authorbibnamehash}{ce2d4e4b4d89664bcb3a2377d1afac27}
+      \strng{authornamehash}{ce2d4e4b4d89664bcb3a2377d1afac27}
+      \strng{authorfullhash}{ce2d4e4b4d89664bcb3a2377d1afac27}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NASA}
+      \field{title}{Vehicle Body Axes}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.grc.nasa.gov/www/k-12/airplane/rotations.html
+      \endverb
+      \verb{url}
+      \verb https://www.grc.nasa.gov/www/k-12/airplane/rotations.html
+      \endverb
+    \endentry
+    \entry{MARSGRAM}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b11ba5c2e9017f0d195998eb7abc9231}{%
+           family={Justh},
+           familyi={J\bibinitperiod},
+           given={Hilary\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{fullhash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{bibnamehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{authorbibnamehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{authornamehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{authorfullhash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NASA}
+      \field{title}{Mars Global Reference Atmospheric Model}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://see.msfc.nasa.gov/model-Marsgram
+      \endverb
+      \verb{url}
+      \verb https://see.msfc.nasa.gov/model-Marsgram
+      \endverb
     \endentry
     \entry{KLUMPP}{article}{}
       \name{author}{1}{}{%
@@ -292,22 +348,12 @@
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0731-5090}
       \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
       \field{month}{12}
       \field{title}{Propellant-Optimal Powered Descent Guidance}
       \field{year}{2017}
       \field{pages}{1\bibrangedash 14}
       \range{pages}{14}
-      \verb{doi}
-      \verb 10.2514/1.G003243
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.2514/1.G003243
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.2514/1.G003243
-      \endverb
     \endentry
     \entry{MCINNES}{article}{}
       \name{author}{1}{}{%
@@ -420,27 +466,6 @@
       \field{pages}{955\bibrangedash 964}
       \range{pages}{10}
     \endentry
-    \entry{MARSGRAM}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b11ba5c2e9017f0d195998eb7abc9231}{%
-           family={Justh},
-           familyi={J\bibinitperiod},
-           given={Hilary\bibnamedelima L.},
-           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{b11ba5c2e9017f0d195998eb7abc9231}
-      \strng{fullhash}{b11ba5c2e9017f0d195998eb7abc9231}
-      \strng{bibnamehash}{b11ba5c2e9017f0d195998eb7abc9231}
-      \strng{authorbibnamehash}{b11ba5c2e9017f0d195998eb7abc9231}
-      \strng{authornamehash}{b11ba5c2e9017f0d195998eb7abc9231}
-      \strng{authorfullhash}{b11ba5c2e9017f0d195998eb7abc9231}
-      \field{sortinit}{N}
-      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February 2018}
-      \field{title}{Mars Global Reference Atmospheric Model}
-    \endentry
     \entry{PLOEN}{article}{}
       \name{author}{3}{}{%
         {{hash=c11bf0373394246367e2e53d594853d2}{%
@@ -472,6 +497,7 @@
       \field{journaltitle}{AIAA}
       \field{month}{8}
       \field{title}{A Comparison of Powered Descent Guidance Laws for Mars Pinpoint Landing}
+      \field{titleaddon}{AIAA/AAS Astrodynamics Specialist Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences}
       \field{volume}{2006-6676}
       \field{year}{2006}
     \endentry
@@ -500,6 +526,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{AIAA Paper}
       \field{title}{Analytical Dimensional Reduction of a Fuel Optimal Powered Descent Subproblem}
+      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference}
       \field{volume}{2010-8026}
       \field{year}{2010}
     \endentry
@@ -524,6 +551,7 @@
       \field{journaltitle}{AIAA}
       \field{month}{8}
       \field{title}{How to Find Minimum-Fuel Controllers}
+      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences}
       \field{volume}{2004-5346}
       \field{year}{2004}
     \endentry
@@ -553,6 +581,7 @@
       \field{journaltitle}{AIAA}
       \field{month}{8}
       \field{title}{Powered Descent Guidance Methods for the Moon and Mars}
+      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference and Exhibit}
       \field{volume}{2005-6287}
       \field{year}{2005}
     \endentry

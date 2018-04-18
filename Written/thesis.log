@@ -1,70 +1,66 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.4.17)  17 APR 2018 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.4.17)  17 APR 2018 23:25
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **./thesis.tex
-(thesis.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-(sdsu-thesis.cls
+(./thesis.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./sdsu-thesis.cls
 Document Class: sdsu-thesis 2012/02/13 v2012-02-13-17:31:23-PST SDSU-Thesis Cla
 ss for Mathematics Department
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count80
-\calc@Bcount=\count81
+(c:/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
 \calc@Adimen=\dimen102
 \calc@Bdimen=\dimen103
 \calc@Askip=\skip41
 \calc@Bskip=\skip42
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count82
+\calc@Ccount=\count81
 \calc@Cskip=\skip43
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+(c:/texlive/2017/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+(c:/texlive/2017/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count83
-\c@chapter=\count84
-\c@section=\count85
-\c@subsection=\count86
-\c@subsubsection=\count87
-\c@paragraph=\count88
-\c@subparagraph=\count89
-\c@figure=\count90
-\c@table=\count91
+\c@part=\count82
+\c@chapter=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
 \abovecaptionskip=\skip44
 \belowcaptionskip=\skip45
 \bibindent=\dimen104
 )
-\c@titlelines=\count92
-\c@subsubsubsection=\count93
+\c@titlelines=\count91
+\c@subsubsubsection=\count92
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
-.sty"
-Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
-cmds.sty"
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
-err.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
-ex.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
-s.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
-sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -72,95 +68,87 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count94
+\etb@tempcnta=\count93
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
-s.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
-eys.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
-ds.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
-"
+(c:/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count95
+\lrq@indent=\count94
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
-"
+(c:/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.s
-ty"
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring
-.tex"
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count96
-\decimalpart=\count97
+\integerpart=\count95
+\decimalpart=\count96
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count98
-\c@listtotal=\count99
-\c@listcount=\count100
-\c@liststart=\count101
-\c@liststop=\count102
-\c@citecount=\count103
-\c@citetotal=\count104
-\c@multicitecount=\count105
-\c@multicitetotal=\count106
-\c@instcount=\count107
-\c@maxnames=\count108
-\c@minnames=\count109
-\c@maxitems=\count110
-\c@minitems=\count111
-\c@citecounter=\count112
-\c@savedcitecounter=\count113
-\c@uniquelist=\count114
-\c@uniquename=\count115
-\c@refsection=\count116
-\c@refsegment=\count117
-\c@maxextratitle=\count118
-\c@maxextratitleyear=\count119
-\c@maxextradate=\count120
-\c@maxextraalpha=\count121
-\c@abbrvpenalty=\count122
-\c@highnamepenalty=\count123
-\c@lownamepenalty=\count124
-\c@maxparens=\count125
-\c@parenlevel=\count126
-\blx@tempcnta=\count127
-\blx@tempcntb=\count128
-\blx@tempcntc=\count129
-\blx@maxsection=\count130
-\blx@maxsegment@0=\count131
-\blx@notetype=\count132
-\blx@parenlevel@text=\count133
-\blx@parenlevel@foot=\count134
-\blx@sectionciteorder@0=\count135
+\c@tabx@nest=\count97
+\c@listtotal=\count98
+\c@listcount=\count99
+\c@liststart=\count100
+\c@liststop=\count101
+\c@citecount=\count102
+\c@citetotal=\count103
+\c@multicitecount=\count104
+\c@multicitetotal=\count105
+\c@instcount=\count106
+\c@maxnames=\count107
+\c@minnames=\count108
+\c@maxitems=\count109
+\c@minitems=\count110
+\c@citecounter=\count111
+\c@savedcitecounter=\count112
+\c@uniquelist=\count113
+\c@uniquename=\count114
+\c@refsection=\count115
+\c@refsegment=\count116
+\c@maxextratitle=\count117
+\c@maxextratitleyear=\count118
+\c@maxextradate=\count119
+\c@maxextraalpha=\count120
+\c@abbrvpenalty=\count121
+\c@highnamepenalty=\count122
+\c@lownamepenalty=\count123
+\c@maxparens=\count124
+\c@parenlevel=\count125
+\blx@tempcnta=\count126
+\blx@tempcntb=\count127
+\blx@tempcntc=\count128
+\blx@maxsection=\count129
+\blx@maxsegment@0=\count130
+\blx@notetype=\count131
+\blx@parenlevel@text=\count132
+\blx@parenlevel@foot=\count133
+\blx@sectionciteorder@0=\count134
 \labelnumberwidth=\skip46
 \labelalphawidth=\skip47
 \biblabelsep=\skip48
@@ -171,189 +159,172 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip53
 \blx@bcfin=\read1
 \blx@bcfout=\write4
-\c@mincomprange=\count136
-\c@maxcomprange=\count137
-\c@mincompwidth=\count138
+\c@mincomprange=\count135
+\c@maxcomprange=\count136
+\c@mincompwidth=\count137
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.d
-ef"
-File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'chicago-notes.dbx' not found.
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex citestyle data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex bibstyle data model...
+Package biblatex Info: ... file 'mla.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count139
-\c@savedafterword=\count140
-\c@annotator=\count141
-\c@savedannotator=\count142
-\c@author=\count143
-\c@savedauthor=\count144
-\c@bookauthor=\count145
-\c@savedbookauthor=\count146
-\c@commentator=\count147
-\c@savedcommentator=\count148
-\c@editor=\count149
-\c@savededitor=\count150
-\c@editora=\count151
-\c@savededitora=\count152
-\c@editorb=\count153
-\c@savededitorb=\count154
-\c@editorc=\count155
-\c@savededitorc=\count156
-\c@foreword=\count157
-\c@savedforeword=\count158
-\c@holder=\count159
-\c@savedholder=\count160
-\c@introduction=\count161
-\c@savedintroduction=\count162
-\c@namea=\count163
-\c@savednamea=\count164
-\c@nameb=\count165
-\c@savednameb=\count166
-\c@namec=\count167
-\c@savednamec=\count168
-\c@translator=\count169
-\c@savedtranslator=\count170
-\c@shortauthor=\count171
-\c@savedshortauthor=\count172
-\c@shorteditor=\count173
-\c@savedshorteditor=\count174
-\c@labelname=\count175
-\c@savedlabelname=\count176
-\c@institution=\count177
-\c@savedinstitution=\count178
-\c@lista=\count179
-\c@savedlista=\count180
-\c@listb=\count181
-\c@savedlistb=\count182
-\c@listc=\count183
-\c@savedlistc=\count184
-\c@listd=\count185
-\c@savedlistd=\count186
-\c@liste=\count187
-\c@savedliste=\count188
-\c@listf=\count189
-\c@savedlistf=\count190
-\c@location=\count191
-\c@savedlocation=\count192
-\c@organization=\count193
-\c@savedorganization=\count194
-\c@origlocation=\count195
-\c@savedoriglocation=\count196
-\c@origpublisher=\count197
-\c@savedorigpublisher=\count198
-\c@publisher=\count199
-\c@savedpublisher=\count266
-\c@language=\count267
-\c@savedlanguage=\count268
-\c@origlanguage=\count269
-\c@savedoriglanguage=\count270
-\c@pageref=\count271
-\c@savedpageref=\count272
+\c@afterword=\count138
+\c@savedafterword=\count139
+\c@annotator=\count140
+\c@savedannotator=\count141
+\c@author=\count142
+\c@savedauthor=\count143
+\c@bookauthor=\count144
+\c@savedbookauthor=\count145
+\c@commentator=\count146
+\c@savedcommentator=\count147
+\c@editor=\count148
+\c@savededitor=\count149
+\c@editora=\count150
+\c@savededitora=\count151
+\c@editorb=\count152
+\c@savededitorb=\count153
+\c@editorc=\count154
+\c@savededitorc=\count155
+\c@foreword=\count156
+\c@savedforeword=\count157
+\c@holder=\count158
+\c@savedholder=\count159
+\c@introduction=\count160
+\c@savedintroduction=\count161
+\c@namea=\count162
+\c@savednamea=\count163
+\c@nameb=\count164
+\c@savednameb=\count165
+\c@namec=\count166
+\c@savednamec=\count167
+\c@translator=\count168
+\c@savedtranslator=\count169
+\c@shortauthor=\count170
+\c@savedshortauthor=\count171
+\c@shorteditor=\count172
+\c@savedshorteditor=\count173
+\c@labelname=\count174
+\c@savedlabelname=\count175
+\c@institution=\count176
+\c@savedinstitution=\count177
+\c@lista=\count178
+\c@savedlista=\count179
+\c@listb=\count180
+\c@savedlistb=\count181
+\c@listc=\count182
+\c@savedlistc=\count183
+\c@listd=\count184
+\c@savedlistd=\count185
+\c@liste=\count186
+\c@savedliste=\count187
+\c@listf=\count188
+\c@savedlistf=\count189
+\c@location=\count190
+\c@savedlocation=\count191
+\c@organization=\count192
+\c@savedorganization=\count193
+\c@origlocation=\count194
+\c@savedoriglocation=\count195
+\c@origpublisher=\count196
+\c@savedorigpublisher=\count197
+\c@publisher=\count198
+\c@savedpublisher=\count199
+\c@language=\count266
+\c@savedlanguage=\count267
+\c@origlanguage=\count268
+\c@savedoriglanguage=\count269
+\c@pageref=\count270
+\c@savedpageref=\count271
 \shorthandwidth=\skip54
 \shortjournalwidth=\skip55
 \shortserieswidth=\skip56
 \shorttitlewidth=\skip57
 \shortauthorwidth=\skip58
 \shorteditorwidth=\skip59
-\locallabelnumberwidth=\skip60
-\locallabelalphawidth=\skip61
-\localshorthandwidth=\skip62
-\localshortjournalwidth=\skip63
-\localshortserieswidth=\skip64
-\localshorttitlewidth=\skip65
-\localshortauthorwidth=\skip66
-\localshorteditorwidth=\skip67
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-comp
-at.def"
-File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
-.def"
-File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count273
-\c@textcitetotal=\count274
-\c@textcitemaxnames=\count275
-\c@biburlnumpenalty=\count276
-\c@biburlucpenalty=\count277
-\c@biburllcpenalty=\count278
-\c@smartand=\count279
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count272
+\c@textcitetotal=\count273
+\c@textcitemaxnames=\count274
+\c@biburlnumpenalty=\count275
+\c@biburlucpenalty=\count276
+\c@biburllcpenalty=\count277
+\c@smartand=\count278
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-natb
-ib.def"
-File: blx-natbib.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
 )
-Package biblatex Info: Trying to load bibliography style 'chicago-notes'...
-Package biblatex Info: ... file 'chicago-notes.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'mla'...
+Package biblatex Info: ... file 'mla.bbx' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-chicago\
-bbx\chicago-notes.bbx"
-File: chicago-notes.bbx 2018/01/11 v 3.10 biblatex bibliography style
-\lositemsep=\skip68
-\c@bbx:relatedcount=\count280
-\c@bbx:relatedtotal=\count281
-)
-Package biblatex Info: Trying to load citation style 'chicago-notes'...
-Package biblatex Info: ... file 'chicago-notes.cbx' found.
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex-mla/mla.bbx
+File: mla-this.bbx 2016/11/01 v1.9 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-chicago\
-cbx\chicago-notes.cbx"
-File: chicago-notes.cbx 2018/01/10 v 3.10 biblatex citation style
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count279
+\c@bbx:relatedtotal=\count280
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\smartcites'.
-Package biblatex Info: Redefining '\footfullcite'.
-Package biblatex Info: Redefining '\fullcite'.
-Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Patching 'autolang=other' option.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
-.cfg"
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\epsfig.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
-hics.cfg"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
-ex.def"
+(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen105
@@ -362,17 +333,14 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \epsfxsize=\dimen107
 \epsfysize=\dimen108
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
--hyperref.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
--generic.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -401,28 +369,22 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
-.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.
-sty"
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen109
-\Hy@linkcounter=\count282
-\Hy@pagecounter=\count283
+\Hy@linkcounter=\count281
+\Hy@pagecounter=\count282
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.d
-ef"
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count284
+\Hy@SavedSpaceFactor=\count283
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref
-.cfg"
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
@@ -433,10 +395,10 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count285
+\c@Hy@tempcnt=\count284
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen110
-\Fld@menulength=\count286
+\Fld@menulength=\count285
 \Field@Width=\dimen111
 \Fld@charsize=\dimen112
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -448,27 +410,25 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count287
-\c@Item=\count288
-\c@Hfootnote=\count289
+\Hy@abspage=\count286
+\c@Item=\count287
+\c@Hfootnote=\count288
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.
-def"
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count290
-\c@bookmark@seq@number=\count291
+\Fld@listcount=\count289
+\c@bookmark@seq@number=\count290
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfil
-echeck.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip69
+\Hy@SectionHShift=\skip60
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\bm.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -476,8 +436,7 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup7
@@ -485,44 +444,38 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.
-sty"
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
-"
+(c:/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks16
 \thm@bodyfont=\toks17
 \thm@headfont=\toks18
 \thm@notefont=\toks19
 \thm@headpunct=\toks20
-\thm@preskip=\skip70
-\thm@postskip=\skip71
-\thm@headsep=\skip72
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
 \dth@everypar=\toks21
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlecaps\titleca
-ps.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/titlecaps/titlecaps.sty
 Package: titlecaps 2015/01/30 V1.2 Routines for setting rich-text input into Ti
 tling Caps
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifnextok\ifnextok
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/ifnextok/ifnextok.sty
 Package: ifnextok 2011/06/27 v0.3 test next token (UL)
 )
-\c@lcword@index=\count292
-\c@word@count=\count293
-\c@lc@words=\count294
-\c@dia@count=\count295
-\c@arg@@@index=\count296
+\c@lcword@index=\count291
+\c@word@count=\count292
+\c@lc@words=\count293
+\c@dia@count=\count294
+\c@arg@@@index=\count295
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.
-sty"
+(c:/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen113
@@ -542,69 +495,62 @@ See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
 p {\ssp \raggedright \bfseries #1. #2\par } \vskip \belowcaptionskip .
-\c@ContinuedFloat=\count297
+\c@ContinuedFloat=\count296
 Package caption Info: hyperref package is loaded.
-)
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algori
-thm.sty"
+) (c:/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count298
+\c@float@type=\count297
 \float@exts=\toks22
 \float@box=\box26
 \@float@everytoks=\toks23
 \@floatcapt=\box27
 )
 \@float@every@algorithm=\toks24
-\c@algorithm=\count299
+\c@algorithm=\count298
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algp
-seudocode.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algo
-rithmicx.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count300
-\c@ALG@rem=\count301
-\c@ALG@nested=\count302
-\ALG@tlm=\skip73
-\ALG@thistlm=\skip74
-\c@ALG@Lnr=\count303
-\c@ALG@blocknr=\count304
-\c@ALG@storecount=\count305
-\c@ALG@tmpcounter=\count306
-\ALG@tmplength=\skip75
+\c@ALG@line=\count299
+\c@ALG@rem=\count300
+\c@ALG@nested=\count301
+\ALG@tlm=\skip64
+\ALG@thistlm=\skip65
+\c@ALG@Lnr=\count302
+\c@ALG@blocknr=\count303
+\c@ALG@storecount=\count304
+\c@ALG@tmpcounter=\count305
+\ALG@tmplength=\skip66
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-)
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.s
-ty"
+) (c:/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip76
-\LTright=\skip77
-\LTpre=\skip78
-\LTpost=\skip79
-\LTchunksize=\count307
+\LTleft=\skip67
+\LTright=\skip68
+\LTpre=\skip69
+\LTpost=\skip70
+\LTchunksize=\count306
 \LTcapwidth=\dimen120
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count308
-\LT@rows=\count309
-\c@LT@tables=\count310
-\c@LT@chunks=\count311
+\LT@cols=\count307
+\LT@rows=\count308
+\c@LT@tables=\count309
+\c@LT@chunks=\count310
 \LT@p@ftn=\toks25
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
-.sty"
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
+(c:/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen121
 \lightrulewidth=\dimen122
 \cmidrulewidth=\dimen123
@@ -615,41 +561,38 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen128
 \cmidrulekern=\dimen129
 \defaultaddspace=\dimen130
-\@cmidla=\count312
-\@cmidlb=\count313
+\@cmidla=\count311
+\@cmidlb=\count312
 \@aboverulesep=\dimen131
 \@belowrulesep=\dimen132
-\@thisruleclass=\count314
-\@lastruleclass=\count315
+\@thisruleclass=\count313
+\@lastruleclass=\count314
 \@thisrulewidth=\dimen133
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.st
-y"
-Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
- ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+(c:/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+(c:/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen134
-\ar@mcellbox=\box32
 \extrarowheight=\dimen135
 \NC@list=\toks26
-\extratabsurround=\skip80
-\backup@length=\skip81
-\ar@cellbox=\box33
+\extratabsurround=\skip71
+\backup@length=\skip72
 )
 \TX@col@width=\dimen136
 \TX@old@table=\dimen137
 \TX@old@col=\dimen138
 \TX@target=\dimen139
 \TX@delta=\dimen140
-\TX@cols=\count316
+\TX@cols=\count315
 \TX@ftn=\toks27
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
-.sty"
-Package: geometry 2018/03/24 v5.7 Page Geometry
-\Gm@cnth=\count317
-\Gm@cntv=\count318
-\c@Gm@tempcnt=\count319
+(c:/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count316
+\Gm@cntv=\count317
+\c@Gm@tempcnt=\count318
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -659,102 +602,88 @@ Package: geometry 2018/03/24 v5.7 Page Geometry
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks28
-
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
-.cfg"))
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
-\UL@box=\box34
-\UL@hyphenbox=\box35
-\UL@skip=\skip82
+)
+(c:/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box32
+\UL@hyphenbox=\box33
+\UL@skip=\skip73
 \UL@hook=\toks29
 \UL@height=\dimen149
-\UL@pe=\count320
+\UL@pe=\count319
 \UL@pixel=\dimen150
-\ULC@box=\box36
+\ULC@box=\box34
 Package: ulem 2012/05/18
 \ULdepth=\dimen151
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool.sty
 Package: datatool 2017/11/12 v2.29 (NLCT)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval
-.tex"
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutil
-s.tex"
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count321
+\XKV@depth=\count320
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty
-"
+(c:/texlive/2017/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count322
+\c@su@anzahl=\count321
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool
--base.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2017/11/12 v2.29 (NLCT)
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip83
+\@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
-y"
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks32
 \ex@=\dimen152
 ))
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
-y"
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
 \pmbraise@=\dimen153
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
-y"
+(c:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count323
+\inf@bad=\count322
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count324
-\leftroot@=\count325
+\uproot@=\count323
+\leftroot@=\count324
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count326
-\DOTSCASE@=\count327
+\classnum@=\count325
+\DOTSCASE@=\count326
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box37
-\strutbox@=\box38
+\Mathstrutbox@=\box35
+\strutbox@=\box36
 \big@size=\dimen154
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count328
-\c@MaxMatrixCols=\count329
+\macc@depth=\count327
+\c@MaxMatrixCols=\count328
 \dotsspace@=\muskip11
-\c@parentequation=\count330
-\dspbrk@lvl=\count331
+\c@parentequation=\count329
+\dspbrk@lvl=\count330
 \tag@help=\toks33
-\row@=\count332
-\column@=\count333
-\maxfields@=\count334
+\row@=\count331
+\column@=\count332
+\maxfields@=\count333
 \andhelp@=\toks34
 \eqnshift@=\dimen155
 \alignsep@=\dimen156
@@ -763,83 +692,89 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \totwidth@=\dimen159
 \lineht@=\dimen160
 \@envbody=\toks35
-\multlinegap=\skip84
-\multlinetaggap=\skip85
+\multlinegap=\skip75
+\multlinetaggap=\skip76
 \mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool
--fp.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2017/11/12 v2.29 (NLCT)
- ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
+
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
- `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty
-"
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(c:/texlive/2017/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count335
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty
-"
-Package: fp-basic 1996/05/13
-\FP@xs=\count336
-\FP@xia=\count337
-\FP@xib=\count338
-\FP@xfa=\count339
-\FP@xfb=\count340
-\FP@rega=\count341
-\FP@regb=\count342
-\FP@regs=\count343
-\FP@times=\count344
+\actioncount=\count334
 )
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count335
+\FP@xia=\count336
+\FP@xib=\count337
+\FP@xfa=\count338
+\FP@xfb=\count339
+\FP@rega=\count340
+\FP@regb=\count341
+\FP@regs=\count342
+\FP@times=\count343
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-snap.sty
 Package: fp-snap 1995/04/05
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-exp.sty
 Package: fp-exp 1995/04/03
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty
-"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-pas.sty
 Package: fp-pas 1994/08/29
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.st
-y"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count345
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+\FPseed=\count344
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-upn.sty
 Package: fp-upn 1996/10/21
-) ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+)
+(c:/texlive/2017/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks37
-\@dtl@tmpcount=\count346
-\dtl@tmplength=\skip86
-\dtl@sortresult=\count347
-\@dtl@numgrpsepcount=\count348
-\@dtl@datatype=\count349
-\dtl@codeA=\count350
-\dtl@codeB=\count351
-\@dtl@foreach@level=\count352
+\@dtl@tmpcount=\count345
+\dtl@tmplength=\skip77
+\dtl@sortresult=\count346
+\@dtl@numgrpsepcount=\count347
+\@dtl@datatype=\count348
+\dtl@codeA=\count349
+\dtl@codeB=\count350
+\@dtl@foreach@level=\count351
 )
-\dtlcolumnnum=\count353
-\dtlrownum=\count354
+\dtlcolumnnum=\count352
+\dtlrownum=\count353
 \@dtl@before=\toks38
 \@dtl@after=\toks39
 \@dtl@colhead=\toks40
 \dtlcurrentrow=\toks41
 \dtlbeforerow=\toks42
 \dtlafterrow=\toks43
-\dtlforeachlevel=\count355
-\c@DTLrowi=\count356
-\c@DTLrowii=\count357
-\c@DTLrowiii=\count358
-\c@DTLrow=\count359
-\dtl@rowi=\count360
-\dtl@rowii=\count361
-\dtl@rowiii=\count362
+\dtlforeachlevel=\count354
+\c@DTLrowi=\count355
+\c@DTLrowii=\count356
+\c@DTLrowiii=\count357
+\c@DTLrow=\count358
+\dtl@rowi=\count359
+\dtl@rowii=\count360
+\dtl@rowiii=\count361
 \@dtl@curi=\toks44
 \@dtl@previ=\toks45
 \@dtl@nexti=\toks46
@@ -849,7 +784,7 @@ Package: fp-eval 1995/04/03
 \@dtl@curiii=\toks50
 \@dtl@previii=\toks51
 \@dtl@nextiii=\toks52
-\@dtl@elements=\count363
+\@dtl@elements=\count362
 \@dtl@list=\toks53
 \@dtl@rowa=\toks54
 \@dtl@rowb=\toks55
@@ -857,79 +792,89 @@ Package: fp-eval 1995/04/03
 \@dtl@toksB=\toks57
 \@dtl@write=\write5
 \@dtl@read=\read2
-\dtl@entrycr=\count364
-\dtl@omitlines=\count365
+\dtl@entrycr=\count363
+\dtl@omitlines=\count364
 )
-\c@corollary=\count366
-\c@definition=\count367
-\c@lemma=\count368
-\c@proposition=\count369
-\c@theorem=\count370
+\c@corollary=\count365
+\c@definition=\count366
+\c@lemma=\count367
+\c@proposition=\count368
+\c@theorem=\count369
+Package biblatex Info: Trying to load language 'american' -> 'american-mla'...
+Package biblatex Info: ... file 'american-mla.lbx' found.
+
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex-mla/american-mla.lbx
+File: american-mla.lbx 2013/03/24 v0.2.5 biblatex style localization
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+Package biblatex Info: Trying to load language 'english' -> 'english-mla'...
+Package biblatex Info: ... file 'english-mla.lbx' found.
+
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex-mla/english-mla.lbx
+File: english-mla.lbx 2013/03/24 v0.4.5 biblatex style localization
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\engl
-ish.lbx"
-File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-)
-\@quotelevel=\count371
-\@quotereset=\count372
- (thesis.aux)
+(c:/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+))))
+\@quotelevel=\count370
+\@quotereset=\count371
+
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 233.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 249.
 
-
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ (c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Note: longtable package detected, redefining the caption printing
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
+(biblatex)             Assuming data encoding 'ascii'.
 \openout4 = `thesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
-(thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 233.
-Package biblatex Info: Reference segment=0 on input line 233.
-
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
-kii"
+(./thesis.bbl)
+Package biblatex Info: Reference section=0 on input line 249.
+Package biblatex Info: Reference segment=0 on input line 249.
+ (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count373
+\scratchcounter=\count372
 \scratchdimen=\dimen161
-\scratchbox=\box39
-\nofMPsegments=\count374
-\nofMParguments=\count375
+\scratchbox=\box37
+\nofMPsegments=\count373
+\nofMParguments=\count374
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count376
+\MPscratchCnt=\count375
 \MPscratchDim=\dimen162
-\MPnumerator=\count377
-\makeMPintoPDFobject=\count378
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks59
-)
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
--base.sty"
+) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
-ty"
+(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -938,24 +883,27 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 233.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
-sty"
+(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring OFF on input line 249.
+
+(c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
-lestring.sty"
+(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count379
+\c@section@level=\count378
 )
-LaTeX Info: Redefining \ref on input line 233.
-LaTeX Info: Redefining \pageref on input line 233.
-LaTeX Info: Redefining \nameref on input line 233.
- (thesis.out) (thesis.out)
+LaTeX Info: Redefining \ref on input line 249.
+LaTeX Info: Redefining \pageref on input line 249.
+LaTeX Info: Redefining \nameref on input line 249.
+
+(./thesis.out) (./thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
@@ -963,8 +911,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption
-.sty"
+(c:/texlive/2017/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
@@ -1004,37 +951,37 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 254.
 [1
 
 
-{C:/Users/stroll/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 241.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
  [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 246.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 262.
 
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+(c:/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 246.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 262.
  [3]
 
 Package hyperref Warning: bookmark level for unknown schapter defaults to 0.
 
-(abstract.tex) [4
+(./abstract.tex) [4
 
-] (thesis.toc
+] (./thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
-("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
- ("C:\Users\stroll\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
-"
+
+(c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 
@@ -1042,18 +989,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
- [6] (thesis.lot)
+ [6] (./thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [7
+[7
 
-] (thesis.lof
-Underfull \hbox (badness 4168) in paragraph at lines 3--3
- \OT1/ptm/m/n/12 NASA Glenn Re-search Cen-ter, https://www.grc.nasa.gov/www/k- 
+] (./thesis.lof
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
 
+Underfull \hbox (badness 2698) in paragraph at lines 3--3
+ [][] [][]\OT1/ptm/m/n/12 Vehicle Body Axes. Source: HALL, NANCY. Ve-hi-cle Bod
+y 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ \OT1/ptm/m/n/12 Axes. NASA (2018). <https://www.grc.nasa.gov/www/k- 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
 [8
 
 ])
@@ -1062,7 +1027,7 @@ Underfull \hbox (badness 4168) in paragraph at lines 3--3
 
  [9] [10
 
-] (body.tex
+] (./body.tex
 
 Package hyperref Warning: bookmark level for unknown chaphd defaults to 0.
 
@@ -1078,593 +1043,540 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
  Section 1.2.
 [2]
  Section 1.3.
-[3]
  Section 1.4.
-[4]
+[3]
  Section 1.5.
+[4]pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.310 	\item T
+              he vehicle's engine is not vectored such that the thrust is in...
+pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311 	\item T
+              he vehicle's control system is perfect with zero lagpdfTeX warnin
+g (ext4): destination with the same identifier (name{enumi.0}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.312 	\item T
+              he nozzle exit velocity $v_{ex}$ is a known constantpdfTeX warnin
+g (ext4): destination with the same identifier (name{enumi.0}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.313 	\item T
+              he thrust magnitude's upper bound is knownpdfTeX warning (ext4): 
+destination with the same identifier (name{enumi.0}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.314 	\item T
+              he vehicle's state can be reliably measured at all times, incl...
+pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.315 	\item T
+              he vehicle's thrust is throttleable between minimum and maximu...
+pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.316 	\item U
+              pon ignition, the vehicle can obtain commanded thrust within i...
 [5pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      pdfTeX warning (ext4): destination with the same identifier (name{enumi.0
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.320 
-      ] [6]
+l.324 \chapter
+              {METHODOLOGY} \label{chap:methodology}]
 CHAPTER 2.
  Section 2.1.
-[7
+[6
 
 ]
  Section 2.2.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CHERRY
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.426 ...d in several ways. Cherry\:\cite{CHERRY} 
-                                                  used a gravitational body-...
-[8]
-<Figures/bodyaxes.jpg, id=510, 533.74406pt x 401.24907pt>
+[7]
+<Figures/bodyaxes.jpg, id=524, 533.74406pt x 401.24907pt>
 File: Figures/bodyaxes.jpg Graphic file (type jpg)
 <use Figures/bodyaxes.jpg>
 Package pdftex.def Info: Figures/bodyaxes.jpg  used on input line 445.
 (pdftex.def)             Requested size: 310.76122pt x 233.62463pt.
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ú in font ptmb7t!
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ù in font ptmb7t!
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ú in font ptmb7t!
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ù in font ptmb7t!
 
-Underfull \hbox (badness 2189) in paragraph at lines 446--446
-\OT1/ptm/b/n/12 Ro-ta-tions Body Axes. NASA Glenn Re-search Cen-ter,
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
+[]\OT1/ptm/b/n/12 Figure 2.1. |Ve-hi-cle Body Axes. Source:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
-\OT1/ptm/b/n/12 https://www.grc.nasa.gov/www/k-12/airplane/rotations.html,
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
+\OT1/ptm/b/n/12 HALL, NANCY. Ve-hi-cle Body Axes. NASA
  []
 
-[9]
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
+\OT1/ptm/b/n/12 (2018). <https://www.grc.nasa.gov/www/k-
+ []
+
+[8]
  Section 2.3.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CHERRY
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.451 ...first presented in Cherry\:\cite{CHERRY}.
-                                                   APDG is a version of E-Gu...
-[10 <./Figures/bodyaxes.jpg>]
+[9 <./Figures/bodyaxes.jpg>]
  Subsection 2.3.1.
-[11]
+[10]
  Subsection 2.3.2.
  Subsection 2.3.3.
  Subsubsection 2.3.3.1.
-[12]
+[11]
  Subsubsection 2.3.3.2.
-[13]
+[12]
  Subsection 2.3.4.
-[14]
+[13]
  Subsection 2.3.5.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 815.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CITRON
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.829 ...on, Dunin, and Meissinger\:\cite{CITRON}.
-                                                   Here, $\gamma$ is flight ...
-[15] [16]
+put line 816.
+[14] [15]
  Section 2.4.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:LEITMA
-NN}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.849 ...anding. From Leitmann's\:\cite{LEITMANN} 
-                                                  and Meditch's\:\cite{MEDIT...
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:MEDITC
-H}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.849 ...{LEITMANN} and Meditch's\:\cite{MEDITCH} 
-                                                  work in one and two dimens...
-[17] [18]
+[16] [17]
 CHAPTER 3.
-<Figures/simarch.jpg, id=623, 704.6325pt x 572.1375pt>
+<Figures/simarch.jpg, id=643, 704.6325pt x 572.1375pt>
 File: Figures/simarch.jpg Graphic file (type jpg)
 <use Figures/simarch.jpg>
-Package pdftex.def Info: Figures/simarch.jpg  used on input line 896.
+Package pdftex.def Info: Figures/simarch.jpg  used on input line 897.
 (pdftex.def)             Requested size: 310.76122pt x 252.32619pt.
-[19
+[18
 
  <./Figures/simarch.jpg>]
  Section 3.1.
-[20]
+[19]
  Section 3.2.
-[21]
+[20]
  Section 3.3.
  Section 3.4.
-[22]
+[21]
  Section 3.5.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CERIME
-LE}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.973 ...loped by Cerimele et. al\:\cite{CERIMELE}
-                                                  
  Subsection 3.5.1.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CERIME
-LE}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.976 ...sign by Cerimele et. al\:\cite{CERIMELE}.
-                                                   The CobraMRV is a ``rigid...
-<Figures/CobraMRV.png, id=672, 816.1692pt x 542.5068pt>
+<Figures/CobraMRV.png, id=697, 816.1692pt x 542.5068pt>
 File: Figures/CobraMRV.png Graphic file (type png)
 <use Figures/CobraMRV.png>
-Package pdftex.def Info: Figures/CobraMRV.png  used on input line 981.
+Package pdftex.def Info: Figures/CobraMRV.png  used on input line 982.
 (pdftex.def)             Requested size: 310.76122pt x 206.56035pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 985.
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ú in font ptmb7t!
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ù in font ptmb7t!
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ú in font ptmb7t!
+Missing character: There is no ‚ in font ptmb7t!
+Missing character: There is no Ä in font ptmb7t!
+Missing character: There is no ù in font ptmb7t!
 
-Underfull \hbox (badness 1661) in paragraph at lines 985--985
-\OT1/ptm/b/n/12 CHRISTO-PHER, ROBERT-SON, ED-WARD, SOSTARIC,
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
+\OT1/ptm/b/n/12 CHRISTO-PHER, ED-WARD ROBERT-SON, RONALD
  []
 
-[23]pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CE
-RIMELE}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.989 ... paper, Cerimele et. al\:\cite{CERIMELE} 
-                                                  provide maximum thrust $T_...
+[22] [23 <./Figures/CobraMRV.png>]
  Subsection 3.5.2.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:MARSGR
-AM}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.998 ...n NASA's Mars-GRAM 2010\:\cite{MARSGRAM},
-                                                   an engineering-level atmo...
-[24 <./Figures/CobraMRV.png>]
  Subsection 3.5.3.
-[25]
+[24]
  Section 3.6.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:MOESSE
-R}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1045 ...nce with Moesser's 2010\:\cite{MOESSER} 
-                                                  work as described in Secti...
 
-Underfull \hbox (badness 10000) in alignment at lines 1068--1068
+Underfull \hbox (badness 10000) in alignment at lines 1071--1071
 [][][][] 
  []
 
-[26] [27]
+[25]
  Section 3.7.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:CERIME
-LE}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1093 ...rk of Cerimele\:et\:al\:\cite{CERIMELE}.
-                                                   They are provided in the ...
-<Figures/trajunpowvac_1.pdf, id=722, 421.575pt x 316.18124pt>
+[26]
+<Figures/trajunpowvac_1.pdf, id=750, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvac_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowvac_1.pdf>
-Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 1123.
+Package pdftex.def Info: Figures/trajunpowvac_1.pdf  used on input line 1125.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-[28]
-<Figures/trajunpowvacgr.pdf, id=727, 421.575pt x 316.18124pt>
+<Figures/trajunpowvacgr.pdf, id=751, 421.575pt x 316.18124pt>
 File: Figures/trajunpowvacgr.pdf Graphic file (type pdf)
 <use Figures/trajunpowvacgr.pdf>
-Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 1131.
+Package pdftex.def Info: Figures/trajunpowvacgr.pdf  used on input line 1133.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/trajunpowatmo_1.pdf, id=733, 421.575pt x 316.18124pt>
+ [27 <./Figures/trajunpowvac_1.pdf>]
+<Figures/trajunpowatmo_1.pdf, id=796, 421.575pt x 316.18124pt>
 File: Figures/trajunpowatmo_1.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_1.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1141.
+Package pdftex.def Info: Figures/trajunpowatmo_1.pdf  used on input line 1143.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [29 <./Figures/trajunpowvac_1.pdf> <./Figures/trajunpowvacgr.pdf>]
-<Figures/trajunpowatmo_2.pdf, id=789, 421.575pt x 316.18124pt>
+ [28 <./Figures/trajunpowvacgr.pdf>]
+<Figures/trajunpowatmo_2.pdf, id=819, 421.575pt x 316.18124pt>
 File: Figures/trajunpowatmo_2.pdf Graphic file (type pdf)
 <use Figures/trajunpowatmo_2.pdf>
-Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1149.
+Package pdftex.def Info: Figures/trajunpowatmo_2.pdf  used on input line 1151.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
 
-[30 <./Figures/trajunpowatmo_1.pdf> <./Figures/trajunpowatmo_2.pdf>]
+[29 <./Figures/trajunpowatmo_1.pdf> <./Figures/trajunpowatmo_2.pdf>]
 CHAPTER 4.
 pdfTeX warning (ext4): destination with the same identifier (name{enumi.0}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1619 	\item N
+l.1621 	\item N
                ominal vs. dispersed parameterspdfTeX warning (ext4): destinatio
 n with the same identifier (name{enumi.0}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.1620 	\item A
+l.1622 	\item A
                tmosphere vs. vacuumpdfTeX warning (ext4): destination with the 
 same identifier (name{enumi.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1621 	\item S
-               tatic initial conditions vs. Adaptive PDI
- Section 4.1.
-[31
+l.1623 	\item S
+               tatic initial conditions vs. Adaptive PDI [30
 
 ]
-<Figures/gtcriteriavac.pdf, id=862, 421.575pt x 316.18124pt>
+ Section 4.1.
+<Figures/gtcriteriavac.pdf, id=892, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriavac.pdf Graphic file (type pdf)
 <use Figures/gtcriteriavac.pdf>
-Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1641.
+Package pdftex.def Info: Figures/gtcriteriavac.pdf  used on input line 1644.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/gtcriteriaatmo.pdf, id=868, 421.575pt x 316.18124pt>
+<Figures/gtcriteriaatmo.pdf, id=898, 421.575pt x 316.18124pt>
 File: Figures/gtcriteriaatmo.pdf Graphic file (type pdf)
 <use Figures/gtcriteriaatmo.pdf>
-Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1651.
+Package pdftex.def Info: Figures/gtcriteriaatmo.pdf  used on input line 1654.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [32 <./Figures/gtcriteriavac.pdf>]
+[31 <./Figures/gtcriteriavac.pdf>]
  Section 4.2.
-<Figures/trajEvsAPDG.pdf, id=899, 421.575pt x 316.18124pt>
+<Figures/trajEvsAPDG.pdf, id=930, 421.575pt x 316.18124pt>
 File: Figures/trajEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/trajEvsAPDG.pdf>
-Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1674.
+Package pdftex.def Info: Figures/trajEvsAPDG.pdf  used on input line 1677.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-[33 <./Figures/gtcriteriaatmo.pdf>]
-<Figures/altEvsAPDG.pdf, id=921, 421.575pt x 316.18124pt>
+[32 <./Figures/gtcriteriaatmo.pdf>]
+<Figures/altEvsAPDG.pdf, id=951, 421.575pt x 316.18124pt>
 File: Figures/altEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/altEvsAPDG.pdf>
-Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1682.
+Package pdftex.def Info: Figures/altEvsAPDG.pdf  used on input line 1685.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/rngEvsAPDG.pdf, id=922, 421.575pt x 316.18124pt>
+<Figures/rngEvsAPDG.pdf, id=952, 421.575pt x 316.18124pt>
 File: Figures/rngEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/rngEvsAPDG.pdf>
-Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1690.
+Package pdftex.def Info: Figures/rngEvsAPDG.pdf  used on input line 1693.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [34 <./Figures/trajEvsAPDG.pdf> <./Figures/altEvsAPDG.pdf>]
-<Figures/spdEvsAPDG.pdf, id=984, 421.575pt x 316.18124pt>
+ [33 <./Figures/trajEvsAPDG.pdf> <./Figures/altEvsAPDG.pdf>]
+<Figures/spdEvsAPDG.pdf, id=1016, 421.575pt x 316.18124pt>
 File: Figures/spdEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/spdEvsAPDG.pdf>
-Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1698.
+Package pdftex.def Info: Figures/spdEvsAPDG.pdf  used on input line 1701.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/thrEvsAPDG.pdf, id=985, 421.575pt x 316.18124pt>
+<Figures/thrEvsAPDG.pdf, id=1017, 421.575pt x 316.18124pt>
 File: Figures/thrEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/thrEvsAPDG.pdf>
-Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1706.
+Package pdftex.def Info: Figures/thrEvsAPDG.pdf  used on input line 1709.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [35 <./Figures/rngEvsAPDG.pdf> <./Figures/spdEvsAPDG.pdf>]
-<Figures/fatEvsAPDG.pdf, id=1032, 421.575pt x 316.18124pt>
+ [34 <./Figures/rngEvsAPDG.pdf> <./Figures/spdEvsAPDG.pdf>]
+<Figures/fatEvsAPDG.pdf, id=1064, 421.575pt x 316.18124pt>
 File: Figures/fatEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/fatEvsAPDG.pdf>
-Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1714.
+Package pdftex.def Info: Figures/fatEvsAPDG.pdf  used on input line 1717.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
 
-[36 <./Figures/thrEvsAPDG.pdf> <./Figures/fatEvsAPDG.pdf>]
-<Figures/hfuelEvsAPDG.pdf, id=1086, 614.295pt x 794.97pt>
+[35 <./Figures/thrEvsAPDG.pdf> <./Figures/fatEvsAPDG.pdf>]
+<Figures/hfuelEvsAPDG.pdf, id=1118, 614.295pt x 794.97pt>
 File: Figures/hfuelEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/hfuelEvsAPDG.pdf>
-Package pdftex.def Info: Figures/hfuelEvsAPDG.pdf  used on input line 1771.
+Package pdftex.def Info: Figures/hfuelEvsAPDG.pdf  used on input line 1774.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [37]
-<Figures/hrngEvsAPDG.pdf, id=1091, 614.295pt x 794.97pt>
+ [36]
+<Figures/hrngEvsAPDG.pdf, id=1124, 614.295pt x 794.97pt>
 File: Figures/hrngEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/hrngEvsAPDG.pdf>
-Package pdftex.def Info: Figures/hrngEvsAPDG.pdf  used on input line 1781.
+Package pdftex.def Info: Figures/hrngEvsAPDG.pdf  used on input line 1784.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [38 <./Figures/hfuelEvsAPDG.pdf>]
-<Figures/hspdEvsAPDG.pdf, id=1100, 614.295pt x 794.97pt>
+ [37 <./Figures/hfuelEvsAPDG.pdf>]
+<Figures/hspdEvsAPDG.pdf, id=1133, 614.295pt x 794.97pt>
 File: Figures/hspdEvsAPDG.pdf Graphic file (type pdf)
 <use Figures/hspdEvsAPDG.pdf>
-Package pdftex.def Info: Figures/hspdEvsAPDG.pdf  used on input line 1791.
+Package pdftex.def Info: Figures/hspdEvsAPDG.pdf  used on input line 1794.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [39 <./Figures/hrngEvsAPDG.pdf>]
+ [38 <./Figures/hrngEvsAPDG.pdf>]
  Section 4.3.
-[40 <./Figures/hspdEvsAPDG.pdf>]
-<Figures/hfuelnavvsnonav.pdf, id=1126, 614.295pt x 794.97pt>
+[39 <./Figures/hspdEvsAPDG.pdf>]
+<Figures/hfuelnavvsnonav.pdf, id=1159, 614.295pt x 794.97pt>
 File: Figures/hfuelnavvsnonav.pdf Graphic file (type pdf)
 <use Figures/hfuelnavvsnonav.pdf>
-Package pdftex.def Info: Figures/hfuelnavvsnonav.pdf  used on input line 1862.
+Package pdftex.def Info: Figures/hfuelnavvsnonav.pdf  used on input line 1865.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [41]
-<Figures/hrngnavvsnonav.pdf, id=1131, 614.295pt x 794.97pt>
+ [40]
+<Figures/hrngnavvsnonav.pdf, id=1164, 614.295pt x 794.97pt>
 File: Figures/hrngnavvsnonav.pdf Graphic file (type pdf)
 <use Figures/hrngnavvsnonav.pdf>
-Package pdftex.def Info: Figures/hrngnavvsnonav.pdf  used on input line 1872.
+Package pdftex.def Info: Figures/hrngnavvsnonav.pdf  used on input line 1875.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [42 <./Figures/hfuelnavvsnonav.pdf>]
-<Figures/hspdnavvsnonav.pdf, id=1140, 614.295pt x 794.97pt>
+ [41 <./Figures/hfuelnavvsnonav.pdf>]
+<Figures/hspdnavvsnonav.pdf, id=1173, 614.295pt x 794.97pt>
 File: Figures/hspdnavvsnonav.pdf Graphic file (type pdf)
 <use Figures/hspdnavvsnonav.pdf>
-Package pdftex.def Info: Figures/hspdnavvsnonav.pdf  used on input line 1882.
+Package pdftex.def Info: Figures/hspdnavvsnonav.pdf  used on input line 1885.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
 
-[43 <./Figures/hrngnavvsnonav.pdf>]
+[42 <./Figures/hrngnavvsnonav.pdf>]
  Section 4.4.
-[44 <./Figures/hspdnavvsnonav.pdf>]
-<Figures/trajatmovsvac.pdf, id=1169, 421.575pt x 316.18124pt>
+[43 <./Figures/hspdnavvsnonav.pdf>]
+<Figures/trajatmovsvac.pdf, id=1202, 421.575pt x 316.18124pt>
 File: Figures/trajatmovsvac.pdf Graphic file (type pdf)
 <use Figures/trajatmovsvac.pdf>
-Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1898.
+Package pdftex.def Info: Figures/trajatmovsvac.pdf  used on input line 1901.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/altatmovsvac.pdf, id=1170, 421.575pt x 316.18124pt>
+<Figures/altatmovsvac.pdf, id=1203, 421.575pt x 316.18124pt>
 File: Figures/altatmovsvac.pdf Graphic file (type pdf)
 <use Figures/altatmovsvac.pdf>
-Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1906.
+Package pdftex.def Info: Figures/altatmovsvac.pdf  used on input line 1909.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [45 <./Figures/trajatmovsvac.pdf>]
-<Figures/rngatmovsvac.pdf, id=1214, 421.575pt x 316.18124pt>
+ [44 <./Figures/trajatmovsvac.pdf>]
+<Figures/rngatmovsvac.pdf, id=1247, 421.575pt x 316.18124pt>
 File: Figures/rngatmovsvac.pdf Graphic file (type pdf)
 <use Figures/rngatmovsvac.pdf>
-Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1914.
+Package pdftex.def Info: Figures/rngatmovsvac.pdf  used on input line 1917.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/spdatmovsvac.pdf, id=1215, 421.575pt x 316.18124pt>
+<Figures/spdatmovsvac.pdf, id=1248, 421.575pt x 316.18124pt>
 File: Figures/spdatmovsvac.pdf Graphic file (type pdf)
 <use Figures/spdatmovsvac.pdf>
-Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1922.
+Package pdftex.def Info: Figures/spdatmovsvac.pdf  used on input line 1925.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [46 <./Figures/altatmovsvac.pdf> <./Figures/rngatmovsvac.pdf>]
-<Figures/thratmovsvac.pdf, id=1264, 421.575pt x 316.18124pt>
+ [45 <./Figures/altatmovsvac.pdf> <./Figures/rngatmovsvac.pdf>]
+<Figures/thratmovsvac.pdf, id=1298, 421.575pt x 316.18124pt>
 File: Figures/thratmovsvac.pdf Graphic file (type pdf)
 <use Figures/thratmovsvac.pdf>
-Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1930.
+Package pdftex.def Info: Figures/thratmovsvac.pdf  used on input line 1933.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/massatmovsvac.pdf, id=1265, 421.575pt x 316.18124pt>
+<Figures/massatmovsvac.pdf, id=1299, 421.575pt x 316.18124pt>
 File: Figures/massatmovsvac.pdf Graphic file (type pdf)
 <use Figures/massatmovsvac.pdf>
-Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1938.
+Package pdftex.def Info: Figures/massatmovsvac.pdf  used on input line 1941.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [47 <./Figures/spdatmovsvac.pdf> <./Figures/thratmovsvac.pdf>]
+ [46 <./Figures/spdatmovsvac.pdf> <./Figures/thratmovsvac.pdf>]
  Section 4.5.
-[48 <./Figures/massatmovsvac.pdf>]
-<Figures/trajpowvac.pdf, id=1348, 421.575pt x 316.18124pt>
+[47 <./Figures/massatmovsvac.pdf>]
+<Figures/trajpowvac.pdf, id=1383, 421.575pt x 316.18124pt>
 File: Figures/trajpowvac.pdf Graphic file (type pdf)
 <use Figures/trajpowvac.pdf>
-Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1963.
+Package pdftex.def Info: Figures/trajpowvac.pdf  used on input line 1966.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/spdpowvac.pdf, id=1349, 421.575pt x 316.18124pt>
+<Figures/spdpowvac.pdf, id=1384, 421.575pt x 316.18124pt>
 File: Figures/spdpowvac.pdf Graphic file (type pdf)
 <use Figures/spdpowvac.pdf>
-Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1971.
+Package pdftex.def Info: Figures/spdpowvac.pdf  used on input line 1974.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/altpowvac.pdf, id=1350, 421.575pt x 316.18124pt>
+<Figures/altpowvac.pdf, id=1385, 421.575pt x 316.18124pt>
 File: Figures/altpowvac.pdf Graphic file (type pdf)
 <use Figures/altpowvac.pdf>
-Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1979.
+Package pdftex.def Info: Figures/altpowvac.pdf  used on input line 1982.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [49 <./Figures/trajpowvac.pdf> <./Figures/spdpowvac.pdf>]
-<Figures/rngpowvac.pdf, id=1406, 421.575pt x 316.18124pt>
+ [48 <./Figures/trajpowvac.pdf> <./Figures/spdpowvac.pdf>]
+<Figures/rngpowvac.pdf, id=1442, 421.575pt x 316.18124pt>
 File: Figures/rngpowvac.pdf Graphic file (type pdf)
 <use Figures/rngpowvac.pdf>
-Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1987.
+Package pdftex.def Info: Figures/rngpowvac.pdf  used on input line 1990.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/thrpowvac.pdf, id=1407, 421.575pt x 316.18124pt>
+<Figures/thrpowvac.pdf, id=1443, 421.575pt x 316.18124pt>
 File: Figures/thrpowvac.pdf Graphic file (type pdf)
 <use Figures/thrpowvac.pdf>
-Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1995.
+Package pdftex.def Info: Figures/thrpowvac.pdf  used on input line 1998.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [50 <./Figures/altpowvac.pdf> <./Figures/rngpowvac.pdf>] [51 <./Figures/thrpow
+ [49 <./Figures/altpowvac.pdf> <./Figures/rngpowvac.pdf>] [50 <./Figures/thrpow
 vac.pdf>]
-<Figures/bulldisppowvac.pdf, id=1475, 421.575pt x 316.18124pt>
+<Figures/bulldisppowvac.pdf, id=1510, 421.575pt x 316.18124pt>
 File: Figures/bulldisppowvac.pdf Graphic file (type pdf)
 <use Figures/bulldisppowvac.pdf>
-Package pdftex.def Info: Figures/bulldisppowvac.pdf  used on input line 2066.
+Package pdftex.def Info: Figures/bulldisppowvac.pdf  used on input line 2069.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/hfueldisppowvac.pdf, id=1476, 614.295pt x 794.97pt>
+<Figures/hfueldisppowvac.pdf, id=1511, 614.295pt x 794.97pt>
 File: Figures/hfueldisppowvac.pdf Graphic file (type pdf)
 <use Figures/hfueldisppowvac.pdf>
-Package pdftex.def Info: Figures/hfueldisppowvac.pdf  used on input line 2074.
+Package pdftex.def Info: Figures/hfueldisppowvac.pdf  used on input line 2077.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [52 <./Figures/bulldisppowvac.pdf>]
-<Figures/hspdfaildisppowvac.pdf, id=1497, 421.575pt x 316.18124pt>
+ [51 <./Figures/bulldisppowvac.pdf>]
+<Figures/hspdfaildisppowvac.pdf, id=1533, 421.575pt x 316.18124pt>
 File: Figures/hspdfaildisppowvac.pdf Graphic file (type pdf)
 <use Figures/hspdfaildisppowvac.pdf>
 Package pdftex.def Info: Figures/hspdfaildisppowvac.pdf  used on input line 208
-2.
+5.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [53 <./Figures/hfueldisppowvac.pdf>]
+ [52 <./Figures/hfueldisppowvac.pdf>]
  Section 4.6.
-<Figures/trajpowatmo.pdf, id=1526, 421.575pt x 316.18124pt>
+<Figures/trajpowatmo.pdf, id=1563, 421.575pt x 316.18124pt>
 File: Figures/trajpowatmo.pdf Graphic file (type pdf)
 <use Figures/trajpowatmo.pdf>
-Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 2104.
+Package pdftex.def Info: Figures/trajpowatmo.pdf  used on input line 2107.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-[54 <./Figures/hspdfaildisppowvac.pdf>]
-<Figures/altpowatmo.pdf, id=1534, 421.575pt x 316.18124pt>
+[53 <./Figures/hspdfaildisppowvac.pdf>]
+<Figures/altpowatmo.pdf, id=1571, 421.575pt x 316.18124pt>
 File: Figures/altpowatmo.pdf Graphic file (type pdf)
 <use Figures/altpowatmo.pdf>
-Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 2112.
+Package pdftex.def Info: Figures/altpowatmo.pdf  used on input line 2115.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/rngpowatmo.pdf, id=1535, 421.575pt x 316.18124pt>
+<Figures/rngpowatmo.pdf, id=1572, 421.575pt x 316.18124pt>
 File: Figures/rngpowatmo.pdf Graphic file (type pdf)
 <use Figures/rngpowatmo.pdf>
-Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 2120.
+Package pdftex.def Info: Figures/rngpowatmo.pdf  used on input line 2123.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [55 <./Figures/trajpowatmo.pdf> <./Figures/altpowatmo.pdf>]
-<Figures/spdpowatmo.pdf, id=1605, 421.575pt x 316.18124pt>
+ [54 <./Figures/trajpowatmo.pdf> <./Figures/altpowatmo.pdf>]
+<Figures/spdpowatmo.pdf, id=1643, 421.575pt x 316.18124pt>
 File: Figures/spdpowatmo.pdf Graphic file (type pdf)
 <use Figures/spdpowatmo.pdf>
-Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 2128.
+Package pdftex.def Info: Figures/spdpowatmo.pdf  used on input line 2131.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/thrpowatmo.pdf, id=1606, 421.575pt x 316.18124pt>
+<Figures/thrpowatmo.pdf, id=1644, 421.575pt x 316.18124pt>
 File: Figures/thrpowatmo.pdf Graphic file (type pdf)
 <use Figures/thrpowatmo.pdf>
-Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 2136.
+Package pdftex.def Info: Figures/thrpowatmo.pdf  used on input line 2139.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [56 <./Figures/rngpowatmo.pdf> <./Figures/spdpowatmo.pdf>]
-<Figures/bulldisppowatmo.pdf, id=1655, 421.575pt x 316.18124pt>
+ [55 <./Figures/rngpowatmo.pdf> <./Figures/spdpowatmo.pdf>]
+<Figures/bulldisppowatmo.pdf, id=1693, 421.575pt x 316.18124pt>
 File: Figures/bulldisppowatmo.pdf Graphic file (type pdf)
 <use Figures/bulldisppowatmo.pdf>
-Package pdftex.def Info: Figures/bulldisppowatmo.pdf  used on input line 2146.
+Package pdftex.def Info: Figures/bulldisppowatmo.pdf  used on input line 2149.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-[57 <./Figures/thrpowatmo.pdf> <./Figures/bulldisppowatmo.pdf>]
-<Figures/hfueldisppowatmo.pdf, id=1705, 614.295pt x 794.97pt>
+[56 <./Figures/thrpowatmo.pdf> <./Figures/bulldisppowatmo.pdf>]
+<Figures/hfueldisppowatmo.pdf, id=1743, 614.295pt x 794.97pt>
 File: Figures/hfueldisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hfueldisppowatmo.pdf>
-Package pdftex.def Info: Figures/hfueldisppowatmo.pdf  used on input line 2236.
+Package pdftex.def Info: Figures/hfueldisppowatmo.pdf  used on input line 2239.
 
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [58] [59 <./Figures/hfueldisppowatmo.pdf>]
+ [57] [58 <./Figures/hfueldisppowatmo.pdf>]
 CHAPTER 5.
  Section 5.1.
-<Figures/convtestatmo.pdf, id=1727, 421.575pt x 316.18124pt>
+<Figures/convtestatmo.pdf, id=1766, 421.575pt x 316.18124pt>
 File: Figures/convtestatmo.pdf Graphic file (type pdf)
 <use Figures/convtestatmo.pdf>
-Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 2256.
+Package pdftex.def Info: Figures/convtestatmo.pdf  used on input line 2259.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-[60
+[59
 
 ]
-<Figures/convtestvac.pdf, id=1735, 421.575pt x 316.18124pt>
+<Figures/convtestvac.pdf, id=1774, 421.575pt x 316.18124pt>
 File: Figures/convtestvac.pdf Graphic file (type pdf)
 <use Figures/convtestvac.pdf>
-Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 2277.
+Package pdftex.def Info: Figures/convtestvac.pdf  used on input line 2280.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [61 <./Figures/convtestatmo.pdf>]
+ [60 <./Figures/convtestatmo.pdf>]
  Section 5.2.
-[62 <./Figures/convtestvac.pdf>]
+[61 <./Figures/convtestvac.pdf>]
  Section 5.3.
-[63] [64]
+[62] [63]
 CHAPTER 6.
  Section 6.1.
-pdfTeX warning (ext4): destination with the same identifier (name{cite.0:LU}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2339 ...nt optimal guidance solution\:\cite{LU}.
-                                                   For a lower bound limit, ...
  Section 6.2.
-[65
+[64
 
 ]
-<Figures/thrtgofac.pdf, id=1924, 421.575pt x 316.18124pt>
+<Figures/thrtgofac.pdf, id=1964, 421.575pt x 316.18124pt>
 File: Figures/thrtgofac.pdf Graphic file (type pdf)
 <use Figures/thrtgofac.pdf>
-Package pdftex.def Info: Figures/thrtgofac.pdf  used on input line 2355.
+Package pdftex.def Info: Figures/thrtgofac.pdf  used on input line 2358.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
-<Figures/spdtgofac.pdf, id=1925, 421.575pt x 316.18124pt>
+<Figures/spdtgofac.pdf, id=1965, 421.575pt x 316.18124pt>
 File: Figures/spdtgofac.pdf Graphic file (type pdf)
 <use Figures/spdtgofac.pdf>
-Package pdftex.def Info: Figures/spdtgofac.pdf  used on input line 2363.
+Package pdftex.def Info: Figures/spdtgofac.pdf  used on input line 2366.
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [66 <./Figures/thrtgofac.pdf>]) [67 <./Figures/spdtgofac.pdf>] [68
-
-]
-(append.tex [69]
+ [65 <./Figures/thrtgofac.pdf>]) [66 <./Figures/spdtgofac.pdf>] [67]
+(./append.tex [68]
 APPENDIX A.
-[70
+[69
 
 ]
-<Figures/hrngdisppowvac.pdf, id=2010, 614.295pt x 794.97pt>
+<Figures/hrngdisppowvac.pdf, id=2034, 614.295pt x 794.97pt>
 File: Figures/hrngdisppowvac.pdf Graphic file (type pdf)
 <use Figures/hrngdisppowvac.pdf>
 Package pdftex.def Info: Figures/hrngdisppowvac.pdf  used on input line 15.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
-<Figures/hspddisppowvac.pdf, id=2011, 614.295pt x 794.97pt>
+<Figures/hspddisppowvac.pdf, id=2035, 614.295pt x 794.97pt>
 File: Figures/hspddisppowvac.pdf Graphic file (type pdf)
 <use Figures/hspddisppowvac.pdf>
 Package pdftex.def Info: Figures/hspddisppowvac.pdf  used on input line 25.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [71 <./Figures/hrngdisppowvac.pdf>]
-<Figures/hrngdisppowatmo.pdf, id=2025, 614.295pt x 794.97pt>
+ [70 <./Figures/hrngdisppowvac.pdf>]
+<Figures/hrngdisppowatmo.pdf, id=2049, 614.295pt x 794.97pt>
 File: Figures/hrngdisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hrngdisppowatmo.pdf>
 Package pdftex.def Info: Figures/hrngdisppowatmo.pdf  used on input line 33.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
- [72 <./Figures/hspddisppowvac.pdf>]
-<Figures/hspddisppowatmo.pdf, id=2039, 614.295pt x 794.97pt>
+ [71 <./Figures/hspddisppowvac.pdf>]
+<Figures/hspddisppowatmo.pdf, id=2063, 614.295pt x 794.97pt>
 File: Figures/hspddisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hspddisppowatmo.pdf>
 Package pdftex.def Info: Figures/hspddisppowatmo.pdf  used on input line 43.
 (pdftex.def)             Requested size: 310.76122pt x 402.1663pt.
 
-[73 <./Figures/hrngdisppowatmo.pdf>]
-<Figures/hspdfaildisppowatmo.pdf, id=2053, 421.575pt x 316.18124pt>
+[72 <./Figures/hrngdisppowatmo.pdf>]
+<Figures/hspdfaildisppowatmo.pdf, id=2077, 421.575pt x 316.18124pt>
 File: Figures/hspdfaildisppowatmo.pdf Graphic file (type pdf)
 <use Figures/hspdfaildisppowatmo.pdf>
 Package pdftex.def Info: Figures/hspdfaildisppowatmo.pdf  used on input line 53
 .
 (pdftex.def)             Requested size: 310.76122pt x 233.07309pt.
- [74 <./Figures/hspddisppowatmo.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
+ [73 <./Figures/hspddisppowatmo.pdf>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
 
-[75 <./Figures/hspdfaildisppowatmo.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
- (thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 419.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 419.
+[74 <./Figures/hspdfaildisppowatmo.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
+ (./thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1AA6052499D140DDF6F80E33AB05E573;3037.
+(rerunfilecheck)             Checksum: F08A92B06273DC2CCBAF6F015DCF69FA;2995.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18969 strings out of 492976
- 316977 string characters out of 3126308
- 989576 words of memory out of 3000000
- 22206 multiletter control sequences out of 15000+200000
- 26664 words of font info for 63 fonts, out of 3000000 for 9000
+ 18365 strings out of 492982
+ 297282 string characters out of 6136225
+ 809072 words of memory out of 5000000
+ 21310 multiletter control sequences out of 15000+600000
+ 23311 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,16n,77p,1621b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
-c}<C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx8.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/stroll/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/stroll/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users
-/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmib10.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/stroll/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/stroll/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/stroll
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy6.pfb><C:/Users/stroll/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/stroll/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/stroll/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/stroll/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/stroll/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/str
-oll/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (85 pages, 4548417 bytes).
+ 48i,16n,77p,1621b,1275s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c
+:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (84 pages, 4343907 bytes).
 PDF statistics:
- 2197 PDF objects out of 2487 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
+ 2217 PDF objects out of 2487 (max. 8388607)
+ 2040 compressed objects within 21 object streams
+ 254 named destinations out of 1000 (max. 500000)
  640 words of extra memory for PDF output out of 10000 (max. 10000000)
 
