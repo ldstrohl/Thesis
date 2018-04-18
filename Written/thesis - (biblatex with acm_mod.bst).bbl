@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+
+\bibitem{CERIMELE}
+CERIMELE, CHRISTOPHER, ROBERTSON, EDWARD, SOSTARIC, RONALD, CAMPBELL, CHARLES,
+  ROBINSON, PHIL, MATZ, DANIEL, JOHNSON, BREANNA, AND ET~AL.
+\newblock ``\titlecap{A Rigid Mid Lift-to-Drag Ratio Approach to Human Mars
+  Entry, Descent, and Landing}''.
+\newblock {\em AIAA Paper 2017-1898\/} (2017).
+
+\bibitem{CHERRY}
+CHERRY, GEORGE~W.
+\newblock ``\titlecap{A General, Explicit, Optimizing Guidance Law for
+  Rocket-Propelled Spaceflight}''.
+\newblock {\em AIAA Paper 64-638\/} (1964).
+
+\bibitem{CHOMEL}
+CHOMEL, CHRISTINA.
+\newblock ``\titlecap{Development of an Analytical Guidance Algorithm for Lunar
+  Descent}''.
+\newblock PhD thesis, The University of Texas at Austin, Austin, TX, 2007.
+
+\bibitem{CITRON}
+CITRON, STEPHEN~J., DUNIN, STANLEY~E., AND MEISSINGER, HANS~F.
+\newblock ``\titlecap{A Terminal Guidance Technique for Lunar Landing}''.
+\newblock {\em AIAA Journal 2\/} (1964), 503--509.
+
+\bibitem{DSOUZA}
+D'SOUZA, CHRISTOPHER~N.
+\newblock ``\titlecap{An Optimal Guidance Law for Planetary Landing}''.
+\newblock {\em AIAA Paper 97-3709\/} (1997).
+
+\bibitem{FERZIGER}
+FERZIGER, JOEL~H., AND PERI\'C, MILOVAN.
+\newblock ``\titlecap{Computational Methods for Fluid Dynamics}''.
+\newblock Springer, Berlin, 2002.
+
+\bibitem{MARSGRAM}
+JUSTH, HILARY~L.
+\newblock ``\titlecap{Mars Global Reference Atmospheric Model}''.
+\newblock NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February
+  2018.
+
+\bibitem{KLUMPP}
+KLUMPP, ALLAN~R.
+\newblock ``\titlecap{Apollo Lunar Descent Guidance}''.
+\newblock {\em Automatica 10\/} (1974), 133--146.
+
+\bibitem{LEITMANN}
+LEITMANN, GEORGE.
+\newblock ``\titlecap{Class of Variational Problems in Rocket Flight}''.
+\newblock {\em Journal of the Aerospace Sciences 26\/} (1959), 586--591.
+
+\bibitem{LU}
+LU, PING.
+\newblock ``\titlecap{Propellant-Optimal Powered Descent Guidance}''.
+\newblock {\em Journal of Guidance, Control, and Dynamics\/} (Dec 2017), 1--14.
+
+\bibitem{MCINNES}
+MCINNES, COLIN~R.
+\newblock ``\titlecap{Path Shaping Guidance for Terminal Lunar Descent}''.
+\newblock {\em Acta Astronautica 36\/} (1995), 367--377.
+
+\bibitem{MEDITCH}
+MEDITCH, JAMES~J.
+\newblock ``\titlecap{On the Problem of Optimal Thrust Programming For a Lunar
+  Soft Landing}''.
+\newblock {\em IEEE Transactions on Automatic Control 9\/} (1964), 477--484.
+
+\bibitem{MOESSER}
+MOESSER, TRAVIS~J.
+\newblock ``\titlecap{Guidance and Navigation Linear Covariance Analysis for
+  Lunar Powered Descent}''.
+\newblock Master's thesis, Utah State University, Logan, UT, 2010.
+
+\bibitem{NAJSON}
+NAJSON, FEDERICO, AND MEASE, KENNETH~D.
+\newblock ``\titlecap{Computationally Inexpensive Guidance Algorithm for
+  Fuel-Efficient Terminal Descent}''.
+\newblock {\em Journal of Guidance, Control, and Dynamics 29\/} (2006),
+  955--964.
+
+\bibitem{PLOEN}
+PLOEN, SCOTT~R., ACIKMESE, BECHET, AND WOLF, ARON.
+\newblock ``\titlecap{A Comparison of Powered Descent Guidance Laws for Mars
+  Pinpoint Landing}''.
+\newblock {\em AIAA 2006-6676\/} (August 2006).
+
+\bibitem{REA}
+REA, JEREMY~R., AND BISHOP, ROBERT~H.
+\newblock ``\titlecap{Analytical Dimensional Reduction of a Fuel Optimal
+  Powered Descent Subproblem}''.
+\newblock {\em AIAA Paper 2010-8026\/} (2010).
+
+\bibitem{ROSS}
+ROSS, ISAAC~M.
+\newblock ``\titlecap{How to Find Minimum-Fuel Controllers}''.
+\newblock {\em AIAA 2004-5346\/} (August 2004).
+
+\bibitem{SOSTARIC}
+SOSTARIC, RONALD~R., AND REA, JEREMY~R.
+\newblock ``\titlecap{Powered Descent Guidance Methods for the Moon and
+  Mars}''.
+\newblock {\em AIAA 2005-6287\/} (August 2005).
+
+\end{thebibliography}

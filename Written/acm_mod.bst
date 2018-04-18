@@ -1,19 +1,13 @@
-% Copyright (C) 1986, 1988, 2010 Howard Trickey and Oren Patashnik.
-% Unlimited copying and redistribution of this file are permitted as long as
-% it is unmodified.  Modifications (and redistribution of modified versions)
-% are also permitted, but only if the resulting file is renamed.
-% 
-% ACM Transactions bibliography style (8-Dec-10 version)
-%    A lot like abbrv.bst, but names come out "Last, initials", and in \sc.
-%    Some dates are parenthesized.
-%
-%    History
-%     2/ 6/86   (HWT)   Original version, by Howard Trickey.
-%     3/ 5/86   (HWT)   Put in pp. everywhere but articles, as per ACM style.
-%     1/24/88   (OP&HWT) Updated for BibTeX version 0.99a, Oren Patashnik;
-%                       corrected the abbreviations to "Mar." and "Sept.";
-%                       THIS `acm' VERSION DOES NOT WORK WITH BIBTEX 0.98i.
-%     12/ 8/10  (OP&HWT) Clarify license.
+%% Modification of ACM.bst to satisfy SDSU formatting requirements for AE Master's thesis
+%% Lloyd Strohl 04/17/18
+%%
+%% Changes:
+%% Numeric citations
+%% all uppercase names
+%% Chicago style order (Last1, First1, First2 Last2, First3 Last3, etc)
+%% Quotes around title
+%% Headline Case title
+%% Journal Volumes not italicized
 
 ENTRY
   { address
@@ -267,7 +261,7 @@ FUNCTION {format.innames}
 FUNCTION {format.authors}
 { author empty$
     { "" }
-    { author format.names scapify }
+    { author format.names "u" change.case$ }
   if$
 }
 

@@ -279,7 +279,7 @@ don't use the twocolumn option}
   \fi
   {
     \if@issavepaper\else
-      \vspace*{0.5in} %
+      \vspace*{1in} %
       \vspace*{-\nspextrabaselinelg}% (baselinestretch-1.0 * baselineskip)
     \fi
     \par
@@ -303,7 +303,7 @@ don't use the twocolumn option}
       \ifnum \c@secnumdepth >\m@ne
         { \bfseries \@chapapp\space \thechapter } %
         \par\nobreak %
-	\vspace*{12pt}
+	\vspace*{21pt}
 	\vspace*{-\nspextrabaselinelg}% (baselinestretch-1.0 * baselineskip)
       \fi
     \fi
@@ -316,7 +316,7 @@ don't use the twocolumn option}
                        \par\vspace*{\nspextrabaseline} \vspace*{\nspextrabaselinelg} }%
     \par
     \vspace*{-\nspextrabaselinelg}% (baselinestretch-1.0 * baselineskip)
-    \addvspace{12pt}
+    \addvspace{21pt}
   }%
   }	
 
@@ -851,14 +851,14 @@ don't use the twocolumn option}
 \newcommand{\@frontmattertitle}[1]{%
   \clearpage
   \if@issavepaper\else
-    \vspace*{0.5in}%
+    \vspace*{1in}%
     \vspace*{-\nspextrabaseline}% (baselinestretch-1.0 * baselineskip)
   \fi
   \par%
   {%
     \centering \noindent
     {\large \bfseries #1}
-    \vspace*{12pt}%
+    \vspace*{24pt}%
     \vspace*{-\nspextrabaselinelg}% (baselinestretch-1.0 * baselineskip)
     \par
   }%
@@ -870,12 +870,12 @@ don't use the twocolumn option}
   \clearpage
   \ssp %
   \addcontentsline{toc}{schapter}{ABSTRACT}
-  \vspace*{0.5in}%
+  \vspace*{1in}%
   \par
   \begingroup
     \centering
     {\large\bfseries ABSTRACT OF THE THESIS}
-    \par \vspace*{12pt}
+    \par \vspace*{20pt}
     {\@titleheading} \\
     by \\
     {\@author} \\
@@ -903,7 +903,7 @@ don't use the twocolumn option}
   \begingroup
     \centering
     ABSTRACT OF THE THESIS
-    \par \vspace*{12pt}
+    \par \vspace*{20pt}
     {\@titleheading} \\
     by \\
     {\@author} \\

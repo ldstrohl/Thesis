@@ -425,7 +425,7 @@ Time derivatives are represented by dot notation as in Equation\:(\ref{eqn:timed
 \section{Coordinate Frame}
 The guidance algorithm is developed within the guidance coordinate frame $\bm{\hat{e}}$. This frame can be defined in several ways. Cherry\:\cite{CHERRY} used a gravitational body-centered frame to develop E-Guidance, but any inertial frame can be appropriate. The simulation uses a body-centered frame such that Initial and Final conditions are defined by longitudes, latitudes, and radii from the center of Mars. This simulation neglects the body rotation, but it could be taken into account by defining a rotated final landing site and would not alter the problem qualitatively. Gravitational acceleration is modeled as that of a spherical body, with radius of Mars $R_M = 3.396*10^6$. Equation\:(\ref{eqn:gravity}) gives the vector equation for gravitational acceleration around a spherical body.
 
-For convenience, these Initial Conditions are presented in Table\:\ref{tab:IC} after a coordinate transformation to a frame centered on the landing cite so that the final position constraint\:(\ref{eqn:constraint_r}) is at the origin. This frame is a right-handed system such that the first coordinate is Mars East, the second is Mars North, and the third is Mars up (the direction opposite the local gravitational acceleration, $-\hat{\bm{g}}$). This E-N-U frame is intuitive because mission conditions such as ground range and altitude are directly represented.  
+For convenience, these Initial Conditions are presented in Table\:\ref{tab:IC} after a coordinate transformation to a frame centered on the landing citep so that the final position constraint\:(\ref{eqn:constraint_r}) is at the origin. This frame is a right-handed system such that the first coordinate is Mars East, the second is Mars North, and the third is Mars up (the direction opposite the local gravitational acceleration, $-\hat{\bm{g}}$). This E-N-U frame is intuitive because mission conditions such as ground range and altitude are directly represented.  
 
 The vehicle's aerodynamics depend upon its orientation, which can best be described in terms of its body axes as shown in Figure\:\ref{fig:bodyaxes}. This figure shows the classic definitions of body axes for Aerospace vehicles in atmosphere. The aircraft's orientation is described as a rotation of the body frame relative to the guidance frame. As depicted in the figure, the body frame of Equation\:\ref{eqn:bodyframe} consists of the yaw, pitch, and roll body axes. Orientations are thus defined as rotations about the yaw axis, then the pitch axis, then the roll axis in a traditional Euler 3-2-1 sequence.
 
@@ -1235,7 +1235,7 @@ As is clear from Figures\:\ref{fig:trajunpowatmo_1} and\:\:\ref{fig:trajunpowatm
 %%    \includegraphics[width=\linewidth]{Figures/plot2.eps}
 %%    \caption{This is a graph of the above equation, where the circular
 %%      frequency is taken as $\omega = 2$.\label{fig1} Note: \emph{if
-%%        you need to cite a source (of e.g.~a figure) in the caption,
+%%        you need to citep a source (of e.g.~a figure) in the caption,
 %%        include the FULL CITATION, e.g.~} Source: Montezuma
 %%      Publishing, San Diego State University Dissertation and Thesis
 %%      Manual: Policies, Procedures and Format, Spring

@@ -15,6 +15,18 @@
 % See the README file for more information
 
 \documentclass{sdsu-thesis}
+
+% use chicago style manual
+%\usepackage[notes,backend=biber]{biblatex-chicago}  
+%\usepackage[style=chicago-notes, autocite=inline,backend=biber]{biblatex}
+\usepackage[style=chicago-notes, natbib=true, backend=biber]{biblatex}
+\addbibresource{thbib.bib}
+
+% try natbib
+%\usepackage{natbib}
+%\setcitestyle{numbers}
+
+
 %
 % 
 % For early printouts to save paper use the savepaper option as
@@ -45,7 +57,9 @@
 \usepackage{epsfig}
 \usepackage{graphicx}
 
+% add links compatible with adobe reader
 \usepackage[bookmarks]{hyperref}
+
 % These packages may also be useful for pictures...
 % \usepackage{color}
 % \usepackage{eepic}
@@ -86,7 +100,7 @@
 \usepackage{longtable}
 % For pretty tables
 \usepackage{booktabs,tabularx}
-\usepackage[left=1.25in, top=1in, right = 1in, bottom = 1in, headsep=34pt]{geometry} % set margins to meet your document's needs
+\usepackage[left=1.25in, top=1in, right = 1in, bottom = 1in, headsep=18pt]{geometry} % set margins to meet your document's needs
 %\usepackage{geometry}
 \newcolumntype{Y}{>{\raggedleft\arraybackslash}X} 
 
@@ -338,10 +352,15 @@ I would also like to thank Dr. Peter Blomgren both for his instruction and his w
 % The bibliography page, must be between main body and appendices
 % 
 % You must have thbib.bib file in the current directory 
-% 
-\bibliographystyle{acm_mod}
-\bibliography{thbib}
-% Here include citations so new entries appear in the bibliography before they're actually cited in the paper
+
+% use customized bibliography file
+%\bibliographystyle{acm_mod}
+
+%\bibliographystyle{chicago-biblatex}
+%\bibliography{thbib}
+
+%% for chicago-biblatex
+\printbibliography
 
 % This includes append.tex
 \input{append}

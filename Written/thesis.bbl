@@ -1,105 +1,562 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{CERIMELE}
-{\sc Cerimele, Christopher, Robertson, Edward, Sostaric, Ronald, Campbell,
-  Charles, Robinson, Phil, Matz, Daniel, Johnson, Breanna, and et~al.}
-\newblock ``\titlecap{A Rigid Mid Lift-to-Drag Ratio Approach to Human Mars
-  Entry, Descent, and Landing}''.
-\newblock {\em AIAA Paper 2017-1898\/} (2017).
 
-\bibitem{CHERRY}
-{\sc Cherry, George~W.}
-\newblock ``\titlecap{A General, Explicit, Optimizing Guidance Law for
-  Rocket-Propelled Spaceflight}''.
-\newblock {\em AIAA Paper 64-638\/} (1964).
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{CERIMELE}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6a9c71cd88dda93481d56300132a281a}{%
+           family={Cerimele},
+           familyi={C\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4bc9aad9608f8037a760a1f2207d247e}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=79c49baf7828fb486ebb1251aba30aa9}{%
+           family={Sostaric},
+           familyi={S\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod}}}%
+        {{hash=54db0218082cf4730de6ee4e8ceb77c7}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7e923f0347836679a9f5e38d2ad6103d}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+        {{hash=95b3e117ad4635a86f6563db5fb675b4}{%
+           family={Matz},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2bbd6d86abbbacb8b9e1078169c8b757}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Breanna},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c3b2ca4e1cd26593d202b777d068da34}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c64c0e07ee44a88bcd903e23aa93174}
+      \strng{fullhash}{b967750f8f2cdb975bdd47f4825de745}
+      \strng{bibnamehash}{5c64c0e07ee44a88bcd903e23aa93174}
+      \strng{authorbibnamehash}{5c64c0e07ee44a88bcd903e23aa93174}
+      \strng{authornamehash}{5c64c0e07ee44a88bcd903e23aa93174}
+      \strng{authorfullhash}{b967750f8f2cdb975bdd47f4825de745}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Paper}
+      \field{title}{A Rigid Mid Lift-to-Drag Ratio Approach to Human Mars Entry, Descent, and Landing}
+      \field{volume}{2017-1898}
+      \field{year}{2017}
+    \endentry
+    \entry{CHERRY}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8c050d19ef3519a167dc69014bdeb540}{%
+           family={Cherry},
+           familyi={C\bibinitperiod},
+           given={George\bibnamedelima W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c050d19ef3519a167dc69014bdeb540}
+      \strng{fullhash}{8c050d19ef3519a167dc69014bdeb540}
+      \strng{bibnamehash}{8c050d19ef3519a167dc69014bdeb540}
+      \strng{authorbibnamehash}{8c050d19ef3519a167dc69014bdeb540}
+      \strng{authornamehash}{8c050d19ef3519a167dc69014bdeb540}
+      \strng{authorfullhash}{8c050d19ef3519a167dc69014bdeb540}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Paper}
+      \field{title}{A General, Explicit, Optimizing Guidance Law for Rocket-Propelled Spaceflight}
+      \field{volume}{64-638}
+      \field{year}{1964}
+    \endentry
+    \entry{CHOMEL}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=a62743d40676b9c50c013d0f1410816a}{%
+           family={Chomel},
+           familyi={C\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {The University of Texas at Austin}%
+      }
+      \list{location}{1}{%
+        {Austin, TX}%
+      }
+      \strng{namehash}{a62743d40676b9c50c013d0f1410816a}
+      \strng{fullhash}{a62743d40676b9c50c013d0f1410816a}
+      \strng{bibnamehash}{a62743d40676b9c50c013d0f1410816a}
+      \strng{authorbibnamehash}{a62743d40676b9c50c013d0f1410816a}
+      \strng{authornamehash}{a62743d40676b9c50c013d0f1410816a}
+      \strng{authorfullhash}{a62743d40676b9c50c013d0f1410816a}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Development of an Analytical Guidance Algorithm for Lunar Descent}
+      \field{type}{phdthesis}
+      \field{year}{2007}
+    \endentry
+    \entry{CITRON}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3ef2212c249ad78fe5f58da39ead2493}{%
+           family={Citron},
+           familyi={C\bibinitperiod},
+           given={Stephen\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c76529c131909f0ff582bfa0277f826f}{%
+           family={Dunin},
+           familyi={D\bibinitperiod},
+           given={Stanley\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a7042b0b05e9274ae5a31ea668a2e534}{%
+           family={Meissinger},
+           familyi={M\bibinitperiod},
+           given={Hans\bibnamedelima F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{f87ca5a03ca4962206fef0bd7a898671}
+      \strng{fullhash}{f87ca5a03ca4962206fef0bd7a898671}
+      \strng{bibnamehash}{f87ca5a03ca4962206fef0bd7a898671}
+      \strng{authorbibnamehash}{f87ca5a03ca4962206fef0bd7a898671}
+      \strng{authornamehash}{f87ca5a03ca4962206fef0bd7a898671}
+      \strng{authorfullhash}{f87ca5a03ca4962206fef0bd7a898671}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Journal}
+      \field{title}{A Terminal Guidance Technique for Lunar Landing}
+      \field{volume}{2}
+      \field{year}{1964}
+      \field{pages}{503\bibrangedash 509}
+      \range{pages}{7}
+    \endentry
+    \entry{DSOUZA}{article}{}
+      \name{author}{1}{}{%
+        {{hash=13988433388366986317055c2c3cf2df}{%
+           family={D'Souza},
+           familyi={D\bibinitperiod},
+           given={Christopher\bibnamedelima N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{13988433388366986317055c2c3cf2df}
+      \strng{fullhash}{13988433388366986317055c2c3cf2df}
+      \strng{bibnamehash}{13988433388366986317055c2c3cf2df}
+      \strng{authorbibnamehash}{13988433388366986317055c2c3cf2df}
+      \strng{authornamehash}{13988433388366986317055c2c3cf2df}
+      \strng{authorfullhash}{13988433388366986317055c2c3cf2df}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Paper}
+      \field{title}{An Optimal Guidance Law for Planetary Landing}
+      \field{volume}{97-3709}
+      \field{year}{1997}
+    \endentry
+    \entry{FERZIGER}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=004e0e63018c23b1410937fb2729dd22}{%
+           family={Ferziger},
+           familyi={F\bibinitperiod},
+           given={Joel\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7b57139d1e85c76caf4a3f43473d3dec}{%
+           family={Perić},
+           familyi={P\bibinitperiod},
+           given={Milovan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5d55c57336a8288aad36bb2a58cdbc66}
+      \strng{fullhash}{5d55c57336a8288aad36bb2a58cdbc66}
+      \strng{bibnamehash}{5d55c57336a8288aad36bb2a58cdbc66}
+      \strng{authorbibnamehash}{5d55c57336a8288aad36bb2a58cdbc66}
+      \strng{authornamehash}{5d55c57336a8288aad36bb2a58cdbc66}
+      \strng{authorfullhash}{5d55c57336a8288aad36bb2a58cdbc66}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computational Methods for Fluid Dynamics}
+      \field{year}{2002}
+    \endentry
+    \entry{KLUMPP}{article}{}
+      \name{author}{1}{}{%
+        {{hash=992d0e874932bfebc463f0c9c17d8f89}{%
+           family={Klumpp},
+           familyi={K\bibinitperiod},
+           given={Allan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{992d0e874932bfebc463f0c9c17d8f89}
+      \strng{fullhash}{992d0e874932bfebc463f0c9c17d8f89}
+      \strng{bibnamehash}{992d0e874932bfebc463f0c9c17d8f89}
+      \strng{authorbibnamehash}{992d0e874932bfebc463f0c9c17d8f89}
+      \strng{authornamehash}{992d0e874932bfebc463f0c9c17d8f89}
+      \strng{authorfullhash}{992d0e874932bfebc463f0c9c17d8f89}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{No. 2}
+      \field{journaltitle}{Automatica}
+      \field{title}{Apollo Lunar Descent Guidance}
+      \field{volume}{10}
+      \field{year}{1974}
+      \field{pages}{133\bibrangedash 146}
+      \range{pages}{14}
+    \endentry
+    \entry{LEITMANN}{article}{}
+      \name{author}{1}{}{%
+        {{hash=df9f20c8c7c5a89cb99b424d0a0d7502}{%
+           family={Leitmann},
+           familyi={L\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{df9f20c8c7c5a89cb99b424d0a0d7502}
+      \strng{fullhash}{df9f20c8c7c5a89cb99b424d0a0d7502}
+      \strng{bibnamehash}{df9f20c8c7c5a89cb99b424d0a0d7502}
+      \strng{authorbibnamehash}{df9f20c8c7c5a89cb99b424d0a0d7502}
+      \strng{authornamehash}{df9f20c8c7c5a89cb99b424d0a0d7502}
+      \strng{authorfullhash}{df9f20c8c7c5a89cb99b424d0a0d7502}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{No. 9}
+      \field{journaltitle}{Journal of the Aerospace Sciences}
+      \field{title}{Class of Variational Problems in Rocket Flight}
+      \field{volume}{26}
+      \field{year}{1959}
+      \field{pages}{586\bibrangedash 591}
+      \range{pages}{6}
+    \endentry
+    \entry{LU}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7f4ef9a23c764b668ca61ce43d95bc86}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{7f4ef9a23c764b668ca61ce43d95bc86}
+      \strng{fullhash}{7f4ef9a23c764b668ca61ce43d95bc86}
+      \strng{bibnamehash}{7f4ef9a23c764b668ca61ce43d95bc86}
+      \strng{authorbibnamehash}{7f4ef9a23c764b668ca61ce43d95bc86}
+      \strng{authornamehash}{7f4ef9a23c764b668ca61ce43d95bc86}
+      \strng{authorfullhash}{7f4ef9a23c764b668ca61ce43d95bc86}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0731-5090}
+      \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+      \field{month}{12}
+      \field{title}{Propellant-Optimal Powered Descent Guidance}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.2514/1.G003243
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.2514/1.G003243
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2514/1.G003243
+      \endverb
+    \endentry
+    \entry{MCINNES}{article}{}
+      \name{author}{1}{}{%
+        {{hash=967c05e13ff977ec60c2555536a402a1}{%
+           family={McInnes},
+           familyi={M\bibinitperiod},
+           given={Colin\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{967c05e13ff977ec60c2555536a402a1}
+      \strng{fullhash}{967c05e13ff977ec60c2555536a402a1}
+      \strng{bibnamehash}{967c05e13ff977ec60c2555536a402a1}
+      \strng{authorbibnamehash}{967c05e13ff977ec60c2555536a402a1}
+      \strng{authornamehash}{967c05e13ff977ec60c2555536a402a1}
+      \strng{authorfullhash}{967c05e13ff977ec60c2555536a402a1}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{No. 2}
+      \field{journaltitle}{Acta Astronautica}
+      \field{title}{Path Shaping Guidance for Terminal Lunar Descent}
+      \field{volume}{36}
+      \field{year}{1995}
+      \field{pages}{367\bibrangedash 377}
+      \range{pages}{11}
+    \endentry
+    \entry{MEDITCH}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9b5ee64fb8727bb0dc9a67ec2f8bcd6b}{%
+           family={Meditch},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b5ee64fb8727bb0dc9a67ec2f8bcd6b}
+      \strng{fullhash}{9b5ee64fb8727bb0dc9a67ec2f8bcd6b}
+      \strng{bibnamehash}{9b5ee64fb8727bb0dc9a67ec2f8bcd6b}
+      \strng{authorbibnamehash}{9b5ee64fb8727bb0dc9a67ec2f8bcd6b}
+      \strng{authornamehash}{9b5ee64fb8727bb0dc9a67ec2f8bcd6b}
+      \strng{authorfullhash}{9b5ee64fb8727bb0dc9a67ec2f8bcd6b}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{No. 4}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{title}{On the Problem of Optimal Thrust Programming For a Lunar Soft Landing}
+      \field{volume}{9}
+      \field{year}{1964}
+      \field{pages}{477\bibrangedash 484}
+      \range{pages}{8}
+    \endentry
+    \entry{MOESSER}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=bda171ca44d8f346b06c99ed41ece112}{%
+           family={Moesser},
+           familyi={M\bibinitperiod},
+           given={Travis\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Utah State University}%
+      }
+      \list{location}{1}{%
+        {Logan, UT}%
+      }
+      \strng{namehash}{bda171ca44d8f346b06c99ed41ece112}
+      \strng{fullhash}{bda171ca44d8f346b06c99ed41ece112}
+      \strng{bibnamehash}{bda171ca44d8f346b06c99ed41ece112}
+      \strng{authorbibnamehash}{bda171ca44d8f346b06c99ed41ece112}
+      \strng{authornamehash}{bda171ca44d8f346b06c99ed41ece112}
+      \strng{authorfullhash}{bda171ca44d8f346b06c99ed41ece112}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guidance and Navigation Linear Covariance Analysis for Lunar Powered Descent}
+      \field{type}{mathesis}
+      \field{year}{2010}
+    \endentry
+    \entry{NAJSON}{article}{}
+      \name{author}{2}{}{%
+        {{hash=37b390d78f7a79efa72ca8bd95de645d}{%
+           family={Najson},
+           familyi={N\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3d4029f6c2170cf58478655d2cdc8f6a}{%
+           family={Mease},
+           familyi={M\bibinitperiod},
+           given={Kenneth\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e887081f730200c7b709218632f958d5}
+      \strng{fullhash}{e887081f730200c7b709218632f958d5}
+      \strng{bibnamehash}{e887081f730200c7b709218632f958d5}
+      \strng{authorbibnamehash}{e887081f730200c7b709218632f958d5}
+      \strng{authornamehash}{e887081f730200c7b709218632f958d5}
+      \strng{authorfullhash}{e887081f730200c7b709218632f958d5}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{No. 4}
+      \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+      \field{title}{Computationally Inexpensive Guidance Algorithm for Fuel-Efficient Terminal Descent}
+      \field{volume}{29}
+      \field{year}{2006}
+      \field{pages}{955\bibrangedash 964}
+      \range{pages}{10}
+    \endentry
+    \entry{MARSGRAM}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b11ba5c2e9017f0d195998eb7abc9231}{%
+           family={Justh},
+           familyi={J\bibinitperiod},
+           given={Hilary\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{fullhash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{bibnamehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{authorbibnamehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{authornamehash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \strng{authorfullhash}{b11ba5c2e9017f0d195998eb7abc9231}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February 2018}
+      \field{title}{Mars Global Reference Atmospheric Model}
+    \endentry
+    \entry{PLOEN}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c11bf0373394246367e2e53d594853d2}{%
+           family={Ploen},
+           familyi={P\bibinitperiod},
+           given={Scott\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=43778911eb4900e0ac36f201537c7525}{%
+           family={Acikmese},
+           familyi={A\bibinitperiod},
+           given={Bechet},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6f65ae64ffdd4035894018a67a83ff59}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Aron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b561f46c51935d96267e1b353c27d94}
+      \strng{fullhash}{0b561f46c51935d96267e1b353c27d94}
+      \strng{bibnamehash}{0b561f46c51935d96267e1b353c27d94}
+      \strng{authorbibnamehash}{0b561f46c51935d96267e1b353c27d94}
+      \strng{authornamehash}{0b561f46c51935d96267e1b353c27d94}
+      \strng{authorfullhash}{0b561f46c51935d96267e1b353c27d94}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA}
+      \field{month}{8}
+      \field{title}{A Comparison of Powered Descent Guidance Laws for Mars Pinpoint Landing}
+      \field{volume}{2006-6676}
+      \field{year}{2006}
+    \endentry
+    \entry{REA}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a2e3ce8fd8ac0480abb455e6c329dae3}{%
+           family={Rea},
+           familyi={R\bibinitperiod},
+           given={Jeremy\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=1e2c064467041f4972349420ee131943}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{67d90d47517e000a8cbef19e7426a05f}
+      \strng{fullhash}{67d90d47517e000a8cbef19e7426a05f}
+      \strng{bibnamehash}{67d90d47517e000a8cbef19e7426a05f}
+      \strng{authorbibnamehash}{67d90d47517e000a8cbef19e7426a05f}
+      \strng{authornamehash}{67d90d47517e000a8cbef19e7426a05f}
+      \strng{authorfullhash}{67d90d47517e000a8cbef19e7426a05f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA Paper}
+      \field{title}{Analytical Dimensional Reduction of a Fuel Optimal Powered Descent Subproblem}
+      \field{volume}{2010-8026}
+      \field{year}{2010}
+    \endentry
+    \entry{ROSS}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f6f9aafbadc909832fdf416fe528329f}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Isaac\bibnamedelima M.},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6f9aafbadc909832fdf416fe528329f}
+      \strng{fullhash}{f6f9aafbadc909832fdf416fe528329f}
+      \strng{bibnamehash}{f6f9aafbadc909832fdf416fe528329f}
+      \strng{authorbibnamehash}{f6f9aafbadc909832fdf416fe528329f}
+      \strng{authornamehash}{f6f9aafbadc909832fdf416fe528329f}
+      \strng{authorfullhash}{f6f9aafbadc909832fdf416fe528329f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA}
+      \field{month}{8}
+      \field{title}{How to Find Minimum-Fuel Controllers}
+      \field{volume}{2004-5346}
+      \field{year}{2004}
+    \endentry
+    \entry{SOSTARIC}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4d1cc16d0f0b0d3dac103b6316c2bf7b}{%
+           family={Sostaric},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a2e3ce8fd8ac0480abb455e6c329dae3}{%
+           family={Rea},
+           familyi={R\bibinitperiod},
+           given={Jeremy\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{91d4a48e6bb231c63af523615caed213}
+      \strng{fullhash}{91d4a48e6bb231c63af523615caed213}
+      \strng{bibnamehash}{91d4a48e6bb231c63af523615caed213}
+      \strng{authorbibnamehash}{91d4a48e6bb231c63af523615caed213}
+      \strng{authornamehash}{91d4a48e6bb231c63af523615caed213}
+      \strng{authorfullhash}{91d4a48e6bb231c63af523615caed213}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIAA}
+      \field{month}{8}
+      \field{title}{Powered Descent Guidance Methods for the Moon and Mars}
+      \field{volume}{2005-6287}
+      \field{year}{2005}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{CHOMEL}
-{\sc Chomel, Christina}.
-\newblock ``\titlecap{Development of an Analytical Guidance Algorithm for Lunar
-  Descent}''.
-\newblock PhD thesis, The University of Texas at Austin, Austin, TX, 2007.
-
-\bibitem{CITRON}
-{\sc Citron, Stephen~J., Dunin, Stanley~E., and Meissinger, Hans~F.}
-\newblock ``\titlecap{A Terminal Guidance Technique for Lunar Landing}''.
-\newblock {\em AIAA Journal 2\/} (1964), 503--509.
-
-\bibitem{DSOUZA}
-{\sc D'Souza, Christopher~N.}
-\newblock ``\titlecap{An Optimal Guidance Law for Planetary Landing}''.
-\newblock {\em AIAA Paper 97-3709\/} (1997).
-
-\bibitem{FERZIGER}
-{\sc Ferziger, Joel~H., and Peri\'c, Milovan}.
-\newblock ``\titlecap{Computational Methods for Fluid Dynamics}''.
-\newblock Springer, Berlin, 2002.
-
-\bibitem{MARSGRAM}
-{\sc Justh, Hilary~L.}
-\newblock ``\titlecap{Mars Global Reference Atmospheric Model}''.
-\newblock NASA, https://see.msfc.nasa.gov/model-Marsgram, accessed February
-  2018.
-
-\bibitem{KLUMPP}
-{\sc Klumpp, Allan~R.}
-\newblock ``\titlecap{Apollo Lunar Descent Guidance}''.
-\newblock {\em Automatica 10\/} (1974), 133--146.
-
-\bibitem{LEITMANN}
-{\sc Leitmann, George}.
-\newblock ``\titlecap{Class of Variational Problems in Rocket Flight}''.
-\newblock {\em Journal of the Aerospace Sciences 26\/} (1959), 586--591.
-
-\bibitem{LU}
-{\sc Lu, Ping}.
-\newblock ``\titlecap{Propellant-Optimal Powered Descent Guidance}''.
-\newblock {\em Journal of Guidance, Control, and Dynamics\/} (Dec 2017), 1--14.
-
-\bibitem{MCINNES}
-{\sc McInnes, Colin~R.}
-\newblock ``\titlecap{Path Shaping Guidance for Terminal Lunar Descent}''.
-\newblock {\em Acta Astronautica 36\/} (1995), 367--377.
-
-\bibitem{MEDITCH}
-{\sc Meditch, James~J.}
-\newblock ``\titlecap{On the Problem of Optimal Thrust Programming For a Lunar
-  Soft Landing}''.
-\newblock {\em IEEE Transactions on Automatic Control 9\/} (1964), 477--484.
-
-\bibitem{MOESSER}
-{\sc Moesser, Travis~J.}
-\newblock ``\titlecap{Guidance and Navigation Linear Covariance Analysis for
-  Lunar Powered Descent}''.
-\newblock Master's thesis, Utah State University, Logan, UT, 2010.
-
-\bibitem{NAJSON}
-{\sc Najson, Federico, and Mease, Kenneth~D.}
-\newblock ``\titlecap{Computationally Inexpensive Guidance Algorithm for
-  Fuel-Efficient Terminal Descent}''.
-\newblock {\em Journal of Guidance, Control, and Dynamics 29\/} (2006),
-  955--964.
-
-\bibitem{PLOEN}
-{\sc Ploen, Scott~R., Acikmese, Bechet, and Wolf, Aron}.
-\newblock ``\titlecap{A Comparison of Powered Descent Guidance Laws for Mars
-  Pinpoint Landing}''.
-\newblock {\em AIAA 2006-6676\/} (August 2006).
-
-\bibitem{REA}
-{\sc Rea, Jeremy~R., and Bishop, Robert~H.}
-\newblock ``\titlecap{Analytical Dimensional Reduction of a Fuel Optimal
-  Powered Descent Subproblem}''.
-\newblock {\em AIAA Paper 2010-8026\/} (2010).
-
-\bibitem{ROSS}
-{\sc Ross, Isaac~M.}
-\newblock ``\titlecap{How to Find Minimum-Fuel Controllers}''.
-\newblock {\em AIAA 2004-5346\/} (August 2004).
-
-\bibitem{SOSTARIC}
-{\sc Sostaric, Ronald~R., and Rea, Jeremy~R.}
-\newblock ``\titlecap{Powered Descent Guidance Methods for the Moon and
-  Mars}''.
-\newblock {\em AIAA 2005-6287\/} (August 2005).
-
-\end{thebibliography}
