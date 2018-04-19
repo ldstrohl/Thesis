@@ -186,7 +186,7 @@
       \field{volume}{97-3709}
       \field{year}{1997}
     \endentry
-    \entry{FERZIGER}{inbook}{}
+    \entry{FERZIGER}{book}{}
       \name{author}{2}{}{%
         {{hash=004e0e63018c23b1410937fb2729dd22}{%
            family={Ferziger},
@@ -218,7 +218,7 @@
       \field{title}{Computational Methods for Fluid Dynamics}
       \field{year}{2002}
     \endentry
-    \entry{BODYAXES}{article}{}
+    \entry{BODYAXES}{online}{}
       \name{author}{1}{}{%
         {{hash=ce2d4e4b4d89664bcb3a2377d1afac27}{%
            family={Hall},
@@ -236,9 +236,8 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{NASA}
       \field{title}{Vehicle Body Axes}
-      \field{year}{2018}
+      \field{titleaddon}{NASA. Published 2015. Accessed 2018}
       \verb{urlraw}
       \verb https://www.grc.nasa.gov/www/k-12/airplane/rotations.html
       \endverb
@@ -246,7 +245,7 @@
       \verb https://www.grc.nasa.gov/www/k-12/airplane/rotations.html
       \endverb
     \endentry
-    \entry{MARSGRAM}{article}{}
+    \entry{MARSGRAM}{online}{}
       \name{author}{1}{}{%
         {{hash=b11ba5c2e9017f0d195998eb7abc9231}{%
            family={Justh},
@@ -264,9 +263,8 @@
       \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{NASA}
       \field{title}{Mars Global Reference Atmospheric Model}
-      \field{year}{2018}
+      \field{titleaddon}{NASA. Published 2010. Accessed 2018}
       \verb{urlraw}
       \verb https://see.msfc.nasa.gov/model-Marsgram
       \endverb
@@ -401,7 +399,7 @@
       \field{labeltitlesource}{title}
       \field{chapter}{No. 4}
       \field{journaltitle}{IEEE Transactions on Automatic Control}
-      \field{title}{On the Problem of Optimal Thrust Programming For a Lunar Soft Landing}
+      \field{title}{On the Problem of Optimal Thrust Programming for a Lunar Soft Landing}
       \field{volume}{9}
       \field{year}{1964}
       \field{pages}{477\bibrangedash 484}

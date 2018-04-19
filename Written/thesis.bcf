@@ -377,6 +377,7 @@
     <bcf:option datatype="boolean">noremoteinfo</bcf:option>
     <bcf:option datatype="boolean">showmedium</bcf:option>
     <bcf:option datatype="boolean">guessmedium</bcf:option>
+    <bcf:option datatype="boolean">subentry</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>

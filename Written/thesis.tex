@@ -16,29 +16,33 @@
 
 \documentclass{sdsu-thesis}
 
-% Produce SDSU-flavored CMS citations and bibliography using bastardized MLA style
+% Produce modified CMS citations and bibliography using bastardized MLA style
 \usepackage[
-bibstyle=mla,   % vanilla mla
-citestyle=numeric, % force numeric inline citations
-natbib=true,    % not sure why this is required
-backend=biber,  % compiling stuff
-maxnames=7,
-minnames=7,  
-showmedium=false,
-sorting=nty,
-language=american
+citestyle=numeric,  % force numeric inline citations
+bibstyle=mla,       % vanilla mla
+natbib=true,        % not sure why this is required
+backend=biber,      % compiling stuff
+maxnames=7,         % SDSU DTM guideline is up to 10
+minnames=7,         %   biblatex defaults to minnames when max is exceeded, but need 7 per DTM
+showmedium=false,   % don't print publication medium 
+sorting=nty,        % sort name, title, year
+language=american   % proper comma inside quotation behavior
 ]{biblatex}
 \addbibresource{thbib.bib}
-\DefineBibliographyExtras{American}{}
-\AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\MakeUppercase{#1}}}
-\AtBeginBibliography{\renewcommand*{\mkbibnamegiven}[1]{\MakeUppercase{#1}}}
-\DeclareFieldFormat{journaltitle}{#1}
-\defbibheading{bibliography}{%
+
+%\AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\MakeUppercase{#1}}} % force author names
+%\AtBeginBibliography{\renewcommand*{\mkbibnamegiven}[1]{\MakeUppercase{#1}}} % to be uppercase (DTM)
+\DeclareFieldFormat{journalvolume}{#1} % Remove italicized formatting from journal volumes
+\DeclareFieldFormat{booktitle}{#1} % Remove italicized formatting from journal volumes
+\defbibheading{bibliography}{% % Change "Works Cited" to "Bibliography"
 	\section*{Bibliography}}
 
-
-% include citation numbers in bibliography
-\AtEveryBibitem{[\printfield{labelnumber}]\addspace\addspace}%Numbers in the bib
+% add citation numbers to bibliography (simulate numeric citation)
+\makeatletter
+\input{numeric.bbx}
+\makeatother
+%\AtEveryBibitem{[\printfield{labelnumber}]\addspace}% Numbers in the bib
+\DeclareNameAlias{default}{family-given/given-family}
 
 
 
@@ -74,7 +78,7 @@ language=american
 \usepackage{graphicx}
 
 % add links compatible with adobe reader
-\usepackage[bookmarks]{hyperref}
+%\usepackage[bookmarks]{hyperref}
 
 % These packages may also be useful for pictures...
 % \usepackage{color}

@@ -1,109 +1,109 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {schapter}{ABSTRACT}{iv}{Doc-Start}
+\contentsline {schapter}{ABSTRACT}{iv}
 \defcounter {refsection}{0}\relax 
-\contentsline {schapter}{LIST OF TABLES}{vii}{Doc-Start}
+\contentsline {schapter}{LIST OF TABLES}{vii}
 \defcounter {refsection}{0}\relax 
-\contentsline {schapter}{LIST OF FIGURES}{viii}{Doc-Start}
+\contentsline {schapter}{LIST OF FIGURES}{viii}
 \defcounter {refsection}{0}\relax 
-\contentsline {schapter}{ACKNOWLEDGMENTS}{x}{Doc-Start}
-\defcounter {refsection}{0}\relax 
-\pagebreak [3]
-\defcounter {refsection}{0}\relax 
-\contentsline {chaphd}{CHAPTER}{1}{Doc-Start}
-\defcounter {refsection}{0}\relax 
-\nopagebreak 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Guidance and Control in Aerospace}{1}{section.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Literature Review}{2}{section.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Contribution}{3}{section.1.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Organization}{3}{section.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Problem Statement}{4}{section.1.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}METHODOLOGY}{6}{chapter.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Notation}{6}{section.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Coordinate Frame}{7}{section.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Guidance Law}{9}{section.2.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Equations of Motion}{10}{subsection.2.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}E-Guidance}{11}{subsection.2.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Optimality}{11}{subsection.2.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{11}{subsubsection.2.3.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{12}{subsubsection.2.3.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{13}{subsection.2.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{14}{subsection.2.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{16}{section.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}SIMULATION}{18}{chapter.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Numerical Integration}{19}{section.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Guidance Computer}{20}{section.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Ignition trigger}{21}{section.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Navigation Module}{21}{section.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Aerodynamic Model}{22}{section.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}CobraMRV}{22}{subsection.3.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{24}{subsection.3.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Orientation}{24}{subsection.3.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Monte Carlo}{25}{section.3.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Initial Condition}{26}{section.3.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}RESULTS}{30}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Adaptive PDI}{31}{section.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Comparison of E-Guidance with APDG}{32}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Navigation Error}{39}{section.4.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Vacuum vs. Atmosphere}{43}{section.4.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Vacuum Performance}{47}{section.4.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Atmospheric Performance}{53}{section.4.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}DISCUSSION}{59}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{59}{section.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{61}{section.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{62}{section.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{64}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{64}{section.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Future Work}{64}{section.6.2}
+\contentsline {schapter}{ACKNOWLEDGMENTS}{x}
 \defcounter {refsection}{0}\relax 
 \pagebreak [3]
 \defcounter {refsection}{0}\relax 
-\contentsline {chaphd}{APPENDIX}{68}{figure.caption.52}
+\contentsline {chaphd}{CHAPTER}{1}
 \defcounter {refsection}{0}\relax 
 \nopagebreak 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{69}{appendix.A}
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Guidance and Control in Aerospace}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Literature Review}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Contribution}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Organization}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Problem Statement}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}METHODOLOGY}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Notation}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Coordinate Frame}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Guidance Law}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Equations of Motion}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}E-Guidance}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Optimality}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.1}Performance Index}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.2}E-Guidance As An Optimal Guidance Law}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Apollo Powered Descent Guidance}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Time-to-go}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Adaptive Powered Descent Initiation}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}SIMULATION}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Numerical Integration}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Guidance Computer}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Ignition trigger}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Navigation Module}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Aerodynamic Model}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}CobraMRV}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Atmosphere Model}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.3}Orientation}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Monte Carlo}{25}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Initial Condition}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}RESULTS}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Adaptive PDI}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Comparison of E-Guidance with APDG}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Navigation Error}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Vacuum vs. Atmosphere}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Vacuum Performance}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Atmospheric Performance}{53}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}DISCUSSION}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Simulation Error Analysis}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Apollo Powered Descent Guidance}{61}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Adaptive Powered Descent Initiation}{62}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}CONCLUSIONS AND FUTURE WORK}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Adaptive Powered Descent Initiation}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Future Work}{64}
+\defcounter {refsection}{0}\relax 
+\pagebreak [3]
+\defcounter {refsection}{0}\relax 
+\contentsline {chaphd}{APPENDIX}{68}
+\defcounter {refsection}{0}\relax 
+\nopagebreak 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{DISPERSED TRAJECTORY FIGURES}{69}
