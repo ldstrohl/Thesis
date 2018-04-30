@@ -1,22 +1,15 @@
-[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'thesis.blg'
-[38] biber-MSWIN32:313> INFO - === 
-[84] Biber.pm:371> INFO - Reading 'thesis.bcf'
-[213] Biber.pm:857> INFO - Found 19 citekeys in bib section 0
-[230] Biber.pm:3976> INFO - Processing section 0
-[245] Biber.pm:4136> INFO - Looking for bibtex format file 'thbib.bib' for section 0
-[246] bibtex.pm:1444> INFO - Reading ascii input as UTF-8
-[248] bibtex.pm:1490> INFO - LaTeX decoding ...
-[276] bibtex.pm:1306> INFO - Found BibTeX data source 'thbib.bib'
-[286] Utils.pm:193> WARN - month field 'August' in entry 'SOSTARIC' is not an integer - this will probably not sort properly.
-[294] Utils.pm:193> WARN - month field 'August' in entry 'PLOEN' is not an integer - this will probably not sort properly.
-[321] Utils.pm:193> WARN - month field 'August' in entry 'ROSS' is not an integer - this will probably not sort properly.
-[338] Utils.pm:193> WARN - month field 'Dec' in entry 'LU' is not an integer - this will probably not sort properly.
-[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[397] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[397] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[424] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'ascii'
-[430] Utils.pm:193> WARN - The entry 'FERZIGER' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[435] bbl.pm:720> INFO - Output to thesis.bbl
-[441] Biber.pm:110> INFO - WARNINGS: 5
+[27] biber-MSWIN64:313> INFO - === 
+[59] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[138] Biber.pm:857> INFO - Found 19 citekeys in bib section 0
+[154] Biber.pm:3976> INFO - Processing section 0
+[167] Biber.pm:4136> INFO - Looking for bibtex format file 'thbib.bib' for section 0
+[174] bibtex.pm:1500> INFO - LaTeX decoding ...
+[197] bibtex.pm:1316> INFO - Found BibTeX data source 'thbib.bib'
+[288] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[288] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[288] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[288] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[304] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[311] bbl.pm:720> INFO - Output to thesis.bbl

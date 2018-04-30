@@ -54,14 +54,14 @@
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>blx-natbib.def</file>
-      <file>mla.bbx</file>
       <file>standard.bbx</file>
+      <file>mla.bbx</file>
       <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
-      <file>american-mla.lbx</file>
-      <file>american.lbx</file>
-      <file>english-mla.lbx</file>
       <file>english.lbx</file>
+      <file>english-mla.lbx</file>
+      <file>american.lbx</file>
+      <file>american-mla.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">

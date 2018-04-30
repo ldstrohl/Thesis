@@ -72,11 +72,8 @@
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA Paper}
       \field{title}{A Rigid Mid Lift-to-Drag Ratio Approach to Human Mars Entry, Descent, and Landing}
-      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference}
-      \field{volume}{2017-1898}
-      \field{year}{2017}
+      \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference, Grapevine, Texas, 2017}
     \endentry
     \entry{CHERRY}{article}{}
       \name{author}{1}{}{%
@@ -96,11 +93,8 @@
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA Paper}
       \field{title}{A General, Explicit, Optimizing Guidance Law for Rocket-Propelled Spaceflight}
-      \field{titleaddon}{AIAA/ION Astrodynamics Guidance and Control Conference}
-      \field{volume}{64-638}
-      \field{year}{1964}
+      \field{titleaddon}{Paper presented at AIAA/ION Astrodynamics Guidance and Control Conference, Los Angeles, California, 1964}
     \endentry
     \entry{CHOMEL}{thesis}{}
       \name{author}{1}{}{%
@@ -180,11 +174,8 @@
       \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA Paper}
       \field{title}{An Optimal Guidance Law for Planetary Landing}
-      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference}
-      \field{volume}{97-3709}
-      \field{year}{1997}
+      \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference, New Orleans, Louisiana, 1997}
     \endentry
     \entry{FERZIGER}{book}{}
       \name{author}{2}{}{%
@@ -194,7 +185,7 @@
            given={Joel\bibnamedelima H.},
            giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
         {{hash=7b57139d1e85c76caf4a3f43473d3dec}{%
-           family={Peri\'{c}},
+           family={Perić},
            familyi={P\bibinitperiod},
            given={Milovan},
            giveni={M\bibinitperiod}}}%
@@ -218,7 +209,7 @@
       \field{title}{Computational Methods for Fluid Dynamics}
       \field{year}{2002}
     \endentry
-    \entry{BODYAXES}{online}{}
+    \entry{BODYAXES}{article}{}
       \name{author}{1}{}{%
         {{hash=ce2d4e4b4d89664bcb3a2377d1afac27}{%
            family={Hall},
@@ -237,15 +228,9 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Vehicle Body Axes}
-      \field{titleaddon}{NASA. Published 2015. Accessed 2018}
-      \verb{urlraw}
-      \verb https://www.grc.nasa.gov/www/k-12/airplane/rotations.html
-      \endverb
-      \verb{url}
-      \verb https://www.grc.nasa.gov/www/k-12/airplane/rotations.html
-      \endverb
+      \field{titleaddon}{NASA. Published 2015. https://www.grc.nasa.gov/www/k-12/airplane/rotations.html}
     \endentry
-    \entry{MARSGRAM}{online}{}
+    \entry{MARSGRAM}{article}{}
       \name{author}{1}{}{%
         {{hash=b11ba5c2e9017f0d195998eb7abc9231}{%
            family={Justh},
@@ -264,13 +249,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Mars Global Reference Atmospheric Model}
-      \field{titleaddon}{NASA. Published 2010. Accessed 2018}
-      \verb{urlraw}
-      \verb https://see.msfc.nasa.gov/model-Marsgram
-      \endverb
-      \verb{url}
-      \verb https://see.msfc.nasa.gov/model-Marsgram
-      \endverb
+      \field{titleaddon}{NASA. Published 2010. https://see.msfc.nasa.gov/model-Marsgram}
     \endentry
     \entry{KLUMPP}{article}{}
       \name{author}{1}{}{%
@@ -347,7 +326,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-      \field{month}{12}
       \field{title}{Propellant-Optimal Powered Descent Guidance}
       \field{year}{2017}
       \field{pages}{1\bibrangedash 14}
@@ -492,12 +470,8 @@
       \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA}
-      \field{month}{8}
       \field{title}{A Comparison of Powered Descent Guidance Laws for Mars Pinpoint Landing}
-      \field{titleaddon}{AIAA/AAS Astrodynamics Specialist Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences}
-      \field{volume}{2006-6676}
-      \field{year}{2006}
+      \field{titleaddon}{Paper presented at AIAA/AAS Astrodynamics Specialist Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences, Keystone, Colorado, 2006}
     \endentry
     \entry{REA}{article}{}
       \name{author}{2}{}{%
@@ -522,11 +496,8 @@
       \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA Paper}
       \field{title}{Analytical Dimensional Reduction of a Fuel Optimal Powered Descent Subproblem}
-      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference}
-      \field{volume}{2010-8026}
-      \field{year}{2010}
+      \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference, Toronto, Ontario, 2010}
     \endentry
     \entry{ROSS}{article}{}
       \name{author}{1}{}{%
@@ -546,12 +517,8 @@
       \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA}
-      \field{month}{8}
       \field{title}{How to Find Minimum-Fuel Controllers}
-      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences}
-      \field{volume}{2004-5346}
-      \field{year}{2004}
+      \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences, Providence, Rhode Island, 2004}
     \endentry
     \entry{SOSTARIC}{article}{}
       \name{author}{2}{}{%
@@ -576,12 +543,8 @@
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIAA}
-      \field{month}{8}
       \field{title}{Powered Descent Guidance Methods for the Moon and Mars}
-      \field{titleaddon}{AIAA Guidance, Navigation, and Control Conference and Exhibit}
-      \field{volume}{2005-6287}
-      \field{year}{2005}
+      \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference and Exhibit, San Francisco, California, 2005}
     \endentry
   \enddatalist
 \endrefsection
