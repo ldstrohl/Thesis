@@ -30,12 +30,19 @@ language=american   % proper comma inside quotation behavior
 ]{biblatex}
 \addbibresource{thbib.bib}
 
-%\AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\MakeUppercase{#1}}} % force author names
-%\AtBeginBibliography{\renewcommand*{\mkbibnamegiven}[1]{\MakeUppercase{#1}}} % to be uppercase (DTM)
 \DeclareFieldFormat{journalvolume}{#1} % Remove italicized formatting from journal volumes
 \DeclareFieldFormat{booktitle}{#1} % Remove italicized formatting from journal volumes
 \defbibheading{bibliography}{% % Change "Works Cited" to "Bibliography"
 	\section*{Bibliography}}
+
+%\DeclareFieldFormat[thesis]{type}{#1\addcomma}
+\DefineBibliographyStrings{american}{phdthesis = {PhD diss\adddot}}
+\DefineBibliographyStrings{american}{mathesis = {Master's thesis}}
+
+\renewbibmacro*{mla:thesis:type}{%
+    \iffieldundef{type}%
+    {\printtext[mla:capital]{\bibstring{phdthesis}\addcomma}}%
+    {\usebibmacro{mla:all:type}\addcomma}}
 
 % add citation numbers to bibliography (simulate numeric citation)
 \makeatletter

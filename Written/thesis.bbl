@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{CERIMELE}{article}{}
+    \entry{CERIMELE}{inproceedings}{}
       \name{author}{8}{}{%
         {{hash=6a9c71cd88dda93481d56300132a281a}{%
            family={Cerimele},
@@ -75,7 +75,7 @@
       \field{title}{A Rigid Mid Lift-to-Drag Ratio Approach to Human Mars Entry, Descent, and Landing}
       \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference, Grapevine, Texas, 2017}
     \endentry
-    \entry{CHERRY}{article}{}
+    \entry{CHERRY}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=8c050d19ef3519a167dc69014bdeb540}{%
            family={Cherry},
@@ -156,7 +156,7 @@
       \field{pages}{503\bibrangedash 509}
       \range{pages}{7}
     \endentry
-    \entry{DSOUZA}{article}{}
+    \entry{DSOUZA}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=13988433388366986317055c2c3cf2df}{%
            family={D'Souza},
@@ -209,7 +209,7 @@
       \field{title}{Computational Methods for Fluid Dynamics}
       \field{year}{2002}
     \endentry
-    \entry{BODYAXES}{article}{}
+    \entry{BODYAXES}{online}{}
       \name{author}{1}{}{%
         {{hash=ce2d4e4b4d89664bcb3a2377d1afac27}{%
            family={Hall},
@@ -230,7 +230,7 @@
       \field{title}{Vehicle Body Axes}
       \field{titleaddon}{NASA. Published 2015. https://www.grc.nasa.gov/www/k-12/airplane/rotations.html}
     \endentry
-    \entry{MARSGRAM}{article}{}
+    \entry{MARSGRAM}{online}{}
       \name{author}{1}{}{%
         {{hash=b11ba5c2e9017f0d195998eb7abc9231}{%
            family={Justh},
@@ -442,7 +442,7 @@
       \field{pages}{955\bibrangedash 964}
       \range{pages}{10}
     \endentry
-    \entry{PLOEN}{article}{}
+    \entry{PLOEN}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=c11bf0373394246367e2e53d594853d2}{%
            family={Ploen},
@@ -473,7 +473,7 @@
       \field{title}{A Comparison of Powered Descent Guidance Laws for Mars Pinpoint Landing}
       \field{titleaddon}{Paper presented at AIAA/AAS Astrodynamics Specialist Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences, Keystone, Colorado, 2006}
     \endentry
-    \entry{REA}{article}{}
+    \entry{REA}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=a2e3ce8fd8ac0480abb455e6c329dae3}{%
            family={Rea},
@@ -499,7 +499,7 @@
       \field{title}{Analytical Dimensional Reduction of a Fuel Optimal Powered Descent Subproblem}
       \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference, Toronto, Ontario, 2010}
     \endentry
-    \entry{ROSS}{article}{}
+    \entry{ROSS}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=f6f9aafbadc909832fdf416fe528329f}{%
            family={Ross},
@@ -520,7 +520,7 @@
       \field{title}{How to Find Minimum-Fuel Controllers}
       \field{titleaddon}{Paper presented at AIAA Guidance, Navigation, and Control Conference and Exhibit, Guidance, Navigation, and Control and Co-located Conferences, Providence, Rhode Island, 2004}
     \endentry
-    \entry{SOSTARIC}{article}{}
+    \entry{SOSTARIC}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=4d1cc16d0f0b0d3dac103b6316c2bf7b}{%
            family={Sostaric},
